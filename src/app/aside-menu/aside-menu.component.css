@@ -1,0 +1,89 @@
+aside {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    height: 98vh;
+    margin: 1vh;
+    justify-content: center;
+    border-radius: 2rem;
+}
+
+aside .perfil {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+aside .perfil img {
+    width: 6rem;
+    border-radius: 6rem;
+    height: 6rem;
+    object-fit: cover;
+}
+
+aside .navegacion {
+    width: 100%;
+    display: flex;
+}
+
+
+/*navegacion*/
+
+aside .navegacion ul {
+    width: 100%;
+}
+
+aside .navegacion ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3rem;
+    cursor: pointer;
+}
+
+aside .navegacion ul li img {
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+
+/* seccion contactenos*/
+
+aside .contactenos {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+aside .contactenos ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    column-gap: 2rem;
+}
+
+aside .contactenos ul li img {
+    width: 1rem;
+    cursor: pointer;
+}
+
+ul li img {
+    filter: invert(1);
+}
+
+hr {
+    box-shadow: 0px -5px 2px 0px white;
+    height: 1px;
+    border: 0;
+    border-color: white;
+    width: 60%;
+}
