@@ -1,5 +1,5 @@
 aside {
-    width: 20rem;
+    width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,11 @@ aside .navegacion {
 /*navegacion*/
 
 aside .navegacion ul {
+    /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
     width: 100%;
+    background: linear-gradient(to right, rgb(86, 130, 129), hsl(0, 0%, 100%));
+    padding: 0;
+    margin-left: 40px;
 }
 
 aside .navegacion ul li {
@@ -44,11 +48,29 @@ aside .navegacion ul li {
     align-items: center;
     height: 3rem;
     cursor: pointer;
+    background: rgb(86, 130, 129);
+    padding-left: 1rem;
+}
+
+aside .navegacion ul li:hover .hoverEfecto {
+    opacity: 70%;
+}
+
+aside .contactenos ul li:hover {
+    opacity: 70%;
 }
 
 aside .navegacion ul li img {
     width: 1.5rem;
     margin-right: 1rem;
+}
+
+.guiaDiseño * {
+    visibility: hidden;
+}
+
+.guiaDiseño {
+    cursor: auto !important;
 }
 
 

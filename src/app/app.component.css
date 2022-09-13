@@ -4,3 +4,14 @@ app-asside-menu {
     display: flex;
     align-items: center;
 }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 32% 68%;
+}
+
+.contenedor main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

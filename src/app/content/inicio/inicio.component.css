@@ -1,0 +1,22 @@
+.contenedor img {
+    width: 40%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor::after {
+    content: 'WEB DEVELOPER';
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 2px white;
+    color: black;
+}

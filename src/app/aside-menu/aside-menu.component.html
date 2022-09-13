@@ -5,30 +5,37 @@
     </div>
     <div class="navegacion">
         <ul>
-            <li>
-                <img src="../../assets/icons/icons-aside/home-outline.svg" alt="home">
-                <span>INICIO</span>
+            <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
+
+            <li [ngStyle]="li_diseno1" class="guiaDiseño"><img src="../../assets/icons/icons-aside/home-outline.svg" alt="diseño">
+                <span>guia del diseño</span></li>
+            <li (click)="inicio()" [ngStyle]="li_inicio">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgInicio}" src="../../assets/icons/icons-aside/home-outline.svg" alt="home">
+                <span class="hoverEfecto">INICIO</span>
             </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/school-outline.svg" alt="education">
-                <span>EDUCACION</span>
+            <li (click)="educacion()" [ngStyle]="li_educacion">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgEducacion}" src="../../assets/icons/icons-aside/school-outline.svg" alt="education">
+                <span class="hoverEfecto">EDUCACION</span>
             </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/file-tray-stacked-outline.svg" alt="portafolio">
-                <span>PORTAFOLIO</span>
+            <li (click)="portafolio()" [ngStyle]="li_portafolio">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgPortafolio}" src="../../assets/icons/icons-aside/file-tray-stacked-outline.svg" alt="portafolio">
+                <span class="hoverEfecto">PORTAFOLIO</span>
             </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/code-slash-outline.svg" alt="skills">
-                <span>HABILIDADES</span>
+            <li (click)="habilidades()" [ngStyle]="li_habilidades">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgHabilidades}" src="../../assets/icons/icons-aside/code-slash-outline.svg" alt="skills">
+                <span class="hoverEfecto">HABILIDADES</span>
             </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/albums-outline.svg" alt="resume">
-                <span>RESUMEN</span>
+            <li (click)="resumen()" [ngStyle]="li_resumen">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgResumen}" src="../../assets/icons/icons-aside/albums-outline.svg" alt="resume">
+                <span class="hoverEfecto">RESUMEN</span>
             </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/chatbubbles-outline.svg" alt="contact">
-                <span>CONTACTAME</span>
+            <li (click)="contactame()" [ngStyle]=" li_contactame">
+                <img class="hoverEfecto" [ngStyle]="{'filter':imgContactame}" src="../../assets/icons/icons-aside/chatbubbles-outline.svg" alt="contact">
+                <span class="hoverEfecto">CONTACTAME</span>
             </li>
+            <li [ngStyle]="li_diseno2" class="guiaDiseño"><img src="../../assets/icons/icons-aside/home-outline.svg" alt="diseño">
+                <span class="hoverEfecto">guia del diseño</span></li>
+            <li>
         </ul>
     </div>
     <div class="contactenos">
