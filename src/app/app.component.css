@@ -7,11 +7,22 @@ app-asside-menu {
 
 .contenedor {
     display: grid;
-    grid-template-columns: 32% 68%;
+    grid-template-columns: 20% 80%;
 }
 
 .contenedor main {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+hr {
+    width: 80%;
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgb(137, 186, 199), rgba(0, 0, 0, 0));
+    height: 1px;
+    border: none;
+}
+
+.ancho {
+    width: 90%;
 }

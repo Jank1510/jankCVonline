@@ -1,4 +1,4 @@
-.contenedor img {
+.contenedor .perfil img {
     width: 40%;
     margin: auto;
     border-radius: 50%;
@@ -6,17 +6,128 @@
 
 .contenedor {
     display: flex;
+    height: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.perfil {
+    display: flex;
     height: 100vh;
     position: relative;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.contenedor::after {
-    content: 'WEB DEVELOPER';
+.contenedor .perfil h1 {
+    display: contents;
+}
+
+.contenedor .perfil h1 span {
     position: absolute;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 0 0 2px white;
     color: black;
+    width: max-content;
 }
+
+@keyframes visible_text {
+    0% {
+        margin-top: -1rem;
+        margin-left: 0rem;
+    }
+    33.3% {
+        margin-top: 1rem;
+        margin-left: -1rem;
+    }
+    66.6% {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    99.9% {
+        margin-top: -1rem;
+        margin-left: 0rem;
+    }
+}
+
+#text1 {
+    animation-name: visible_text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.linea {
+    animation: elasticus 2.4s cubic-bezier(1, 0, 0, 1) infinite;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -1px;
+    width: 1px;
+    height: 82px;
+    background: #000;
+    content: ' ';
+    mix-blend-mode: difference;
+    z-index: 6;
+    animation-name: linea_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.linea_contenedo {
+    position: relative;
+    width: 1px;
+    height: 82px;
+}
+
+@keyframes linea_animation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 82px;
+    }
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    margin: 3rem;
+}
+
+.name {
+    color: rgb(47, 62, 68);
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.presentacion div button {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(86, 130, 129);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.presentacion div a {
+    text-decoration: none;
+    color: rgb(47, 62, 68);
+    font-weight: bold;
+    margin-left: 3rem;
+}
+
+.presentacion div a:hover {
+    text-decoration-line: revert;
+}
+
+
+/*codigo bajado de internet*/
