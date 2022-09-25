@@ -1,0 +1,31 @@
+.content {
+    margin: 3rem 0; 
+}
+
+.content .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content .titulo hr {
+    width: 3rem;
+    margin: 0;
+    margin-right: 0px;
+    height: 1px;
+    border: none;
+    background-color: black;
+    margin-right: 1rem;
+}
+.content p{
+    text-align: center;
+}
+.gridPortafolio {}
+.gridPortafolio .etiqueta{width: 14rem;
+    text-align: center;
+    padding: 0.5rem;
+    background-size: 100% 100%;border-radius: 0.5rem;}
+.gridPortafolio .etiqueta .hoveretiqueta{
+    opacity: 0;
+
+}

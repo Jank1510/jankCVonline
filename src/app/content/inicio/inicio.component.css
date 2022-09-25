@@ -102,7 +102,7 @@
 }
 
 .name {
-    color: rgb(47, 62, 68);
+    color: black;
     font-weight: bold;
     font-size: 2rem;
     margin: 1rem;
@@ -113,14 +113,14 @@
     padding: 1rem;
     border-radius: 1rem;
     color: white;
-    background-color: rgb(86, 130, 129);
+    background-color: #ff3936;
     font-weight: bold;
     cursor: pointer;
 }
 
 .presentacion div a {
     text-decoration: none;
-    color: rgb(47, 62, 68);
+    color: black;
     font-weight: bold;
     margin-left: 3rem;
 }

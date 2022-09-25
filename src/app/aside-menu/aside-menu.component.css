@@ -36,10 +36,10 @@ aside .navegacion {
 
 aside .navegacion ul {
     /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
-    width: 100%;
-    background: linear-gradient(to right, rgb(86, 130, 129), hsl(0, 0%, 100%));
+    width: 80%;
+    background: linear-gradient(to right,#ff3936, hsl(0, 0%, 100%));
     padding: 0;
-    margin-left: 40px;
+    margin-left: 20%;
 }
 
 aside .navegacion ul li {
@@ -48,7 +48,7 @@ aside .navegacion ul li {
     align-items: center;
     height: 3rem;
     cursor: pointer;
-    background: rgb(86, 130, 129);
+    background: #ff3936;
     padding-left: 1rem;
 }
 

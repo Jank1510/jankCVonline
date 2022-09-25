@@ -15,7 +15,13 @@ export class EducacionComponent implements OnInit {
     imagen:"https://misiontic2022.unab.edu.co/pluginfile.php/1/theme_academi/logo/-1/LogoUnab-Horizontal.png",
     linkPreview:"https://drive.google.com/file/d/1azE_1-bS-DaQ-6vil9r52fwF1UNsvUdl/view?usp=sharing"
 
-     }, {}]
+     }, {
+      titulo: "HTML desde cero hasta experto",
+    lugar:"Udemy",
+    imagen:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
+    linkPreview:"https://drive.google.com/file/d/1YPb7faXiYtSzN8uX0Byn67KdOKFNUUgA/view?usp=sharing"
+
+     }]
   }
 
   ngOnInit(): void {

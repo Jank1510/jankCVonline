@@ -26,7 +26,7 @@ export class AsideMenuComponent implements OnInit {
 
 
   constructor() {
-    this.colorGlobal = 'rgb(86, 130, 129)'
+    this.colorGlobal = '#ff3936'
   }
 
   ngOnInit(): void {
@@ -35,7 +35,7 @@ export class AsideMenuComponent implements OnInit {
   inicio(): void {
     this.li_diseno1 = { 'border-bottom-right-radius': '2rem' }
     this.li_educacion = { 'border-top-right-radius': '2rem' }
-    this.li_inicio = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_inicio = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_habilidades = {}
     this.li_portafolio = {}
     this.li_resumen = {}
@@ -51,7 +51,7 @@ export class AsideMenuComponent implements OnInit {
   educacion(): void {
     this.li_inicio = { 'border-bottom-right-radius': '2rem' }
     this.li_portafolio = { 'border-top-right-radius': '2rem' }
-    this.li_educacion = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_educacion = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -67,7 +67,7 @@ export class AsideMenuComponent implements OnInit {
   portafolio(): void {
     this.li_educacion = { 'border-bottom-right-radius': '2rem' }
     this.li_habilidades = { 'border-top-right-radius': '2rem' }
-    this.li_portafolio = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_portafolio = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_resumen = {}    
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -83,7 +83,7 @@ export class AsideMenuComponent implements OnInit {
   habilidades(): void {
     this.li_portafolio = { 'border-bottom-right-radius': '2rem' }
     this.li_resumen = { 'border-top-right-radius': '2rem' }
-    this.li_habilidades = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_habilidades = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_diseno2 = {}
@@ -99,7 +99,7 @@ export class AsideMenuComponent implements OnInit {
   resumen(): void {
     this.li_habilidades = { 'border-bottom-right-radius': '2rem' }
     this.li_contactame = { 'border-top-right-radius': '2rem' }
-    this.li_resumen = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_resumen = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_portafolio = {}    
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -115,7 +115,7 @@ export class AsideMenuComponent implements OnInit {
   contactame(): void {
     this.li_resumen = { 'border-bottom-right-radius': '2rem' }
     this.li_diseno2 = { 'border-top-right-radius': '2rem' }
-    this.li_contactame = { 'color': 'rgb(47, 62, 68)', 'background': 'white', 'border-radius': '2rem' }
+    this.li_contactame = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}
