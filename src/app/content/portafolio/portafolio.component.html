@@ -4,11 +4,11 @@
     </div>
     <p>Desde hace mucho tiempo eh venido viendo y aprendiendo como crear una web, hasta que decidi empezar en este mundo. Eh aqui algunos de mis humildes proyectos</p>
     <div  class="gridPortafolio">
-        <div onmouseover=" hoverEtiqueta=1" class="etiqueta"  *ngFor="let data of dataPortafolio" [ngStyle]="{'background-image':data.imgFondo}">
-           <div [ngStyle]="{'opacity':hoverEtiqueta}"class="hoveretiqueta">
-            <p>{{data.info}}</p>
-            <a target="_blank" href="{{data.preview}}">Visitar web</a>
-            <a target="_blank" href="{{data.repositorio}}">Visitar repositorio</a>
+        <div (mouseover)="mouseEncima(data.var)" (mouseout)="mouseFuera(data.var)" class="etiqueta"  *ngFor="let data of dataPortafolio" [ngStyle]="{'background-image':data.imgFondo}">
+           <div class="hoveretiqueta" [ngStyle]="{'display':data.var}">
+                <p>{{data.info}}</p>
+                <a target="_blank" href="{{data.preview}}">Visitar web</a>
+                <a target="_blank" href="{{data.repositorio}}">Visitar repositorio</a>
            </div>
         </div>
     </div>

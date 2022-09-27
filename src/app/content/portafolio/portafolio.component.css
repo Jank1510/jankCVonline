@@ -1,5 +1,5 @@
 .content {
-    margin: 3rem 0; 
+    margin: 3rem 0;
 }
 
 .content .titulo {
@@ -17,15 +17,55 @@
     background-color: black;
     margin-right: 1rem;
 }
-.content p{
+
+.content p {
     text-align: center;
 }
+
 .gridPortafolio {}
-.gridPortafolio .etiqueta{width: 14rem;
+
+.gridPortafolio .etiqueta {
+    width: 15rem;
     text-align: center;
+    background-size: 100% 100%;
+    border-radius: 0.5rem;
+    height: 12rem;
+}
+
+.gridPortafolio .etiqueta .hoveretiqueta {
+    background-color: gray;/*esto hay q mejorarlo*/
+    display: inline-block;
     padding: 0.5rem;
-    background-size: 100% 100%;border-radius: 0.5rem;}
-.gridPortafolio .etiqueta .hoveretiqueta{
-    opacity: 0;
+    border-radius: 0.5rem;
+    animation-name: animacionEtiqueta;
+    animation-duration: 0.5s;
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.gridPortafolio .etiqueta .hoveretiqueta a {
+    padding: 0.5rem 0rem;
+    margin-bottom: 0.5rem;
+    background-color: #ff7673;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.gridPortafolio .etiqueta .hoveretiqueta a:hover {
+    opacity: 80%
+}
+
+@keyframes animacionEtiqueta {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 
 }
