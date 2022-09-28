@@ -22,37 +22,51 @@
     text-align: center;
 }
 
-.gridPortafolio {}
+.gridPortafolio {
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+    column-gap: 1vw;
+    justify-content: center;
+    margin-top: 2rem;
+    row-gap: 1vw;
+}
 
 .gridPortafolio .etiqueta {
     width: 15rem;
     text-align: center;
-    background-size: 100% 100%;
+    background-size: cover;
     border-radius: 0.5rem;
-    height: 12rem;
+    height: 10rem;background-position: center top;
 }
 
 .gridPortafolio .etiqueta .hoveretiqueta {
-    background-color: gray;/*esto hay q mejorarlo*/
+    background-color: gray;
+    /*esto hay q mejorarlo*/
     display: inline-block;
-    padding: 0.5rem;
+    justify-content: center;
     border-radius: 0.5rem;
     animation-name: animacionEtiqueta;
     animation-duration: 0.5s;
     color: white;
-    display: flex;
+    display: none;
     flex-direction: column;
+    height: 11rem;
+    height: 10rem;
+    font-size: 0.8358vw;
 
 }
 
 .gridPortafolio .etiqueta .hoveretiqueta a {
     padding: 0.5rem 0rem;
-    margin-bottom: 0.5rem;
-    background-color: #ff7673;
+    background-color: white;
     border-radius: 0.5rem;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 57, 54);
     cursor: pointer;
+    font-weight: bolder;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
 }
 
 .gridPortafolio .etiqueta .hoveretiqueta a:hover {
@@ -68,4 +82,23 @@
         opacity: 1;
     }
 
+}
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.paginacion span {
+    background-color: rgb(255, 57, 54);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.paginacion span:hover{
+    opacity: 80%;
 }

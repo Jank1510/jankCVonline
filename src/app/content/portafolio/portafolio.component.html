@@ -4,13 +4,17 @@
     </div>
     <p>Desde hace mucho tiempo eh venido viendo y aprendiendo como crear una web, hasta que decidi empezar en este mundo. Eh aqui algunos de mis humildes proyectos</p>
     <div  class="gridPortafolio">
-        <div (mouseover)="mouseEncima(data.var)" (mouseout)="mouseFuera(data.var)" class="etiqueta"  *ngFor="let data of dataPortafolio" [ngStyle]="{'background-image':data.imgFondo}">
-           <div class="hoveretiqueta" [ngStyle]="{'display':data.var}">
+        <div (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta"  *ngFor="let data of dataPortafolio[numeroDePagina]" [ngStyle]="{'background-image':data.imgFondo}">
+           <div class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
                 <p>{{data.info}}</p>
                 <a target="_blank" href="{{data.preview}}">Visitar web</a>
                 <a target="_blank" href="{{data.repositorio}}">Visitar repositorio</a>
            </div>
         </div>
     </div>
-
+    <div class="paginacion">
+        <span *ngIf="numeroDePagina!=0" (click)="numeroDePagina=numeroDePagina-1">Anterior</span>
+            {{numeroDePagina+1}}/{{dataPortafolio.length}}
+        <span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="numeroDePagina=numeroDePagina+1">Siguiente</span>
+    </div>
 </div>
