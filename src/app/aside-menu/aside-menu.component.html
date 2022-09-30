@@ -1,46 +1,66 @@
-<aside [ngStyle]="{'background-color': colorGlobal}">
+<aside [ngStyle]="{'background-color': colorGlobal}" (window:scroll)="scroll()">
     <div class="perfil">
-        <img src="../../assets/aside-icon.jpg" alt="perfil">
+        <img src="../../assets/aside-icon4.jpg" alt="perfil"> 
         <p>JEHAN CARLOS HURTADO GUERRERO</p>
     </div>
     <div class="navegacion">
         <ul>
             <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
 
-            <li [ngStyle]="li_diseno1" class="guiaDiseño"><img src="../../assets/icons/icons-aside/home-outline.svg" alt="diseño">
-                <span>guia del diseño</span></li>
-            <li (click)="inicio()" [ngStyle]="li_inicio">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgInicio}" src="../../assets/icons/icons-aside/home-outline.svg" alt="home">
-                <span class="hoverEfecto">INICIO</span>
+            <li >
+                <a href="#"  [ngStyle]="li_diseno1">
+                </a>
             </li>
-            <li (click)="educacion()" [ngStyle]="li_educacion">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgEducacion}" src="../../assets/icons/icons-aside/school-outline.svg" alt="education">
-                <span class="hoverEfecto">EDUCACION</span>
+            <li (click)="inicio()">
+                <a href="#app-inicio " [ngStyle]="li_inicio">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgInicio}"
+                        src="../../assets/icons/icons-aside/home-outline.svg" alt="home">
+                    <span class="hoverEfecto">INICIO</span>
+                </a>
             </li>
-            <li (click)="portafolio()" [ngStyle]="li_portafolio">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgPortafolio}" src="../../assets/icons/icons-aside/file-tray-stacked-outline.svg" alt="portafolio">
-                <span class="hoverEfecto">PORTAFOLIO</span>
+            <li (click)="educacion()">
+                <a href="#app-educacion" [ngStyle]="li_educacion">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgEducacion}"
+                        src="../../assets/icons/icons-aside/school-outline.svg" alt="education">
+                    <span class="hoverEfecto">EDUCACION</span>
+                </a>
             </li>
-            <li (click)="habilidades()" [ngStyle]="li_habilidades">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgHabilidades}" src="../../assets/icons/icons-aside/code-slash-outline.svg" alt="skills">
-                <span class="hoverEfecto">HABILIDADES</span>
+            <li (click)="portafolio()">
+                <a href="#app-portafoli" [ngStyle]="li_portafolio">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgPortafolio}"
+                        src="../../assets/icons/icons-aside/file-tray-stacked-outline.svg" alt="portafolio">
+                    <span class="hoverEfecto">PORTAFOLIO</span>
+                </a>
             </li>
-            <li (click)="resumen()" [ngStyle]="li_resumen">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgResumen}" src="../../assets/icons/icons-aside/albums-outline.svg" alt="resume">
-                <span class="hoverEfecto">RESUMEN</span>
+            <li (click)="habilidades()">
+                <a href="#app-habilidades" [ngStyle]="li_habilidades">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgHabilidades}"
+                        src="../../assets/icons/icons-aside/code-slash-outline.svg" alt="skills">
+                    <span class="hoverEfecto">HABILIDADES</span>
+                </a>
             </li>
-            <li (click)="contactame()" [ngStyle]=" li_contactame">
-                <img class="hoverEfecto" [ngStyle]="{'filter':imgContactame}" src="../../assets/icons/icons-aside/chatbubbles-outline.svg" alt="contact">
-                <span class="hoverEfecto">CONTACTAME</span>
+            <li (click)="resumen()">
+                <a href="#app-resumen" [ngStyle]="li_resumen">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgResumen}"
+                        src="../../assets/icons/icons-aside/albums-outline.svg" alt="resume">
+                    <span class="hoverEfecto">RESUMEN</span>
+                </a>
             </li>
-            <li [ngStyle]="li_diseno2" class="guiaDiseño"><img src="../../assets/icons/icons-aside/home-outline.svg" alt="diseño">
-                <span class="hoverEfecto">guia del diseño</span>
+            <li (click)="contactame()">
+                <a href="#app-contactame" [ngStyle]=" li_contactame">
+                    <img class="hoverEfecto" [ngStyle]="{'filter':imgContactame}"
+                        src="../../assets/icons/icons-aside/chatbubbles-outline.svg" alt="contact">
+                    <span class="hoverEfecto">CONTACTAME</span></a>
             </li>
-            
+            <li >
+                <a href="#"  [ngStyle]="li_diseno2" >
+                </a>
+            </li>
+
         </ul>
     </div>
     <div class="contactenos">
-        <hr/>
+        <hr />
         <ul>
             <li>
                 <img src="../../assets/icons/icons-aside/contact/logo-github.svg" alt="logo-github">

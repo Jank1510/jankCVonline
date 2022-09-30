@@ -5,5 +5,9 @@ body,
 app-root {
     height: 100%;
     margin: 0;
-    display: inherit;
+}
+html{
+
+    display: inherit;overflow-y: scroll;
+    scroll-behavior: smooth;
 }

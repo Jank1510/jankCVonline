@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'jankCVonline';
+
+
+
+  constructor() {
+  }
+  xd(){
+
+  var xd = document.getElementById('app-inicio')
+  console.log("xd",xd?.scrollTop)}
 }

@@ -8,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortafolioComponent implements OnInit {
   dataPortafolio: any
-  numeroDePagina:number
+  numeroDePagina: number
+  animationScroll: String
 
   constructor() {
-    this.numeroDePagina=0
+    this.animationScroll = ''
+    this.numeroDePagina = 0
     this.dataPortafolio = [
       [
         {
@@ -161,7 +163,7 @@ export class PortafolioComponent implements OnInit {
           repositorio: 'https://github.com/Jank1510/interactive-card-details-form',
           background: '#22092f',
           var: 'interactiveCard'
-        }
+        },{},{},{},{},{},{}
       ]
     ]
   }
@@ -169,4 +171,14 @@ export class PortafolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  EventPortafolio(buttonNameAnimation:string):void{//como parametro el nombre de la animacion correspondiente
+    this.animationScroll = ''
+    setTimeout(() => {
+      this.animationScroll = buttonNameAnimation
+      setTimeout(() => { 
+        buttonNameAnimation=='siguienteAnimation' ? this.numeroDePagina++ : this.numeroDePagina--
+      }, 500)
+    }, 1)
+  }
+  
 }

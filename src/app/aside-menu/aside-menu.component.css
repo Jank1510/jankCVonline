@@ -37,7 +37,7 @@ aside .navegacion {
 aside .navegacion ul {
     /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
     width: 80%;
-    background: linear-gradient(to right,#ff3936, hsl(0, 0%, 100%));
+    background: linear-gradient(to right, #ff3936, hsl(0, 0%, 100%));
     padding: 0;
     margin-left: 20%;
 }
@@ -48,8 +48,17 @@ aside .navegacion ul li {
     align-items: center;
     height: 3rem;
     cursor: pointer;
+}
+
+aside .navegacion ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background: #ff3936;
+    height: 3rem;
+    width: 100%;
     padding-left: 1rem;
+    text-decoration: none;color: white;
 }
 
 aside .navegacion ul li:hover .hoverEfecto {
@@ -60,18 +69,12 @@ aside .contactenos ul li:hover {
     opacity: 70%;
 }
 
-aside .navegacion ul li img {
+aside .navegacion ul li a img {
     width: 1.5rem;
     margin-right: 1rem;
 }
 
-.guiaDiseño * {
-    visibility: hidden;
-}
 
-.guiaDiseño {
-    cursor: auto !important;
-}
 
 
 /* seccion contactenos*/

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-aside-menu',
@@ -25,8 +26,13 @@ export class AsideMenuComponent implements OnInit {
   imgContactame!:string
 
 
-  constructor() {
+  
+  constructor(private router: Router) {
     this.colorGlobal = '#ff3936'
+  }
+  scroll(){
+    console.log(window.scrollY)
+
   }
 
   ngOnInit(): void {
