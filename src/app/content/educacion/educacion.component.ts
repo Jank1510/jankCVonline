@@ -27,7 +27,7 @@ export class EducacionComponent implements OnInit {
       imagen: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png",
       linkPreview: "https://drive.google.com/file/d/14S9mXm02HYprRqjtF2SUO4MBrRYkuwvB/view"
 
-    },{},{}
+    },{}
     ]
   }
 

@@ -1,5 +1,5 @@
 <section class="contenedor" >
-    <div class="perfil">
+    <div class="perfil" (mousemove)="mouseMove($event)" [ngStyle]="{'background-position':positionBackground}">
         <img src="../../../assets/perfil-icon2.jpg" alt="perfil-icon">
         <h1>
             <span id="text1" class="word ">WEB DEVELOPER.</span>
