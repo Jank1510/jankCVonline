@@ -10,6 +10,7 @@ import { PortafolioComponent } from './content/portafolio/portafolio.component';
 import { HabilidadesComponent } from './content/habilidades/habilidades.component';
 import { ResumenComponent } from './content/resumen/resumen.component';
 import { ContactameComponent } from './content/contactame/contactame.component';
+import { ServiceService } from './servicios/service.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ContactameComponent } from './content/contactame/contactame.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
