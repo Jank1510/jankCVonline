@@ -1,14 +1,18 @@
 <section class="content">
     <div class="titulo">
-        <hr><span>Mi educacion</span></div>
+        <hr><span>Mi educacion</span>
+    </div>
     <div class="contentenedorTarjeta">
         <div class="tarjeta" *ngFor="let data of obecjtEstudios">
-            <div>
-                <p>{{data.titulo}}</p>
-            <img src="{{data.imagen}}" alt="imagen">
-            </div>
+            <p>{{data.titulo}}</p>
             <span>{{data.lugar}}</span>
-            <a target="_blank" href="{{data.linkPreview}}">Certificado <img width="1rem" src="../../../assets/icons/openNewTab.png" alt="New-tab" ></a>
+            <div>
+
+                <a target="_blank" href="{{data.linkPreview}}">Certificado <img width="1rem"
+                        src="../../../assets/icons/openNewTab.png" alt="New-tab"></a>
+                <img src="{{data.imagen}}" alt="imagen">
+
+            </div>
         </div>
     </div>
 
