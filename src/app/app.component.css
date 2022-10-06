@@ -26,3 +26,7 @@ hr {
 .ancho {
     width: 90%;
 }
+.copy p{
+    color: #605f5f;
+margin: 2rem;
+}

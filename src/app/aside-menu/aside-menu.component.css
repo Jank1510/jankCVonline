@@ -18,6 +18,13 @@ aside .perfil {
     align-items: center;
     text-align: center;
 }
+aside .perfil p{
+
+    background-color: #ff0400;
+padding: 0.1rem 1rem;
+border-radius: 1rem;
+font-weight: bold;
+}
 
 aside .perfil img {
     width: 6rem;

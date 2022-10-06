@@ -157,3 +157,6 @@ a {
 .paginacion span:hover {
     opacity: 80%;
 }
+.hoveretiqueta p{
+    color:white
+}
