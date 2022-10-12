@@ -33,10 +33,10 @@ export class AsideMenuComponent implements OnInit {
 
   constructor(private service: ServiceService) {
     this.colorGlobal = '#ff3936'
-    setTimeout(()=>{
-      this.scroll() 
-    },1)
-     //para q carge la animacion inicial, ya q ahora son por la funcion scroll no por los click
+    setTimeout(() => {
+      this.scroll()
+    }, 10)
+    //para q carge la animacion inicial, ya q ahora son por la funcion scroll no por los click
   }
 
   ngOnInit(): void {
@@ -52,8 +52,8 @@ export class AsideMenuComponent implements OnInit {
   }
 
   scroll() {//esta funcion identifica donde esta el foco central de la pagina para animar la navegacion
-    let ubicacionCentral = (window.screen.height / 4) + window.scrollY //esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
-    
+    let ubicacionCentral = (window.screen.height / 2) + window.scrollY //esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
+
     this.cararPosicionYDeLosElementos()
     if (ubicacionCentral <= this.inicioY) {
       this.inicio()
@@ -61,8 +61,12 @@ export class AsideMenuComponent implements OnInit {
       this.educacion()
     } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + 2)) {
       this.portafolio()
-    }else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY +this.habilidadesY+ 3)) {
+    } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + 3)) {
       this.habilidades()
+    } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + this.resumenY + 4)) {
+      this.resumen()
+    } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + this.resumenY +this.contactameY+5)) {
+      this.contactame()
     }
   }
   /*funciones de navegacion*/

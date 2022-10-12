@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServiceService } from './servicios/service.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -21,5 +22,11 @@ export class AppComponent {
   }
   posicionElemento(idElemento: string): any {//retorna el alto de una seccion
     return document.getElementById(idElemento)?.clientHeight
+  }
+  //codigo para inicia la libreria aos de animaciones
+  ngOnInit(){
+    AOS.init()
+    window.addEventListener('load',AOS.refresh)
+
   }
 }
