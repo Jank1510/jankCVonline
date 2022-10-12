@@ -3,12 +3,16 @@
 html,
 body,
 app-root {
-    height: 100%;
+    
     margin: 0;
 }
 html{
 
     display: inherit;overflow-y: scroll;
     scroll-behavior: smooth;
+    background-color: white;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 /*----------*/

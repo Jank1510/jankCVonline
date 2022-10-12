@@ -1,79 +1,125 @@
-<aside [ngStyle]="{'background-color': colorGlobal}" (window:scroll)="scroll()">
-    <div class="perfil">
-        <img src="../../assets/aside-icon4.jpg" alt="perfil"> 
-        <p>JEHAN HURTADO</p>
-    </div>
-    <nav class="navegacion">
-        <ul>
-            <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
+<aside
+  [ngStyle]="{ 'background-color': colorGlobal }"
+  (window:scroll)="scroll()"
+>
+  <div class="perfil">
+    <img src="../../assets/aside-icon4.jpg" alt="perfil" />
+    <p>JEHAN HURTADO</p>
+  </div>
+  <nav class="navegacion">
+    <ul>
+      <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
 
-            <li >
-                <a href="#"  [ngStyle]="li_diseno1">
-                </a>
-            </li>
-            <li>
-                <a href="#app-inicio" [ngStyle]="li_inicio">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgInicio}"
-                        src="../../assets/icons/icons-aside/home-outline.svg" alt="home">
-                    <span class="hoverEfecto">INICIO</span>
-                </a>
-            </li>
-            <li >
-                <a href="#app-educacion" [ngStyle]="li_educacion">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgEducacion}"
-                        src="../../assets/icons/icons-aside/school-outline.svg" alt="education">
-                    <span class="hoverEfecto">EDUCACION</span>
-                </a>
-            </li>
-            <li >
-                <a href="#app-portafoli" [ngStyle]="li_portafolio">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgPortafolio}"
-                        src="../../assets/icons/icons-aside/file-tray-stacked-outline.svg" alt="portafolio">
-                    <span class="hoverEfecto">PORTAFOLIO</span>
-                </a>
-            </li>
-            <li >
-                <a href="#app-habilidades" [ngStyle]="li_habilidades">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgHabilidades}"
-                        src="../../assets/icons/icons-aside/code-slash-outline.svg" alt="skills">
-                    <span class="hoverEfecto">HABILIDADES</span>
-                </a>
-            </li>
-            <li >
-                <a href="#app-resumen" [ngStyle]="li_resumen">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgResumen}"
-                        src="../../assets/icons/icons-aside/albums-outline.svg" alt="resume">
-                    <span class="hoverEfecto">RESUMEN</span>
-                </a>
-            </li>
-            <li>
-                <a href="#app-contactame" [ngStyle]=" li_contactame">
-                    <img class="hoverEfecto" [ngStyle]="{'filter':imgContactame}"
-                        src="../../assets/icons/icons-aside/chatbubbles-outline.svg" alt="contact">
-                    <span class="hoverEfecto">CONTACTAME</span></a>
-            </li>
-            <li >
-                <a href="#"  [ngStyle]="li_diseno2" >
-                </a>
-            </li>
-
-        </ul>
-    </nav>
-    <div class="contactenos">
-        <hr />
-        <ul>
-            <li>
-                <img src="../../assets/icons/icons-aside/contact/logo-github.svg" alt="logo-github">
-            </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/contact/logo-instagram.svg" alt="logo-instagram">
-            </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/contact/logo-linkedin.svg" alt="logo-linkedin">
-            </li>
-            <li>
-                <img src="../../assets/icons/icons-aside/contact/logo-whatsapp.svg" alt="logo-whatsapp">
-            </li>
-        </ul>
-    </div>
+      <li>
+        <a href="#" [ngStyle]="li_diseno1"> </a>
+      </li>
+      <li>
+        <a href="#app-inicio" [ngStyle]="li_inicio">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgInicio }"
+            src="../../assets/icons/icons-aside/inicio-icon.png"
+            alt="home"
+          />
+          <span class="hoverEfecto">INICIO</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-educacion" [ngStyle]="li_educacion">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgEducacion }"
+            src="../../assets/icons/icons-aside/educacion-icon.png"
+            alt="education"
+          />
+          <span class="hoverEfecto">EDUCACION</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-portafoli" [ngStyle]="li_portafolio">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgPortafolio }"
+            src="../../assets/icons/icons-aside/portafolio-icon.png"
+            alt="portafolio"
+          />
+          <span class="hoverEfecto">PORTAFOLIO</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-habilidades" [ngStyle]="li_habilidades">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgHabilidades }"
+            src="../../assets/icons/icons-aside/habilidades-icon.png"
+            alt="skills"
+          />
+          <span class="hoverEfecto">HABILIDADES</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-resumen" [ngStyle]="li_resumen">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgResumen }"
+            src="../../assets/icons/icons-aside/resumen-icon.png"
+            alt="resume"
+          />
+          <span class="hoverEfecto">RESUMEN</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-contactame" [ngStyle]="li_contactame">
+          <img
+            class="hoverEfecto"
+            [ngStyle]="{ filter: imgContactame }"
+            src="../../assets/icons/icons-aside/contactanos-icon.png"
+            alt="contact"
+          />
+          <span class="hoverEfecto">CONTACTAME</span></a
+        >
+      </li>
+      <li>
+        <a href="#" [ngStyle]="li_diseno2"> </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="contactenos">
+    <hr />
+    <ul>
+      <li>
+        <a target="_blank" href="https://github.com/Jank1510">
+          <img
+            src="../../assets/icons/icons-aside/contact/github-icon.png"
+            alt="logo-github"
+          />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" href="https://www.instagram.com/jehanhurtado/">
+          <img
+            src="../../assets/icons/icons-aside/contact/instagram-icon.png"
+            alt="logo-instagram"
+          />
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/"
+        >
+          <img
+            src="../../assets/icons/icons-aside/contact/linkedin-icon.png"
+            alt="logo-linkedin"
+          />
+        </a>
+      </li>
+      <li>
+        <img
+          src="../../assets/icons/icons-aside/contact/whatsapp-icon.png"
+          alt="logo-whatsapp"
+        />
+      </li>
+    </ul>
+  </div>
 </aside>

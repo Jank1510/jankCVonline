@@ -18,7 +18,7 @@ app-asside-menu {
 
 hr {
     width: 80%;
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), rgb(137, 186, 199), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(137, 186, 199), rgba(0, 0, 0, 0));
     height: 1px;
     border: none;
 }

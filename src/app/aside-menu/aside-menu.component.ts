@@ -33,7 +33,10 @@ export class AsideMenuComponent implements OnInit {
 
   constructor(private service: ServiceService) {
     this.colorGlobal = '#ff3936'
-    this.inicio()//para q carge la animacion inicial, ya q ahora son por la funcion scroll no por los click
+    setTimeout(()=>{
+      this.scroll() 
+    },1)
+     //para q carge la animacion inicial, ya q ahora son por la funcion scroll no por los click
   }
 
   ngOnInit(): void {
@@ -49,7 +52,8 @@ export class AsideMenuComponent implements OnInit {
   }
 
   scroll() {//esta funcion identifica donde esta el foco central de la pagina para animar la navegacion
-    let ubicacionCentral = (window.screen.height / 4) + window.scrollY//esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
+    let ubicacionCentral = (window.screen.height / 4) + window.scrollY //esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
+    
     this.cararPosicionYDeLosElementos()
     if (ubicacionCentral <= this.inicioY) {
       this.inicio()
