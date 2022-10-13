@@ -5,10 +5,7 @@ app-asside-menu {
     align-items: center;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-columns: 20% 80%;
-}
+
 
 .contenedor main {
     display: flex;
@@ -23,10 +20,28 @@ hr {
     border: none;
 }
 
-.ancho {
-    width: 90%;
-}
-.copy p{
+
+.copy p {
     color: #605f5f;
-margin: 2rem;
+    margin: 2rem;
+}
+/* RESPONSIVE DESIGN*/
+@media (min-width:700px) {
+    .contenedor {
+        display: block;
+        grid-template-columns: 20% 80%;
+    }.ancho {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:1270px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }.ancho {
+        width: 90%;
+    }
+    
 }

@@ -11,5 +11,7 @@ export class ContactameComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  enviar() {
+    console.log("XD")
+  }
 }

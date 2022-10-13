@@ -1,44 +1,55 @@
 <section class="content">
-    <div  data-aos="fade-right" class="titulo">
-        <hr><span>Contactame</span>
-    </div>
-    <div>
-        <form action="#" method="post" data-aos="fade-up" data-aos-duration="1500">
-            <ul>
-                <li class="li_left">
-                    <label for="name">Nombre:</label>
-                    <input type="text" name="name" id="name" required>
-                </li>
+  <div data-aos="fade-right" class="titulo">
+    <hr />
+    <span>Contactame</span>
+  </div>
+  <div>
+    <form 
+      action="https://formspree.io/f/mlevlowv"
+      method="POST"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    ><!--SE USA LA HERRAMIENTE FORMSPREE PARA ENVIAR CORREOS -->
+      <ul>
+        <li class="li_left">
+          <label for="name">Nombre:</label>
+          <input type="text" name="name" id="name" required />
+        </li>
 
-                <li>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
-                </li>
-                <li>
-                    <label for="asunto">Asunto:</label>
-                    <input type="text" name="asunto" id="asunto" required>
-                </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </li>
+        <li>
+          <label for="asunto">Asunto:</label>
+          <input type="text" name="asunto" id="asunto" required />
+        </li>
 
-                <li>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
-                </li>
-                <li>
-                    <button type="#">Enviar</button>
-                </li>
-            </ul>
-        </form>
-        <div class="datosContacto">
-            <div  data-aos="fade-left" data-aos-duration="1500" class="telefono">
-                <img src="../../../assets/icons/icon-contact/telefono-inteligente.png" alt="CellPhone">
-                <a href="tel:+57 3043602822" class="direccion">+57 3043602822</a>
-                <p class="txt">Llamame</p>
-            </div>
-            <div  data-aos="fade-left" data-aos-duration="1500" class="email">
-                <img src="../../../assets/icons/icon-contact/email.png" alt="E-mail">
-                <a href="mailto:jeanhurt15@gmail.com" class="direccion">jeanhurt15@gmail.com</a>
-                <p class="txt">Escribeme un correo</p>
-            </div>
-        </div>
+        <li>
+          <label for="mensaje">Mensaje:</label>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+        </li>
+        <li>
+          <button type="submit">Enviar</button>
+        </li>
+      </ul>
+    </form>
+    <div class="datosContacto">
+      <div data-aos="fade-left" data-aos-duration="1500" class="telefono">
+        <img
+          src="../../../assets/icons/icon-contact/telefono-inteligente.png"
+          alt="CellPhone"
+        />
+        <a href="tel:+57 3043602822" class="direccion">+57 3043602822</a>
+        <p class="txt">Llamame</p>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="1500" class="email">
+        <img src="../../../assets/icons/icon-contact/email.png" alt="E-mail" />
+        <a href="mailto:jeanhurt15@gmail.com" class="direccion"
+          >jeanhurt15@gmail.com</a
+        >
+        <p class="txt">Escribeme un correo</p>
+      </div>
     </div>
+  </div>
 </section>

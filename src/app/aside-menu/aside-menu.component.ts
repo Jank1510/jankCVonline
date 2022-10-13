@@ -31,7 +31,12 @@ export class AsideMenuComponent implements OnInit {
   resumenY!: number
   contactameY!: number
 
+  /*responsive design*/
+  width:number
+  menuVisible:boolean
   constructor(private service: ServiceService) {
+    this.width=window.screen.width//cargamos una variable para condicionar las vistas de desgin en el dom
+    this.menuVisible=false
     this.colorGlobal = '#ff3936'
     setTimeout(() => {
       this.scroll()
@@ -41,7 +46,12 @@ export class AsideMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+closedMenu():void{
+  setTimeout(() => {
+    this.menuVisible=false
+    
+  }, 1);
+}
   cararPosicionYDeLosElementos() {//cargamos las variables con el servicio q nos trae los datos del componente app
     this.inicioY = this.service.getinicioY()
     this.educaciony = this.service.geteducacionY()
