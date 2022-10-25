@@ -128,9 +128,9 @@
 </aside>
 
 <!--Aside para vistas de Ipads-->
-<img *ngIf="(width > 700 && width < 1270)" class="openMenu" src="" alt="Open" (click)="menuVisible=true">
+<img *ngIf="(width > 700 && width < 1270 && menuVisible==false)" class="openMenu" src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open" (click)="menuVisible=true">
 <div class="opacity_fondo" *ngIf="(width > 700 && width < 1270) && menuVisible">
-  <img class="closedMenu" (click)="closedMenu()" src="" alt="Closed" />
+  <img class="closedMenu" (click)="closedMenu()" src="../../assets/icons/icons-aside/icon-close.png" alt="Closed" />
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal }">
     <div class="perfil">
       <img src="../../assets/aside-icon4.jpg" alt="perfil" />

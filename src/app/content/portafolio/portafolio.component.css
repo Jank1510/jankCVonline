@@ -23,14 +23,6 @@
 .content p {color: #605f5f;
 }
 
-.gridPortafolio {
-    display: grid;
-    grid-template-columns: 14.4rem 14.4rem 14.4rem 14.4rem;
-    column-gap: 1vw;
-    margin-top: 2rem;
-    row-gap: 1vw;
-    animation-duration: 1s;
-}
 
 .scrollAnimation {
     overflow-x: hidden;
@@ -66,14 +58,6 @@
     }
 }
 
-.gridPortafolio .etiqueta {
-    width: 14.4rem;
-    text-align: center;
-    background-size: cover;
-    border-radius: 0.5rem;
-    height: 10rem;
-    background-position: center top;
-}
 
 .gridPortafolio .etiqueta .hoveretiqueta {
     display: inline-block;
@@ -160,3 +144,40 @@ a {
 .hoveretiqueta p{
     color:white
 }
+/* RESPONSIVE DESIGN*/
+@media (min-width:700px) {
+    .gridPortafolio {display: grid;
+        grid-template-columns: 11rem 11rem 11rem 11rem;
+        grid-column-gap: 1vw;
+        column-gap: 1vw;
+        margin-top: 2rem;
+        grid-row-gap: 1vw;
+        row-gap: 1vw;
+        animation-duration: 1s;
+    }   
+    .gridPortafolio .etiqueta {width: 11rem;
+        text-align: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        height: 8rem;
+        background-position: center top;
+    }
+}
+
+@media (min-width:1270px) {
+    .gridPortafolio {
+        display: grid;
+        grid-template-columns: 14.4rem 14.4rem 14.4rem 14.4rem;
+        column-gap: 1vw;
+        margin-top: 2rem;
+        row-gap: 1vw;
+        animation-duration: 1s;
+    }
+    .gridPortafolio .etiqueta {
+        width: 14.4rem;
+        text-align: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        height: 10rem;
+        background-position: center top;
+    }}

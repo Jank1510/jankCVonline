@@ -1,10 +1,4 @@
-.contenedor .perfil img {
-    width: 70vh;
-    margin: auto;
-    border-radius: 100%;
-    height: 70vh;
-    object-fit: cover;
-}
+
 
 .contenedor {
     display: flex;
@@ -154,4 +148,21 @@
 }
 
 
-/*codigo bajado de internet*/
+/* RESPONSIVE DESIGN*/
+@media (min-width:700px) {
+    .contenedor .perfil img {
+        width: 75vw;
+        margin: auto;
+        border-radius: 100%;
+        height: 75vw;
+        object-fit: cover;
+    }
+}
+
+@media (min-width:1270px) {.contenedor .perfil img {
+    width: 70vh;
+    margin: auto;
+    border-radius: 100%;
+    height: 70vh;
+    object-fit: cover;
+}}

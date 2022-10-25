@@ -193,11 +193,13 @@ hr {
 .openMenu {
     position: fixed;
     top: 2rem;
-    left: 2rem;z-index: 1;
+    left: 2rem;z-index: 1;width: 4rem;
 }
 
 .closedMenu {
     position: fixed;
     top: 4rem;
-    left: 4rem;z-index: 2;
+    left: 4rem;z-index: 2;width: 3rem;
 }
+/* EL diseño esta por partes, la de ipad en 700 y desktop en 12** todos los componentes no tienen
+mediaqueris solo los necesarios para el diseño optimo*/

@@ -29,7 +29,7 @@ hr {
 @media (min-width:700px) {
     .contenedor {
         display: block;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 20% 80%;margin: 0 5%;
     }.ancho {
         width: 100%;
     }
@@ -39,7 +39,7 @@ hr {
 @media (min-width:1270px) {
     .contenedor {
         display: grid;
-        grid-template-columns: 20% 80%;
+        grid-template-columns: 20% 80%;margin:0;
     }.ancho {
         width: 90%;
     }
