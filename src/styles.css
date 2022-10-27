@@ -3,16 +3,23 @@
 html,
 body,
 app-root {
-    
+
     margin: 0;
 }
-html{
 
-    display: inherit;overflow-y: scroll;
+html {
+
+    display: inherit;
+    overflow-y: scroll;
     scroll-behavior: smooth;
     background-color: white;
-    color:black;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+body{
+    overflow-x: hidden;
+
+}
+
 /*----------*/

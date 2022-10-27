@@ -1,5 +1,3 @@
-
-
 .contenedor {
     display: flex;
     height: auto;
@@ -19,7 +17,6 @@
     flex-direction: column;
     width: 76vw;
     background-image: url(../../../assets/fondos/fondo-inicio3.png);
-    background-size: 80vh 80vh;
     background-repeat: repeat;
 }
 
@@ -108,11 +105,16 @@
 }
 
 .presentacion div {
-    margin: 2rem;display: flex;
+    margin: 2rem;
+    display: flex;
     flex-direction: row;
 }
-.presentacion div div{margin:0;display: flex;
-    align-items: center;}
+
+.presentacion div div {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
 
 .name {
     color: black;
@@ -147,22 +149,34 @@
     text-decoration-line: revert;
 }
 
+.contenedor .perfil img {
+    margin: auto;
+    border-radius: 100%;
+    object-fit: cover;
+}
 
 /* RESPONSIVE DESIGN*/
 @media (min-width:700px) {
     .contenedor .perfil img {
         width: 75vw;
-        margin: auto;
-        border-radius: 100%;
         height: 75vw;
-        object-fit: cover;
+    }
+
+    .perfil {
+        background-size: 40vh 40vh;
+
     }
 }
 
-@media (min-width:1270px) {.contenedor .perfil img {
-    width: 70vh;
-    margin: auto;
-    border-radius: 100%;
-    height: 70vh;
-    object-fit: cover;
-}}
+@media (min-width:1270px) {
+    .contenedor .perfil img {
+        width: 70vh;
+        height: 70vh;
+
+    }
+
+    .perfil {
+        background-size: 80vh 80vh;
+
+    }
+}

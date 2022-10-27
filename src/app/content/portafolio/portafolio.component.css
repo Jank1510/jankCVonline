@@ -147,7 +147,7 @@ a {
 /* RESPONSIVE DESIGN*/
 @media (min-width:700px) {
     .gridPortafolio {display: grid;
-        grid-template-columns: 11rem 11rem 11rem 11rem;
+        grid-template-columns: 22vw 22vw 22vw 22vw;
         grid-column-gap: 1vw;
         column-gap: 1vw;
         margin-top: 2rem;
@@ -155,11 +155,11 @@ a {
         row-gap: 1vw;
         animation-duration: 1s;
     }   
-    .gridPortafolio .etiqueta {width: 11rem;
+    .gridPortafolio .etiqueta {width: 22vw;
         text-align: center;
         background-size: cover;
         border-radius: 0.5rem;
-        height: 8rem;
+        height: 15vw;
         background-position: center top;
     }
 }

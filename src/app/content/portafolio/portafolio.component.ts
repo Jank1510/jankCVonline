@@ -10,10 +10,13 @@ export class PortafolioComponent implements OnInit {
   dataPortafolio: any
   numeroDePagina: number
   animationScroll: String
+/*ancho pantalla*/
+width:number
 
   constructor() {
     this.animationScroll = ''
     this.numeroDePagina = 0
+    this.width=window.screen.width
     this.dataPortafolio = [
       [
         {
@@ -179,6 +182,9 @@ export class PortafolioComponent implements OnInit {
         buttonNameAnimation=='siguienteAnimation' ? this.numeroDePagina++ : this.numeroDePagina--
       }, 500)
     }, 1)
+  }
+  Redireccionar(enlace:string):void{
+    location.href =enlace;
   }
   
 }

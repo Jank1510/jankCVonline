@@ -94,7 +94,7 @@ p {
     background-color: #2a2a2a;
     border-radius: 0.4rem;
     width: 50%;
-    height: 10rem;
+    height: auto;
     font-size: 0.9rem;
     border-top: 2px solid rgb(255, 57, 54);
 }

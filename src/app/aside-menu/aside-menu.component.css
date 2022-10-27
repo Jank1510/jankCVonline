@@ -191,11 +191,9 @@ hr {
 }
 
 .openMenu {
-    position: fixed;
+    position: absolute;
     top: 2rem;
-    left: 2rem;z-index: 1;width: 4rem;
-}
-
+    left: 2rem;z-index: 1;width: 4rem;}
 .closedMenu {
     position: fixed;
     top: 4rem;

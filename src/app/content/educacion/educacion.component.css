@@ -23,7 +23,6 @@
 
 .contentenedorTarjeta {
     display: grid;
-    grid-template-columns: 20rem 20rem;
     justify-content: center;
     column-gap: 1rem;
     row-gap: 1rem;
@@ -90,6 +89,19 @@
 .tarjeta a:hover {
     opacity: 90%;
 }
+@media (min-width:700px) {
+    .contentenedorTarjeta {
+        grid-template-columns: 41vw 41vw;
+
+    }
+}
+@media (min-width:1270px) {
+    .contentenedorTarjeta {
+        grid-template-columns: 25vw 25vw;
+    }
+}
+
+
 
 
 
