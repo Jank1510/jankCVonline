@@ -2,7 +2,8 @@
     margin: 6rem 0;
 }
 
-.content .titulo {display: flex;
+.content .titulo {
+    display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: bold;
@@ -20,7 +21,8 @@
     margin-right: 1rem;
 }
 
-.content p {color: #605f5f;
+.content p {
+    color: #605f5f;
 }
 
 
@@ -69,17 +71,22 @@
     display: none;
     flex-direction: column;
     height: 11rem;
-    height: 10rem;font-size: 0.8rem;
+    height: 10rem;
+    font-size: 0.8rem;
 
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
     color: rgb(255, 57, 54);
 
-}a:hover {
+}
+
+a:hover {
     opacity: 80%
 }
+
 .gridPortafolio .etiqueta .hoveretiqueta a {
     padding: 0.5rem 0rem;
     background-color: white;
@@ -110,7 +117,8 @@ a {
     align-items: center;
 }
 
-.paginacion span {background-color: rgb(255, 57, 54);
+.paginacion span {
+    background-color: rgb(255, 57, 54);
     color: white;
     border-radius: 1rem;
     cursor: pointer;
@@ -122,7 +130,8 @@ a {
     align-items: center;
     justify-content: center;
 }
-.paginacion div{
+
+.paginacion div {
     width: 6rem;
     height: 2rem;
 }
@@ -141,12 +150,46 @@ a {
 .paginacion span:hover {
     opacity: 80%;
 }
-.hoveretiqueta p{
-    color:white
+
+.hoveretiqueta p {
+    color: white
 }
+
 /* RESPONSIVE DESIGN*/
+@media (min-width:300px) {
+    .gridPortafolio {
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        grid-column-gap: 1vw;
+        column-gap: 0.5rem;
+        margin-top: 2rem;
+        grid-row-gap: 1vw;
+        row-gap: 0.5rem;
+        animation-duration: 1s;
+    }
+
+    .gridPortafolio .etiqueta {
+        width: 45vw;
+        text-align: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        height: 30vw;
+        background-position: center top;
+    }
+
+    .titulo {
+        width: 90vw;
+        margin-left: 4vw;
+    }
+
+    .content p {
+        width: 90vw;
+    }
+}
+
 @media (min-width:700px) {
-    .gridPortafolio {display: grid;
+    .gridPortafolio {
+        display: grid;
         grid-template-columns: 22vw 22vw 22vw 22vw;
         grid-column-gap: 1vw;
         column-gap: 1vw;
@@ -154,13 +197,24 @@ a {
         grid-row-gap: 1vw;
         row-gap: 1vw;
         animation-duration: 1s;
-    }   
-    .gridPortafolio .etiqueta {width: 22vw;
+    }
+
+    .gridPortafolio .etiqueta {
+        width: 22vw;
         text-align: center;
         background-size: cover;
         border-radius: 0.5rem;
         height: 15vw;
         background-position: center top;
+    }
+
+    .titulo {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .content p {
+        width: auto;
     }
 }
 
@@ -173,6 +227,7 @@ a {
         row-gap: 1vw;
         animation-duration: 1s;
     }
+
     .gridPortafolio .etiqueta {
         width: 14.4rem;
         text-align: center;
@@ -180,4 +235,5 @@ a {
         border-radius: 0.5rem;
         height: 10rem;
         background-position: center top;
-    }}
+    }
+}

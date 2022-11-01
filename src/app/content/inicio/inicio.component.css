@@ -20,13 +20,8 @@
     background-repeat: repeat;
 }
 
-.contenedor .perfil h1 {
-    display: contents;
-}
 
 .contenedor .perfil h1 span {
-    position: absolute;
-    font-size: 3rem;
     font-weight: bold;
     color: brown;
     width: max-content;
@@ -55,7 +50,6 @@
 }
 
 #text1 {
-    animation-name: visible_text;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
@@ -142,7 +136,6 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin-left: 3rem;
 }
 
 .presentacion div .leerMas:hover {
@@ -150,27 +143,116 @@
 }
 
 .contenedor .perfil img {
-    margin: auto;
     border-radius: 100%;
     object-fit: cover;
 }
+@keyframes animationFondoPhone {
+    12.5%{
+        background-position: 0.5px 0.5px;
+    }
+    25%{
+        background-position:  0px 1px;
+    }
+    37.5%{
+        background-position: -0.5px 0.5px;
 
+    }
+    50%{
+        background-position: -1px 0px;
+
+    }
+    62.5% {
+        background-position: -0.5px -0.5px;
+
+    }
+    75%{
+        background-position: 0px -1px;
+
+
+    }87.5%{
+        background-position: 0.5px -0.5px;
+
+    }100%{
+        background-position: 1px 0px;
+
+    }
+}
 /* RESPONSIVE DESIGN*/
+
+@media (min-width:300px) {
+    .contenedor .perfil img {width: 70vw;
+        height: 70vw;
+        margin-top: 50%;
+    }
+
+    .perfil {
+        background-size: 30vh 30vh;
+animation-name: animationFondoPhone;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+    }
+
+    .contenedor .perfil h1 {
+        display: contents;
+        margin-top: 45vh;
+        position: absolute;
+    }
+
+    .contenedor .perfil h1 span {
+        position: relative;
+        font-size: 2rem;
+        margin-top: 30%;margin-bottom: auto;
+    }
+
+    #text1 {
+        animation-name: none;
+    }
+    .presentacion div .leerMas {
+        margin-left: 2rem;
+        width: 5rem;
+    }
+
+}
 @media (min-width:700px) {
     .contenedor .perfil img {
         width: 75vw;
+        margin: auto;
         height: 75vw;
     }
 
     .perfil {
-        background-size: 40vh 40vh;
+animation-name: none;
+background-size: 40vh 40vh;
 
+    }
+
+    .contenedor .perfil h1 {
+        display: contents;
+        position: relative;
+        margin: 0;
+    }
+
+    .contenedor .perfil h1 span {
+        position: absolute;
+        font-size: 3rem;
+        margin: 0;
+
+    }
+
+    #text1 {
+        animation-name: visible_text;
+    }
+    .presentacion div .leerMas {
+
+        margin-left: 3rem;width: auto;
     }
 }
 
 @media (min-width:1270px) {
     .contenedor .perfil img {
         width: 70vh;
+        margin: auto;
         height: 70vh;
 
     }
@@ -179,4 +261,15 @@
         background-size: 80vh 80vh;
 
     }
+
+    .contenedor .perfil h1 {
+        display: contents;
+        position: relative;
+        margin: 0;
+    }
+
+    .contenedor .perfil h1 span {
+        position: absolute;
+    }
+
 }

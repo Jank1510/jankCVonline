@@ -9,7 +9,7 @@
     <div class="scrollAnimation" >
         <div  class="gridPortafolio" [ngStyle]="{'animation-name':animationScroll}">
             <div  (click)="(width<1270)? Redireccionar(data.repositorio):xd" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta"  *ngFor="let data of dataPortafolio[numeroDePagina]" [ngStyle]="{'background-image':data.imgFondo}">
-               <div class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
+               <div *ngIf="width>1270" class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
                     <p>{{data.info}}</p>
                     <a target="_blank" href="{{data.preview}}">Visitar web</a>
                     <a target="_blank" href="{{data.repositorio}}">Visitar repositorio</a>

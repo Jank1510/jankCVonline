@@ -23,12 +23,9 @@
 
 .flex {
     display: flex;
-    flex-direction: row;
 }
 
-.secciones {
-    width: 50%;
-}
+
 
 p {
     color: #605f5f;
@@ -38,7 +35,6 @@ p {
     width: 100%;
     display: grid;
     grid-template-columns: 45% 45%;
-    margin-left: 10%;
     column-gap: 5%;
 }
 
@@ -86,7 +82,6 @@ p {
     column-gap: 2rem;
     justify-content: center;
     width: 90%;
-    margin-left: 10%;
     margin-top: 2rem
 }
 
@@ -109,4 +104,38 @@ a{
 }
 a:hover {
     opacity: 80%;
+}
+@media (min-width:300px) {
+    .flex{
+        flex-direction: column;
+    
+        }.secciones {
+            width: 90vw;
+        }
+        .content-skills {
+            margin-left: 0;
+        
+        }
+        
+.content-tarjetas {
+    margin-left: 0;
+
+}
+}
+@media (min-width:700px) {
+    .flex{
+    flex-direction: row;
+
+    }.secciones {
+        width: 50%;
+    }
+.content-skills {
+    margin-left: 10%;
+
+}
+.content-tarjetas {
+    margin-left: 10%;
+
+}
+
 }
