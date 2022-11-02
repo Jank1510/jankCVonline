@@ -1,7 +1,3 @@
-.content {
-    margin: 6rem 0;
-}
-
 .content .titulo {
     display: flex;
     flex-direction: row;
@@ -93,28 +89,41 @@
     .tarjeta {
         width: 80vw;
     }
-    .contentenedorTarjeta{
-    height: auto;
 
-    }.titulo{
-        width: 90vw;
-    margin-left: 5vw;
+    .contentenedorTarjeta {
+        height: auto;
+
     }
-    
+
+    .titulo {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    .content {
+        margin: 2rem 0 6rem 0;
+    }
+
 }
 
 
 @media (min-width:700px) {
     .contentenedorTarjeta {
-    height: 25rem;
-    grid-template-columns: 41vw 41vw;
+        height: 25rem;
+        grid-template-columns: 41vw 41vw;
     }
 
     .tarjeta {
         width: auto;
-    }.titulo{
+    }
+
+    .titulo {
         width: auto;
-    margin-left: 0;
+        margin-left: 0;
+    }
+
+    .content {
+        margin: 6rem 0;
     }
 }
 

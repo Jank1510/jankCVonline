@@ -10,13 +10,13 @@ export class PortafolioComponent implements OnInit {
   dataPortafolio: any
   numeroDePagina: number
   animationScroll: String
-/*ancho pantalla*/
-width:number
+  /*ancho pantalla*/
+  width: number
 
   constructor() {
     this.animationScroll = ''
     this.numeroDePagina = 0
-    this.width=window.screen.width
+    this.width = window.screen.width
     this.dataPortafolio = [
       [
         {
@@ -166,25 +166,29 @@ width:number
           repositorio: 'https://github.com/Jank1510/interactive-card-details-form',
           background: '#22092f',
           var: 'interactiveCard'
-        },{},{},{},{},{},{}
+        }, {}, {}, {}, {}, {}, {}
       ]
     ]
   }
 
   ngOnInit(): void {
   }
+  ajusteResolucion(event: any): void {//funcion para actualizar el tamaño del ancho en px de la pantalla
+    this.width = (event.target.innerWidth)
+    console.log(this.width)
+  }
 
-  EventPortafolio(buttonNameAnimation:string):void{//como parametro el nombre de la animacion correspondiente
+  EventPortafolio(buttonNameAnimation: string): void {//como parametro el nombre de la animacion correspondiente
     this.animationScroll = ''
     setTimeout(() => {
       this.animationScroll = buttonNameAnimation
-      setTimeout(() => { 
-        buttonNameAnimation=='siguienteAnimation' ? this.numeroDePagina++ : this.numeroDePagina--
+      setTimeout(() => {
+        buttonNameAnimation == 'siguienteAnimation' ? this.numeroDePagina++ : this.numeroDePagina--
       }, 500)
     }, 1)
   }
-  Redireccionar(enlace:string):void{
-    location.href =enlace;
+  Redireccionar(enlace: string): void {
+    location.href = enlace;
   }
-  
+
 }

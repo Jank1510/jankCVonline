@@ -180,9 +180,9 @@
 /* RESPONSIVE DESIGN*/
 
 @media (min-width:300px) {
-    .contenedor .perfil img {width: 70vw;
-        height: 70vw;
-        margin-top: 50%;
+    .contenedor .perfil img {width: 60vw;
+        height: 60vw;
+        margin-top: auto;
     }
 
     .perfil {
@@ -216,9 +216,9 @@ animation-iteration-count: infinite;
 }
 @media (min-width:700px) {
     .contenedor .perfil img {
-        width: 75vw;
+        width: 50vw;
         margin: auto;
-        height: 75vw;
+        height: 50vw;
     }
 
     .perfil {

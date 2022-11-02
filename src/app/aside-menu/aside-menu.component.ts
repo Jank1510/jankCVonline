@@ -32,11 +32,11 @@ export class AsideMenuComponent implements OnInit {
   contactameY!: number
 
   /*responsive design*/
-  width:number
-  menuVisible:boolean
+  width: number
+  menuVisible: boolean
   constructor(private service: ServiceService) {
-    this.width=window.screen.width//cargamos una variable para condicionar las vistas de desgin en el dom
-    this.menuVisible=false
+    this.width = window.screen.width//cargamos una variable para condicionar las vistas de desgin en el dom
+    this.menuVisible = false
     this.colorGlobal = '#ff3936'
     setTimeout(() => {
       this.scroll()
@@ -46,12 +46,17 @@ export class AsideMenuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-closedMenu():void{
-  setTimeout(() => {
-    this.menuVisible=false
-    
-  }, 1);
-}
+
+  ajusteResolucion(event:any):void{//funcion para actualizar el tamaño del ancho en px de la pantalla
+    this.width=(event.target.innerWidth)
+    console.log(this.width)
+  }
+
+  closedMenu(): void {
+    setTimeout(() => {
+      this.menuVisible = false
+    }, 1);
+  }
   cararPosicionYDeLosElementos() {//cargamos las variables con el servicio q nos trae los datos del componente app
     this.inicioY = this.service.getinicioY()
     this.educaciony = this.service.geteducacionY()
@@ -75,15 +80,15 @@ closedMenu():void{
       this.habilidades()
     } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + this.resumenY + 4)) {
       this.resumen()
-    } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + this.resumenY +this.contactameY+5)) {
+    } else if ((ubicacionCentral <= this.inicioY + this.educaciony + this.portafolioY + this.habilidadesY + this.resumenY + this.contactameY + 5)) {
       this.contactame()
     }
   }
   /*funciones de navegacion*/
   inicio(): void {
-    this.li_diseno1 = { 'border-bottom-right-radius': '2rem' }
-    this.li_educacion = { 'border-top-right-radius': '2rem' }
-    this.li_inicio = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_diseno1 = { 'border-bottom-right-radius': '2vw' }
+    this.li_educacion = { 'border-top-right-radius': '2vw' }
+    this.li_inicio = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_habilidades = {}
     this.li_portafolio = {}
     this.li_resumen = {}
@@ -97,9 +102,9 @@ closedMenu():void{
     this.imgContactame = ''
   }
   educacion(): void {
-    this.li_inicio = { 'border-bottom-right-radius': '2rem' }
-    this.li_portafolio = { 'border-top-right-radius': '2rem' }
-    this.li_educacion = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_inicio = { 'border-bottom-right-radius': '2vw' }
+    this.li_portafolio = { 'border-top-right-radius': '2vw' }
+    this.li_educacion = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -113,9 +118,9 @@ closedMenu():void{
     this.imgContactame = ''
   }
   portafolio(): void {
-    this.li_educacion = { 'border-bottom-right-radius': '2rem' }
-    this.li_habilidades = { 'border-top-right-radius': '2rem' }
-    this.li_portafolio = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_educacion = { 'border-bottom-right-radius': '2vw' }
+    this.li_habilidades = { 'border-top-right-radius': '2vw' }
+    this.li_portafolio = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_resumen = {}
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -129,9 +134,9 @@ closedMenu():void{
     this.imgContactame = ''
   }
   habilidades(): void {
-    this.li_portafolio = { 'border-bottom-right-radius': '2rem' }
-    this.li_resumen = { 'border-top-right-radius': '2rem' }
-    this.li_habilidades = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_portafolio = { 'border-bottom-right-radius': '2vw' }
+    this.li_resumen = { 'border-top-right-radius': '2vw' }
+    this.li_habilidades = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_diseno2 = {}
@@ -145,9 +150,9 @@ closedMenu():void{
     this.imgContactame = ''
   }
   resumen(): void {
-    this.li_habilidades = { 'border-bottom-right-radius': '2rem' }
-    this.li_contactame = { 'border-top-right-radius': '2rem' }
-    this.li_resumen = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_habilidades = { 'border-bottom-right-radius': '2vw' }
+    this.li_contactame = { 'border-top-right-radius': '2vw' }
+    this.li_resumen = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_portafolio = {}
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -161,9 +166,9 @@ closedMenu():void{
     this.imgContactame = ''
   }
   contactame(): void {
-    this.li_resumen = { 'border-bottom-right-radius': '2rem' }
-    this.li_diseno2 = { 'border-top-right-radius': '2rem' }
-    this.li_contactame = { 'color': 'black', 'background': 'white', 'border-radius': '2rem' }
+    this.li_resumen = { 'border-bottom-right-radius': '2vw' }
+    this.li_diseno2 = { 'border-top-right-radius': '2vw' }
+    this.li_contactame = { 'color': 'black', 'background': 'white', 'border-radius': '2vw' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}

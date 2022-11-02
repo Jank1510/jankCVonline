@@ -1,5 +1,5 @@
 <!--Aside para vistas de desktops-->
-<aside class="aside_desktop" *ngIf="width > 1270" [ngStyle]="{ 'background-color': colorGlobal }"
+<aside  class="aside_desktop" *ngIf="width > 1270" [ngStyle]="{ 'background-color': colorGlobal }"
   (window:scroll)="scroll()">
   <div class="perfil">
     <img src="../../assets/aside-icon4.jpg" alt="perfil" />
@@ -8,7 +8,6 @@
   <nav class="navegacion">
     <ul>
       <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
-
       <li>
         <a href="#" [ngStyle]="li_diseno1"> </a>
       </li>
@@ -157,3 +156,5 @@
     </div>
   </aside>
 </div>
+<!--Funcion para ajustar contneido cuando se cambie de tamaño-->
+<div style="display: none;" (window:resize)="ajusteResolucion($event)"></div>

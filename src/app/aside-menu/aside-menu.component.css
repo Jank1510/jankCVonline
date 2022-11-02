@@ -8,7 +8,6 @@
     height: 98vh;
     margin: 1vh;
     justify-content: center;
-    border-radius: 2rem;
 }
 
 .perfil {
@@ -22,15 +21,10 @@
 .perfil p {
 
     background-color: #ff0400;
-    padding: 0.1rem 1rem;
-    border-radius: 1rem;
     font-weight: bold;
 }
 
 .perfil img {
-    width: 6rem;
-    border-radius: 6rem;
-    height: 6rem;
     object-fit: cover;
 }
 
@@ -54,7 +48,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 3rem;
     cursor: pointer;
 }
 
@@ -63,11 +56,10 @@
     flex-direction: row;
     align-items: center;
     background: #ff3936;
-    height: 3rem;
     width: 100%;
-    padding-left: 1rem;
     text-decoration: none;
     color: white;
+
 }
 
 .navegacion ul li:hover .hoverEfecto {
@@ -76,11 +68,6 @@
 
 .contactenos ul li:hover {
     opacity: 70%;
-}
-
-.navegacion ul li a img {
-    width: 1.5rem;
-    margin-right: 1rem;
 }
 
 /* seccion contactenos*/
@@ -99,11 +86,9 @@
     justify-content: center;
     padding: 0;
     list-style: none;
-    column-gap: 2rem;
 }
 
 .contactenos ul li img {
-    width: 1rem;
     cursor: pointer;
 }
 
@@ -152,10 +137,8 @@ hr {
     align-items: center;
     color: white;
     position: fixed;
-    height: 40rem;
     margin: auto;
     justify-content: center;
-    border-radius: 2rem;
     text-align: center;
 }
 
@@ -163,10 +146,8 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 3rem;
     cursor: pointer;
     border-bottom: 1px solid white;
-    margin-bottom: 1rem;
 }
 
 .aside_Ipad .navegacion ul {
@@ -177,27 +158,25 @@ hr {
 }
 
 .aside_Ipad .navegacion ul li a {
+
     display: flex;
     flex-direction: row;
     align-items: center;
     background: #ff3936;
-    height: 3rem;
     width: 100%;
     justify-content: center;
     padding: 0;
     text-decoration: none;
     color: white;
 }
+
 .closedMenu {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
     z-index: 2;
-    width: 1.5rem;
     filter: invert(.95);
 }
 
-@media (min-width:300px) {
+@media (min-width:300px) {/*las medidas se calculan en rem para un diseño optimo en mobil y ipad*/
     .openMenu {
         position: absolute;
         top: 1rem;
@@ -205,11 +184,77 @@ hr {
         z-index: 1;
         width: 3rem;
     }
-
+*{font-size:1rem;}
 
     .aside_Ipad {
         width: 80%;
     }
+
+    .aside_desktop {
+        border-radius: 2rem;
+
+    }
+
+    .perfil p {
+
+        padding: 0.1rem 1rem;
+        border-radius: 1rem;
+    }
+
+    .perfil img {
+        width: 6rem;
+        border-radius: 6rem;
+        height: 6rem;
+    }
+
+    .aside_desktop .navegacion ul li a {
+        padding-left: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navegacion ul li {
+        height: 3rem;
+    }
+
+    .aside_desktop .navegacion ul li a {
+
+        padding-left: 1rem;
+        height: 3rem;
+    }
+
+    .navegacion ul li a img {
+        width: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .contactenos ul {
+        column-gap: 2rem;
+    }
+
+    .contactenos ul li img {
+        width: 1rem;
+    }
+
+    .aside_Ipad {
+        border-radius: 2rem;
+        height: 40rem;
+    }
+
+    .aside_Ipad .navegacion ul li {
+        height: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .aside_Ipad .navegacion ul li a {
+        height: 3rem;
+    }
+
+    .closedMenu {
+        width: 1.5rem;
+        top: 1rem;
+        left: 1rem;
+    }
+
 }
 
 @media (min-width:700px) {
@@ -220,8 +265,78 @@ hr {
         z-index: 1;
         width: 4rem;
     }
+
     .aside_Ipad {
         width: 40vw;
+    }
+}
+
+@media (min-width:1270px) {/*Las medidas se calculan en vw para un diseño optimo en vista desktop y vistas de grandes tamaños*/
+    *{font-size:1vw;}
+
+    .aside_desktop {
+        border-radius: 2vw;
+
+    }
+
+    .perfil p {
+
+        padding: 0.1vw 1vw;
+        border-radius: 1vw;
+    }
+
+    .perfil img {
+        width: 6vw;
+        border-radius: 6vw;
+        height: 6vw;
+    }
+
+    .aside_desktop .navegacion ul li a {
+        padding-left: 1vw;
+        padding-left: 1vw;
+    }
+
+    .navegacion ul li {
+        height: 3vw;
+    }
+
+    .aside_desktop .navegacion ul li a {
+
+        padding-left: 1vw;
+        height: 3vw;
+    }
+
+    .navegacion ul li a img {
+        width: 1.5vw;
+        margin-right: 1vw;
+    }
+
+    .contactenos ul {
+        column-gap: 2vw;
+    }
+
+    .contactenos ul li img {
+        width: 1vw;
+    }
+
+    .aside_Ipad {
+        border-radius: 2vw;
+        height: 40vw;
+    }
+
+    .aside_Ipad .navegacion ul li {
+        height: 3vw;
+        margin-bottom: 1vw;
+    }
+
+    .aside_Ipad .navegacion ul li a {
+        height: 3vw;
+    }
+
+    .closedMenu {
+        width: 1.5vw;
+        top: 1vw;
+        left: 1vw;
     }
 }
 

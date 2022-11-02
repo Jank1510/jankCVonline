@@ -1,7 +1,4 @@
 .content {
-    margin: 6rem 0;
-    margin-bottom: 6rem;
-    margin-bottom: 12rem;
     display: flex;
     flex-direction: column;
 }
@@ -67,7 +64,6 @@
 }
 
 .content form ul li button {
-    width: 15%;
     margin: auto;
     margin-top: auto;
     height: 2.2rem;
@@ -84,9 +80,7 @@
     opacity: 80%
 }
 
-.content form {
-    width: 70%;
-}
+
 
 .content .datosContacto {
     display: flex;
@@ -131,17 +125,56 @@ ul {
 }
 
 /* RESPONSIVE DESIGN*/
+@media (min-width:300px) {
+    .contactenosSection {
+        width: 90vw;
+    }
+
+    .content form {
+        width: 100%;
+    }
+
+    .content form ul li button {
+        width: 35%;
+    }
+
+    .content .datosContacto {
+        flex-direction: column;
+    }
+
+    .content {
+
+        margin: 2rem 0 12rem 0;
+    }
+
+}
+
 @media (min-width:700px) {
     .contactenosSection {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
 
     .content .datosContacto {
         width: 100%;
         flex-direction: row;
-        justify-content: center;margin-top: 1.5rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+
+    .content form {
+        width: 70%;
+    }
+
+    .content form ul li button {
+        width: 15%;
+    }
+
+    .content {
+
+        margin: 6rem 0 12rem 0;
     }
 }
 
@@ -153,6 +186,7 @@ ul {
 
     .content .datosContacto {
         width: 30%;
-        flex-direction: column;margin-top:0
+        flex-direction: column;
+        margin-top: 0
     }
 }

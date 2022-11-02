@@ -1,7 +1,3 @@
-.content {
-    margin: 6rem 0;
-}
-
 .content .titulo {
     display: flex;
     flex-direction: row;
@@ -185,6 +181,10 @@ a:hover {
     .content p {
         width: 90vw;
     }
+
+    .content {
+        margin: 2rem 0 6rem 0;
+    }
 }
 
 @media (min-width:700px) {
@@ -215,6 +215,10 @@ a:hover {
 
     .content p {
         width: auto;
+    }
+
+    .content {
+        margin: 6rem 0;
     }
 }
 
