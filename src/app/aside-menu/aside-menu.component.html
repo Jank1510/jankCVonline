@@ -83,10 +83,14 @@
 </aside>
 
 <!--Aside para vistas de Ipads-->
-<img *ngIf="( width < 1270 && menuVisible==false)" class="openMenu"
-  src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open" (click)="menuVisible=true">
+<div  *ngIf="( width < 1270 )" class="banner">
+  <img class="openMenu"
+  src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open" (click)="menuVisible=true;directionNameAnimation='asideIpad'">
+  <a href="#" target="_blank">Descargar PDF <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+</div>
+
 <div class="opacity_fondo" *ngIf="( width < 1270) && menuVisible">
-  <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal }">
+  <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
     <img class="closedMenu" (click)="closedMenu()" src="../../assets/icons/icons-aside/icon-close.png" alt="Closed" />
 
     <div class="perfil">
@@ -132,7 +136,7 @@
         </li>
       </ul>
     </nav>
-    <div class="contactenos">
+    <div style="position: fixed;" class="contactenos">
       <ul>
         <li>
           <a target="_blank" href="https://github.com/Jank1510">

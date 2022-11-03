@@ -116,30 +116,47 @@ hr {
     }
 }
 
-.opacity_fondo {
-    position: fixed;
+.opacity_fondo {position: fixed;
     width: 100%;
     height: 100%;
     z-index: 1;
-    top: 0;
+    top: 3.2rem;
     left: 0;
-    background: #0f0303da;
+    background:#0f03036e;
     display: flex;
-    align-items: center;
-    justify-content: center;
     animation-duration: 1s;
     animation-name: animationOpen;
 }
 
+@keyframes asideIpad {
+    from{
+        margin-left:-70% ;
+    }
+    to{
+        margin-left:0% ;
+
+    }
+    
+}
+@keyframes asideIpadClosed {
+    from{
+        margin-left:0% ;
+    }
+    to{
+        margin-left:-70% ;
+
+    }
+    
+}
 .aside_Ipad {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     position: fixed;
-    margin: auto;
-    justify-content: center;
+    margin: auto;padding-top: 5rem;
     text-align: center;
+    animation-duration: 0.5s;
 }
 
 .aside_Ipad .navegacion ul li {
@@ -164,7 +181,6 @@ hr {
     align-items: center;
     background: #ff3936;
     width: 100%;
-    justify-content: center;
     padding: 0;
     text-decoration: none;
     color: white;
@@ -175,20 +191,36 @@ hr {
     z-index: 2;
     filter: invert(.95);
 }
+.banner{position: fixed;
+    width: 100vw;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgb(255, 57, 54);left:0;
+}
+.banner a{margin-left: auto;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.35rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;font-size: 13px;
+}
+.banner img{
+    filter: invert(1);
+}
 
 @media (min-width:300px) {/*las medidas se calculan en rem para un diseño optimo en mobil y ipad*/
     .openMenu {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
         z-index: 1;
-        width: 3rem;
+        width: 2.5rem;padding: 0.35rem;
+        filter: invert(1);
     }
 *{font-size:1rem;}
 
-    .aside_Ipad {
-        width: 80%;
-    }
 
     .aside_desktop {
         border-radius: 2rem;
@@ -236,10 +268,9 @@ hr {
     }
 
     .aside_Ipad {
-        border-radius: 2rem;
-        height: 40rem;
+        height: 100vh;
+        width: 70%;
     }
-
     .aside_Ipad .navegacion ul li {
         height: 3rem;
         margin-bottom: 1rem;
@@ -252,18 +283,17 @@ hr {
     .closedMenu {
         width: 1.5rem;
         top: 1rem;
-        left: 1rem;
+        right: 1rem;
     }
 
 }
 
 @media (min-width:700px) {
     .openMenu {
-        position: absolute;
         top: 2rem;
         left: 2rem;
         z-index: 1;
-        width: 4rem;
+        width: 4rem;padding: 0;
     }
 
     .aside_Ipad {

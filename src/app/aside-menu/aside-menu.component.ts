@@ -34,6 +34,7 @@ export class AsideMenuComponent implements OnInit {
   /*responsive design*/
   width: number
   menuVisible: boolean
+  directionNameAnimation!:string
   constructor(private service: ServiceService) {
     this.width = window.screen.width//cargamos una variable para condicionar las vistas de desgin en el dom
     this.menuVisible = false
@@ -53,9 +54,11 @@ export class AsideMenuComponent implements OnInit {
   }
 
   closedMenu(): void {
+      this.directionNameAnimation='asideIpadClosed'
+
     setTimeout(() => {
       this.menuVisible = false
-    }, 1);
+    }, 490);
   }
   cararPosicionYDeLosElementos() {//cargamos las variables con el servicio q nos trae los datos del componente app
     this.inicioY = this.service.getinicioY()
