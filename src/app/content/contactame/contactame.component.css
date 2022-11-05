@@ -102,6 +102,35 @@ ul {
     padding: 0;
 }
 
+.exitoEnvio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;width: 70%;
+}
+
+.exitoEnvio div img {
+    width: 4vw;margin: auto;
+    filter: invert(1);
+}
+
+.exitoEnvio div {background: rgb(255, 57, 54);
+    width: 6vw;
+    height: 6vw;
+    border-radius: 12vw;
+    display: flex;
+}
+.exitoEnvio button{
+    border: none;
+background: rgb(255, 57, 54);
+color: white;
+padding: 0.5vw 1.5vw;
+border-radius: 0.5vw;
+font-weight: bold;
+}
+.exitoEnvio button:hover{
+    opacity: 80%;
+}
+
 /* RESPONSIVE DESIGN*/
 @media (min-width:300px) {
     .contactenosSection {
@@ -218,7 +247,7 @@ ul {
 
     .contactenosSection {
         flex-direction: row;
-        display: flex;
+        display: flex;justify-content: center;
     }
 
     .content .datosContacto {
@@ -232,7 +261,8 @@ ul {
     .content .titulo {
         margin-bottom: 3vw;
     }
-    .content .titulo span{
+
+    .content .titulo span {
         font-size: 1.5vw;
 
     }

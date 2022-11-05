@@ -7,12 +7,12 @@
     <form 
       action="https://formspree.io/f/mlevlowv"
       method="POST"
-      data-aos="fade-up"
+      data-aos="fade-up" id="form_" *ngIf="!exitoEnvio"
     ><!--SE USA LA HERRAMIENTE FORMSPREE PARA ENVIAR CORREOS -->
       <ul>
         <li class="li_left">
           <label for="name">Nombre:</label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="name" id="name" required ng/>
         </li>
 
         <li>
@@ -29,11 +29,17 @@
           <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
         </li>
         <li>
-          <button type="submit">Enviar</button>
+          <button type="submit" (click)="submit_btn()">Enviar</button>
         </li>
         <input type="text" name="_gotcha" style="display:none" />
       </ul>
     </form>
+    <div class="exitoEnvio"  *ngIf="exitoEnvio" data-aos="fade-down">
+      <div><img src="../../../assets/icons/icon-contact/cheque.png" alt="Exito"></div>
+      <h1>GRACIAS !</h1>
+      <p>Tu mensaje se ha enviado con exito, pronto sera revisado.</p>
+      <button (click)="exitoEnvio=false">Atras</button>
+    </div>
     <div class="datosContacto">
       <div data-aos="fade-left"  class="telefono">
         <img

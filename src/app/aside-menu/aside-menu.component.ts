@@ -35,10 +35,13 @@ export class AsideMenuComponent implements OnInit {
   width: number
   menuVisible: boolean
   directionNameAnimation!:string
+  animation!:string
+  ancho:string
   constructor(private service: ServiceService) {
     this.width = window.screen.width//cargamos una variable para condicionar las vistas de desgin en el dom
     this.menuVisible = false
     this.colorGlobal = '#ff3936'
+    this.ancho='0'
     setTimeout(() => {
       this.scroll()
     }, 10)

@@ -1,5 +1,5 @@
 <!--Aside para vistas de desktops-->
-<aside  class="aside_desktop" *ngIf="width >= 1270" [ngStyle]="{ 'background-color': colorGlobal }"
+<aside class="aside_desktop" *ngIf="width >= 1270" [ngStyle]="{ 'background-color': colorGlobal }"
   (window:scroll)="scroll()">
   <div class="perfil">
     <img src="../../assets/aside-icon4.jpg" alt="perfil" />
@@ -81,18 +81,24 @@
     </ul>
   </div>
 </aside>
-
-<!--Aside para vistas de Ipads-->
-<div  *ngIf="( width < 1270 )" class="banner">
-  <img class="openMenu"
-  src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open" (click)="menuVisible=true;directionNameAnimation='asideIpad'">
-  <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">Descargar PDF <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+<!--Boton de descarga cv Viusta desktop-->
+<div *ngIf="width>=1270" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
+  (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
+  <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">
+    <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar_PDF</span></div>
+    <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV">
+  </a>
 </div>
-
+<!--Aside para vistas de Ipads-->
+<div *ngIf="( width < 1270 )" class="banner">
+  <img class="openMenu" src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
+    (click)="menuVisible=true;directionNameAnimation='asideIpad'">
+  <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">Descargar
+    PDF <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+</div>
 <div class="opacity_fondo" *ngIf="( width < 1270) && menuVisible">
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
     <img class="closedMenu" (click)="closedMenu()" src="../../assets/icons/icons-aside/icon-close.png" alt="Closed" />
-
     <div class="perfil">
       <img src="../../assets/aside-icon4.jpg" alt="perfil" />
       <p>JEHAN HURTADO</p>

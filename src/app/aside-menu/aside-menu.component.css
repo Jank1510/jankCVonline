@@ -116,44 +116,50 @@ hr {
     }
 }
 
-.opacity_fondo {position: fixed;
+.opacity_fondo {
+    position: fixed;
     width: 100%;
     height: 100%;
     z-index: 1;
     left: 0;
-    background:#0f03036e;
+    background: #0f03036e;
     display: flex;
     animation-duration: 1s;
     animation-name: animationOpen;
 }
 
 @keyframes asideIpad {
-    from{
-        margin-left:-70% ;
+    from {
+        margin-left: -70%;
     }
-    to{
-        margin-left:0% ;
+
+    to {
+        margin-left: 0%;
 
     }
-    
+
 }
+
 @keyframes asideIpadClosed {
-    from{
-        margin-left:0% ;
+    from {
+        margin-left: 0%;
     }
-    to{
-        margin-left:-70% ;
+
+    to {
+        margin-left: -70%;
 
     }
-    
+
 }
+
 .aside_Ipad {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     position: fixed;
-    margin: auto;padding-top: 5rem;
+    margin: auto;
+    padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
 }
@@ -190,35 +196,86 @@ hr {
     z-index: 2;
     filter: invert(.95);
 }
-.banner{position: fixed;
+
+.banner {
+    position: fixed;
     width: 100vw;
     display: flex;
     z-index: 1;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: rgb(255, 57, 54);left:0;
+    background: rgb(255, 57, 54);
+    left: 0;
 }
-.banner a{margin-left: auto;
+
+.banner a {
+    margin-left: auto;
     margin-right: 1rem;
     display: flex;
     align-items: center;
     column-gap: 0.35rem;
     text-decoration: none;
     color: white;
-    font-weight: bold;font-size: 13px;
+    font-weight: bold;
+    font-size: 13px;
 }
-.banner img{
+
+.banner img {
     filter: invert(1);
 }
 
-@media (min-width:300px) {/*las medidas se calculan en rem para un diseño optimo en mobil y ipad*/
+.btnDescarga {
+    position: fixed;
+    top: 10vw;
+    right: 2vw;
+    z-index: 2;
+    background: rgb(255, 57, 54);
+    padding: 0.5vw;box-shadow: 0rem 0rem 1rem 0rem #ff9595c7;
+    border-radius: 5vw;
+}
+
+.btnDescarga a {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2vw;
+    color: white;
+    text-decoration: none;
+}
+
+.btnDescarga a img {
+    filter: invert(1);
+}
+
+@keyframes animacionBTNDescarga {
+    from {width:0}
+
+    to {width:7.8vw}
+}
+@keyframes animacionBTNDescargaClosed {
+    from {width:7.8vw}
+
+    to {width:0}
+}
+
+.btnDescarga a div {
+    overflow-x: hidden;
+    width: 8vw;animation-duration: .5s;
+}
+
+@media (min-width:300px) {
+
+    /*las medidas se calculan en rem para un diseño optimo en mobil y ipad*/
     .openMenu {
         z-index: 1;
-        width: 2.5rem;padding: 0.35rem;
+        width: 2.5rem;
+        padding: 0.35rem;
         filter: invert(1);
     }
-*{font-size:1rem;}
+
+    * {
+        font-size: 1rem;
+    }
 
 
     .aside_desktop {
@@ -270,6 +327,7 @@ hr {
         height: 100vh;
         width: 70%;
     }
+
     .aside_Ipad .navegacion ul li {
         height: 3rem;
         margin-bottom: 1rem;
@@ -283,8 +341,10 @@ hr {
         width: 1.5rem;
         top: 1rem;
         right: 1rem;
-    }.opacity_fondo{
-    top: 3.2rem;
+    }
+
+    .opacity_fondo {
+        top: 3.2rem;
 
     }
 
@@ -295,20 +355,26 @@ hr {
         top: 2rem;
         left: 2rem;
         z-index: 1;
-        width: 4rem;padding: 0;
+        width: 4rem;
+        padding: 0;
     }
 
     .aside_Ipad {
         width: 40vw;
     }
-    .opacity_fondo{
+
+    .opacity_fondo {
         top: 4rem;
-    
-        }
+
+    }
 }
 
-@media (min-width:1270px) {/*Las medidas se calculan en vw para un diseño optimo en vista desktop y vistas de grandes tamaños*/
-    *{font-size:1vw;}
+@media (min-width:1270px) {
+
+    /*Las medidas se calculan en vw para un diseño optimo en vista desktop y vistas de grandes tamaños*/
+    * {
+        font-size: 1vw;
+    }
 
     .aside_desktop {
         border-radius: 2vw;
