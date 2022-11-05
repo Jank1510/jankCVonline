@@ -17,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div class="paginacion" data-aos="fade-top" >
+    <div class="paginacion"  >
         <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('anteriorAnimation')">Anterior</span></div>
             {{numeroDePagina+1}}/{{dataPortafolio.length}}
         <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('siguienteAnimation')">Siguiente</span></div>

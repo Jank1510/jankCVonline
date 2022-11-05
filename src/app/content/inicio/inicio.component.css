@@ -1,11 +1,11 @@
 .contenedor {
+
     display: flex;
     height: auto;
     position: relative;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 6rem;
 }
 
 .perfil {
@@ -55,26 +55,22 @@
 }
 
 .linea {
+
     animation: elasticus 2.4s cubic-bezier(1, 0, 0, 1) infinite;
     position: absolute;
     top: 0px;
     left: 50%;
     margin-left: -1px;
-    width: 1.5px;
-    height: 95px;
     background: #000;
     content: ' ';
     mix-blend-mode: difference;
     z-index: 6;
-    animation-name: linea_animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 .linea_contenedo {
     position: relative;
-    width: 1px;
-    height: 82px;
     z-index: 1;
 }
 
@@ -88,18 +84,27 @@
     }
 }
 
+@keyframes linea_animation_desktop {
+    from {
+        height: 0vw;
+    }
+
+    to {
+        height: 6vw;
+    }
+}
+
 .presentacion {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
     text-align: center;
-    margin: 3rem;
     margin-bottom: 0;
 }
 
 .presentacion div {
-    margin: 2rem;
     display: flex;
     flex-direction: row;
 }
@@ -111,19 +116,16 @@
 }
 
 .name {
+
     color: black;
     font-weight: bold;
-    font-size: 2rem;
-    margin: 1rem;
 }
 
 .presentacion div .contactame {
-    border: none;
-    padding: 1rem;
-    border-radius: 1rem;
     color: white;
     background-color: #ff3936;
     text-decoration: none;
+    border: none;
     font-weight: bold;
     cursor: pointer;
 }
@@ -146,50 +148,62 @@
     border-radius: 100%;
     object-fit: cover;
 }
+
 @keyframes animationFondoPhone {
-    12.5%{
+    12.5% {
         background-position: 0.5px 0.5px;
     }
-    25%{
-        background-position:  0px 1px;
+
+    25% {
+        background-position: 0px 1px;
     }
-    37.5%{
+
+    37.5% {
         background-position: -0.5px 0.5px;
 
     }
-    50%{
+
+    50% {
         background-position: -1px 0px;
 
     }
+
     62.5% {
         background-position: -0.5px -0.5px;
 
     }
-    75%{
+
+    75% {
         background-position: 0px -1px;
 
 
-    }87.5%{
+    }
+
+    87.5% {
         background-position: 0.5px -0.5px;
 
-    }100%{
+    }
+
+    100% {
         background-position: 1px 0px;
 
     }
 }
+
 /* RESPONSIVE DESIGN*/
 
 @media (min-width:300px) {
-    .contenedor .perfil img {width: 60vw;
-        height: 60vw;
+    .contenedor .perfil img {
+        width: 55vw;
+        height: 55vw;
         margin-top: auto;
     }
 
     .perfil {
         background-size: 30vh 30vh;
-animation-name: animationFondoPhone;
-animation-duration: 5s;
-animation-iteration-count: infinite;
+        animation-name: animationFondoPhone;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
 
     }
 
@@ -202,28 +216,65 @@ animation-iteration-count: infinite;
     .contenedor .perfil h1 span {
         position: relative;
         font-size: 2rem;
-        margin-top: 30%;margin-bottom: auto;
+        margin-top: 30%;
+        margin-bottom: auto;
     }
 
     #text1 {
         animation-name: none;
     }
+
     .presentacion div .leerMas {
         margin-left: 2rem;
         width: 5rem;
     }
 
+    .contenedor {
+        margin-bottom: 6rem;
+    }
+
+    .presentacion {
+        margin: 3rem;
+    }
+
+    .presentacion div {
+        margin: 2rem;
+    }
+
+    .name {
+
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .presentacion div .contactame {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .linea {
+        height: 95px;
+        animation-name: linea_animation;
+        width: 1.5px;
+    }
+
+    .linea_contenedo {
+        width: 1px;
+        height: 82px;
+    }
+
 }
+
 @media (min-width:700px) {
     .contenedor .perfil img {
-        width: 50vw;
+        width: 40vw;
         margin: auto;
-        height: 50vw;
+        height: 40vw;
     }
 
     .perfil {
-animation-name: none;
-background-size: 40vh 40vh;
+        animation-name: none;
+        background-size: 40vh 40vh;
 
     }
 
@@ -243,9 +294,11 @@ background-size: 40vh 40vh;
     #text1 {
         animation-name: visible_text;
     }
+
     .presentacion div .leerMas {
 
-        margin-left: 3rem;width: auto;
+        margin-left: 3rem;
+        width: auto;
     }
 }
 
@@ -269,7 +322,50 @@ background-size: 40vh 40vh;
     }
 
     .contenedor .perfil h1 span {
+        font-size: 3vw;
         position: absolute;
     }
 
+    .contenedor {
+        margin-bottom: 6vw;
+    }
+
+    .presentacion {
+        margin: 3vw;
+    }
+
+    .presentacion div {
+        margin: 2vw;
+    }
+
+    .name {
+
+        font-size: 2vw;
+        margin: 1vw;
+    }
+
+    .presentacion div .contactame {
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+
+    .presentacion div .leerMas {
+        margin-left: 2vw;
+        width: 5vw;
+    }
+
+    * {
+        font-size: 1vw;
+    }
+
+    .linea {
+        width: 0.1vw;
+        height: 6vw;
+        animation-name: linea_animation_desktop;
+    }
+
+    .linea_contenedo {
+        width: 0.1vw;
+        height: 6vw;
+    }
 }

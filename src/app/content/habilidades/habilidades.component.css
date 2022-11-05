@@ -3,25 +3,18 @@
     flex-direction: row;
     align-items: center;
     font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
 }
 
 .content .titulo hr {
-    width: 3rem;
     margin: 0;
     margin-right: 0px;
-    height: 1px;
     border: none;
     background-color: black;
-    margin-right: 1rem;
 }
 
 .flex {
     display: flex;
 }
-
-
 
 p {
     color: #605f5f;
@@ -42,7 +35,6 @@ p {
 
 .skills {
     position: relative;
-    margin-bottom: 1rem;
     cursor: pointer;
 }
 
@@ -51,14 +43,11 @@ p {
 }
 
 .linea {
-    height: 1px;
     background-color: #dbcfcf;
     position: relative;
 }
 
 .porcentajeLinea {
-    height: 3px;
-    margin-top: -1px;
     position: absolute;
 }
 
@@ -68,7 +57,6 @@ p {
     z-index: 2;
     top: 0;
     right: 0;
-    font-size: 0.7rem;
     color: gray;
 }
 
@@ -76,16 +64,12 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2rem
 }
 
 .tarjeta {
     background-color: #2a2a2a;
-    border-radius: 0.4rem;
     width: 50%;
     height: auto;
-    font-size: 0.9rem;
-    border-top: 2px solid rgb(255, 57, 54);
 }
 
 .tarjeta .title-tarjetas {
@@ -127,6 +111,50 @@ a:hover {
     .content {
         margin: 2rem 0 6rem 0;
     }
+
+    .content .titulo {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .content .titulo hr {
+        margin-right: 1rem;
+        width: 3rem;
+    }
+
+    .skills {
+        margin-bottom: 1rem;
+    }
+
+    .txtEmergente {
+        font-size: 0.7rem;
+    }
+
+    .content-tarjetas {
+        margin-top: 2rem;
+    }
+
+    .tarjeta {
+        font-size: 0.9rem;
+        border-radius: 0.4rem;
+    }
+
+    .content .titulo hr {
+        height: 1px;
+    }
+
+    .linea {
+        height: 1px;
+    }
+
+    .porcentajeLinea {
+        height: 3px;
+        margin-top: -1px;
+    }
+
+    .tarjeta {
+        border-top: 2px solid rgb(255, 57, 54);
+    }
 }
 
 @media (min-width:700px) {
@@ -153,6 +181,64 @@ a:hover {
 
     .content {
         margin: 6rem 0;
+    }
+
+}
+
+@media (min-width:1270px) {
+    * {
+        font-size: 1vw;
+    }
+
+    .content .titulo {
+        margin-bottom: 3vw;
+    }
+
+    .content .titulo span {
+        font-size: 1.5vw;
+
+    }
+
+    .content .titulo hr {
+        margin-right: 1vw;
+        width: 3vw;
+    }
+
+    .skills {
+        margin-bottom: 1vw;
+    }
+
+    .txtEmergente {
+        font-size: 0.7vw;
+    }
+
+    .content-tarjetas {
+        margin-top: 2vw;
+    }
+
+    .tarjeta {
+        font-size: 0.9vw;
+        border-radius: 0.4vw;
+    }
+
+    .content .titulo hr {
+        height: 0.1vw;
+    }
+
+    .linea {
+        height: 0.1vw;
+    }
+
+    .porcentajeLinea {
+        height: 0.3vw;
+        margin-top: -0.1vw;
+    }
+
+    .tarjeta {
+        border-top: 0.2vw solid rgb(255, 57, 54);
+    }
+    .content {
+        margin: 6vw 0;
     }
 
 }

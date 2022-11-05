@@ -50,16 +50,15 @@ export class AsideMenuComponent implements OnInit {
 
   ajusteResolucion(event:any):void{//funcion para actualizar el tamaño del ancho en px de la pantalla
     this.width=(event.target.innerWidth)
-    console.log(this.width)
   }
 
   closedMenu(): void {
       this.directionNameAnimation='asideIpadClosed'
-
     setTimeout(() => {
-      this.menuVisible = false
-    }, 490);
+      this.menuVisible = false 
+    }, 500);
   }
+
   cararPosicionYDeLosElementos() {//cargamos las variables con el servicio q nos trae los datos del componente app
     this.inicioY = this.service.getinicioY()
     this.educaciony = this.service.geteducacionY()
@@ -70,7 +69,7 @@ export class AsideMenuComponent implements OnInit {
   }
 
   scroll() {//esta funcion identifica donde esta el foco central de la pagina para animar la navegacion
-    let ubicacionCentral = (window.screen.height / 2) + window.scrollY //esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
+    let ubicacionCentral = (window.screen.height /3) + window.scrollY //esta formula calcula l centro de l a pantalla para que sea mas dinamico en ves de calcular el top
 
     this.cararPosicionYDeLosElementos()
     if (ubicacionCentral <= this.inicioY) {

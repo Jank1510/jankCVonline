@@ -19,6 +19,11 @@ export class AppComponent {
         this.posicionElemento('app-resumen'), this.posicionElemento('app-contactame'))
     }, 10);
 
+  } 
+  RecargarValoresDeElementos(event:any){//esta funcion recarga la posicion de los elementos para no tener errores mientras de hace zoom en la pagina
+    this.service.setPositionY(this.posicionElemento('app-inicio'), this.posicionElemento('app-educacion'),
+    this.posicionElemento('app-portafoli'), this.posicionElemento('app-habilidades'),
+    this.posicionElemento('app-resumen'), this.posicionElemento('app-contactame'))
   }
   posicionElemento(idElemento: string): any {//retorna el alto de una seccion
     return document.getElementById(idElemento)?.clientHeight

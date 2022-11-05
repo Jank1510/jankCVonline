@@ -1,1 +1,29 @@
-<p>resumen works!</p>
+<section class="content" (window:resize)="ajusteResolucion($event)">
+    <div data-aos="fade-right" class="titulo">
+        <hr><span>Resumen</span>
+    </div>
+    <div data-aos="fade-left" class="contentenedorTarjeta">
+        <div class="section">
+            <img *ngIf="width>=700" src="../../../assets/icons/resumen/perfil.png" alt="perfil">
+            <div>
+                <h1>Perfil</h1>
+                <img *ngIf="width<700" src="../../../assets/icons/resumen/perfil.png" alt="perfil">
+                <p>Soy una persona paciente, amable y con muchas ganas de aprender. En el momento me encuentro
+                    en la búsqueda de un empleo como desarrollador de software en el cual
+                    pueda demostrar mis habilidades en la creación de aplicaciones web.
+                    Soy muy responsable, aprendo rápido y tengo muy buena disposición.</p>
+            </div>
+        </div>
+        <div class="section">
+            <img *ngIf="width>=700" src="../../../assets/icons/resumen/objetivo.png" alt="objetivo">
+            <div>
+                <h1>Objetivos</h1>
+                <img *ngIf="width<700" src="../../../assets/icons/resumen/objetivo.png" alt="objetivo">
+                <p>Mis objetivos principales son formar parte de un equipo de trabajo
+                    y consolidarme profesionalmente en una empresa donde los logros personales
+                    y el desempeño sean reconocidos además de permitir oportunidades de desarrollo personal y
+                    profesional.</p>
+            </div>
+        </div>
+    </div>
+</section>

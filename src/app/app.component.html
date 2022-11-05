@@ -1,4 +1,4 @@
-<div class="contenedor">
+<div class="contenedor" (window:resize)="RecargarValoresDeElementos($event)">
     <app-aside-menu role="header"></app-aside-menu>
     <main>
         <app-inicio name="app-inicio" id="app-inicio" class="ancho"></app-inicio>
@@ -17,4 +17,4 @@
             <p>© Jehan Carlos Hurtado Guerrero | Todos los derechos reservados</p> 
         </div>
     </main>
-</div>
+</div> 

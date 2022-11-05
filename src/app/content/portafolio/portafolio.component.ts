@@ -68,7 +68,7 @@ export class PortafolioComponent implements OnInit {
           var: 'calculadora'
         },
         {
-          imgFondo: 'url(https://camo.githubusercontent.com/bc1a60c93ddb7eddd6984420661decd540b3b6a947881055f4c9ec6b60715885/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f715f6175746f2c775f3930302f53637265656e73686f74732f656e6b6a6e66757566723638317631766c6563362e6a7067)',
+          imgFondo: 'url(https://camo.githubusercontent.com/e586c70d60e6a2620be3bfa38dc9e68c267b736d0dfb0f7972b417fd2d1b42a4/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2c775f3930302f53637265656e73686f74732f6f7a7769797a737066646c666f356e6d77666a6e2e6a7067)',
           info: "Seccion de negocios de cuartos de habitaciones modernos",
           preview: 'https://jank1510.github.io/room-homepage/',
           repositorio: 'https://github.com/Jank1510/room-homepage',
@@ -102,7 +102,7 @@ export class PortafolioComponent implements OnInit {
           var: 'qrCode'
         },
         {
-          imgFondo: 'url(https://camo.githubusercontent.com/59ecdc689bb352b2aa60e4d5a8d79273399297fcd3b1dd171a45b04b30875637/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f715f6175746f2c775f3930302f53637265656e73686f74732f6937736f6c626269657362346a78686d696572342e6a7067)',
+          imgFondo: 'url(https://camo.githubusercontent.com/f13c8f435b8fbc698a29b0bcb2fbd00c9bca967227397d62954df18f4e90d86a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2c775f3930302f53637265656e73686f74732f6c76726a7474337a637972327a366366716f766e2e6a7067)',
           info: "Componente de tarjeta de vista previa de estadísticas",
           preview: 'https://jank1510.github.io/Stats-preview-card-component/',
           repositorio: 'https://github.com/Jank1510/Stats-preview-card-component',
@@ -110,7 +110,7 @@ export class PortafolioComponent implements OnInit {
           var: 'statsPreview'
         },
         {
-          imgFondo: 'url(https://camo.githubusercontent.com/bff7330df207a7409527481c1ce65e3b085f22c74eabf032bbdbb4351baa4826/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f715f6175746f2c775f3930302f53637265656e73686f74732f6c7868717a616f66757763766479746d743061362e6a7067)',
+          imgFondo: 'url(https://camo.githubusercontent.com/fda88bd6e8e4f49f470f516f860c145e9f9555ba41bfd4b49c8f5db12cdab853/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2c775f3930302f53637265656e73686f74732f7766376f67677378716f6a39396e6e39763176382e6a7067)',
           info: "Vista previa de una tarjeta NFTS",
           preview: 'https://jank1510.github.io/nft-preview-card-component-main/',
           repositorio: 'https://github.com/Jank1510/nft-preview-card-component-main',
