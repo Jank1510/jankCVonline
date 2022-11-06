@@ -11,6 +11,7 @@ import { HabilidadesComponent } from './content/habilidades/habilidades.componen
 import { ResumenComponent } from './content/resumen/resumen.component';
 import { ContactameComponent } from './content/contactame/contactame.component';
 import { ServiceService } from './servicios/service.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ServiceService } from './servicios/service.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,FormsModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

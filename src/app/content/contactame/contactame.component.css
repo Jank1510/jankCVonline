@@ -102,37 +102,56 @@ ul {
     padding: 0;
 }
 
-.exitoEnvio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;width: 70%;
-}
 
-.exitoEnvio div img {
-    width: 4vw;margin: auto;
-    filter: invert(1);
-}
-
-.exitoEnvio div {background: rgb(255, 57, 54);
-    width: 6vw;
-    height: 6vw;
-    border-radius: 12vw;
-    display: flex;
-}
-.exitoEnvio button{
-    border: none;
-background: rgb(255, 57, 54);
-color: white;
-padding: 0.5vw 1.5vw;
-border-radius: 0.5vw;
-font-weight: bold;
-}
-.exitoEnvio button:hover{
+.exitoEnvio button:hover {
     opacity: 80%;
+}
+
+li span {
+    text-align: center;
+    color: rgb(255, 57, 54);
 }
 
 /* RESPONSIVE DESIGN*/
 @media (min-width:300px) {
+    .exitoEnvio p {
+        text-align: center;
+    }
+
+    .exitoEnvio {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        margin-bottom: auto;
+        margin-bottom: 2rem;
+    }
+
+    .exitoEnvio div img {
+        width: 4rem;
+        margin: auto;
+        filter: invert(1);
+    }
+
+    .exitoEnvio div {
+        background: rgb(255, 57, 54);
+        width: 6rem;
+        height: 6rem;
+        border-radius: 12rem;
+        display: flex;
+    }
+
+    .exitoEnvio button {
+        border: none;
+        background: rgb(255, 57, 54);
+        color: white;
+        padding: 0.5vw 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: bold;
+    }
+
     .contactenosSection {
         width: 90vw;
     }
@@ -212,6 +231,38 @@ font-weight: bold;
 }
 
 @media (min-width:700px) {
+
+    .exitoEnvio div img {
+        width: 4vw;
+        margin: auto;
+        filter: invert(1);
+    }
+
+    .exitoEnvio div {
+        background: rgb(255, 57, 54);
+        width: 6vw;
+        height: 6vw;
+        border-radius: 12vw;
+        display: flex;
+    }
+
+    .exitoEnvio button {
+        border: none;
+        background: rgb(255, 57, 54);
+        color: white;
+        padding: 0.5vw 1.5vw;
+        border-radius: 0.5vw;
+        font-weight: bold;
+    }
+
+    .exitoEnvio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+    }
+
     .contactenosSection {
         display: flex;
         flex-direction: column;
@@ -247,7 +298,8 @@ font-weight: bold;
 
     .contactenosSection {
         flex-direction: row;
-        display: flex;justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
     .content .datosContacto {
