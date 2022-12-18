@@ -11,3 +11,6 @@ https://jank1510.github.io/jankCVonline/
 #
 -This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
