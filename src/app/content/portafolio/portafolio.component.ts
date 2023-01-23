@@ -103,6 +103,7 @@ export class PortafolioComponent implements OnInit {
         },
         {
           imgFondo: 'url(https://camo.githubusercontent.com/f13c8f435b8fbc698a29b0bcb2fbd00c9bca967227397d62954df18f4e90d86a/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2c775f3930302f53637265656e73686f74732f6c76726a7474337a637972327a366366716f766e2e6a7067)',
+ 
           info: "Componente de tarjeta de vista previa de estadísticas",
           preview: 'https://jank1510.github.io/Stats-preview-card-component/',
           repositorio: 'https://github.com/Jank1510/Stats-preview-card-component',
@@ -166,7 +167,42 @@ export class PortafolioComponent implements OnInit {
           repositorio: 'https://github.com/Jank1510/interactive-card-details-form',
           background: '#22092f',
           var: 'interactiveCard'
-        }, {}, {}, {}, {}, {}, {}
+        }, {
+          imgFondo: 'url(https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_900/Screenshots/qli3kybsxpmw6i3qtfkc.jpg)',
+          info: "Seccion principal de introduccion",
+          preview: 'https://jank1510.github.io/intro-section-with-dropdown-navigation-main/',
+          repositorio: 'https://github.com/Jank1510/intro-section-with-dropdown-navigation-main',
+          background: '#DBC428',
+          var: 'seccionmainPrincipal'
+        }, {
+          imgFondo: 'url(https://raw.githubusercontent.com/Jank1510/Presupuesto-App/main/design/design.png)',
+          info: "Aplicacion de presupuestos dinamica",
+          preview: 'https://jank1510.github.io/Presupuesto-App/',
+          repositorio: 'https://github.com/Jank1510/Presupuesto-App',
+          background: '#AC3362',
+          var: 'presupuestosapp'
+        }, {
+          imgFondo: 'url(https://raw.githubusercontent.com/Jank1510/Listado-de-personas/main/design/listadopersonas.png)',
+          info: "Listado de personas app",
+          preview: 'https://jank1510.github.io/Listado-de-personas/',
+          repositorio: 'https://github.com/Jank1510/Listado-de-personas',
+          background: '#0F96B9',
+          var: 'listadoPersonasxd'
+        }, {
+          imgFondo: 'url(https://raw.githubusercontent.com/Jank1510/Reloj-Digital/main/design/reloj.png)',
+          info: "Relojs Web App",
+          preview: 'https://jank1510.github.io/Reloj-Digital/',
+          repositorio: 'https://github.com/Jank1510/Reloj-Digital',
+          background: '#90C9AC',
+          var: 'relojWebapp'
+        }, {
+          imgFondo: 'url(https://camo.githubusercontent.com/9a5870c83244d5964c2e76ccda46befbc0ba4d70a714a6218816d36b2521001d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f715f6175746f2c775f3930302f53637265656e73686f74732f757961716b36706c6768673568636671636a3472)',
+          info: "Pagina de marcador de destino web",
+          preview: 'https://github.com/Jank1510/bookmark-landing-page-master',
+          repositorio: 'https://jank1510.github.io/bookmark-landing-page-master/',
+          background: '#5467CE',
+          var: 'bookmarkLandingpage'
+        }, {}
       ]
     ]
   }
