@@ -2,8 +2,8 @@
     <div  data-aos="fade-right" class="titulo">
         <hr><span>Mi educacion</span>
     </div>
-    <div data-aos="fade-left"   class="contentenedorTarjeta">
-        <div class="tarjeta" *ngFor="let data of obecjtEstudios">
+    <div  class="contentenedorTarjeta">
+        <div [ngStyle]="data.design" data-aos="fade-up" class="tarjeta" *ngFor="let data of obecjtEstudios">
             <p>{{data.titulo}}</p>
             <span>{{data.lugar}}</span>
             <div>
@@ -13,6 +13,9 @@
                 <img src="{{data.imagen}}" alt="imagen">
 
             </div>
+        <div class="lineatarjeta" [ngStyle]="data.linea"></div>
+
         </div>
+        <div class="lineadiv"></div>
     </div>
 </section>
