@@ -9,16 +9,23 @@ import * as AOS from 'aos';
 })
 export class AppComponent {
   title = 'jankCVonline';
-
-
+  nameAnimatin:string=''
+  displayanimatin:string='block'
   constructor(private service: ServiceService) {
     setTimeout(() => {//esat funcion es para q cargen los datos y no marque undefined
       //enviamos todos los datos al servicio para compartirlos con otros componentes
       this.service.setPositionY(this.posicionElemento('app-inicio'), this.posicionElemento('app-educacion'),
         this.posicionElemento('app-portafoli'), this.posicionElemento('app-habilidades'),
         this.posicionElemento('app-resumen'), this.posicionElemento('app-contactame'))
-    }, 10);
-
+    }, 10); 
+    //funcion de carga de diseño inicial
+    setTimeout(() => {
+      this.nameAnimatin='animatinoLoader'
+      setTimeout(() => {
+        
+      this.displayanimatin='none'
+      }, 1000);
+    }, 2000);
   } 
   RecargarValoresDeElementos(event:any){//esta funcion recarga la posicion de los elementos para no tener errores mientras de hace zoom en la pagina
     this.service.setPositionY(this.posicionElemento('app-inicio'), this.posicionElemento('app-educacion'),

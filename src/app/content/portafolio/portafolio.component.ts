@@ -202,7 +202,14 @@ export class PortafolioComponent implements OnInit {
           repositorio: 'https://jank1510.github.io/bookmark-landing-page-master/',
           background: '#5467CE',
           var: 'bookmarkLandingpage'
-        }, {}
+        }, {
+          imgFondo: 'url(https://camo.githubusercontent.com/99bd0a04336bb72ba8beed74fd824c7a3d5033f7c959e04b398d6f8565d9a468/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f647a32303973366a6b2f696d6167652f75706c6f61642f665f6175746f2c715f6175746f2c775f3930302f53637265656e73686f74732f73726f706f377470726764686b636170636269792e6a7067)',
+          info: "Todo app, gestiona tus taras de una forma facil",
+          preview: 'https://jank1510.github.io/To-do-App/',
+          repositorio: 'https://github.com/Jank1510/To-do-App',
+          background: '#542095',
+          var: 'todoApP'
+        }
       ]
     ]
   }

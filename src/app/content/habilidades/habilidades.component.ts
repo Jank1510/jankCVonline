@@ -11,17 +11,17 @@ export class HabilidadesComponent implements OnInit {
     this.dataHabilidades=[
       {
         name:'HTML',
-        porcentaje:'90%',
+        porcentaje:'95%',
         color:'#da4d25'
       },
       {
         name:'CSS',
-        porcentaje:'90%',
+        porcentaje:'95%',
         color:'#0b6daf'
       },
       {
         name:'JavasCript',
-        porcentaje:'70%',
+        porcentaje:'80%',
         color:'#db9d26'
       },
       {
@@ -41,7 +41,7 @@ export class HabilidadesComponent implements OnInit {
       },
       {
         name:'Angular',
-        porcentaje:'70%',
+        porcentaje:'85%',
         color:'#d6002f'
       }
 

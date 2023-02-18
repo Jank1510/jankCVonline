@@ -68,3 +68,54 @@ hr {
         font-size: 1vw;
     }
 }
+.pantallaBienvenida{position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff3936;
+    top: 0;
+    left: 0;
+    animation-duration: 1s;z-index: 5;
+}
+.pantallaBienvenida::after{content: '';
+    width: 150%;
+    background: #ff393682;
+    height: 100vh;
+    position: absolute;
+}
+.pantallaBienvenida::before{content: '';
+    background: #ff393638;
+    height: 100vh;
+    position: absolute;
+    width: 200%;
+    z-index: 33;
+
+} 
+.loader {border: 5px solid #f3f3f3;
+    border-radius: 100%;
+    width: 2vw;
+    animation: spin 1s linear infinite;
+      animation-delay: 0s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    opacity: 0;
+    animation-delay: 0.5s;
+    background-color: #f3f3f3;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); opacity: 0; } /* ángulo inicial y opacidad oculta */
+    50% { opacity: 1; } /* opacidad visible */
+    100% { transform: rotate(360deg); opacity: 0; } /* ángulo final y opacidad oculta */
+}
+@keyframes animatinoLoader {
+    from{
+        width: 100vw;
+    }
+    to{
+        width: 0;
+    }
+    
+}

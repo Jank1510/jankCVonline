@@ -2,7 +2,7 @@
 <aside class="aside_desktop" *ngIf="width >= 1270" [ngStyle]="{ 'background-color': colorGlobal }"
   (window:scroll)="scroll()">
   <div class="perfil">
-    <img src="../../assets/aside-icon4.jpg" alt="perfil" />
+    <img src="./assets/aside-icon4.jpg" alt="perfil" />
     <p>JEHAN HURTADO</p>
   </div>
   <nav class="navegacion">
@@ -14,42 +14,42 @@
       <li>
         <a href="#app-inicio" [ngStyle]="li_inicio">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgInicio }"
-            src="../../assets/icons/icons-aside/inicio-icon.png" alt="home" />
+            src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
           <span class="hoverEfecto">INICIO</span>
         </a>
       </li>
       <li>
         <a href="#app-educacion" [ngStyle]="li_educacion">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgEducacion }"
-            src="../../assets/icons/icons-aside/educacion-icon.png" alt="education" />
+            src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
           <span class="hoverEfecto">EDUCACION</span>
         </a>
       </li>
       <li>
         <a href="#app-portafoli" [ngStyle]="li_portafolio">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgPortafolio }"
-            src="../../assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
+            src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
           <span class="hoverEfecto">PORTAFOLIO</span>
         </a>
       </li>
       <li>
         <a href="#app-habilidades" [ngStyle]="li_habilidades">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgHabilidades }"
-            src="../../assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
+            src="./assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
           <span class="hoverEfecto">HABILIDADES</span>
         </a>
       </li>
       <li>
         <a href="#app-resumen" [ngStyle]="li_resumen">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgResumen }"
-            src="../../assets/icons/icons-aside/resumen-icon.png" alt="resume" />
+            src="./assets/icons/icons-aside/resumen-icon.png" alt="resume" />
           <span class="hoverEfecto">RESUMEN</span>
         </a>
       </li>
       <li>
         <a href="#app-contactame" [ngStyle]="li_contactame">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgContactame }"
-            src="../../assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
+            src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
           <span class="hoverEfecto">CONTACTAME</span></a>
       </li>
       <li>
@@ -62,21 +62,21 @@
     <ul>
       <li>
         <a target="_blank" href="https://github.com/Jank1510">
-          <img src="../../assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
+          <img src="./assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
         </a>
       </li>
       <li>
         <a target="_blank" href="https://www.instagram.com/jehanhurtado/">
-          <img src="../../assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
+          <img src="./assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
         </a>
       </li>
       <li>
         <a target="_blank" href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/">
-          <img src="../../assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
+          <img src="./assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
         </a>
       </li>
       <li>
-        <img src="../../assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+        <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
       </li>
     </ul>
   </div>
@@ -86,58 +86,58 @@
   (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
   <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">
     <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar_PDF</span></div>
-    <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV">
+    <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV">
   </a>
 </div>
 <!--Aside para vistas de Ipads-->
 <div *ngIf="( width < 1270 )" class="banner">
-  <img class="openMenu" src="../../assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
+  <img class="openMenu" src="./assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
     (click)="menuVisible=true;directionNameAnimation='asideIpad'">
   <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">Descargar
-    PDF <img style="width:'1.5rem'" src="../../assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+    PDF <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
 </div>
 <div class="opacity_fondo" *ngIf="( width < 1270) && menuVisible">
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
-    <img class="closedMenu" (click)="closedMenu()" src="../../assets/icons/icons-aside/icon-close.png" alt="Closed" />
+    <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
     <div class="perfil">
-      <img src="../../assets/aside-icon4.jpg" alt="perfil" />
+      <img src="./assets/aside-icon4.jpg" alt="perfil" />
       <p>JEHAN HURTADO</p>
     </div>
     <nav class="navegacion">
       <ul>
         <li>
           <a (click)="closedMenu()" href="#app-inicio">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/inicio-icon.png" alt="home" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
             <span class="hoverEfecto">INICIO</span>
           </a>
         </li>
         <li>
           <a (click)="closedMenu()" href="#app-educacion">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/educacion-icon.png" alt="education" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
             <span class="hoverEfecto">EDUCACION</span>
           </a>
         </li>
         <li>
           <a (click)="closedMenu()" href="#app-portafoli">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
             <span class="hoverEfecto">PORTAFOLIO</span>
           </a>
         </li>
         <li>
           <a (click)="closedMenu()" href="#app-habilidades">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
             <span class="hoverEfecto">HABILIDADES</span>
           </a>
         </li>
         <li>
           <a (click)="closedMenu()" href="#app-resumen">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/resumen-icon.png" alt="resume" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/resumen-icon.png" alt="resume" />
             <span class="hoverEfecto">RESUMEN</span>
           </a>
         </li>
         <li>
           <a (click)="closedMenu()" href="#app-contactame">
-            <img class="hoverEfecto" src="../../assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
             <span class="hoverEfecto">CONTACTAME</span></a>
         </li>
       </ul>
@@ -146,21 +146,21 @@
       <ul>
         <li>
           <a target="_blank" href="https://github.com/Jank1510">
-            <img src="../../assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
+            <img src="./assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.instagram.com/jehanhurtado/">
-            <img src="../../assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
+            <img src="./assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/">
-            <img src="../../assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
+            <img src="./assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
           </a>
         </li>
         <li>
-          <img src="../../assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+          <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
         </li>
       </ul>
     </div>

@@ -5,7 +5,7 @@
     <p data-aos="fade-left" >Desde hace mucho tiempo me he interesado en el desarrollo web, hasta que decidí empezar en este mundo. Eh aquí algunos de mis proyectos.
         Quieres ver mas? <a target="_blank" href="https://github.com/Jank1510">Entra aqui.</a>
     </p>
-    <p data-aos="fade-left"  *ngIf="width<1270"><img style="width: 1rem;" src="../../../assets/icons/warning.png" alt="Warning"> Al precionar una de las imagenes seras redireccionado al repositorio del proyecto.</p>
+    <p data-aos="fade-left"  *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al precionar una de las imagenes seras redireccionado al repositorio del proyecto.</p>
     <div class="scrollAnimation" >
         <div  class="gridPortafolio" [ngStyle]="{'animation-name':animationScroll}">
             <div  (click)="(width<1270)? Redireccionar(data.repositorio):xd" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta"  *ngFor="let data of dataPortafolio[numeroDePagina]" [ngStyle]="{'background-image':data.imgFondo}">
