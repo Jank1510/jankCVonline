@@ -8,37 +8,46 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'jankCVonline';
-  nameAnimatin:string=''
-  displayanimatin:string='block'
+  title = 'Jehan Hurtado | Soporte TI y Desarrollo Web';
+  nameAnimatin = ''
+  displayanimatin = 'block'
+
   constructor(private service: ServiceService) {
-    setTimeout(() => {//esat funcion es para q cargen los datos y no marque undefined
-      //enviamos todos los datos al servicio para compartirlos con otros componentes
-      this.service.setPositionY(this.posicionElemento('app-inicio'), this.posicionElemento('app-educacion'),
-        this.posicionElemento('app-portafoli'), this.posicionElemento('app-habilidades'),
-        this.posicionElemento('app-resumen'), this.posicionElemento('app-contactame'))
-    }, 10); 
-    //funcion de carga de diseño inicial
     setTimeout(() => {
-      this.nameAnimatin='animatinoLoader'
+      this.loadSectionHeights()
+    }, 10);
+
+    setTimeout(() => {
+      this.nameAnimatin = 'animatinoLoader'
       setTimeout(() => {
-        
-      this.displayanimatin='none'
+        this.displayanimatin = 'none'
       }, 1000);
     }, 2000);
-  } 
-  RecargarValoresDeElementos(event:any){//esta funcion recarga la posicion de los elementos para no tener errores mientras de hace zoom en la pagina
-    this.service.setPositionY(this.posicionElemento('app-inicio'), this.posicionElemento('app-educacion'),
-    this.posicionElemento('app-portafoli'), this.posicionElemento('app-habilidades'),
-    this.posicionElemento('app-resumen'), this.posicionElemento('app-contactame'))
   }
-  posicionElemento(idElemento: string): any {//retorna el alto de una seccion
-    return document.getElementById(idElemento)?.clientHeight
-  }
-  //codigo para inicia la libreria aos de animaciones
-  ngOnInit(){
-    AOS.init()
-    window.addEventListener('load',AOS.refresh)
 
+  RecargarValoresDeElementos(event: Event): void {
+    this.loadSectionHeights()
+  }
+
+  posicionElemento(idElemento: string): number {
+    return document.getElementById(idElemento)?.clientHeight ?? 0
+  }
+
+  ngOnInit(): void {
+    AOS.init()
+    window.addEventListener('load', AOS.refresh)
+  }
+
+  private loadSectionHeights(): void {
+    this.service.setPositionY(
+      this.posicionElemento('app-inicio'),
+      this.posicionElemento('app-especialidad'),
+      this.posicionElemento('app-educacion'),
+      this.posicionElemento('app-experiencia'),
+      this.posicionElemento('app-portafoli'),
+      this.posicionElemento('app-habilidades'),
+      this.posicionElemento('app-resumen'),
+      this.posicionElemento('app-contactame')
+    )
   }
 }

@@ -1,0 +1,343 @@
+.content .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.content .titulo hr {
+    margin: 0;
+    border: none;
+    background-color: black;
+}
+
+.bloquePrincipal,
+.tarjetaEnfoque,
+.proceso {
+    background: white;
+    box-shadow: 0 1px 10px -4px #ff7673;
+    color: black;
+}
+
+.bloquePrincipal {
+    display: grid;
+    overflow: hidden;
+}
+
+.textoPrincipal span {
+    color: #ff3936;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.textoPrincipal h1,
+.textoPrincipal p,
+.tarjetaEnfoque h2,
+.tarjetaEnfoque p,
+.proceso h3,
+.proceso p {
+    margin: 0;
+}
+
+.textoPrincipal p,
+.tarjetaEnfoque p,
+.proceso p {
+    color: #605f5f;
+}
+
+.resumenOperativo {
+    background: #2a2a2a;
+    color: white;
+    display: grid;
+}
+
+.resumenOperativo div {
+    border-left: 2px solid #ff3936;
+}
+
+.resumenOperativo strong,
+.resumenOperativo span {
+    display: block;
+}
+
+.resumenOperativo strong {
+    color: #ff7673;
+}
+
+.gridEnfoque {
+    display: grid;
+}
+
+.tarjetaEnfoque {
+    border-top: 2px solid #ff3936;
+}
+
+.proceso {
+    display: grid;
+}
+
+.proceso article {
+    display: flex;
+    align-items: flex-start;
+}
+
+.proceso article span {
+    align-items: center;
+    background: #ff3936;
+    color: white;
+    display: flex;
+    flex-shrink: 0;
+    font-weight: bold;
+    justify-content: center;
+}
+
+@media (min-width:300px) {
+    .content {
+        margin: 2rem 0 6rem 0;
+    }
+
+    .content .titulo {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+        margin-left: 5vw;
+        width: 90vw;
+    }
+
+    .content .titulo hr {
+        height: 1px;
+        margin-right: 1rem;
+        width: 3rem;
+    }
+
+    .bloquePrincipal,
+    .gridEnfoque,
+    .proceso {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .bloquePrincipal {
+        border-radius: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .textoPrincipal {
+        padding: 1.2rem;
+    }
+
+    .textoPrincipal span {
+        font-size: 0.75rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .textoPrincipal h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .textoPrincipal p {
+        font-size: 0.9rem;
+    }
+
+    .resumenOperativo {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+    }
+
+    .resumenOperativo div {
+        padding-left: 0.8rem;
+    }
+
+    .resumenOperativo strong,
+    .resumenOperativo span {
+        font-size: 0.85rem;
+    }
+
+    .gridEnfoque {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+
+    .tarjetaEnfoque {
+        border-radius: 0.8rem;
+        padding: 1rem;
+    }
+
+    .tarjetaEnfoque h2 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .tarjetaEnfoque p,
+    .proceso p {
+        font-size: 0.85rem;
+    }
+
+    .proceso {
+        border-radius: 1rem;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .proceso article {
+        column-gap: 0.8rem;
+    }
+
+    .proceso article span {
+        border-radius: 2rem;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .proceso h3 {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+    }
+}
+
+@media (min-width:700px) {
+    .content {
+        margin: 6rem 0;
+    }
+
+    .content .titulo {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .bloquePrincipal,
+    .gridEnfoque,
+    .proceso {
+        width: 80vw;
+    }
+
+    .bloquePrincipal {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .resumenOperativo {
+        align-content: center;
+    }
+
+    .gridEnfoque {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .proceso {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1270px) {
+    * {
+        font-size: 1vw;
+    }
+
+    .content {
+        margin: 6vw 0;
+    }
+
+    .content .titulo {
+        margin-bottom: 3vw;
+    }
+
+    .content .titulo span {
+        font-size: 1.5vw;
+    }
+
+    .content .titulo hr {
+        height: 0.1vw;
+        margin-right: 1vw;
+        width: 3vw;
+    }
+
+    .bloquePrincipal,
+    .gridEnfoque,
+    .proceso {
+        width: 70vw;
+    }
+
+    .bloquePrincipal {
+        border-radius: 1vw;
+    }
+
+    .textoPrincipal {
+        padding: 1.5vw;
+    }
+
+    .textoPrincipal span {
+        font-size: 0.75vw;
+        margin-bottom: 0.7vw;
+    }
+
+    .textoPrincipal h1 {
+        font-size: 1.6vw;
+        margin-bottom: 1vw;
+    }
+
+    .textoPrincipal p {
+        font-size: 0.95vw;
+    }
+
+    .resumenOperativo {
+        gap: 1vw;
+        padding: 1.5vw;
+    }
+
+    .resumenOperativo div {
+        border-left-width: 0.2vw;
+        padding-left: 0.8vw;
+    }
+
+    .resumenOperativo strong,
+    .resumenOperativo span {
+        font-size: 0.85vw;
+    }
+
+    .gridEnfoque {
+        gap: 1vw;
+        margin-top: 1vw;
+    }
+
+    .tarjetaEnfoque {
+        border-radius: 0.8vw;
+        border-top-width: 0.2vw;
+        padding: 1vw;
+    }
+
+    .tarjetaEnfoque h2 {
+        font-size: 1vw;
+        margin-bottom: 0.6vw;
+    }
+
+    .tarjetaEnfoque p,
+    .proceso p {
+        font-size: 0.85vw;
+    }
+
+    .proceso {
+        border-radius: 1vw;
+        gap: 1vw;
+        margin-top: 1vw;
+        padding: 1vw;
+    }
+
+    .proceso article {
+        column-gap: 0.8vw;
+    }
+
+    .proceso article span {
+        border-radius: 2vw;
+        height: 2vw;
+        width: 2vw;
+    }
+
+    .proceso h3 {
+        font-size: 1vw;
+        margin-bottom: 0.35vw;
+    }
+}

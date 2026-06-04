@@ -1,0 +1,242 @@
+.content .titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+.content .titulo hr {
+    margin: 0;
+    margin-right: 0;
+    border: none;
+    background-color: black;
+}
+
+.experiencias {
+    display: grid;
+}
+
+.experiencia {
+    background: white;
+    box-shadow: 0 1px 10px -4px #ff7673;
+    color: black;
+}
+
+.experiencia h1,
+.experiencia h2,
+.experiencia h3,
+.experiencia p {
+    margin: 0;
+}
+
+.experiencia h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.experiencia h2 {
+    color: #2a2a2a;
+    font-weight: normal;
+}
+
+.experiencia h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.encabezado span,
+.ubicacion {
+    color: #605f5f;
+}
+
+.aptitudes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detalleExperiencia {
+    display: grid;
+}
+
+.detalleExperiencia ul {
+    margin: 0;
+    padding-left: 1.1rem;
+}
+
+.detalleExperiencia li {
+    color: #605f5f;
+}
+
+.aptitudes span {
+    background-color: #fff1f1;
+    color: #ff3936;
+    font-weight: bold;
+}
+
+@media (min-width:300px) {
+    .content {
+        margin: 2rem 0 6rem 0;
+    }
+
+    .content .titulo {
+        font-size: 1.5rem;
+        width: 90vw;
+        margin-left: 5vw;
+        margin-bottom: 3rem;
+    }
+
+    .content .titulo hr {
+        margin-right: 1rem;
+        height: 1px;
+        width: 3rem;
+    }
+
+    .experiencias {
+        gap: 1rem;
+        width: 90vw;
+        margin: auto;
+    }
+
+    .experiencia {
+        border-top: 2px solid rgb(255, 57, 54);
+        border-radius: 1rem;
+        padding: 1.2rem;
+    }
+
+    .encabezado {
+        flex-direction: column;
+    }
+
+    .experiencia h1 {
+        font-size: 1.05rem;
+    }
+
+    .experiencia h2,
+    .experiencia p,
+    .encabezado span {
+        font-size: 0.9rem;
+    }
+
+    .ubicacion {
+        margin: 0.5rem 0 1rem 0 !important;
+    }
+
+    .aptitudes {
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .detalleExperiencia {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+
+    .experiencia h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .detalleExperiencia li {
+        font-size: 0.85rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .aptitudes span {
+        border-radius: 1rem;
+        font-size: 0.75rem;
+        padding: 0.35rem 0.7rem;
+    }
+}
+
+@media (min-width:700px) {
+    .content {
+        margin: 6rem 0;
+    }
+
+    .experiencias {
+        width: 80vw;
+    }
+
+    .encabezado {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .detalleExperiencia {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content .titulo {
+        margin-left: 0;
+        width: auto;
+    }
+}
+
+@media (min-width:1270px) {
+    * {
+        font-size: 1vw;
+    }
+
+    .content {
+        margin: 6vw 0;
+    }
+
+    .content .titulo {
+        margin-bottom: 3vw;
+        margin-left: 0;
+    }
+
+    .content .titulo span {
+        font-size: 1.5vw;
+    }
+
+    .content .titulo hr {
+        height: 0.1vw;
+        margin-right: 1vw;
+        width: 3vw;
+    }
+
+    .experiencias {
+        gap: 1vw;
+        width: 70vw;
+    }
+
+    .experiencia {
+        border-top: 0.2vw solid rgb(255, 57, 54);
+        border-radius: 1vw;
+        padding: 1.4vw;
+    }
+
+    .aptitudes {
+        gap: 0.5vw;
+        margin-top: 1vw;
+    }
+
+    .detalleExperiencia {
+        gap: 1vw;
+        margin-top: 1vw;
+    }
+
+    .experiencia h3 {
+        font-size: 0.95vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .detalleExperiencia li {
+        font-size: 0.85vw;
+        margin-bottom: 0.35vw;
+    }
+
+    .aptitudes span {
+        border-radius: 1vw;
+        font-size: 0.75vw;
+        padding: 0.35vw 0.7vw;
+    }
+}

@@ -7,7 +7,7 @@
   </div>
   <nav class="navegacion">
     <ul>
-      <!--Guida diseño es para tener un espacio y ponerle el radio y genere el efecto visual, y los ngstyle son para manipular los border radius de los elementos alrededor de el seleccionado-->
+      <!--Guia de diseno para generar el efecto visual del item seleccionado-->
       <li>
         <a href="#" [ngStyle]="li_diseno1"> </a>
       </li>
@@ -19,10 +19,24 @@
         </a>
       </li>
       <li>
+        <a href="#app-especialidad" [ngStyle]="li_especialidad">
+          <img class="hoverEfecto" [ngStyle]="{ filter: imgEspecialidad }"
+            src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
+          <span class="hoverEfecto">SOPORTE TI</span>
+        </a>
+      </li>
+      <li>
         <a href="#app-educacion" [ngStyle]="li_educacion">
           <img class="hoverEfecto" [ngStyle]="{ filter: imgEducacion }"
             src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
           <span class="hoverEfecto">EDUCACION</span>
+        </a>
+      </li>
+      <li>
+        <a href="#app-experiencia" [ngStyle]="li_experiencia">
+          <img class="hoverEfecto" [ngStyle]="{ filter: imgExperiencia }"
+            src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
+          <span class="hoverEfecto">EXPERIENCIA</span>
         </a>
       </li>
       <li>
@@ -76,7 +90,9 @@
         </a>
       </li>
       <li>
-        <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+        <a target="_blank" href="https://wa.me/573043602822">
+          <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+        </a>
       </li>
     </ul>
   </div>
@@ -84,8 +100,8 @@
 <!--Boton de descarga cv Viusta desktop-->
 <div *ngIf="width>=1270" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
   (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
-  <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">
-    <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar_PDF</span></div>
+  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">
+    <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar CV</span></div>
     <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV">
   </a>
 </div>
@@ -93,8 +109,8 @@
 <div *ngIf="( width < 1270 )" class="banner">
   <img class="openMenu" src="./assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
     (click)="menuVisible=true;directionNameAnimation='asideIpad'">
-  <a href="https://drive.google.com/uc?id=1kU3zW9yxvQGZEdMFw_45M7MRkBFDWZZa&export=download" target="_blank">Descargar
-    PDF <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">Descargar
+    CV <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
 </div>
 <div class="opacity_fondo" *ngIf="( width < 1270) && menuVisible">
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
@@ -112,9 +128,21 @@
           </a>
         </li>
         <li>
+          <a (click)="closedMenu()" href="#app-especialidad">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
+            <span class="hoverEfecto">SOPORTE TI</span>
+          </a>
+        </li>
+        <li>
           <a (click)="closedMenu()" href="#app-educacion">
             <img class="hoverEfecto" src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
             <span class="hoverEfecto">EDUCACION</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-experiencia">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
+            <span class="hoverEfecto">EXPERIENCIA</span>
           </a>
         </li>
         <li>
@@ -160,11 +188,13 @@
           </a>
         </li>
         <li>
-          <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+          <a target="_blank" href="https://wa.me/573043602822">
+            <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+          </a>
         </li>
       </ul>
     </div>
   </aside>
 </div>
-<!--Funcion para ajustar contneido cuando se cambie de tamaño-->
+<!--Funcion para ajustar contenido cuando se cambie de tamano-->
 <div style="display: none;" (window:resize)="ajusteResolucion($event)"></div>

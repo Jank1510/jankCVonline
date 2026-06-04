@@ -1,0 +1,49 @@
+<section class="content">
+    <div data-aos="fade-right" class="titulo">
+        <hr><span>Especialidad principal</span>
+    </div>
+
+    <div class="bloquePrincipal" data-aos="fade-up">
+        <div class="textoPrincipal">
+            <span>Trabajo actual y fortaleza tecnica</span>
+            <h1>Soporte TI, impresoras y equipos de computo</h1>
+            <p>
+                Mi perfil actual esta centrado en mantener operativos los equipos que sostienen el trabajo diario:
+                impresoras, computadores, sistemas y herramientas de usuarios. Combino diagnostico tecnico,
+                mantenimiento preventivo/correctivo y comunicacion clara para resolver fallas reales en campo.
+            </p>
+        </div>
+
+        <div class="resumenOperativo">
+            <div>
+                <strong>Actual</strong>
+                <span>Multitintas INK</span>
+            </div>
+            <div>
+                <strong>Foco</strong>
+                <span>Soporte TI</span>
+            </div>
+            <div>
+                <strong>Base</strong>
+                <span>Mecatronica</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="gridEnfoque">
+        <article data-aos="zoom-in" class="tarjetaEnfoque" *ngFor="let item of enfoque">
+            <h2>{{item.titulo}}</h2>
+            <p>{{item.descripcion}}</p>
+        </article>
+    </div>
+
+    <div class="proceso" data-aos="fade-left">
+        <article *ngFor="let item of proceso; let index = index">
+            <span>{{index + 1}}</span>
+            <div>
+                <h3>{{item.paso}}</h3>
+                <p>{{item.detalle}}</p>
+            </div>
+        </article>
+    </div>
+</section>

@@ -1,23 +1,42 @@
-<section  (window:resize)="ajusteResolucion($event)" class="content">
-    <div  data-aos="fade-right" class="titulo">
+<section (window:resize)="ajusteResolucion($event)" class="content">
+    <div data-aos="fade-right" class="titulo">
         <hr><span>Mi portafolio</span>
     </div>
-    <p data-aos="fade-left" >Desde hace mucho tiempo me he interesado en el desarrollo web, hasta que decidí empezar en este mundo. Eh aquí algunos de mis proyectos.
+    <p data-aos="fade-left">Desde hace mucho tiempo me interesa el desarrollo web. Aqui puedes ver algunos de mis proyectos.
         Quieres ver mas? <a target="_blank" href="https://github.com/Jank1510">Entra aqui.</a>
     </p>
-    <p data-aos="fade-left"  *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al precionar una de las imagenes seras redireccionado al repositorio del proyecto.</p>
-    <div class="scrollAnimation" >
-        <div  class="gridPortafolio" [ngStyle]="{'animation-name':animationScroll}">
-            <div  (click)="(width<1270)? Redireccionar(data.repositorio):xd" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta"  *ngFor="let data of dataPortafolio[numeroDePagina]" [ngStyle]="{'background-image':data.imgFondo}">
+    <div class="destacados" data-aos="fade-up">
+        <article class="proyectoDestacado" *ngFor="let proyecto of proyectosDestacados" [ngStyle]="{'background-image':proyecto.imgFondo}">
+            <div class="contenidoDestacado">
+                <span>Proyecto destacado de IA</span>
+                <h3>{{proyecto.titulo}} - IA personal</h3>
+                <p>{{proyecto.info}}</p>
+                <ul>
+                    <li>Chat privado con experiencia conversacional.</li>
+                    <li>Proyecto propio conectado a tu perfil tecnico y web.</li>
+                    <li>Vista previa real del sitio publicada en produccion.</li>
+                </ul>
+                <div class="accionesDestacado">
+                    <a *ngIf="proyecto.preview" target="_blank" rel="noopener noreferrer" [href]="proyecto.preview">Ver web</a>
+                    <a target="_blank" rel="noopener noreferrer" [href]="proyecto.repositorio">Repositorio</a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <p data-aos="fade-left" *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al presionar una de las imagenes seras redireccionado al repositorio del proyecto.</p>
+    <div class="scrollAnimation">
+        <div class="gridPortafolio" [ngStyle]="{'animation-name':animationScroll}">
+            <div (click)="abrirRepositorioEnMovil(data.repositorio)" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta" *ngFor="let data of dataPortafolio[numeroDePagina]" [attr.aria-label]="data.titulo" [ngStyle]="{'background-image':data.imgFondo}">
                <div *ngIf="width>1270" class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
+                    <h3>{{data.titulo}}</h3>
                     <p>{{data.info}}</p>
-                    <a target="_blank" href="{{data.preview}}">Visitar web</a>
-                    <a target="_blank" href="{{data.repositorio}}">Visitar repositorio</a>
-               </div> 
+                    <a *ngIf="data.preview" target="_blank" rel="noopener noreferrer" [href]="data.preview">Visitar web</a>
+                    <a target="_blank" rel="noopener noreferrer" [href]="data.repositorio">Visitar repositorio</a>
+               </div>
             </div>
         </div>
     </div>
-    <div class="paginacion"  >
+    <div class="paginacion">
         <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('anteriorAnimation')">Anterior</span></div>
             {{numeroDePagina+1}}/{{dataPortafolio.length}}
         <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('siguienteAnimation')">Siguiente</span></div>

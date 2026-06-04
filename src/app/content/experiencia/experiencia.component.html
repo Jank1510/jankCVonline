@@ -1,0 +1,35 @@
+<section class="content">
+    <div data-aos="fade-right" class="titulo">
+        <hr><span>Experiencia</span>
+    </div>
+    <div class="experiencias">
+        <article data-aos="fade-up" class="experiencia" *ngFor="let experiencia of experiencias">
+            <div class="encabezado">
+                <div>
+                    <h1>{{experiencia.cargo}}</h1>
+                    <h2>{{experiencia.empresa}}</h2>
+                </div>
+                <span>{{experiencia.periodo}}</span>
+            </div>
+            <p class="ubicacion">{{experiencia.ubicacion}}</p>
+            <p>{{experiencia.descripcion}}</p>
+            <div class="detalleExperiencia">
+                <div>
+                    <h3>Responsabilidades</h3>
+                    <ul>
+                        <li *ngFor="let responsabilidad of experiencia.responsabilidades">{{responsabilidad}}</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Aportes</h3>
+                    <ul>
+                        <li *ngFor="let logro of experiencia.logros">{{logro}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aptitudes">
+                <span *ngFor="let aptitud of experiencia.aptitudes">{{aptitud}}</span>
+            </div>
+        </article>
+    </div>
+</section>

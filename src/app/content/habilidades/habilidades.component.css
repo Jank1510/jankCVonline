@@ -63,18 +63,58 @@ p {
 .content-tarjetas {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .tarjeta {
     background-color: #2a2a2a;
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
 .tarjeta .title-tarjetas {
     color: white;
     text-align: center;
+}
+
+.tarjetaPrincipal {
+    background-color: #ff3936;
+}
+
+.tarjetaPrincipal p {
+    color: white;
+}
+
+.fortalezaActual {
+    background-color: white;
+    border-left: 4px solid #ff3936;
+    box-shadow: 0px 1px 10px -4px #ff7673;
+    color: black;
+}
+
+.fortalezaActual span {
+    color: #ff3936;
+    display: block;
+    font-weight: bold;
+}
+
+.fortalezaActual h2 {
+    color: black;
+    margin: 0;
+}
+
+.fortalezaActual p {
+    color: #3a3a3a;
+}
+
+.fortalezaActual ul {
+    margin-bottom: 0;
+    padding-left: 1.1rem;
+}
+
+.fortalezaActual li {
+    color: #605f5f;
 }
 
 a {
@@ -104,6 +144,7 @@ a:hover {
     .content-tarjetas {
         margin-left: 0;
         column-gap: 1rem;
+        row-gap: 1rem;
         width: 100%;
 
     }
@@ -137,6 +178,26 @@ a:hover {
     .tarjeta {
         font-size: 0.9rem;
         border-radius: 0.4rem;
+    }
+
+    .fortalezaActual {
+        border-radius: 0.4rem;
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .fortalezaActual span {
+        font-size: 0.75rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .fortalezaActual h2 {
+        font-size: 1.1rem;
+    }
+
+    .fortalezaActual p,
+    .fortalezaActual li {
+        font-size: 0.9rem;
     }
 
     .content .titulo hr {
@@ -175,8 +236,13 @@ a:hover {
     .content-tarjetas {
         margin-left: 10%;
         column-gap: 2rem;
+        row-gap: 2rem;
         width: 90%;
 
+    }
+
+    .tarjeta {
+        width: calc(50% - 1rem);
     }
 
     .content {
@@ -219,6 +285,28 @@ a:hover {
     .tarjeta {
         font-size: 0.9vw;
         border-radius: 0.4vw;
+        width: calc(50% - 1vw);
+    }
+
+    .fortalezaActual {
+        border-left-width: 0.35vw;
+        border-radius: 0.4vw;
+        margin-top: 1.5vw;
+        padding: 1vw;
+    }
+
+    .fortalezaActual span {
+        font-size: 0.75vw;
+        margin-bottom: 0.4vw;
+    }
+
+    .fortalezaActual h2 {
+        font-size: 1.1vw;
+    }
+
+    .fortalezaActual p,
+    .fortalezaActual li {
+        font-size: 0.9vw;
     }
 
     .content .titulo hr {

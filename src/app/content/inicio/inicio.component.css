@@ -147,6 +147,7 @@
 .contenedor .perfil img {
     border-radius: 100%;
     object-fit: cover;
+    object-position: center center;
 }
 
 @keyframes animationFondoPhone {

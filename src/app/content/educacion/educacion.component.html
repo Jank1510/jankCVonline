@@ -1,20 +1,20 @@
 <section class="content">
-    <div  data-aos="fade-right" class="titulo">
-        <hr><span>Mi educacion</span>
+    <div data-aos="fade-right" class="titulo">
+        <hr><span>Educacion y formacion</span>
     </div>
-    <div  class="contentenedorTarjeta">
-        <div [ngStyle]="data.design" data-aos="fade-up" class="tarjeta" *ngFor="let data of obecjtEstudios">
+    <div class="contentenedorTarjeta">
+        <div [ngStyle]="data.design" data-aos="fade-up" class="tarjeta" *ngFor="let data of estudios">
             <p>{{data.titulo}}</p>
             <span>{{data.lugar}}</span>
+            <span>{{data.periodo}}</span>
+            <span>{{data.descripcion}}</span>
             <div>
-
-                <a target="_blank" href="{{data.linkPreview}}">Certificado <img width="1rem"
-                        src="./assets/icons/openNewTab.png" alt="New-tab"></a>
-                <img src="{{data.imagen}}" alt="imagen">
-
+                <a *ngIf="data.linkPreview" target="_blank" rel="noopener noreferrer" [href]="data.linkPreview">{{data.linkLabel || 'Ver certificado'}} <img width="1rem"
+                        src="./assets/icons/openNewTab.png" alt="Abrir en nueva pestana"></a>
+                <span *ngIf="!data.linkPreview && data.estado" class="estado">{{data.estado}}</span>
+                <img [src]="data.imagen" alt="Logo de {{data.lugar}}">
             </div>
-        <div class="lineatarjeta" [ngStyle]="data.linea"></div>
-
+            <div class="lineatarjeta" [ngStyle]="data.linea"></div>
         </div>
         <div class="lineadiv"></div>
     </div>

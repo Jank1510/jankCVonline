@@ -4,40 +4,58 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ServiceService {
-  //nuestro servicio se encarga de almacenar datos que compartiremos de un componente a otro
-  inicioY!:number
-  educacionY!:number
-  portafolioY!:number
-  habilidadesY!:number
-  resumenY!:number
-  contactameY!:number
+  inicioY = 0
+  especialidadY = 0
+  educacionY = 0
+  experienciaY = 0
+  portafolioY = 0
+  habilidadesY = 0
+  resumenY = 0
+  contactameY = 0
 
-  constructor() { 
+  constructor() {
   }
-  setPositionY(inicio:number,educacion:number,portafolio:number,habilidades:number,resumen:number,contactame:number){
-    this.inicioY=inicio
-    this.educacionY=educacion
-    this.portafolioY=portafolio
-    this.habilidadesY=habilidades
-    this.resumenY=resumen
-    this.contactameY=contactame
+
+  setPositionY(inicio: number, especialidad: number, educacion: number, experiencia: number, portafolio: number, habilidades: number, resumen: number, contactame: number): void {
+    this.inicioY = inicio
+    this.especialidadY = especialidad
+    this.educacionY = educacion
+    this.experienciaY = experiencia
+    this.portafolioY = portafolio
+    this.habilidadesY = habilidades
+    this.resumenY = resumen
+    this.contactameY = contactame
   }
-  getinicioY():number{
+
+  getinicioY(): number {
     return this.inicioY
   }
-  geteducacionY():number{
+
+  geteducacionY(): number {
     return this.educacionY
   }
-  getportafolioY():number{
+
+  getespecialidadY(): number {
+    return this.especialidadY
+  }
+
+  getexperienciaY(): number {
+    return this.experienciaY
+  }
+
+  getportafolioY(): number {
     return this.portafolioY
   }
-  gethabilidadesY():number{
+
+  gethabilidadesY(): number {
     return this.habilidadesY
   }
-  getresumenY():number{
+
+  getresumenY(): number {
     return this.resumenY
   }
-  getcontactameY():number{
+
+  getcontactameY(): number {
     return this.contactameY
   }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contactame',
@@ -6,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactame.component.css']
 })
 export class ContactameComponent implements OnInit {
-  form!: any //variable que es iniciada con el form del dom
   exitoEnvio: boolean
-  name: string = ''
-  email: string = ''
-  asunto: string = ''
-  invalid: boolean = false
+  name = ''
+  email = ''
+  asunto = ''
+  mensaje = ''
+  invalid = false
 
   constructor() {
     this.exitoEnvio = false
@@ -19,31 +20,29 @@ export class ContactameComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  
-  submit_btn() {
-    if (this.name == '' || this.email == '' || this.asunto == '') {//validacion del formulario
+
+  async submit(form: NgForm, event: Event): Promise<void> {
+    if (form.invalid) {
       this.invalid = true
-    } else {
-      this.form = document.getElementById('form_')
-      this.form.addEventListener('submit', this.handlesubmit(event))  
+      return
     }
 
-  }
-  /*funciones para evitar que la pagina recarge */
-  async handlesubmit(event: any) {
-    event.preventDefault()
-    const form = new FormData(this.form)
-    const response = await fetch(this.form.action, {
-      method: this.form.method,
-      body: form,
+    const formElement = event.target as HTMLFormElement
+    const formData = new FormData(formElement)
+    const response = await fetch(formElement.action, {
+      method: formElement.method,
+      body: formData,
       headers: {
-        'Accept': 'application/json'
+        Accept: 'application/json'
       }
     })
+
     if (response.ok) {
       this.exitoEnvio = true
       this.invalid = false
-      this.form.reset()
+      form.resetForm()
+    } else {
+      this.invalid = true
     }
   }
 }

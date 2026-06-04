@@ -4,50 +4,57 @@
     <span>Contactame</span>
   </div>
   <div class="contactenosSection">
-    <form action="https://formspree.io/f/mlevlowv" method="POST" data-aos="fade-up" id="form_" *ngIf="!exitoEnvio">
-      <!--SE USA LA HERRAMIENTE FORMSPREE PARA ENVIAR CORREOS -->
+    <form
+      #contactForm="ngForm"
+      action="https://formspree.io/f/mlevlowv"
+      method="POST"
+      data-aos="fade-up"
+      id="form_"
+      *ngIf="!exitoEnvio"
+      (ngSubmit)="submit(contactForm, $event)"
+    >
+      <!-- SE USA LA HERRAMIENTA FORMSPREE PARA ENVIAR CORREOS -->
       <ul>
         <li class="li_left">
           <label for="name">Nombre:</label>
-          <input [(ngModel)]="name" type="text" name="name" id="name" />
+          <input [(ngModel)]="name" type="text" name="name" id="name" required />
         </li>
         <li>
           <label for="email">Email:</label>
-          <input [(ngModel)]="email" type="email" name="_replyto" id="email" />
+          <input [(ngModel)]="email" type="email" name="_replyto" id="email" required email />
         </li>
         <li>
           <label for="asunto">Asunto:</label>
-          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" />
+          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" required />
         </li>
         <li>
           <label for="mensaje">Mensaje:</label>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+          <textarea [(ngModel)]="mensaje" name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
         </li>
         <li>
           <span data-aos="fade-up" *ngIf="invalid">Asegurese de que los campos requeridos esten completos correctamente.</span>
-
-          <button type="submit" (click)="submit_btn()">Enviar</button>
+          <button type="submit">Enviar</button>
         </li>
         <input type="text" name="_gotcha" style="display:none" />
       </ul>
     </form>
     <div class="exitoEnvio" *ngIf="exitoEnvio" data-aos="fade-down">
       <div><img src="./assets/icons/icon-contact/cheque.png" alt="Exito"></div>
-      <h1>GRACIAS !</h1>
+      <h1>GRACIAS!</h1>
       <p>Tu mensaje se ha enviado con exito, pronto sera revisado.</p>
       <button (click)="exitoEnvio=false">Atras</button>
     </div>
-    <!--tarjetas de contacto -->
+    <!-- Tarjetas de contacto -->
     <div class="datosContacto">
       <div data-aos="fade-left" class="telefono">
-        <img src="./assets/icons/icon-contact/telefono-inteligente.png" alt="CellPhone" />
-        <a href="tel:+57 3043602822" class="direccion">+57 3043602822</a>
-        <p class="txt">Llamame</p>
+        <img src="./assets/icons/icon-contact/telefono-inteligente.png" alt="Telefono" />
+        <a href="tel:+573043602822" class="direccion">+57 3043602822</a>
+        <p class="txt">Telefono / WhatsApp</p>
       </div>
       <div data-aos="fade-left" class="email">
-        <img src="./assets/icons/icon-contact/email.png" alt="E-mail" />
+        <img src="./assets/icons/icon-contact/email.png" alt="Correo electronico" />
         <a href="mailto:jeanhurt15@gmail.com" class="direccion">jeanhurt15@gmail.com</a>
-        <p class="txt">Escribeme un correo</p>
+        <p class="txt">Correo personal</p>
       </div>
     </div>
   </div>

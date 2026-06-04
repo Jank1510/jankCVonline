@@ -1,19 +1,32 @@
+# Jank CV Online
 
-<h4>
-:construction: Proyecto en construcción :construction:
-</h4>
+Portfolio y curriculum web de Jehan Carlos Hurtado Guerrero, desarrollador frontend enfocado en Angular, TypeScript, JavaScript e interfaces web con IA.
 
-# JankCVonline
-Bienvenido a mi curriculum virtual, soy desarrollador de aplicaciones web y disfruto lo que hago !
--Aprecio los comentarios 
+## Estado
 
-## Librerias usadas
-AOS: libreria de animaciones de scroll
+Proyecto en actualizacion. La primera pasada corrige textos, estructura basica, capturas del portafolio y puntos fragiles del codigo antiguo. La siguiente fase deberia completar experiencia laboral y formacion exacta desde una copia accesible del perfil profesional.
 
-## Link preview
+## Tecnologias
+
+- Angular 13
+- TypeScript
+- AOS para animaciones de scroll
+- Formspree para el formulario de contacto
+- Capturas locales del portafolio generadas con Edge headless
+
+## Ejecutar localmente
+
+```bash
+npm install
+npm start
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Preview
+
 https://jank1510.github.io/jankCVonline/
-
-#
--This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
-
-

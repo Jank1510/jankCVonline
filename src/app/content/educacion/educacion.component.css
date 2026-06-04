@@ -42,6 +42,11 @@
 }
 
 .tarjeta a {
+    align-items: center;
+    background-color: #fff1f1;
+    display: flex;
+    gap: 0.35rem;
+    justify-content: center;
     text-decoration: none;
     color: #ff7670;
     font-weight: bold;
@@ -50,6 +55,15 @@
 
 .tarjeta a:hover {
     opacity: 90%;
+}
+
+.tarjeta .estado {
+    background-color: #fff1f1;
+    border-radius: 999px;
+    color: #ff7670;
+    display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
 }
 .lineadiv{
     position: absolute;
@@ -102,7 +116,8 @@ top: 50%;
     .tarjeta {
         border-radius: 1rem;
         padding: 0 1rem;
-        height: 11.5rem;
+        height: auto;
+        min-height: 14rem;
     }
 
     .tarjeta div {
@@ -114,11 +129,13 @@ top: 50%;
         margin-top: 1rem;
         font-size: 13px;
         border-radius: 0.5rem;
+        padding: 0.45rem 0.7rem;
     }
 
     .tarjeta div img {
         width: 5rem;
         height: 2rem;
+        object-fit: contain;
     }
 
     .tarjeta a img {
@@ -128,6 +145,10 @@ top: 50%;
 
     .tarjeta span {
         font-size: 12px;
+    }
+
+    .tarjeta .estado {
+        padding: 0.45rem 0.7rem;
     }
 
     .tarjeta p {
@@ -147,7 +168,8 @@ top: 50%;
         margin: 6rem 0;
     }
 
-    .contentenedorTarjeta {height: 50rem;
+    .contentenedorTarjeta {
+        height: auto;
         grid-template-columns: 35vw 35vw;
         row-gap: 1rem;
         column-gap: 5rem;
@@ -204,7 +226,8 @@ top: 50%;
     .tarjeta {
         border-radius: 1vw;
         padding: 0 1vw;
-        height: 11.5vw;
+        height: auto;
+        min-height: 13.5vw;
     }
 
     .tarjeta div {
@@ -216,11 +239,14 @@ top: 50%;
         margin-top: 1vw;
         font-size: 1vw;
         border-radius: 0.5vw;
+        gap: 0.35vw;
+        padding: 0.45vw 0.7vw;
     }
 
     .tarjeta div img {
         width: 5vw;
         height: 2vw;
+        object-fit: contain;
     }
 
     .tarjeta a img {
@@ -234,6 +260,10 @@ top: 50%;
 
     .tarjeta p {
         font-size: .9vw;
+    }
+
+    .tarjeta .estado {
+        padding: 0.45vw 0.7vw;
     }
 .lineatarjeta{
 width: 5vw; display: block !important;

@@ -6,14 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resumen.component.css']
 })
 export class ResumenComponent implements OnInit {
-width:number
+  width: number
+
   constructor() {
-    this.width=window.screen.width
-   }
+    this.width = window.innerWidth
+  }
 
   ngOnInit(): void {
   }
-ajusteResolucion(event:any){
-  this.width=(event.target.innerWidth)
-}
+
+  ajusteResolucion(event: Event): void {
+    this.width = window.innerWidth
+  }
 }

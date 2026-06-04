@@ -10,6 +10,8 @@ import { PortafolioComponent } from './content/portafolio/portafolio.component';
 import { HabilidadesComponent } from './content/habilidades/habilidades.component';
 import { ResumenComponent } from './content/resumen/resumen.component';
 import { ContactameComponent } from './content/contactame/contactame.component';
+import { ExperienciaComponent } from './content/experiencia/experiencia.component';
+import { EspecialidadComponent } from './content/especialidad/especialidad.component';
 import { ServiceService } from './servicios/service.service';
 import { FormsModule } from '@angular/forms';
 
@@ -22,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     PortafolioComponent,
     HabilidadesComponent,
     ResumenComponent,
-    ContactameComponent
+    ContactameComponent,
+    ExperienciaComponent,
+    EspecialidadComponent
   ],
   imports: [
     BrowserModule,
