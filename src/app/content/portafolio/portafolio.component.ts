@@ -305,11 +305,13 @@ export class PortafolioComponent implements OnInit {
 
     setTimeout(() => {
       this.numeroDePagina = siguientePagina
-      this.animationScroll = isNext ? 'pre-enter-right' : 'pre-enter-left'
+      this.animationScroll = isNext ? 'pre-enter-left' : 'pre-enter-right'
 
-      setTimeout(() => {
-        this.animationScroll = isNext ? 'slide-in-right' : 'slide-in-left'
-      }, 30)
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          this.animationScroll = isNext ? 'slide-in-left' : 'slide-in-right'
+        })
+      })
     }, 420)
 
     setTimeout(() => {

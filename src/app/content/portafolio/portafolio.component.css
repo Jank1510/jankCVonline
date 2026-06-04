@@ -167,20 +167,20 @@ a:hover {
 }
 
 .gridPortafolio.slide-out-left {
-    transform: translateX(-112%);
+    transform: translateX(-104%);
 }
 
 .gridPortafolio.slide-out-right {
-    transform: translateX(112%);
+    transform: translateX(104%);
 }
 
 .gridPortafolio.pre-enter-right {
-    transform: translateX(112%);
+    transform: translateX(104%);
     transition: none;
 }
 
 .gridPortafolio.pre-enter-left {
-    transform: translateX(-112%);
+    transform: translateX(-104%);
     transition: none;
 }
 
