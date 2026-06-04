@@ -24,6 +24,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/iconApp.ico",
+              "src/CNAME",
               "src/assets"
             ],
             "styles": [
@@ -95,6 +96,7 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/iconApp.ico",
+              "src/CNAME",
               "src/assets"
             ],
             "styles": [
