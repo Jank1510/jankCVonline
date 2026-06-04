@@ -156,15 +156,37 @@ a:hover {
 }
 
 .gridPortafolio {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
     display: grid;
     gap: 0.7rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 2rem;
     min-width: 100%;
+    transform: translateX(0);
+    transition: transform 420ms ease-in-out;
     width: 100%;
+}
+
+.gridPortafolio.slide-out-left {
+    transform: translateX(-112%);
+}
+
+.gridPortafolio.slide-out-right {
+    transform: translateX(112%);
+}
+
+.gridPortafolio.pre-enter-right {
+    transform: translateX(112%);
+    transition: none;
+}
+
+.gridPortafolio.pre-enter-left {
+    transform: translateX(-112%);
+    transition: none;
+}
+
+.gridPortafolio.slide-in-right,
+.gridPortafolio.slide-in-left {
+    transform: translateX(0);
 }
 
 .gridPortafolio .etiqueta {
@@ -265,49 +287,6 @@ a:hover {
     opacity: 80%;
 }
 
-@keyframes portafolioSlideNext {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    48% {
-        opacity: 1;
-        transform: translateX(-112%);
-    }
-
-    52% {
-        opacity: 1;
-        transform: translateX(112%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes portafolioSlidePrev {
-    0% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    48% {
-        opacity: 1;
-        transform: translateX(112%);
-    }
-
-    52% {
-        opacity: 1;
-        transform: translateX(-112%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 @keyframes animacionEtiqueta {
     from {
         opacity: 0;

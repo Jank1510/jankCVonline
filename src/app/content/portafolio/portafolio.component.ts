@@ -286,12 +286,13 @@ export class PortafolioComponent implements OnInit {
     this.width = window.innerWidth
   }
 
-  EventPortafolio(buttonNameAnimation: string): void {
+  EventPortafolio(direction: 'next' | 'prev'): void {
     if (this.animandoPortafolio) {
       return
     }
 
-    const siguientePagina = buttonNameAnimation === 'portafolioSlideNext'
+    const isNext = direction === 'next'
+    const siguientePagina = isNext
       ? this.numeroDePagina + 1
       : this.numeroDePagina - 1
 
@@ -300,17 +301,21 @@ export class PortafolioComponent implements OnInit {
     }
 
     this.animandoPortafolio = true
-    this.animationScroll = ''
+    this.animationScroll = isNext ? 'slide-out-left' : 'slide-out-right'
+
     setTimeout(() => {
-      this.animationScroll = buttonNameAnimation
+      this.numeroDePagina = siguientePagina
+      this.animationScroll = isNext ? 'pre-enter-right' : 'pre-enter-left'
+
       setTimeout(() => {
-        this.numeroDePagina = siguientePagina
-      }, 500)
-      setTimeout(() => {
-        this.animationScroll = ''
-        this.animandoPortafolio = false
-      }, 1000)
-    }, 1)
+        this.animationScroll = isNext ? 'slide-in-right' : 'slide-in-left'
+      }, 30)
+    }, 420)
+
+    setTimeout(() => {
+      this.animationScroll = ''
+      this.animandoPortafolio = false
+    }, 870)
   }
 
   Redireccionar(enlace: string): void {

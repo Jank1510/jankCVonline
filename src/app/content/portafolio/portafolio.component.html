@@ -25,7 +25,7 @@
     </div>
     <p data-aos="fade-left" *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al presionar una de las imagenes seras redireccionado al repositorio del proyecto.</p>
     <div class="scrollAnimation">
-        <div class="gridPortafolio" [ngStyle]="{'animation-name':animationScroll}">
+        <div class="gridPortafolio" [ngClass]="animationScroll">
             <div (click)="abrirRepositorioEnMovil(data.repositorio)" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta" *ngFor="let data of dataPortafolio[numeroDePagina]" [attr.aria-label]="data.titulo" [ngStyle]="{'background-image':data.imgFondo}">
                <div *ngIf="width>1270" class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
                     <h3>{{data.titulo}}</h3>
@@ -37,8 +37,8 @@
         </div>
     </div>
     <div class="paginacion">
-        <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('portafolioSlidePrev')">Anterior</span></div>
+        <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('prev')">Anterior</span></div>
             {{numeroDePagina+1}}/{{dataPortafolio.length}}
-        <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('portafolioSlideNext')">Siguiente</span></div>
+        <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('next')">Siguiente</span></div>
     </div>
 </section>
