@@ -305,11 +305,11 @@ export class PortafolioComponent implements OnInit {
       this.animationScroll = buttonNameAnimation
       setTimeout(() => {
         this.numeroDePagina = siguientePagina
-      }, 440)
+      }, 500)
       setTimeout(() => {
         this.animationScroll = ''
         this.animandoPortafolio = false
-      }, 900)
+      }, 1000)
     }, 1)
   }
 

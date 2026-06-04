@@ -20,16 +20,6 @@
     width: 100%;
 }
 
-.perfil::before {
-    background: linear-gradient(90deg, transparent, rgba(255, 57, 54, 0.24), transparent);
-    content: '';
-    height: 1px;
-    max-width: 46rem;
-    position: absolute;
-    top: 5.2rem;
-    width: 70%;
-}
-
 .contenedor .perfil h1 {
     margin: 0 auto;
     max-width: 48rem;
@@ -145,11 +135,6 @@
     .perfil {
         min-height: 30vh;
         padding-top: 5rem;
-    }
-
-    .perfil::before {
-        top: 4.2rem;
-        width: 82%;
     }
 
     .presentacion>div {

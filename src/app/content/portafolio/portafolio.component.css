@@ -151,7 +151,6 @@ a:hover {
 .scrollAnimation {
     margin: auto;
     overflow-x: hidden;
-    perspective: 1100px;
     max-width: calc(100vw - 2rem);
     width: min(100%, 68rem);
 }
@@ -159,14 +158,11 @@ a:hover {
 .gridPortafolio {
     animation-duration: 1s;
     animation-fill-mode: both;
-    animation-timing-function: cubic-bezier(.45, 0, .18, 1);
-    backface-visibility: hidden;
+    animation-timing-function: ease-in-out;
     display: grid;
     gap: 0.7rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 2rem;
-    transform-style: preserve-3d;
-    will-change: transform, opacity;
 }
 
 .gridPortafolio .etiqueta {
@@ -269,56 +265,31 @@ a:hover {
 
 @keyframes siguienteAnimation {
     0% {
-        opacity: 1;
-        transform: translateX(0) rotateY(0deg);
-        transform-origin: left center;
+        margin-left: 0;
     }
 
-    44% {
-        opacity: 0.42;
-        transform: translateX(-9%) rotateY(-34deg);
-        transform-origin: left center;
-    }
-
-    52% {
-        opacity: 0.42;
-        transform: translateX(9%) rotateY(34deg);
-        transform-origin: right center;
+    50% {
+        margin-left: 100%;
     }
 
     100% {
-        opacity: 1;
-        transform: translateX(0) rotateY(0deg);
-        transform-origin: right center;
+        margin-left: 0;
     }
 }
 
 @keyframes anteriorAnimation {
     0% {
-        opacity: 1;
-        transform: translateX(0) rotateY(0deg);
-        transform-origin: right center;
+        margin-left: 0;
     }
 
-    44% {
-        opacity: 0.42;
-        transform: translateX(9%) rotateY(34deg);
-        transform-origin: right center;
-    }
-
-    52% {
-        opacity: 0.42;
-        transform: translateX(-9%) rotateY(-34deg);
-        transform-origin: left center;
+    50% {
+        margin-left: -100%;
     }
 
     100% {
-        opacity: 1;
-        transform: translateX(0) rotateY(0deg);
-        transform-origin: left center;
+        margin-left: 0;
     }
 }
-
 @keyframes animacionEtiqueta {
     from {
         opacity: 0;
