@@ -291,7 +291,7 @@ export class PortafolioComponent implements OnInit {
       return
     }
 
-    const siguientePagina = buttonNameAnimation === 'siguienteAnimation'
+    const siguientePagina = buttonNameAnimation === 'portafolioSlideNext'
       ? this.numeroDePagina + 1
       : this.numeroDePagina - 1
 

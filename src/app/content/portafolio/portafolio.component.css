@@ -163,6 +163,8 @@ a:hover {
     gap: 0.7rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 2rem;
+    min-width: 100%;
+    width: 100%;
 }
 
 .gridPortafolio .etiqueta {
@@ -263,31 +265,47 @@ a:hover {
     opacity: 80%;
 }
 
-@keyframes siguienteAnimation {
+@keyframes portafolioSlideNext {
     0% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0);
     }
 
-    50% {
-        margin-left: 100%;
+    48% {
+        opacity: 1;
+        transform: translateX(-112%);
+    }
+
+    52% {
+        opacity: 1;
+        transform: translateX(112%);
     }
 
     100% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 
-@keyframes anteriorAnimation {
+@keyframes portafolioSlidePrev {
     0% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0);
     }
 
-    50% {
-        margin-left: -100%;
+    48% {
+        opacity: 1;
+        transform: translateX(112%);
+    }
+
+    52% {
+        opacity: 1;
+        transform: translateX(-112%);
     }
 
     100% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 @keyframes animacionEtiqueta {
