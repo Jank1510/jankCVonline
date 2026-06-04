@@ -1,5 +1,12 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
 .content {
+    box-sizing: border-box;
     margin: 2rem 0 6rem 0;
+    width: 100%;
 }
 
 .content .titulo {
@@ -8,7 +15,8 @@
     flex-direction: row;
     font-weight: bold;
     margin: 0 auto 2rem auto;
-    width: min(90vw, 68rem);
+    max-width: calc(100vw - 2rem);
+    width: min(100%, 68rem);
 }
 
 .content .titulo hr {
@@ -28,7 +36,8 @@
     line-height: 1.45;
     margin-left: auto;
     margin-right: auto;
-    width: min(90vw, 68rem);
+    max-width: calc(100vw - 2rem);
+    width: min(100%, 68rem);
 }
 
 a {
@@ -45,27 +54,37 @@ a:hover {
     display: grid;
     gap: 1rem;
     margin: 1rem auto 2rem auto;
-    width: min(90vw, 68rem);
+    max-width: calc(100vw - 2rem);
+    width: min(100%, 68rem);
 }
 
 .proyectoDestacado {
+    align-items: flex-end;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 0.8rem;
+    box-sizing: border-box;
     box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
-    min-height: 33rem;
+    display: flex;
+    min-height: 30rem;
     overflow: hidden;
+    padding: 1rem;
 }
 
 .contenidoDestacado {
-    background: linear-gradient(180deg, rgba(17, 16, 13, 0.16), rgba(17, 16, 13, 0.88) 34%, rgba(17, 16, 13, 0.98));
+    -webkit-backdrop-filter: blur(18px) saturate(135%);
+    backdrop-filter: blur(16px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 57, 54, 0.1), rgba(18, 18, 16, 0.52));
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 4px solid rgba(255, 57, 54, 0.82);
+    border-radius: 0.75rem;
     box-sizing: border-box;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.24);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: inherit;
     padding: 1rem;
     width: 100%;
 }
@@ -132,7 +151,8 @@ a:hover {
 .scrollAnimation {
     margin: auto;
     overflow-x: hidden;
-    width: min(90vw, 68rem);
+    max-width: calc(100vw - 2rem);
+    width: min(100%, 68rem);
 }
 
 .gridPortafolio {
@@ -282,6 +302,7 @@ a:hover {
 
     .proyectoDestacado {
         min-height: 28rem;
+        padding: 1.2rem;
     }
 
     .gridPortafolio {
@@ -292,14 +313,15 @@ a:hover {
 
 @media (min-width: 1270px) {
     .proyectoDestacado {
-        display: flex;
-        min-height: 27rem;
+        align-items: center;
+        min-height: clamp(22rem, 31vw, 26rem);
+        padding: 1.4rem;
     }
 
     .contenidoDestacado {
-        background: linear-gradient(90deg, rgba(17, 16, 13, 0.98), rgba(17, 16, 13, 0.94));
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.17), rgba(255, 57, 54, 0.1), rgba(18, 18, 16, 0.5));
         justify-content: center;
-        padding: 1.8rem;
-        width: min(32rem, 54%);
+        padding: 1.35rem;
+        width: min(30rem, 52%);
     }
 }
