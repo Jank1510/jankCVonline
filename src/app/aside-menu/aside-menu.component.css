@@ -5,9 +5,12 @@
     align-items: center;
     color: white;
     position: fixed;
+    left: 0;
+    top: 0;
     height: 98vh;
     margin: 1vh;
     justify-content: center;
+    z-index: 2;
 }
 
 .perfil {
@@ -369,7 +372,7 @@ hr {
     }
 }
 
-@media (min-width:1270px) {
+@media (min-width:1024px) {
 
     /*Las medidas se calculan en vw para un diseño optimo en vista desktop y vistas de grandes tamaños*/
     * {

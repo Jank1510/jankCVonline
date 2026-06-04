@@ -1,8 +1,6 @@
 app-aside-menu {
-    height: 100%;
     margin: 0;
-    display: flex;
-    align-items: center;
+    display: block;
 }
 
 .contenedor main {
@@ -52,7 +50,7 @@ hr {
 
 }
 
-@media (min-width:1270px) {
+@media (min-width:1024px) {
     .contenedor {
         display: grid;
         grid-template-columns: 20% 80%;

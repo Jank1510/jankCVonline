@@ -1,5 +1,5 @@
 <!--Aside para vistas de desktops-->
-<aside class="aside_desktop" *ngIf="width >= 1270" [ngStyle]="{ 'background-color': colorGlobal }"
+<aside class="aside_desktop" *ngIf="width >= 1024" [ngStyle]="{ 'background-color': colorGlobal }"
   (window:scroll)="scroll()">
   <div class="perfil">
     <img src="./assets/aside-icon4.jpg" alt="perfil" />
@@ -98,7 +98,7 @@
   </div>
 </aside>
 <!--Boton de descarga cv Viusta desktop-->
-<div *ngIf="width>=1270" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
+<div *ngIf="width>=1024" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
   (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
   <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf" aria-label="Descargar CV de Jehan Hurtado">
     <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar CV</span></div>
@@ -106,13 +106,13 @@
   </a>
 </div>
 <!--Aside para vistas de Ipads-->
-<div *ngIf="( width < 1270 )" class="banner">
+<div *ngIf="( width < 1024 )" class="banner">
   <img class="openMenu" src="./assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
     (click)="menuVisible=true;directionNameAnimation='asideIpad'">
   <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">Descargar
     CV <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
 </div>
-<div class="opacity_fondo" *ngIf="( width < 1270) && menuVisible">
+<div class="opacity_fondo" *ngIf="( width < 1024) && menuVisible">
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
     <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
     <div class="perfil">
