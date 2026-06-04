@@ -3,7 +3,37 @@
     <hr />
     <span>Contactame</span>
   </div>
+  <div class="introContacto" data-aos="fade-up">
+    <span>Disponible para soporte TI y proyectos web</span>
+    <h2>Hablemos de tu equipo, impresora, sistema o idea digital.</h2>
+    <p>
+      Puedes escribirme directamente por WhatsApp/correo o dejarme un mensaje en el formulario. Respondo con enfoque
+      practico: diagnostico, prioridad y siguiente paso.
+    </p>
+  </div>
   <div class="contactenosSection">
+    <div class="canalesRapidos" data-aos="fade-right">
+      <a href="https://wa.me/573043602822" target="_blank" rel="noopener noreferrer">
+        <strong>WhatsApp</strong>
+        <span>Respuesta directa</span>
+      </a>
+      <a href="mailto:jeanhurt15@gmail.com">
+        <strong>Correo</strong>
+        <span>jeanhurt15@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/" target="_blank" rel="noopener noreferrer">
+        <strong>LinkedIn</strong>
+        <span>Perfil profesional</span>
+      </a>
+      <a href="https://github.com/Jank1510" target="_blank" rel="noopener noreferrer">
+        <strong>GitHub</strong>
+        <span>Repositorios y proyectos</span>
+      </a>
+      <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">
+        <strong>CV</strong>
+        <span>Descargar hoja de vida</span>
+      </a>
+    </div>
     <form
       #contactForm="ngForm"
       action="https://formspree.io/f/mlevlowv"
@@ -13,7 +43,6 @@
       *ngIf="!exitoEnvio"
       (ngSubmit)="submit(contactForm, $event)"
     >
-      <!-- SE USA LA HERRAMIENTA FORMSPREE PARA ENVIAR CORREOS -->
       <ul>
         <li class="li_left">
           <label for="name">Nombre:</label>
@@ -44,18 +73,16 @@
       <p>Tu mensaje se ha enviado con exito, pronto sera revisado.</p>
       <button (click)="exitoEnvio=false">Atras</button>
     </div>
-    <!-- Tarjetas de contacto -->
-    <div class="datosContacto">
-      <div data-aos="fade-left" class="telefono">
-        <img src="./assets/icons/icon-contact/telefono-inteligente.png" alt="Telefono" />
-        <a href="tel:+573043602822" class="direccion">+57 3043602822</a>
-        <p class="txt">Telefono / WhatsApp</p>
-      </div>
-      <div data-aos="fade-left" class="email">
-        <img src="./assets/icons/icon-contact/email.png" alt="Correo electronico" />
-        <a href="mailto:jeanhurt15@gmail.com" class="direccion">jeanhurt15@gmail.com</a>
-        <p class="txt">Correo personal</p>
-      </div>
+    <div class="disponibilidadContacto" data-aos="fade-left">
+      <span>Atencion principal</span>
+      <h3>Soporte TI y mantenimiento</h3>
+      <ul>
+        <li>Impresoras y computadores</li>
+        <li>Diagnostico de hardware/software</li>
+        <li>Configuracion de sistemas</li>
+        <li>Herramientas web y automatizacion</li>
+      </ul>
+      <p>Bucaramanga, Santander - presencial y remoto segun el caso.</p>
     </div>
   </div>
 </section>

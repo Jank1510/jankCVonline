@@ -113,6 +113,7 @@ a:hover {
     color: #d8d8d8;
     font-size: 0.93rem;
     margin: 0.7rem 0 0 0 !important;
+    overflow-wrap: anywhere;
 }
 
 .tarjeta .title-tarjetas {
@@ -140,7 +141,8 @@ a:hover {
     padding: 1rem;
 }
 
-.fortalezaActual span {
+.fortalezaActual span,
+.herramientas span {
     color: #ff3936;
     display: block;
     font-size: 0.75rem;
@@ -166,6 +168,19 @@ a:hover {
 .fortalezaActual li {
     color: #605f5f;
     line-height: 1.35;
+}
+
+.herramientas {
+    background: #2a2a2a;
+    border-radius: 0.45rem;
+    box-shadow: 0px 1px 10px -4px #ff7673;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.herramientas p {
+    color: #e6e6e6;
+    margin: 0;
 }
 
 @media (max-width: 520px) {

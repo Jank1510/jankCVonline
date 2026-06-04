@@ -1,6 +1,11 @@
 .content {
     display: flex;
     flex-direction: column;
+    margin: 2rem auto 8rem auto;
+    max-width: 68rem;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .content .titulo {
@@ -16,6 +21,71 @@
     margin-right: 0px;
     border: none;
     background-color: black;
+}
+
+.introContacto {
+    margin: 0 auto 2rem auto;
+    max-width: 45rem;
+    text-align: center;
+}
+
+.introContacto span {
+    color: #ff3936;
+    display: block;
+    font-size: 0.78rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.introContacto h2 {
+    font-size: clamp(1.35rem, 3vw, 2rem);
+    margin: 0 0 0.8rem 0;
+}
+
+.introContacto p {
+    color: #605f5f;
+    line-height: 1.45;
+    margin: 0;
+}
+
+.contactenosSection {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+}
+
+.canalesRapidos {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.canalesRapidos a {
+    background: white;
+    border-left: 4px solid #ff3936;
+    border-radius: 0.65rem;
+    box-shadow: 0px 1px 10px -4px #ff7673;
+    color: black;
+    display: block;
+    padding: 0.85rem 1rem;
+    text-decoration: none;
+}
+
+.canalesRapidos a:hover {
+    transform: translateY(-1px);
+}
+
+.canalesRapidos strong,
+.canalesRapidos span {
+    display: block;
+}
+
+.canalesRapidos span {
+    color: #605f5f;
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
 }
 
 .content form ul li {
@@ -69,33 +139,41 @@
 
 
 
-.content .datosContacto {
-    display: flex;
-    align-items: center;
+.disponibilidadContacto {
+    background: #2a2a2a;
+    border-radius: 0.75rem;
+    box-shadow: 0px 1px 10px -4px #ff7673;
+    color: white;
+    padding: 1rem;
 }
 
-.content .datosContacto div {
-    justify-content: center;
-    border: 1px solid #e3e3e3;
-    box-shadow: 0px 0px 10px 0px #e3e3e3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content .datosContacto div img {
+.disponibilidadContacto span {
+    color: #ff7673;
     display: block;
-    background-color: rgb(255, 57, 54);
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-bottom: 0.45rem;
+    text-transform: uppercase;
 }
 
-.content .datosContacto div a {
-    color: black;
+.disponibilidadContacto h3 {
+    margin: 0 0 0.8rem 0;
 }
 
-
-.content .datosContacto div p {
+.disponibilidadContacto ul {
     margin: 0;
-    color: #605f5f;
+    padding-left: 1.1rem;
+}
+
+.disponibilidadContacto li {
+    line-height: 1.35;
+    margin-bottom: 0.35rem;
+}
+
+.disponibilidadContacto p {
+    color: #d8d8d8;
+    line-height: 1.4;
+    margin: 1rem 0 0 0;
 }
 
 ul {
@@ -152,25 +230,13 @@ li span {
         font-weight: bold;
     }
 
-    .contactenosSection {
-        width: 90vw;
-    }
-
     .content form {
         width: 100%;
+        box-sizing: border-box;
     }
 
     .content form ul li button {
         width: 35%;
-    }
-
-    .content .datosContacto {
-        flex-direction: column;
-    }
-
-    .content {
-
-        margin: 2rem 0 12rem 0;
     }
 
     .content .titulo {
@@ -202,27 +268,7 @@ li span {
         height: 2.2rem;
         border-radius: 0.5rem;
         margin-top: 1rem;
-    }
-
-    .content .datosContacto {
-        row-gap: 1rem;
-        column-gap: 1rem;
-    }
-
-    .content .datosContacto div {
-        padding: 1rem;
-        width: 12rem;
-        height: 8rem;
-    }
-
-    .content .datosContacto div img {
-        width: 2rem;
-        border-radius: 0.5rem;
-        padding: 1rem;
-    }
-
-    .content .datosContacto div a {
-        margin: 1rem;
+        min-width: 8rem;
     }
 
     .content .titulo hr {
@@ -263,22 +309,8 @@ li span {
         margin: auto;
     }
 
-    .contactenosSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: auto;
-    }
-
-    .content .datosContacto {
-        width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 1.5rem;
-    }
-
     .content form {
-        width: 70%;
+        width: 100%;
     }
 
     .content form ul li button {
@@ -286,88 +318,57 @@ li span {
     }
 
     .content {
-
-        margin: 6rem 0 12rem 0;
+        margin: 6rem auto 10rem auto;
     }
 }
 
 @media (min-width:1270px) {
-    * {
-        font-size: 1vw;
-    }
-
     .contactenosSection {
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-    }
-
-    .content .datosContacto {
-        width: 30%;
-        flex-direction: column;
-        margin-top: 0;
-        row-gap: 1vw;
-        column-gap: 1vw;
+        grid-template-columns: minmax(14rem, 0.8fr) minmax(26rem, 1.4fr) minmax(12rem, 0.75fr);
+        align-items: start;
     }
 
     .content .titulo {
-        margin-bottom: 3vw;
+        margin-bottom: 3rem;
     }
 
     .content .titulo span {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
 
     }
 
     .content .titulo hr {
-        margin-right: 1vw;
-        width: 3vw;
+        margin-right: 1rem;
+        width: 3rem;
     }
 
     .content form ul li label {
-        margin-bottom: 0.5vw;
+        margin-bottom: 0.5rem;
     }
 
     .content form ul li input {
-        border-radius: 0.5vw;
-        padding-left: 1vw;
-        height: 2.5vw;
+        border-radius: 0.5rem;
+        padding-left: 1rem;
+        height: 2.5rem;
     }
 
     .content form ul li textarea {
-        border-radius: 0.5vw;
-        padding: 1vw;
+        border-radius: 0.5rem;
+        padding: 1rem;
     }
 
     .content form ul li button {
-        height: 2.2vw;
-        border-radius: 0.5vw;
-        margin-top: 1vw;
-    }
-
-    .content .datosContacto div {
-        padding: 1vw;
-        width: 12vw;
-        height: 8vw;
-    }
-
-    .content .datosContacto div img {
-        width: 2vw;
-        border-radius: 0.5vw;
-        padding: 1vw;
-    }
-
-    .content .datosContacto div a {
-        margin: 1vw;
+        height: 2.2rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
     }
 
     .content {
-
-        margin: 6vw 0 12vw 0;
+        margin: 6rem auto 10rem auto;
     }
 
     .content .titulo hr {
-        height: 0.1vw;
+        height: 1px;
     }
 
 }

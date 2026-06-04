@@ -1,17 +1,21 @@
 <section class="content">
     <div data-aos="fade-right" class="titulo">
-        <hr><span>Especialidad principal</span>
+        <hr><span>Servicios tecnicos</span>
     </div>
 
     <div class="bloquePrincipal" data-aos="fade-up">
         <div class="textoPrincipal">
-            <span>Trabajo actual y fortaleza tecnica</span>
+            <span>Fortaleza profesional actual</span>
             <h1>Soporte TI, impresoras y equipos de computo</h1>
             <p>
-                Mi perfil actual esta centrado en mantener operativos los equipos que sostienen el trabajo diario:
-                impresoras, computadores, sistemas y herramientas de usuarios. Combino diagnostico tecnico,
+                Ayudo a mantener operativos los equipos que sostienen el trabajo diario: impresoras, computadores,
+                sistemas, perifericos y herramientas de usuarios. Mi enfoque combina diagnostico tecnico,
                 mantenimiento preventivo/correctivo y comunicacion clara para resolver fallas reales en campo.
             </p>
+            <div class="accionesServicio">
+                <a href="#app-contactame">Solicitar soporte</a>
+                <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">Descargar CV</a>
+            </div>
         </div>
 
         <div class="resumenOperativo">
@@ -31,7 +35,8 @@
     </div>
 
     <div class="gridEnfoque">
-        <article data-aos="zoom-in" class="tarjetaEnfoque" *ngFor="let item of enfoque">
+        <article data-aos="zoom-in" class="tarjetaEnfoque" *ngFor="let item of servicios">
+            <span>{{item.etiqueta}}</span>
             <h2>{{item.titulo}}</h2>
             <p>{{item.descripcion}}</p>
         </article>

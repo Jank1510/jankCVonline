@@ -15,10 +15,6 @@
 
 
 
-.section div {
-    width: 70%;
-}
-
 @media (min-width:300px) {
     .content {
         margin: 2rem 0 6rem 0;
@@ -37,13 +33,84 @@
         width: 3rem;
     }
 
+    .contentenedorTarjeta {
+        margin: auto;
+        width: 90vw;
+    }
+
     .section {
         display: flex;
         flex-direction: column;
         align-items: center;
         column-gap: 4vw;
-    }.section img {
+        margin-top: 2rem;
+    }
+
+    .section div {
+        width: 100%;
+    }
+
+    .section h1 {
+        margin-bottom: 0.75rem;
+    }
+
+    .section img {
         width: 8rem
+    }
+
+    .ctaResumen {
+        align-items: flex-start;
+        background: #2a2a2a;
+        border-radius: 0.75rem;
+        box-shadow: 0 1px 10px -4px #ff7673;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .ctaResumen span {
+        color: #ff7673;
+        display: block;
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom: 0.35rem;
+        text-transform: uppercase;
+    }
+
+    .ctaResumen h2 {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .accionesResumen {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .accionesResumen a {
+        align-items: center;
+        border-radius: 0.55rem;
+        display: inline-flex;
+        font-weight: bold;
+        min-height: 2.4rem;
+        padding: 0 0.9rem;
+        text-decoration: none;
+    }
+
+    .accionesResumen a:first-child {
+        background: #ff3936;
+        color: white;
+    }
+
+    .accionesResumen a:last-child {
+        background: white;
+        color: #ff3936;
     }
 }
 
@@ -56,40 +123,52 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 4vw;
+        margin-top: 4rem;
     }
 
     .content .titulo {
         margin-left: 0;
 
-    }.section img {
-        width: 10vw
+    }
+
+    .section img {
+        width: 7rem
+    }
+
+    .section div {
+        width: 70%;
+    }
+
+    .contentenedorTarjeta {
+        width: 80vw;
+    }
+
+    .ctaResumen {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 
 @media (min-width:1270px) {
-    * {
-        font-size: 1vw;
-    }
-
     .content {
-        margin: 6vw 0;
+        margin: 6rem 0;
     }
 
     .content .titulo hr {
-        height: 0.1vw;
-        margin-right: 1vw;
-        width: 3vw;
+        height: 1px;
+        margin-right: 1rem;
+        width: 3rem;
     }
 
     .content .titulo {
 
-        margin-bottom: 3vw;
+        margin-bottom: 3rem;
         margin-left: 0;
     }
 
     .content .titulo span {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
 
     }
 
@@ -97,5 +176,9 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+
+    .contentenedorTarjeta {
+        width: min(70vw, 68rem);
     }
 }

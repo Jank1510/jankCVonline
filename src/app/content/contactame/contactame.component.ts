@@ -29,19 +29,24 @@ export class ContactameComponent implements OnInit {
 
     const formElement = event.target as HTMLFormElement
     const formData = new FormData(formElement)
-    const response = await fetch(formElement.action, {
-      method: formElement.method,
-      body: formData,
-      headers: {
-        Accept: 'application/json'
-      }
-    })
 
-    if (response.ok) {
-      this.exitoEnvio = true
-      this.invalid = false
-      form.resetForm()
-    } else {
+    try {
+      const response = await fetch(formElement.action, {
+        method: formElement.method,
+        body: formData,
+        headers: {
+          Accept: 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        this.exitoEnvio = true
+        this.invalid = false
+        form.resetForm()
+      } else {
+        this.invalid = true
+      }
+    } catch {
       this.invalid = true
     }
   }

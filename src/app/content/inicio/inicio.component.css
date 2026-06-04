@@ -85,17 +85,36 @@
     line-height: 1.5;
 }
 
-.presentacion>div {
+.saludo {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+    margin-bottom: 0;
+}
+
+.chipsPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    justify-content: center;
+    margin-top: 1.3rem;
+}
+
+.chipsPerfil span {
+    background: #fff1f1;
+    border: 1px solid #ffd3d2;
+    border-radius: 999px;
+    color: #a83232;
+    font-size: 0.85rem;
+    font-weight: bold;
+    padding: 0.38rem 0.75rem;
+}
+
+.accionesInicio {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     margin: 1.75rem 0 0 0;
-}
-
-.presentacion div div {
-    align-items: center;
-    display: flex;
-    margin: 0;
 }
 
 .name {
@@ -105,30 +124,39 @@
     margin: 0.75rem 0;
 }
 
-.presentacion div .contactame {
-    background-color: #ff3936;
-    border: none;
+.accionesInicio a {
+    align-items: center;
     border-radius: 0.75rem;
-    color: white;
-    cursor: pointer;
+    display: inline-flex;
     font-weight: bold;
-    padding: 0.9rem 1rem;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0 1rem;
     text-decoration: none;
 }
 
-.presentacion div .contactame:hover {
+.accionesInicio .contactame {
+    background-color: #ff3936;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.accionesInicio .descargar {
+    background: #2a2a2a;
+    color: white;
+}
+
+.accionesInicio .contactame:hover,
+.accionesInicio .descargar:hover,
+.accionesInicio .leerMas:hover {
     opacity: 80%;
 }
 
-.presentacion div .leerMas {
+.accionesInicio .leerMas {
     color: black;
-    font-weight: bold;
-    padding: 0.9rem 0;
-    text-decoration: none;
-}
-
-.presentacion div .leerMas:hover {
-    text-decoration-line: revert;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 @media (max-width: 520px) {
@@ -137,7 +165,7 @@
         padding-top: 5rem;
     }
 
-    .presentacion>div {
+    .accionesInicio {
         flex-wrap: wrap;
         justify-content: center;
     }

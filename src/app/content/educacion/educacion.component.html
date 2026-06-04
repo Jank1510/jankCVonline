@@ -8,11 +8,14 @@
             <span>{{data.lugar}}</span>
             <span>{{data.periodo}}</span>
             <span>{{data.descripcion}}</span>
-            <div>
+            <ul class="aptitudes">
+                <li *ngFor="let aptitud of data.aptitudes">{{aptitud}}</li>
+            </ul>
+            <div class="accionesEducacion">
                 <a *ngIf="data.linkPreview" target="_blank" rel="noopener noreferrer" [href]="data.linkPreview">{{data.linkLabel || 'Ver certificado'}} <img width="1rem"
                         src="./assets/icons/openNewTab.png" alt="Abrir en nueva pestana"></a>
                 <span *ngIf="!data.linkPreview && data.estado" class="estado">{{data.estado}}</span>
-                <img [src]="data.imagen" alt="Logo de {{data.lugar}}">
+                <img [src]="data.imagen" alt="Logo de {{data.lugar}}" loading="lazy" decoding="async">
             </div>
             <div class="lineatarjeta" [ngStyle]="data.linea"></div>
         </div>

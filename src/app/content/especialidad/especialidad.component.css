@@ -31,8 +31,37 @@
     text-transform: uppercase;
 }
 
+.accionesServicio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.2rem;
+}
+
+.accionesServicio a {
+    align-items: center;
+    border-radius: 0.65rem;
+    display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0 0.9rem;
+    text-decoration: none;
+}
+
+.accionesServicio a:first-child {
+    background: #ff3936;
+    color: white;
+}
+
+.accionesServicio a:last-child {
+    background: #2a2a2a;
+    color: white;
+}
+
 .textoPrincipal h1,
 .textoPrincipal p,
+.tarjetaEnfoque span,
 .tarjetaEnfoque h2,
 .tarjetaEnfoque p,
 .proceso h3,
@@ -71,6 +100,13 @@
 
 .tarjetaEnfoque {
     border-top: 2px solid #ff3936;
+}
+
+.tarjetaEnfoque span {
+    color: #ff3936;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .proceso {
@@ -166,6 +202,11 @@
         padding: 1rem;
     }
 
+    .tarjetaEnfoque span {
+        font-size: 0.72rem;
+        margin-bottom: 0.45rem;
+    }
+
     .tarjetaEnfoque h2 {
         font-size: 1rem;
         margin-bottom: 0.6rem;
@@ -233,111 +274,112 @@
 }
 
 @media (min-width:1270px) {
-    * {
-        font-size: 1vw;
-    }
-
     .content {
-        margin: 6vw 0;
+        margin: 6rem 0;
     }
 
     .content .titulo {
-        margin-bottom: 3vw;
+        margin-bottom: 3rem;
     }
 
     .content .titulo span {
-        font-size: 1.5vw;
+        font-size: 1.5rem;
     }
 
     .content .titulo hr {
-        height: 0.1vw;
-        margin-right: 1vw;
-        width: 3vw;
+        height: 1px;
+        margin-right: 1rem;
+        width: 3rem;
     }
 
     .bloquePrincipal,
     .gridEnfoque,
     .proceso {
-        width: 70vw;
+        width: min(70vw, 68rem);
     }
 
     .bloquePrincipal {
-        border-radius: 1vw;
+        border-radius: 1rem;
     }
 
     .textoPrincipal {
-        padding: 1.5vw;
+        padding: 1.5rem;
     }
 
     .textoPrincipal span {
-        font-size: 0.75vw;
-        margin-bottom: 0.7vw;
+        font-size: 0.75rem;
+        margin-bottom: 0.7rem;
     }
 
     .textoPrincipal h1 {
-        font-size: 1.6vw;
-        margin-bottom: 1vw;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
 
     .textoPrincipal p {
-        font-size: 0.95vw;
+        font-size: 0.95rem;
     }
 
     .resumenOperativo {
-        gap: 1vw;
-        padding: 1.5vw;
+        gap: 1rem;
+        padding: 1.5rem;
     }
 
     .resumenOperativo div {
-        border-left-width: 0.2vw;
-        padding-left: 0.8vw;
+        border-left-width: 2px;
+        padding-left: 0.8rem;
     }
 
     .resumenOperativo strong,
     .resumenOperativo span {
-        font-size: 0.85vw;
+        font-size: 0.85rem;
     }
 
     .gridEnfoque {
-        gap: 1vw;
-        margin-top: 1vw;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     .tarjetaEnfoque {
-        border-radius: 0.8vw;
-        border-top-width: 0.2vw;
-        padding: 1vw;
+        border-radius: 0.8rem;
+        border-top-width: 2px;
+        padding: 1rem;
+    }
+
+    .tarjetaEnfoque span {
+        font-size: 0.72rem;
+        margin-bottom: 0.45rem;
     }
 
     .tarjetaEnfoque h2 {
-        font-size: 1vw;
-        margin-bottom: 0.6vw;
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
     }
 
     .tarjetaEnfoque p,
     .proceso p {
-        font-size: 0.85vw;
+        font-size: 0.85rem;
     }
 
     .proceso {
-        border-radius: 1vw;
-        gap: 1vw;
-        margin-top: 1vw;
-        padding: 1vw;
+        border-radius: 1rem;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding: 1rem;
     }
 
     .proceso article {
-        column-gap: 0.8vw;
+        column-gap: 0.8rem;
     }
 
     .proceso article span {
-        border-radius: 2vw;
-        height: 2vw;
-        width: 2vw;
+        border-radius: 2rem;
+        height: 2rem;
+        width: 2rem;
     }
 
     .proceso h3 {
-        font-size: 1vw;
-        margin-bottom: 0.35vw;
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
     }
 }

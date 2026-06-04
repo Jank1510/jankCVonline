@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 interface FocusItem {
+  etiqueta: string
   titulo: string
   descripcion: string
 }
@@ -16,26 +17,30 @@ interface ProcessItem {
   styleUrls: ['./especialidad.component.css']
 })
 export class EspecialidadComponent implements OnInit {
-  enfoque: FocusItem[]
+  servicios: FocusItem[]
   proceso: ProcessItem[]
 
   constructor() {
-    this.enfoque = [
+    this.servicios = [
       {
+        etiqueta: 'Soporte operativo',
         titulo: 'Impresoras',
-        descripcion: 'Mantenimiento, diagnostico de fallas, limpieza, pruebas y recuperacion de funcionamiento.'
+        descripcion: 'Mantenimiento, diagnostico de fallas, limpieza, pruebas, configuracion y recuperacion de funcionamiento.'
       },
       {
+        etiqueta: 'Equipos de computo',
         titulo: 'Computadores',
-        descripcion: 'Revision de hardware, software, sistema operativo, configuracion y puesta a punto.'
+        descripcion: 'Revision de hardware, software, sistema operativo, perifericos, rendimiento y puesta a punto.'
       },
       {
+        etiqueta: 'Mesa de ayuda',
         titulo: 'Soporte a usuarios',
-        descripcion: 'Atencion tecnica clara, seguimiento de casos y solucion practica en entorno de trabajo.'
+        descripcion: 'Atencion tecnica clara, seguimiento de casos, documentacion y solucion practica en entorno de trabajo.'
       },
       {
+        etiqueta: 'Mejora continua',
         titulo: 'Prevencion',
-        descripcion: 'Mantenimiento preventivo para reducir fallas repetidas y mantener los equipos disponibles.'
+        descripcion: 'Mantenimiento preventivo, recomendaciones de uso y control basico para reducir fallas repetidas.'
       }
     ]
 

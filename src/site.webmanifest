@@ -1,0 +1,15 @@
+{
+  "name": "Jehan Hurtado Portfolio",
+  "short_name": "Jehan Hurtado",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff3936",
+  "icons": [
+    {
+      "src": "iconApp.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

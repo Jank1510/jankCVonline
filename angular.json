@@ -25,6 +25,10 @@
             "assets": [
               "src/iconApp.ico",
               "src/CNAME",
+              "src/404.html",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/site.webmanifest",
               "src/assets"
             ],
             "styles": [

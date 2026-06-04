@@ -7,6 +7,12 @@ app-root {
     margin: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html {
 
     display: inherit;
@@ -20,6 +26,18 @@ html {
 body{
     overflow-x: hidden;
 
+}
+
+img {
+    max-width: 100%;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(255, 57, 54, 0.45);
+    outline-offset: 3px;
 }
 
 /*----------*/
