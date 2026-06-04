@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">SENA</title>
+  <rect width="120" height="120" rx="14" fill="#fff"/>
+  <circle cx="60" cy="29" r="10" fill="#ff5b25"/>
+  <path d="M60 43v50M32 61h56M43 56l-24 34M77 56l24 34M49 70 31 97M71 70l18 27" stroke="#ff5b25" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="60" y="20" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#ff5b25">SENA</text>
+</svg>

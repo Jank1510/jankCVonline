@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" role="img" aria-labelledby="title">
+  <title id="title">UNAB</title>
+  <rect width="180" height="80" rx="10" fill="#ff9d00"/>
+  <path d="M35 22h38v36H35z" fill="#fff" opacity=".95"/>
+  <path d="M42 52V34l8-6 8 6v18M58 52V34l8-6 8 6v18" stroke="#ff9d00" stroke-width="3" fill="none" stroke-linejoin="round"/>
+  <text x="84" y="37" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#fff">unab</text>
+  <text x="84" y="54" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#fff">Universidad Autonoma</text>
+</svg>
