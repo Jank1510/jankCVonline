@@ -1,46 +1,79 @@
+.content {
+    margin: 2rem 0 6rem 0;
+}
+
 .content .titulo {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     font-weight: bold;
+    margin: 0 auto 2rem auto;
+    width: min(90vw, 68rem);
 }
 
 .content .titulo hr {
-    margin: 0;
-    margin-right: 0px;
-    border: none;
     background-color: black;
+    border: none;
+    height: 1px;
+    margin: 0 1rem 0 0;
+    width: 3rem;
+}
+
+.content .titulo span {
+    font-size: 1.5rem;
 }
 
 .content p {
     color: #605f5f;
+    line-height: 1.45;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(90vw, 68rem);
+}
+
+a {
+    color: rgb(255, 57, 54);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 80%;
 }
 
 .destacados {
     display: grid;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 1rem;
+    margin: 1rem auto 2rem auto;
+    width: min(90vw, 68rem);
 }
 
 .proyectoDestacado {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0.8rem;
     box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
+    min-height: 33rem;
     overflow: hidden;
 }
 
 .contenidoDestacado {
-    background: linear-gradient(90deg, rgba(17, 16, 13, 0.96), rgba(17, 16, 13, 0.76), rgba(17, 16, 13, 0.14));
+    background: linear-gradient(180deg, rgba(17, 16, 13, 0.16), rgba(17, 16, 13, 0.88) 34%, rgba(17, 16, 13, 0.98));
+    box-sizing: border-box;
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100%;
     justify-content: flex-end;
+    min-height: inherit;
+    padding: 1rem;
+    width: 100%;
 }
 
 .proyectoDestacado span {
+    font-size: 0.72rem;
     font-weight: bold;
+    margin-bottom: 0.45rem;
     text-transform: uppercase;
 }
 
@@ -50,34 +83,148 @@
     margin: 0;
 }
 
+.proyectoDestacado h3 {
+    color: white;
+    font-size: 1.25rem;
+    line-height: 1.15;
+    margin-bottom: 0.55rem;
+}
+
 .proyectoDestacado p {
     color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.25;
+    width: auto;
 }
 
 .proyectoDestacado ul {
-    padding-left: 1rem;
+    padding-left: 1.05rem;
 }
 
 .proyectoDestacado li {
     color: white;
+    font-size: 0.85rem;
+    line-height: 1.25;
+    margin-top: 0.35rem;
 }
 
 .accionesDestacado {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
 }
 
 .accionesDestacado a {
+    align-items: center;
     background: white;
+    border-radius: 0.5rem;
     color: #ff3936;
+    display: inline-flex;
+    font-size: 0.85rem;
     font-weight: bold;
+    justify-content: center;
+    min-height: 2.4rem;
+    padding: 0 0.9rem;
 }
 
-
 .scrollAnimation {
-    overflow-x: hidden;
-    width: max-content;
     margin: auto;
+    overflow-x: hidden;
+    width: min(90vw, 68rem);
+}
+
+.gridPortafolio {
+    animation-duration: 1s;
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-top: 2rem;
+}
+
+.gridPortafolio .etiqueta {
+    aspect-ratio: 16 / 10;
+    background-color: #111827;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.55rem;
+    box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.gridPortafolio .etiqueta .hoveretiqueta {
+    align-items: center;
+    animation-duration: 0.5s;
+    animation-name: animacionEtiqueta;
+    color: white;
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.gridPortafolio .etiqueta .hoveretiqueta a {
+    background-color: white;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    margin: 0.35rem auto 0 auto;
+    padding: 0.5rem 0;
+    width: 80%;
+}
+
+.hoveretiqueta p {
+    color: white;
+    font-size: 0.82rem;
+    margin: 0 auto 0.5rem auto;
+    width: 84%;
+}
+
+.hoveretiqueta h3 {
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 0.5rem 0;
+    max-width: 84%;
+    text-align: center;
+}
+
+.paginacion {
+    align-items: center;
+    column-gap: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.paginacion span {
+    align-items: center;
+    animation-duration: 0.5s;
+    animation-name: animationSpan;
+    background-color: rgb(255, 57, 54);
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    width: 6rem;
+}
+
+.paginacion div {
+    height: 2rem;
+    width: 6rem;
+}
+
+.paginacion span:hover {
+    opacity: 80%;
 }
 
 @keyframes siguienteAnimation {
@@ -108,41 +255,6 @@
     }
 }
 
-
-.gridPortafolio .etiqueta .hoveretiqueta {
-    justify-content: center;
-    align-items: center;
-    animation-name: animacionEtiqueta;
-    animation-duration: 0.5s;
-    color: white;
-    display: none;
-    flex-direction: column;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: rgb(255, 57, 54);
-
-}
-
-a:hover {
-    opacity: 80%
-}
-
-.gridPortafolio .etiqueta .hoveretiqueta a {
-    background-color: white;
-    font-weight: bolder;
-    width: 80%;
-    margin: 0 auto;
-}
-
-
 @keyframes animacionEtiqueta {
     from {
         opacity: 0;
@@ -151,27 +263,7 @@ a:hover {
     to {
         opacity: 1;
     }
-
 }
-
-.paginacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.paginacion span {
-    background-color: rgb(255, 57, 54);
-    color: white;
-    cursor: pointer;
-    animation-duration: 0.5s;
-    animation-name: animationSpan;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
 
 @keyframes animationSpan {
     from {
@@ -181,316 +273,33 @@ a:hover {
     to {
         opacity: 1;
     }
-
 }
 
-.paginacion span:hover {
-    opacity: 80%;
-}
-
-.hoveretiqueta p {
-    color: white;
-    margin: 0 auto 0.8rem auto;
-    width: 84%;
-}
-
-.hoveretiqueta h3 {
-    color: white;
-    font-size: 1rem;
-    margin: 0 0 0.5rem 0;
-    max-width: 84%;
-    text-align: center;
-}
-
-/* RESPONSIVE DESIGN*/
-@media (min-width:300px) {
-    .gridPortafolio {
-        display: grid;
-        grid-template-columns: 45vw 45vw;
-        grid-column-gap: 1vw;
-        column-gap: 0.5rem;
-        margin-top: 2rem;
-        grid-row-gap: 1vw;
-        row-gap: 0.5rem;
-        animation-duration: 1s;
-    }
-
-    .destacados {
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        margin-bottom: 2rem;
-        width: 90vw;
-    }
-
-    .proyectoDestacado {
-        border-radius: 0.8rem;
-        height: 24rem;
-    }
-
-    .contenidoDestacado {
-        padding: 1rem;
-    }
-
-    .proyectoDestacado span {
-        font-size: 0.7rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .proyectoDestacado h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .proyectoDestacado p {
-        font-size: 0.85rem;
-        width: auto;
-    }
-
-    .proyectoDestacado li {
-        font-size: 0.8rem;
-        margin-top: 0.35rem;
-    }
-
-    .accionesDestacado {
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    .accionesDestacado a {
-        border-radius: 0.5rem;
-        font-size: 0.8rem;
-        padding: 0.5rem 0.7rem;
-    }
-
-    .gridPortafolio .etiqueta {
-        width: 45vw;
-        text-align: center;
-        background-color: #111827;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 0.5rem;
-        height: 30vw;
-        background-position: center top;
-        box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
-        cursor: pointer;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .titulo {
-        width: 90vw;
-        margin-left: 4vw;
-    }
-
-    .content p {
-        width: 90vw;
-    }
-
-    .content {
-        margin: 2rem 0 6rem 0;
-    }
-
-    .content .titulo {
-        margin-bottom: 3rem;
-    }
-
-    .content .titulo span {
-
-        font-size: 1.5rem;
-    }
-
-    .content .titulo hr {
-        margin-right: 1rem;
-        height: 1px;
-        width: 3rem;
-    }
-
-    .gridPortafolio .etiqueta .hoveretiqueta {
-        border-radius: 0.5rem;
-        height: 100%;
-        font-size: 0.8rem;
-    }
-
-    .gridPortafolio .etiqueta .hoveretiqueta a {
-        margin-bottom: 0.5rem;
-        border-radius: 0.5rem;
-        padding: 0.5rem 0rem;
-    }
-
-    .paginacion {
-        margin-top: 2rem;
-        column-gap: 1rem;
-    }
-
-    .paginacion span {
-        width: 6rem;
-        border-radius: 1rem;
-        height: 2rem;
-    }
-
-    .paginacion div {
-        width: 6rem;
-        height: 2rem;
-    }
-}
-
-@media (min-width:700px) {
-    .gridPortafolio {
-        display: grid;
-        grid-template-columns: 22vw 22vw 22vw 22vw;
-        grid-column-gap: 1vw;
-        column-gap: 1vw;
-        margin-top: 2rem;
-        grid-row-gap: 1vw;
-        row-gap: 1vw;
-        animation-duration: 1s;
-    }
-
-    .destacados {
-        grid-template-columns: 1fr;
-        width: 88vw;
-    }
-
-    .proyectoDestacado {
-        height: 26rem;
-    }
-
-    .gridPortafolio .etiqueta {
-        width: 22vw;
-        text-align: center;
-        background-size: cover;
-        border-radius: 0.5rem;
-        height: 15vw;
-        background-position: center top;
-    }
-
-    .titulo {
-        width: auto;
-        margin-left: 0;
-    }
-
-    .content p {
-        width: auto;
-    }
-
+@media (min-width: 700px) {
     .content {
         margin: 6rem 0;
     }
-}
-
-@media (min-width:1270px) {
-    .gridPortafolio {
-        display: grid;
-        grid-template-columns: 17vw 17vw 17vw 17vw;
-        column-gap: 1vw;
-        margin-top: 2vw;
-        row-gap: 1vw;
-        animation-duration: 1s;
-    }
-
-    .destacados {
-        gap: 1vw;
-        margin-bottom: 2vw;
-        width: 70vw;
-    }
 
     .proyectoDestacado {
-        border-radius: 0.8vw;
-        height: 24vw;
+        min-height: 28rem;
+    }
+
+    .gridPortafolio {
+        gap: 1rem;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1270px) {
+    .proyectoDestacado {
+        display: flex;
+        min-height: 27rem;
     }
 
     .contenidoDestacado {
-        max-width: 42%;
-        padding: 1.5vw;
-    }
-
-    .proyectoDestacado span {
-        font-size: 0.7vw;
-        margin-bottom: 0.4vw;
-    }
-
-    .proyectoDestacado h3 {
-        font-size: 1.2vw;
-        margin-bottom: 0.5vw;
-    }
-
-    .proyectoDestacado p {
-        font-size: 0.85vw;
-    }
-
-    .proyectoDestacado li {
-        font-size: 0.8vw;
-        margin-top: 0.35vw;
-    }
-
-    .accionesDestacado {
-        gap: 0.5vw;
-        margin-top: 1vw;
-    }
-
-    .accionesDestacado a {
-        border-radius: 0.5vw;
-        font-size: 0.8vw;
-        padding: 0.5vw 0.7vw;
-    }
-
-    .gridPortafolio .etiqueta {
-        width: 17vw;
-        text-align: center;
-        background-size: cover;
-        border-radius: 0.5vw;
-        height: 12vw;
-        background-position: center top;
-    }
-
-    .content .titulo {
-        margin-bottom: 3vw;
-    }
-
-    .content .titulo span {
-        font-size: 1.5vw;
-
-    }
-
-    .content {
-        margin: 6vw 0;
-    }
-
-    .content .titulo hr {
-        margin-right: 1vw;
-        height: 0.1vw;
-        width: 3vw;
-    }
-
-    .gridPortafolio .etiqueta .hoveretiqueta {
-        border-radius: 0.5vw;
-        height: 100%;
-        font-size: 0.8vw;
-    }
-
-    .gridPortafolio .etiqueta .hoveretiqueta a {
-        margin-bottom: 0.5vw;
-        border-radius: 0.5vw;
-        padding: 0.5vw 0vw;
-    }
-
-    .paginacion {
-        margin-top: 2vw;
-        column-gap: 1vw;
-    }
-
-    .paginacion span {
-        width: 6vw;
-        border-radius: 1vw;
-        height: 2vw;
-    }
-
-    .paginacion div {
-        width: 6vw;
-        height: 2vw;
-    }
-
-    * {
-        font-size: 1vw;
+        background: linear-gradient(90deg, rgba(17, 16, 13, 0.98), rgba(17, 16, 13, 0.94));
+        justify-content: center;
+        padding: 1.8rem;
+        width: min(32rem, 54%);
     }
 }

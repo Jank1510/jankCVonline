@@ -11,6 +11,10 @@ app-asside-menu {
     align-items: center;
 }
 
+.ancho {
+    scroll-margin-top: 4.5rem;
+}
+
 hr {
     width: 80%;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(137, 186, 199), rgba(0, 0, 0, 0));
@@ -74,13 +78,18 @@ hr {
     background-color: #ff3936;
     top: 0;
     left: 0;
-    animation-duration: 1s;z-index: 5;
+    animation-duration: 650ms;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 5;
 }
 .pantallaBienvenida::after{content: '';
     width: 150%;
     background: #ff393682;
     height: 100vh;
     position: absolute;
+    left: 0;
+    top: 0;
 }
 .pantallaBienvenida::before{content: '';
     background: #ff393638;
@@ -88,6 +97,8 @@ hr {
     position: absolute;
     width: 200%;
     z-index: 33;
+    left: 0;
+    top: 0;
 
 } 
 .loader {border: 5px solid #f3f3f3;

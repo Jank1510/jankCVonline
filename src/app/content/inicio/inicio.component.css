@@ -24,7 +24,10 @@
 .contenedor .perfil h1 span {
     font-weight: bold;
     color: brown;
-    width: max-content;
+    line-height: 1.15;
+    max-width: 100%;
+    text-align: center;
+    width: auto;
 }
 
 @keyframes visible_text {
@@ -195,8 +198,8 @@
 
 @media (min-width:300px) {
     .contenedor .perfil img {
-        width: 55vw;
-        height: 55vw;
+        width: min(55vw, 14rem);
+        height: min(55vw, 14rem);
         margin-top: auto;
     }
 
@@ -205,20 +208,26 @@
         animation-name: animationFondoPhone;
         animation-duration: 5s;
         animation-iteration-count: infinite;
+        box-sizing: border-box;
+        min-height: calc(100vh - 3.2rem);
+        padding-top: 3.2rem;
+        width: 100%;
 
     }
 
     .contenedor .perfil h1 {
-        display: contents;
-        margin-top: 45vh;
-        position: absolute;
+        display: block;
+        margin: 2rem auto 0 auto;
+        position: relative;
+        text-align: center;
+        width: min(92vw, 24rem);
     }
 
     .contenedor .perfil h1 span {
-        position: relative;
-        font-size: 2rem;
-        margin-top: 30%;
-        margin-bottom: auto;
+        display: block;
+        font-size: 1.7rem;
+        margin: 0;
+        position: static;
     }
 
     #text1 {
@@ -268,27 +277,32 @@
 
 @media (min-width:700px) {
     .contenedor .perfil img {
-        width: 40vw;
+        width: min(40vw, 25rem);
         margin: auto;
-        height: 40vw;
+        height: min(40vw, 25rem);
     }
 
     .perfil {
         animation-name: none;
         background-size: 40vh 40vh;
+        min-height: 100vh;
+        padding-top: 0;
+        width: 76vw;
 
     }
 
     .contenedor .perfil h1 {
-        display: contents;
+        display: block;
         position: relative;
-        margin: 0;
+        margin: 0 auto;
+        width: min(88vw, 48rem);
     }
 
     .contenedor .perfil h1 span {
-        position: absolute;
+        display: block;
         font-size: 3rem;
         margin: 0;
+        position: relative;
 
     }
 
@@ -305,9 +319,9 @@
 
 @media (min-width:1270px) {
     .contenedor .perfil img {
-        width: 70vh;
+        width: min(70vh, 34rem);
         margin: auto;
-        height: 70vh;
+        height: min(70vh, 34rem);
 
     }
 
@@ -317,14 +331,14 @@
     }
 
     .contenedor .perfil h1 {
-        display: contents;
+        display: block;
         position: relative;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .contenedor .perfil h1 span {
-        font-size: 3vw;
-        position: absolute;
+        font-size: 2.6rem;
+        position: relative;
     }
 
     .contenedor {
@@ -340,8 +354,7 @@
     }
 
     .name {
-
-        font-size: 2vw;
+        font-size: 2rem;
         margin: 1vw;
     }
 
@@ -353,10 +366,6 @@
     .presentacion div .leerMas {
         margin-left: 2vw;
         width: 5vw;
-    }
-
-    * {
-        font-size: 1vw;
     }
 
     .linea {

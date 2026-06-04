@@ -21,8 +21,8 @@ export class AppComponent {
       this.nameAnimatin = 'animatinoLoader'
       setTimeout(() => {
         this.displayanimatin = 'none'
-      }, 1000);
-    }, 2000);
+      }, 650);
+    }, 700);
   }
 
   RecargarValoresDeElementos(event: Event): void {
