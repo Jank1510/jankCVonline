@@ -22,10 +22,12 @@ export class PortafolioComponent implements OnInit {
   proyectosDestacados: PortfolioItem[]
   numeroDePagina: number
   animationScroll: string
+  animandoPortafolio: boolean
   width: number
 
   constructor() {
     this.animationScroll = ''
+    this.animandoPortafolio = false
     this.numeroDePagina = 0
     this.width = window.innerWidth
     const portfolioItems: PortfolioItem[] = [
@@ -285,12 +287,29 @@ export class PortafolioComponent implements OnInit {
   }
 
   EventPortafolio(buttonNameAnimation: string): void {
+    if (this.animandoPortafolio) {
+      return
+    }
+
+    const siguientePagina = buttonNameAnimation === 'siguienteAnimation'
+      ? this.numeroDePagina + 1
+      : this.numeroDePagina - 1
+
+    if (siguientePagina < 0 || siguientePagina >= this.dataPortafolio.length) {
+      return
+    }
+
+    this.animandoPortafolio = true
     this.animationScroll = ''
     setTimeout(() => {
       this.animationScroll = buttonNameAnimation
       setTimeout(() => {
-        buttonNameAnimation === 'siguienteAnimation' ? this.numeroDePagina++ : this.numeroDePagina--
-      }, 500)
+        this.numeroDePagina = siguientePagina
+      }, 440)
+      setTimeout(() => {
+        this.animationScroll = ''
+        this.animandoPortafolio = false
+      }, 900)
     }, 1)
   }
 

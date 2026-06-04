@@ -151,16 +151,22 @@ a:hover {
 .scrollAnimation {
     margin: auto;
     overflow-x: hidden;
+    perspective: 1100px;
     max-width: calc(100vw - 2rem);
     width: min(100%, 68rem);
 }
 
 .gridPortafolio {
     animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.45, 0, .18, 1);
+    backface-visibility: hidden;
     display: grid;
     gap: 0.7rem;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     margin-top: 2rem;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
 }
 
 .gridPortafolio .etiqueta {
@@ -181,12 +187,16 @@ a:hover {
     align-items: center;
     animation-duration: 0.5s;
     animation-name: animacionEtiqueta;
+    box-sizing: border-box;
     color: white;
     display: none;
     flex-direction: column;
+    gap: 0.25rem;
     height: 100%;
     justify-content: center;
     left: 0;
+    overflow: hidden;
+    padding: 0.55rem;
     position: absolute;
     top: 0;
     width: 100%;
@@ -194,25 +204,35 @@ a:hover {
 
 .gridPortafolio .etiqueta .hoveretiqueta a {
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.45rem;
+    box-sizing: border-box;
+    font-size: 0.72rem;
     font-weight: bolder;
-    margin: 0.35rem auto 0 auto;
-    padding: 0.5rem 0;
-    width: 80%;
+    line-height: 1;
+    margin: 0.2rem auto 0 auto;
+    padding: 0.38rem 0.35rem;
+    width: 86%;
 }
 
 .hoveretiqueta p {
     color: white;
-    font-size: 0.82rem;
-    margin: 0 auto 0.5rem auto;
-    width: 84%;
+    display: -webkit-box;
+    font-size: 0.72rem;
+    line-height: 1.18;
+    margin: 0 auto 0.2rem auto;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 88%;
 }
 
 .hoveretiqueta h3 {
     color: white;
-    font-size: 1rem;
-    margin: 0 0 0.5rem 0;
-    max-width: 84%;
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin: 0 0 0.15rem 0;
+    max-width: 88%;
+    overflow-wrap: anywhere;
     text-align: center;
 }
 
@@ -249,29 +269,53 @@ a:hover {
 
 @keyframes siguienteAnimation {
     0% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+        transform-origin: left center;
     }
 
-    50% {
-        margin-left: 100%;
+    44% {
+        opacity: 0.42;
+        transform: translateX(-9%) rotateY(-34deg);
+        transform-origin: left center;
+    }
+
+    52% {
+        opacity: 0.42;
+        transform: translateX(9%) rotateY(34deg);
+        transform-origin: right center;
     }
 
     100% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+        transform-origin: right center;
     }
 }
 
 @keyframes anteriorAnimation {
     0% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+        transform-origin: right center;
     }
 
-    50% {
-        margin-left: -100%;
+    44% {
+        opacity: 0.42;
+        transform: translateX(9%) rotateY(34deg);
+        transform-origin: right center;
+    }
+
+    52% {
+        opacity: 0.42;
+        transform: translateX(-9%) rotateY(-34deg);
+        transform-origin: left center;
     }
 
     100% {
-        margin-left: 0;
+        opacity: 1;
+        transform: translateX(0) rotateY(0deg);
+        transform-origin: left center;
     }
 }
 

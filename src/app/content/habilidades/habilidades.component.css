@@ -1,9 +1,12 @@
 .content {
+    box-sizing: border-box;
     display: grid;
     gap: 2rem;
     margin: 2rem auto 6rem auto;
-    max-width: 64rem;
-    width: 90vw;
+    max-width: 60rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    width: 100%;
 }
 
 .content .titulo {
@@ -175,7 +178,16 @@ a:hover {
 @media (min-width: 900px) {
     .content {
         align-items: start;
-        grid-template-columns: minmax(0, 1.08fr) minmax(19rem, 0.92fr);
+        gap: 2.4rem;
+        grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
         margin: 6rem auto;
+    }
+}
+
+@media (min-width: 1270px) {
+    .content {
+        max-width: 58rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
