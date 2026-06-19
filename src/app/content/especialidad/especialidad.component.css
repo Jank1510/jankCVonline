@@ -113,6 +113,34 @@
     display: grid;
 }
 
+.bloque3d {
+    margin-top: 1rem;
+}
+
+.tarjetaTrabajo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.placeholderTrabajo {
+    align-items: center;
+    background: linear-gradient(135deg, #fff7f7, #f2f2f2);
+    border: 1px dashed #ffb3b1;
+    border-radius: 0.7rem;
+    display: flex;
+    justify-content: center;
+    min-height: 8.5rem;
+}
+
+.placeholderTrabajo span {
+    color: #a83232;
+    font-size: 0.82rem;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    text-transform: uppercase;
+}
+
 .proceso article {
     display: flex;
     align-items: flex-start;
@@ -224,6 +252,14 @@
         padding: 1rem;
     }
 
+    .grid3d {
+        grid-template-columns: 1fr;
+    }
+
+    .gridTrabajos {
+        grid-template-columns: 1fr;
+    }
+
     .proceso article {
         column-gap: 0.8rem;
     }
@@ -265,6 +301,14 @@
     }
 
     .gridEnfoque {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid3d {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gridTrabajos {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -338,6 +382,14 @@
     .gridEnfoque {
         gap: 1rem;
         margin-top: 1rem;
+    }
+
+    .grid3d {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gridTrabajos {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .tarjetaEnfoque {

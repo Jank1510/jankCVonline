@@ -8,7 +8,7 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Jehan Hurtado | Soporte TI y Desarrollo Web';
+  title = 'Jehan Hurtado | Soporte tecnico, impresoras e impresion 3D';
   nameAnimatin = ''
   displayanimatin = 'block'
 

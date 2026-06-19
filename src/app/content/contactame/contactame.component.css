@@ -49,6 +49,35 @@
     margin: 0;
 }
 
+.accionesContacto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+
+.accionesContacto a {
+    align-items: center;
+    border-radius: 0.65rem;
+    display: inline-flex;
+    font-weight: bold;
+    justify-content: center;
+    min-height: 2.5rem;
+    padding: 0 0.9rem;
+    text-decoration: none;
+}
+
+.accionesContacto a:first-child {
+    background: #ff3936;
+    color: white;
+}
+
+.accionesContacto a:last-child {
+    background: #2a2a2a;
+    color: white;
+}
+
 .contactenosSection {
     display: grid;
     gap: 1rem;

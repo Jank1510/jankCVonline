@@ -24,6 +24,16 @@ hr {
 }
 
 /* RESPONSIVE DESIGN*/
+@media (max-width:699px) {
+    .contenedor main {
+        padding-top: 4.5rem;
+    }
+
+    .ancho {
+        scroll-margin-top: 5.25rem;
+    }
+}
+
 @media (min-width:700px) {
 
     hr {
@@ -38,6 +48,14 @@ hr {
 }
 
 @media (min-width:700px) {
+    .contenedor main {
+        padding-top: 5rem;
+    }
+
+    .ancho {
+        scroll-margin-top: 5.75rem;
+    }
+
     .contenedor {
         display: block;
         grid-template-columns: 20% 80%;
@@ -51,6 +69,10 @@ hr {
 }
 
 @media (min-width:1024px) {
+    .contenedor main {
+        padding-top: 0;
+    }
+
     .contenedor {
         display: grid;
         grid-template-columns: 20% 80%;

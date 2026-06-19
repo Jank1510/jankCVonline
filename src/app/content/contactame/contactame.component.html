@@ -1,25 +1,29 @@
 <section class="content">
   <div data-aos="fade-right" class="titulo">
     <hr />
-    <span>Contactame</span>
+    <span>Cotizaciones y contacto</span>
   </div>
   <div class="introContacto" data-aos="fade-up">
-    <span>Disponible para soporte TI y proyectos web</span>
-    <h2>Hablemos de tu equipo, impresora, sistema o idea digital.</h2>
+    <span>Atencion para servicios y proyectos</span>
+    <h2>¿Necesitas cotizar un servicio?</h2>
     <p>
-      Puedes escribirme directamente por WhatsApp/correo o dejarme un mensaje en el formulario. Respondo con enfoque
-      practico: diagnostico, prioridad y siguiente paso.
+      Cuentame que necesitas: mantenimiento de impresoras, revision de computadores, impresion 3D
+      personalizada, litofanias, llaveros NFC, piezas funcionales o algun proyecto especial.
     </p>
+    <div class="accionesContacto">
+      <a href="https://wa.me/573043602822" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+      <a href="#app-especialidad">Ver servicios</a>
+    </div>
   </div>
   <div class="contactenosSection">
     <div class="canalesRapidos" data-aos="fade-right">
       <a href="https://wa.me/573043602822" target="_blank" rel="noopener noreferrer">
         <strong>WhatsApp</strong>
-        <span>Respuesta directa</span>
+        <span>Cotizaciones y respuesta directa</span>
       </a>
       <a href="mailto:jeanhurt15@gmail.com">
         <strong>Correo</strong>
-        <span>jeanhurt15@gmail.com</span>
+        <span>Envio de detalles y solicitudes</span>
       </a>
       <a href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/" target="_blank" rel="noopener noreferrer">
         <strong>LinkedIn</strong>
@@ -54,15 +58,15 @@
         </li>
         <li>
           <label for="asunto">Asunto:</label>
-          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" required />
+          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" required placeholder="Ej. Cotizacion de impresora o impresion 3D" />
         </li>
         <li>
           <label for="mensaje">Mensaje:</label>
-          <textarea [(ngModel)]="mensaje" name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+          <textarea [(ngModel)]="mensaje" name="mensaje" id="mensaje" cols="30" rows="5" required placeholder="Describe el servicio que necesitas, el equipo o la idea que quieres cotizar."></textarea>
         </li>
         <li>
           <span data-aos="fade-up" *ngIf="invalid">Asegurese de que los campos requeridos esten completos correctamente.</span>
-          <button type="submit">Enviar</button>
+          <button type="submit">Solicitar cotizacion</button>
         </li>
         <input type="text" name="_gotcha" style="display:none" />
       </ul>
@@ -74,13 +78,15 @@
       <button (click)="exitoEnvio=false">Atras</button>
     </div>
     <div class="disponibilidadContacto" data-aos="fade-left">
-      <span>Atencion principal</span>
-      <h3>Soporte TI y mantenimiento</h3>
+      <span>Lo que puedes cotizar</span>
+      <h3>Soporte tecnico e impresion 3D</h3>
       <ul>
-        <li>Impresoras y computadores</li>
-        <li>Diagnostico de hardware/software</li>
-        <li>Configuracion de sistemas</li>
-        <li>Herramientas web y automatizacion</li>
+        <li>Impresoras</li>
+        <li>Computadores</li>
+        <li>Impresion 3D</li>
+        <li>Litofanias y lamparas</li>
+        <li>Llaveros NFC</li>
+        <li>Piezas por encargo</li>
       </ul>
       <p>Bucaramanga, Santander - presencial y remoto segun el caso.</p>
     </div>

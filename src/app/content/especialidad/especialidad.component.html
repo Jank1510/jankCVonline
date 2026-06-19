@@ -1,16 +1,16 @@
 <section class="content">
     <div data-aos="fade-right" class="titulo">
-        <hr><span>Servicios tecnicos</span>
+        <hr><span>Servicios principales</span>
     </div>
 
     <div class="bloquePrincipal" data-aos="fade-up">
         <div class="textoPrincipal">
-            <span>Fortaleza profesional actual</span>
-            <h1>Soporte TI, impresoras y equipos de computo</h1>
+            <span>Soporte tecnico y soluciones personalizadas</span>
+            <h1>Impresoras, computadores, impresion 3D y apoyo digital</h1>
             <p>
-                Ayudo a mantener operativos los equipos que sostienen el trabajo diario: impresoras, computadores,
-                sistemas, perifericos y herramientas de usuarios. Mi enfoque combina diagnostico tecnico,
-                mantenimiento preventivo/correctivo y comunicacion clara para resolver fallas reales en campo.
+                Brindo mantenimiento y reparacion de impresoras, optimizacion de computadores e impresion 3D
+                personalizada para proyectos utiles y creativos. El desarrollo web sigue disponible como un
+                servicio complementario cuando tu idea tambien necesita presencia digital.
             </p>
             <div class="accionesServicio">
                 <a href="#app-contactame">Solicitar soporte</a>
@@ -20,16 +20,16 @@
 
         <div class="resumenOperativo">
             <div>
-                <strong>Actual</strong>
-                <span>Multitintas INK</span>
+                <strong>Prioridad 1</strong>
+                <span>Impresoras</span>
             </div>
             <div>
-                <strong>Foco</strong>
-                <span>Soporte TI</span>
+                <strong>Prioridad 2</strong>
+                <span>Computadores</span>
             </div>
             <div>
-                <strong>Base</strong>
-                <span>Mecatronica</span>
+                <strong>Extra</strong>
+                <span>Impresion 3D</span>
             </div>
         </div>
     </div>
@@ -50,5 +50,86 @@
                 <p>{{item.detalle}}</p>
             </div>
         </article>
+    </div>
+
+    <div class="bloque3d" data-aos="fade-up">
+        <div class="bloquePrincipal">
+            <div class="textoPrincipal">
+                <span>Impresion 3D personalizada</span>
+                <h1>Impresion 3D personalizada</h1>
+                <p>
+                    Creo piezas 3D personalizadas para regalos, decoracion, accesorios funcionales y
+                    soluciones a medida. Trabajo desde ideas simples hasta disenos personalizados listos para imprimir.
+                </p>
+                <div class="accionesServicio">
+                    <a href="#app-contactame">Cotizar diseno 3D</a>
+                </div>
+            </div>
+
+            <div class="resumenOperativo">
+                <div>
+                    <strong>Aplicaciones</strong>
+                    <span>Regalos y decoracion</span>
+                </div>
+                <div>
+                    <strong>Utilidad</strong>
+                    <span>Piezas funcionales</span>
+                </div>
+                <div>
+                    <strong>Proceso</strong>
+                    <span>Idea a impresion</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gridEnfoque grid3d">
+            <article data-aos="zoom-in" class="tarjetaEnfoque" *ngFor="let item of impresion3d">
+                <span>{{item.etiqueta}}</span>
+                <h2>{{item.titulo}}</h2>
+                <p>{{item.descripcion}}</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="bloque3d" data-aos="fade-up">
+        <div class="bloquePrincipal">
+            <div class="textoPrincipal">
+                <span>Portafolio de servicios</span>
+                <h1>Trabajos realizados</h1>
+                <p>
+                    Ejemplos de trabajos y soluciones que ya forman parte de mi linea de servicio, desde regalos
+                    personalizados en 3D hasta soporte tecnico para equipos de uso diario.
+                </p>
+                <div class="accionesServicio">
+                    <a href="#app-contactame">Solicitar cotizacion</a>
+                </div>
+            </div>
+
+            <div class="resumenOperativo">
+                <div>
+                    <strong>Enfoque</strong>
+                    <span>Casos reales</span>
+                </div>
+                <div>
+                    <strong>Formato</strong>
+                    <span>Ejemplos concretos</span>
+                </div>
+                <div>
+                    <strong>Contacto</strong>
+                    <span>Cotizacion directa</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gridEnfoque gridTrabajos">
+            <article data-aos="zoom-in" class="tarjetaEnfoque tarjetaTrabajo" *ngFor="let item of trabajosRealizados">
+                <div class="placeholderTrabajo">
+                    <span>Imagen futura</span>
+                </div>
+                <span>{{item.etiqueta}}</span>
+                <h2>{{item.titulo}}</h2>
+                <p>{{item.descripcion}}</p>
+            </article>
+        </div>
     </div>
 </section>
