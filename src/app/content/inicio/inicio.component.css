@@ -22,17 +22,19 @@
 
 .contenedor .perfil h1 {
     margin: 0 auto;
-    max-width: 48rem;
+    max-width: min(90vw, 44rem);
     text-align: center;
 }
 
 .contenedor .perfil h1 span {
     color: #a83232;
     display: block;
-    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-size: clamp(2.2rem, 5vw, 4.25rem);
     font-weight: bold;
-    line-height: 1.08;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
     text-align: center;
+    text-wrap: balance;
 }
 
 #text1 {
@@ -83,6 +85,14 @@
 
 .presentacion p {
     line-height: 1.5;
+}
+
+.descripcionHero {
+    color: #605f5f;
+    font-size: clamp(1rem, 2vw, 1.18rem);
+    margin: 0;
+    max-width: 38rem;
+    text-wrap: balance;
 }
 
 .saludo {
@@ -163,6 +173,12 @@
     .perfil {
         min-height: 30vh;
         padding-top: 5rem;
+    }
+
+    .contenedor .perfil h1 span {
+        font-size: clamp(2rem, 10vw, 3rem);
+        line-height: 1.06;
+        letter-spacing: -0.03em;
     }
 
     .accionesInicio {

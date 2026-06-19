@@ -123,8 +123,9 @@
 
         <div class="gridEnfoque gridTrabajos">
             <article data-aos="zoom-in" class="tarjetaEnfoque tarjetaTrabajo" *ngFor="let item of trabajosRealizados">
-                <div class="placeholderTrabajo">
-                    <span>Imagen futura</span>
+                <img class="imagenTrabajo" *ngIf="item.imagen" [src]="item.imagen" [alt]="item.alt || item.titulo" loading="lazy" decoding="async">
+                <div class="placeholderTrabajo" *ngIf="!item.imagen">
+                    <span>{{item.placeholder || 'A medida'}}</span>
                 </div>
                 <span>{{item.etiqueta}}</span>
                 <h2>{{item.titulo}}</h2>

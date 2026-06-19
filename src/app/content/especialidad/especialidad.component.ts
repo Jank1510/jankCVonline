@@ -4,6 +4,9 @@ interface FocusItem {
   etiqueta: string
   titulo: string
   descripcion: string
+  imagen?: string
+  alt?: string
+  placeholder?: string
 }
 
 interface ProcessItem {
@@ -78,32 +81,43 @@ export class EspecialidadComponent implements OnInit {
       {
         etiqueta: 'Ejemplo 3D',
         titulo: 'Regalos personalizados en 3D',
-        descripcion: 'Piezas decorativas con fotos, nombres o detalles especiales para regalos unicos.'
+        descripcion: 'Piezas decorativas con fotos, nombres o detalles especiales para regalos unicos.',
+        imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
+        alt: 'Regalo personalizado impreso en 3D con nombre y foto'
       },
       {
         etiqueta: 'Conectividad',
         titulo: 'Llaveros NFC',
-        descripcion: 'Llaveros personalizados para compartir enlaces, redes o informacion de contacto.'
+        descripcion: 'Llaveros personalizados para compartir enlaces, redes o informacion de contacto.',
+        imagen: './assets/img/trabajos/llavero-nfc-personalizado.png',
+        alt: 'Llavero NFC personalizado para abrir redes sociales desde el celular'
       },
       {
         etiqueta: 'Uso practico',
         titulo: 'Piezas funcionales',
-        descripcion: 'Soportes, accesorios, adaptadores y soluciones impresas en 3D.'
+        descripcion: 'Soportes, accesorios, adaptadores y soluciones impresas en 3D.',
+        imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
+        alt: 'Piezas funcionales impresas en 3D para accesorios y repuestos personalizados'
       },
       {
         etiqueta: 'Soporte tecnico',
         titulo: 'Servicio tecnico de impresoras',
-        descripcion: 'Mantenimiento, diagnostico y reparacion de impresoras.'
+        descripcion: 'Mantenimiento, diagnostico y reparacion de impresoras.',
+        imagen: './assets/img/trabajos/servicio-tecnico-impresora-epson.png',
+        alt: 'Servicio técnico y mantenimiento de impresora Epson'
       },
       {
         etiqueta: 'Soporte tecnico',
         titulo: 'Servicio tecnico de computadores',
-        descripcion: 'Mantenimiento, optimizacion, formateo y mejoras de equipos.'
+        descripcion: 'Mantenimiento, optimizacion, formateo y mejoras de equipos.',
+        imagen: './assets/img/trabajos/servicio-tecnico-computadores.png',
+        alt: 'Servicio técnico de computadores y mantenimiento de hardware'
       },
       {
         etiqueta: 'Proyecto especial',
         titulo: 'Proyectos personalizados',
-        descripcion: 'Desarrollo de ideas a medida combinando diseno 3D, adaptaciones funcionales o soporte segun la necesidad.'
+        descripcion: 'Desarrollo de ideas a medida combinando diseno 3D, adaptaciones funcionales o soporte segun la necesidad.',
+        placeholder: 'JankOS'
       }
     ]
 

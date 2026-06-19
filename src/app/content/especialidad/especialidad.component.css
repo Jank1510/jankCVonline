@@ -123,22 +123,58 @@
     gap: 0.75rem;
 }
 
+.imagenTrabajo {
+    aspect-ratio: 16 / 10;
+    border-radius: 0.7rem;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
 .placeholderTrabajo {
     align-items: center;
-    background: linear-gradient(135deg, #fff7f7, #f2f2f2);
-    border: 1px dashed #ffb3b1;
+    aspect-ratio: 16 / 10;
+    background:
+        linear-gradient(135deg, rgba(255, 57, 54, 0.1), rgba(42, 42, 42, 0.92)),
+        linear-gradient(45deg, #fff7f7, #f4f4f4);
     border-radius: 0.7rem;
     display: flex;
     justify-content: center;
-    min-height: 8.5rem;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.placeholderTrabajo::before,
+.placeholderTrabajo::after {
+    color: rgba(255, 255, 255, 0.14);
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    position: absolute;
+    text-transform: uppercase;
+}
+
+.placeholderTrabajo::before {
+    content: 'Proyectos';
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    left: 0.9rem;
+    top: 0.8rem;
+}
+
+.placeholderTrabajo::after {
+    content: 'A medida';
+    bottom: 0.8rem;
+    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    right: 0.9rem;
 }
 
 .placeholderTrabajo span {
-    color: #a83232;
-    font-size: 0.82rem;
+    color: white;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
     font-weight: bold;
-    letter-spacing: 0.03rem;
-    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    position: relative;
+    z-index: 1;
 }
 
 .proceso article {
