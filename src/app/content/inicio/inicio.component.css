@@ -27,7 +27,7 @@
 }
 
 .contenedor .perfil h1 span {
-    color: #a83232;
+    color: #3a3a3a;
     display: block;
     font-size: clamp(2.2rem, 5vw, 4.25rem);
     font-weight: bold;
@@ -111,10 +111,10 @@
 }
 
 .chipsPerfil span {
-    background: #fff1f1;
-    border: 1px solid #ffd3d2;
+    background: #f8f8f8;
+    border: 1px solid #e0e0e0;
     border-radius: 999px;
-    color: #a83232;
+    color: #3a3a3a;
     font-size: 0.85rem;
     font-weight: bold;
     padding: 0.38rem 0.75rem;
@@ -146,7 +146,7 @@
 }
 
 .accionesInicio .contactame {
-    background-color: #ff3936;
+    background-color: #2d2d2d;
     border: none;
     color: white;
     cursor: pointer;

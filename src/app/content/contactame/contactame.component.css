@@ -30,7 +30,7 @@
 }
 
 .introContacto span {
-    color: #ff3936;
+    color: #2d2d2d;
     display: block;
     font-size: 0.78rem;
     font-weight: bold;
@@ -69,7 +69,7 @@
 }
 
 .accionesContacto a:first-child {
-    background: #ff3936;
+    background: #2d2d2d;
     color: white;
 }
 
@@ -93,9 +93,9 @@
 
 .canalesRapidos a {
     background: white;
-    border-left: 4px solid #ff3936;
+    border-left: 4px solid #2d2d2d;
     border-radius: 0.65rem;
-    box-shadow: 0px 1px 10px -4px #ff7673;
+    box-shadow: 0px 1px 10px -4px #b8b8b8;
     color: black;
     display: block;
     padding: 0.85rem 1rem;
@@ -146,8 +146,8 @@
 
 .content form ul li input:focus,
 .content form ul li textarea:focus {
-    border: 1px solid #f5c0bf;
-    box-shadow: 0px 0px 10px 0px #f5c0bf;
+    border: 1px solid #d0d0d0;
+    box-shadow: 0px 0px 10px 0px #d0d0d0;
     outline: none;
 
 }
@@ -159,7 +159,7 @@
     color: white;
     cursor: pointer;
     border: none;
-    background-color: rgb(255, 57, 54);
+    background-color: #2d2d2d;
 }
 
 .content form ul li button:hover {
@@ -171,13 +171,13 @@
 .disponibilidadContacto {
     background: #2a2a2a;
     border-radius: 0.75rem;
-    box-shadow: 0px 1px 10px -4px #ff7673;
+    box-shadow: 0px 1px 10px -4px #b8b8b8;
     color: white;
     padding: 1rem;
 }
 
 .disponibilidadContacto span {
-    color: #ff7673;
+    color: #b8b8b8;
     display: block;
     font-size: 0.75rem;
     font-weight: bold;
@@ -216,7 +216,7 @@ ul {
 
 li span {
     text-align: center;
-    color: rgb(255, 57, 54);
+    color: #2d2d2d;
 }
 
 /* RESPONSIVE DESIGN*/
@@ -243,7 +243,7 @@ li span {
     }
 
     .exitoEnvio div {
-        background: rgb(255, 57, 54);
+        background: #2d2d2d;
         width: 6rem;
         height: 6rem;
         border-radius: 12rem;
@@ -252,7 +252,7 @@ li span {
 
     .exitoEnvio button {
         border: none;
-        background: rgb(255, 57, 54);
+        background: #2d2d2d;
         color: white;
         padding: 0.5vw 1.5rem;
         border-radius: 0.5rem;
@@ -314,7 +314,7 @@ li span {
     }
 
     .exitoEnvio div {
-        background: rgb(255, 57, 54);
+        background: #2d2d2d;
         width: 6vw;
         height: 6vw;
         border-radius: 12vw;
@@ -323,7 +323,7 @@ li span {
 
     .exitoEnvio button {
         border: none;
-        background: rgb(255, 57, 54);
+        background: #2d2d2d;
         color: white;
         padding: 0.5vw 1.5vw;
         border-radius: 0.5vw;

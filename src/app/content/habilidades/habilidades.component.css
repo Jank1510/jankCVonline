@@ -35,7 +35,7 @@ p {
 }
 
 a {
-    color: #ff3936;
+    color: #2d2d2d;
     text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .linea {
-    background-color: #dbcfcf;
+    background-color: #e0e0e0;
     height: 2px;
     position: relative;
 }
@@ -102,7 +102,7 @@ a:hover {
 
 .tarjeta {
     background-color: #2a2a2a;
-    border-top: 3px solid rgb(255, 57, 54);
+    border-top: 3px solid #2d2d2d;
     border-radius: 0.45rem;
     box-sizing: border-box;
     min-height: 9.5rem;
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .tarjetaPrincipal {
-    background-color: #ff3936;
+    background-color: #2d2d2d;
 }
 
 .tarjetaPrincipal p {
@@ -133,9 +133,9 @@ a:hover {
 
 .fortalezaActual {
     background-color: white;
-    border-left: 4px solid #ff3936;
+    border-left: 4px solid #2d2d2d;
     border-radius: 0.45rem;
-    box-shadow: 0px 1px 10px -4px #ff7673;
+    box-shadow: 0px 1px 10px -4px #b8b8b8;
     color: black;
     margin-top: 1.5rem;
     padding: 1rem;
@@ -143,7 +143,7 @@ a:hover {
 
 .fortalezaActual span,
 .herramientas span {
-    color: #ff3936;
+    color: #2d2d2d;
     display: block;
     font-size: 0.75rem;
     font-weight: bold;
@@ -173,7 +173,7 @@ a:hover {
 .herramientas {
     background: #2a2a2a;
     border-radius: 0.45rem;
-    box-shadow: 0px 1px 10px -4px #ff7673;
+    box-shadow: 0px 1px 10px -4px #b8b8b8;
     margin-top: 1rem;
     padding: 1rem;
 }

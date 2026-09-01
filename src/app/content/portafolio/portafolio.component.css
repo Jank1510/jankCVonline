@@ -41,7 +41,7 @@
 }
 
 a {
-    color: rgb(255, 57, 54);
+    color: #2d2d2d;
     cursor: pointer;
     text-decoration: none;
 }
@@ -75,9 +75,9 @@ a:hover {
 .contenidoDestacado {
     -webkit-backdrop-filter: blur(18px) saturate(135%);
     backdrop-filter: blur(16px);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(255, 57, 54, 0.1), rgba(18, 18, 16, 0.52));
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.16), rgba(45, 45, 45, 0.1), rgba(18, 18, 16, 0.52));
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 4px solid rgba(255, 57, 54, 0.82);
+    border-left: 4px solid rgba(45, 45, 45, 0.82);
     border-radius: 0.75rem;
     box-sizing: border-box;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.24);
@@ -139,7 +139,7 @@ a:hover {
     align-items: center;
     background: white;
     border-radius: 0.5rem;
-    color: #ff3936;
+    color: #2d2d2d;
     display: inline-flex;
     font-size: 0.85rem;
     font-weight: bold;
@@ -268,7 +268,7 @@ a:hover {
     align-items: center;
     animation-duration: 0.5s;
     animation-name: animationSpan;
-    background-color: rgb(255, 57, 54);
+    background-color: #2d2d2d;
     border-radius: 1rem;
     color: white;
     cursor: pointer;
@@ -331,7 +331,7 @@ a:hover {
     }
 
     .contenidoDestacado {
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.17), rgba(255, 57, 54, 0.1), rgba(18, 18, 16, 0.5));
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.17), rgba(45, 45, 45, 0.1), rgba(18, 18, 16, 0.5));
         justify-content: center;
         padding: 1.35rem;
         width: min(30rem, 52%);

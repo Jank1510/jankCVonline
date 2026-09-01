@@ -23,7 +23,7 @@
 
 .perfil p {
 
-    background-color: #ff0400;
+    background-color: #1a1a1a;
     font-weight: bold;
 }
 
@@ -42,7 +42,7 @@
 .aside_desktop .navegacion ul {
     /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
     width: 80%;
-    background: linear-gradient(to right, #ff3936, hsl(0, 0%, 100%));
+    background: linear-gradient(to right, #2d2d2d, hsl(0, 0%, 100%));
     padding: 0;
     margin-left: 20%;
 }
@@ -58,7 +58,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #ff3936;
+    background: #2d2d2d;
     width: 100%;
     text-decoration: none;
     color: white;
@@ -125,7 +125,7 @@ hr {
     height: 100%;
     z-index: 1;
     left: 0;
-    background: #0f03036e;
+    background: #1a1a1a6e;
     display: flex;
     animation-duration: 1s;
     animation-name: animationOpen;
@@ -177,7 +177,7 @@ hr {
 
 .aside_Ipad .navegacion ul {
     width: 80%;
-    background: #ff3936;
+    background: #2d2d2d;
     padding: 0;
     margin: auto;
 }
@@ -187,7 +187,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #ff3936;
+    background: #2d2d2d;
     width: 100%;
     padding: 0;
     text-decoration: none;
@@ -208,7 +208,7 @@ hr {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: rgb(255, 57, 54);
+    background: #2d2d2d;
     left: 0;
 }
 
@@ -233,8 +233,8 @@ hr {
     top: 10vw;
     right: 2vw;
     z-index: 2;
-    background: rgb(255, 57, 54);
-    padding: 0.5vw;box-shadow: 0rem 0rem 1rem 0rem #ff9595c7;
+    background: #2d2d2d;
+    padding: 0.5vw;box-shadow: 0rem 0rem 1rem 0rem #a0a0a0c7;
     border-radius: 5vw;
 }
 

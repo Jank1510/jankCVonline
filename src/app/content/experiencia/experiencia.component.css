@@ -18,7 +18,7 @@
 
 .experiencia {
     background: white;
-    box-shadow: 0 1px 10px -4px #ff7673;
+    box-shadow: 0 1px 10px -4px #b8b8b8;
     color: black;
 }
 
@@ -74,8 +74,8 @@
 }
 
 .aptitudes span {
-    background-color: #fff1f1;
-    color: #ff3936;
+    background-color: #f8f8f8;
+    color: #2d2d2d;
     font-weight: bold;
 }
 
@@ -104,7 +104,7 @@
     }
 
     .experiencia {
-        border-top: 2px solid rgb(255, 57, 54);
+        border-top: 2px solid #2d2d2d;
         border-radius: 1rem;
         padding: 1.2rem;
     }
@@ -209,7 +209,7 @@
     }
 
     .experiencia {
-        border-top: 0.2vw solid rgb(255, 57, 54);
+        border-top: 0.2vw solid #2d2d2d;
         border-radius: 1vw;
         padding: 1.4vw;
     }

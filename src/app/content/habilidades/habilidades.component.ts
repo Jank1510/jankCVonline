@@ -19,7 +19,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Soporte TI',
         porcentaje: '96%',
-        color: '#ff3936'
+        color: '#2d2d2d'
       },
       {
         name: 'Mantenimiento de impresoras',
@@ -54,7 +54,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Angular',
         porcentaje: '85%',
-        color: '#d6002f'
+        color: '#6a6a6a'
       },
       {
         name: 'TypeScript',
@@ -64,7 +64,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Git',
         porcentaje: '80%',
-        color: '#f05033'
+        color: '#6a6a6a'
       }
     ]
   }

@@ -46,7 +46,7 @@ export class AsideMenuComponent implements OnInit {
   constructor(private service: ServiceService) {
     this.width = window.innerWidth//cargamos una variable para condicionar las vistas de design en el dom
     this.menuVisible = false
-    this.colorGlobal = '#ff3936'
+    this.colorGlobal = '#2d2d2d'
     this.ancho='0'
     setTimeout(() => {
       this.scroll()

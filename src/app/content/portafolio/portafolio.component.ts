@@ -73,7 +73,7 @@ export class PortafolioComponent implements OnInit {
           info: 'Página principal para exposición de productos.',
           preview: 'https://jank1510.github.io/ecommerce-product-page-main/',
           repositorio: 'https://github.com/Jank1510/ecommerce-product-page-main',
-          background: '#ff6f43',
+          background: '#8a8a8a',
           var: 'none'
         },
         {
@@ -199,7 +199,7 @@ export class PortafolioComponent implements OnInit {
           info: 'Diseño de gráfica para gastos.',
           preview: 'https://jank1510.github.io/expenses-chart-component/',
           repositorio: 'https://github.com/Jank1510/expenses-chart-component',
-          background: '#eb775e',
+          background: '#8a8a8a',
           var: 'none'
         },
         {
