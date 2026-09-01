@@ -1,9 +1,9 @@
 .content {
     display: flex;
     flex-direction: column;
-    margin: 2rem auto 8rem auto;
-    max-width: 68rem;
-    padding: 0 1rem;
+    margin: 2rem auto 10rem auto;
+    max-width: 72rem;
+    padding: 0 1.25rem;
     width: 100%;
     box-sizing: border-box;
 }
@@ -24,8 +24,8 @@
 }
 
 .introContacto {
-    margin: 0 auto 2rem auto;
-    max-width: 45rem;
+    margin: 0 auto 3rem auto;
+    max-width: 48rem;
     text-align: center;
 }
 
@@ -74,18 +74,20 @@
 }
 
 .accionesContacto a:first-child {
-    background: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
+    padding: 0.6rem 1.2rem;
 }
 
 .accionesContacto a:last-child {
-    background: #2a2a2a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    border: 1px solid rgba(45, 45, 45, 0.08);
     color: white;
 }
 
 .contactenosSection {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-columns: 1fr;
     margin: auto;
     width: 100%;
@@ -97,18 +99,19 @@
 }
 
 .canalesRapidos a {
-    background: white;
-    border-left: 4px solid #2d2d2d;
-    border-radius: 0.65rem;
+    background: #fafafa;
+    border-left: 2px solid #2d2d2d;
+    border-radius: 0.5rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
     display: block;
-    padding: 0.85rem 1rem;
+    padding: 1rem 1.2rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .canalesRapidos a:hover {
+    background: #f5f5f5;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
 }
@@ -121,13 +124,14 @@
 .canalesRapidos span {
     color: #605f5f;
     font-size: 0.85rem;
-    margin-top: 0.2rem;
+    margin-top: 0.3rem;
 }
 
 .content form ul li {
     display: flex;
-    margin-bottom: 2%;
+    margin-bottom: 1rem;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .li_left {
@@ -140,54 +144,58 @@
 
 .content form ul li input {
 
-    box-shadow: 0px 2px 10px 0px #e3e3e3;
-    border: 1px solid #e3e3e3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d0d0d0;
     background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 0.95rem;
 }
 
 .content form ul li textarea {
     background-color: white;
-    box-shadow: 0px 2px 10px 0px #e3e3e3;
-    border: 1px solid #e3e3e3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #d0d0d0;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    font-size: 0.95rem;
 }
 
 .content form ul li input:focus,
 .content form ul li textarea:focus {
-    border: 1px solid #d0d0d0;
-    box-shadow: 0px 0px 10px 0px #d0d0d0;
+    border: 1px solid #b8b8b8;
+    box-shadow: 0 0 0 3px rgba(45, 45, 45, 0.1);
     outline: none;
-
 }
 
 .content form ul li button {
-    margin: auto;
+    margin: 0.5rem auto 0 auto;
     margin-top: auto;
     font-weight: bolder;
     color: white;
     cursor: pointer;
     border: none;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 0.95rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .content form ul li button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-}
-
-.content form ul li button:hover {
-    opacity: 80%
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 }
 
 
 
 .disponibilidadContacto {
-    background: #2a2a2a;
-    border: 1px solid rgba(45, 45, 45, 0.12);
+    background: #3a3a3a;
+    border: 1px solid rgba(45, 45, 45, 0.08);
     border-radius: 0.75rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: white;
-    padding: 1rem;
+    padding: 1.2rem;
     transition: box-shadow 0.2s ease;
 }
 
@@ -214,8 +222,8 @@
 }
 
 .disponibilidadContacto li {
-    line-height: 1.35;
-    margin-bottom: 0.35rem;
+    line-height: 1.45;
+    margin-bottom: 0.4rem;
 }
 
 .disponibilidadContacto p {
@@ -229,13 +237,48 @@ ul {
 }
 
 
+.exitoEnvio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.exitoEnvio h1 {
+    color: #2a2a2a;
+    margin: 0.5rem 0;
+}
+
+.exitoEnvio p {
+    color: #605f5f;
+    line-height: 1.45;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.exitoEnvio button {
+    border: none;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .exitoEnvio button:hover {
-    opacity: 80%;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 li span {
     text-align: center;
-    color: #2d2d2d;
+    color: #4a4a4a;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 /* RESPONSIVE DESIGN*/
@@ -267,6 +310,8 @@ li span {
         height: 6rem;
         border-radius: 12rem;
         display: flex;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+        transition: box-shadow 0.2s ease;
     }
 
     .exitoEnvio button {
@@ -276,11 +321,12 @@ li span {
         padding: 0.5vw 1.5rem;
         border-radius: 0.5rem;
         font-weight: bold;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .exitoEnvio button:hover {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     }
 
     .content form {
@@ -288,8 +334,10 @@ li span {
         box-sizing: border-box;
     }
 
-    .content form ul li button {
-        width: 35%;
+    .li_left {
+        float: none;
+        width: 100%;
+        margin-right: 0;
     }
 
     .content .titulo {
@@ -310,18 +358,28 @@ li span {
         border-radius: 0.5rem;
         padding-left: 1rem;
         height: 2.5rem;
+        border: 1px solid #d0d0d0;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+        font-size: 0.95rem;
     }
 
     .content form ul li textarea {
         border-radius: 0.5rem;
         padding: 1rem;
+        border: 1px solid #d0d0d0;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+        font-size: 0.95rem;
     }
 
     .content form ul li button {
-        height: 2.2rem;
-        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 14rem;
+        height: 2.5rem;
+        border-radius: 0.6rem;
         margin-top: 1rem;
-        min-width: 8rem;
+        font-size: 0.95rem;
     }
 
     .content .titulo hr {
@@ -343,6 +401,7 @@ li span {
         height: 6vw;
         border-radius: 12vw;
         display: flex;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     }
 
     .exitoEnvio button {
@@ -352,11 +411,12 @@ li span {
         padding: 0.5vw 1.5vw;
         border-radius: 0.5vw;
         font-weight: bold;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .exitoEnvio button:hover {
-        transform: translateY(-1px);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     }
 
     .exitoEnvio {
@@ -372,7 +432,14 @@ li span {
     }
 
     .content form ul li button {
-        width: 15%;
+        max-width: 14rem;
+        width: auto;
+    }
+
+    .li_left {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
     }
 
     .content {
@@ -408,17 +475,33 @@ li span {
         border-radius: 0.5rem;
         padding-left: 1rem;
         height: 2.5rem;
+        border: 1px solid #d0d0d0;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+        font-size: 0.95rem;
     }
 
     .content form ul li textarea {
         border-radius: 0.5rem;
         padding: 1rem;
+        border: 1px solid #d0d0d0;
+        background-color: white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.06);
+        font-size: 0.95rem;
     }
 
     .content form ul li button {
-        height: 2.2rem;
-        border-radius: 0.5rem;
+        height: 2.5rem;
+        border-radius: 0.6rem;
         margin-top: 1rem;
+        max-width: 14rem;
+        width: auto;
+    }
+
+    .li_left {
+        float: left;
+        width: 48%;
+        margin-right: 2%;
     }
 
     .content {
