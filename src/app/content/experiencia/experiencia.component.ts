@@ -22,40 +22,40 @@ export class ExperienciaComponent implements OnInit {
   constructor() {
     this.experiencias = [
       {
-        cargo: 'Soporte TI y mantenimiento tecnologico',
+        cargo: 'Soporte TI y mantenimiento tecnológico',
         empresa: 'Multitintas INK',
         periodo: 'Abr. 2025 - actualidad',
         ubicacion: 'Bucaramanga, Santander, Colombia - Presencial',
-        descripcion: 'Rol enfocado en soporte tecnico operativo, mantenimiento de impresoras y computadores, diagnostico de fallas de hardware/software y configuracion de sistemas para usuarios y equipos de trabajo.',
+        descripcion: 'Rol enfocado en soporte técnico operativo, mantenimiento de impresoras y computadores, diagnóstico de fallas de hardware/software y configuración de sistemas para usuarios y equipos de trabajo.',
         responsabilidades: [
-          'Diagnostico, mantenimiento y reparacion de impresoras y equipos de computo.',
-          'Soporte preventivo y correctivo en hardware, software, sistemas y perifericos.',
-          'Instalacion, configuracion y validacion de herramientas tecnologicas de uso diario.',
-          'Atencion tecnica a usuarios, seguimiento de incidencias y solucion de problemas en campo.'
+          'Diagnóstico, mantenimiento y reparación de impresoras y equipos de cómputo.',
+          'Soporte preventivo y correctivo en hardware, software, sistemas y periféricos.',
+          'Instalación, configuración y validación de herramientas tecnológicas de uso diario.',
+          'Atención técnica a usuarios, seguimiento de incidencias y solución de problemas en campo.'
         ],
         logros: [
           'Fortalecimiento de la disponibilidad de equipos mediante mantenimiento preventivo.',
-          'Solucion de fallas recurrentes en impresoras, computadores y configuraciones de sistema.',
-          'Acompanamiento tecnico cercano a usuarios para recuperar continuidad operativa.'
+          'Solución de fallas recurrentes en impresoras, computadores y configuraciones de sistema.',
+          'Acompañamiento técnico cercano a usuarios para recuperar continuidad operativa.'
         ],
-        aptitudes: ['Soporte TI', 'Impresoras', 'Equipos de computo', 'Hardware y software', 'Configuracion de sistemas']
+        aptitudes: ['Soporte TI', 'Impresoras', 'Equipos de cómputo', 'Hardware y software', 'Configuración de sistemas']
       },
       {
-        cargo: 'Empleado en practicas',
+        cargo: 'Empleado en prácticas',
         empresa: 'Comercializadora Internacional de Llantas S.A.S.',
         periodo: 'Abr. 2022 - Oct. 2022',
         ubicacion: 'Valledupar, Cesar, Colombia',
-        descripcion: 'Practica tecnica en servicios automotrices, mantenimiento y apoyo operativo, aplicando bases de diagnostico, orden de trabajo y responsabilidad tecnica.',
+        descripcion: 'Práctica técnica en servicios automotrices, mantenimiento y apoyo operativo, aplicando bases de diagnóstico, orden de trabajo y responsabilidad técnica.',
         responsabilidades: [
-          'Apoyo en servicios tecnicos automotrices y actividades de mantenimiento.',
-          'Revision de condiciones de equipos, herramientas y procesos operativos.',
-          'Aplicacion de conocimientos de mecatronica en un entorno real de trabajo.'
+          'Apoyo en servicios técnicos automotrices y actividades de mantenimiento.',
+          'Revisión de condiciones de equipos, herramientas y procesos operativos.',
+          'Aplicación de conocimientos de mecatrónica en un entorno real de trabajo.'
         ],
         logros: [
-          'Desarrollo de disciplina tecnica, seguimiento de procesos y criterio para diagnostico.',
-          'Experiencia practica en mantenimiento y atencion de necesidades operativas.'
+          'Desarrollo de disciplina técnica, seguimiento de procesos y criterio para diagnóstico.',
+          'Experiencia práctica en mantenimiento y atención de necesidades operativas.'
         ],
-        aptitudes: ['Servicios tecnicos', 'Mantenimiento', 'Diagnostico', 'Trabajo operativo']
+        aptitudes: ['Servicios técnicos', 'Mantenimiento', 'Diagnóstico', 'Trabajo operativo']
       }
     ]
   }

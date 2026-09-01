@@ -8,7 +8,7 @@
     left: 0;
     top: 0;
     height: 98vh;
-    margin: 1vh;
+    margin: 1vh 0;
     justify-content: center;
     z-index: 2;
 }

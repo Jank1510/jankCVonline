@@ -4,11 +4,11 @@
     <span>Cotizaciones y contacto</span>
   </div>
   <div class="introContacto" data-aos="fade-up">
-    <span>Atencion para servicios y proyectos</span>
+    <span>Atención para servicios y proyectos</span>
     <h2>¿Necesitas cotizar un servicio?</h2>
     <p>
-      Cuentame que necesitas: mantenimiento de impresoras, revision de computadores, impresion 3D
-      personalizada, litofanias, llaveros NFC, piezas funcionales o algun proyecto especial.
+      Cuéntame qué necesitas: mantenimiento de impresoras, revisión de computadores, impresión 3D
+      personalizada, litofanías, llaveros NFC, piezas funcionales o algún proyecto especial.
     </p>
     <div class="accionesContacto">
       <a href="https://wa.me/573043602822" target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
@@ -23,7 +23,7 @@
       </a>
       <a href="mailto:jeanhurt15@gmail.com">
         <strong>Correo</strong>
-        <span>Envio de detalles y solicitudes</span>
+        <span>Envío de detalles y solicitudes</span>
       </a>
       <a href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/" target="_blank" rel="noopener noreferrer">
         <strong>LinkedIn</strong>
@@ -58,15 +58,15 @@
         </li>
         <li>
           <label for="asunto">Asunto:</label>
-          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" required placeholder="Ej. Cotizacion de impresora o impresion 3D" />
+          <input [(ngModel)]="asunto" type="text" name="asunto" id="asunto" required placeholder="Ej. Cotización de impresora o impresión 3D" />
         </li>
         <li>
           <label for="mensaje">Mensaje:</label>
           <textarea [(ngModel)]="mensaje" name="mensaje" id="mensaje" cols="30" rows="5" required placeholder="Describe el servicio que necesitas, el equipo o la idea que quieres cotizar."></textarea>
         </li>
         <li>
-          <span data-aos="fade-up" *ngIf="invalid">Asegurese de que los campos requeridos esten completos correctamente.</span>
-          <button type="submit">Solicitar cotizacion</button>
+          <span data-aos="fade-up" *ngIf="invalid">Asegúrese de que los campos requeridos estén completos correctamente.</span>
+          <button type="submit">Solicitar cotización</button>
         </li>
         <input type="text" name="_gotcha" style="display:none" />
       </ul>
@@ -74,21 +74,21 @@
     <div class="exitoEnvio" *ngIf="exitoEnvio" data-aos="fade-down">
       <div><img src="./assets/icons/icon-contact/cheque.png" alt="Exito"></div>
       <h1>GRACIAS!</h1>
-      <p>Tu mensaje se ha enviado con exito, pronto sera revisado.</p>
-      <button (click)="exitoEnvio=false">Atras</button>
+      <p>Tu mensaje se ha enviado con éxito, pronto será revisado.</p>
+      <button (click)="exitoEnvio=false">Atrás</button>
     </div>
     <div class="disponibilidadContacto" data-aos="fade-left">
       <span>Lo que puedes cotizar</span>
-      <h3>Soporte tecnico e impresion 3D</h3>
+      <h3>Soporte técnico e impresión 3D</h3>
       <ul>
         <li>Impresoras</li>
         <li>Computadores</li>
-        <li>Impresion 3D</li>
-        <li>Litofanias y lamparas</li>
+        <li>Impresión 3D</li>
+        <li>Litofanías y lámparas</li>
         <li>Llaveros NFC</li>
         <li>Piezas por encargo</li>
       </ul>
-      <p>Bucaramanga, Santander - presencial y remoto segun el caso.</p>
+      <p>Bucaramanga, Santander - presencial y remoto según el caso.</p>
     </div>
   </div>
 </section>

@@ -29,51 +29,51 @@ export class EspecialidadComponent implements OnInit {
     this.servicios = [
       {
         etiqueta: 'Servicio prioritario',
-        titulo: 'Mantenimiento y reparacion de impresoras',
-        descripcion: 'Diagnostico, limpieza, mantenimiento preventivo/correctivo, configuracion y recuperacion de impresoras para hogar, negocio u oficina.'
+        titulo: 'Mantenimiento y reparación de impresoras',
+        descripcion: 'Diagnóstico, limpieza, mantenimiento preventivo/correctivo, configuración y recuperación de impresoras para hogar, negocio u oficina.'
       },
       {
-        etiqueta: 'Servicio tecnico',
-        titulo: 'Computadores y optimizacion',
-        descripcion: 'Mantenimiento, formateo, instalacion de software, revision de hardware y mejora de rendimiento para computadores de uso personal o laboral.'
+        etiqueta: 'Servicio técnico',
+        titulo: 'Computadores y optimización',
+        descripcion: 'Mantenimiento, formateo, instalación de software, revisión de hardware y mejora de rendimiento para computadores de uso personal o laboral.'
       },
       {
-        etiqueta: 'Impresion 3D',
+        etiqueta: 'Impresión 3D',
         titulo: 'Piezas y productos personalizados',
-        descripcion: 'Litofanias, lamparas personalizadas, llaveros NFC, llaveros normales, piezas funcionales, accesorios para drones y disenos por encargo.'
+        descripcion: 'Litofanías, lámparas personalizadas, llaveros NFC, llaveros normales, piezas funcionales, accesorios para drones y diseños por encargo.'
       },
       {
         etiqueta: 'Servicio complementario',
         titulo: 'Desarrollo web',
-        descripcion: 'Paginas y proyectos digitales a medida como apoyo secundario para emprendimientos, marcas o servicios que tambien necesiten presencia online.'
+        descripcion: 'Páginas y proyectos digitales a medida como apoyo secundario para emprendimientos, marcas o servicios que también necesiten presencia online.'
       }
     ]
 
     this.impresion3d = [
       {
         etiqueta: 'Destacado',
-        titulo: 'Litofanias personalizadas',
-        descripcion: 'Fotos convertidas en piezas 3D que cobran vida con luz, ideales para regalos y lamparas.'
+        titulo: 'Litofanías personalizadas',
+        descripcion: 'Fotos convertidas en piezas 3D que cobran vida con luz, ideales para regalos y lámparas.'
       },
       {
         etiqueta: 'Regalos creativos',
-        titulo: 'Lamparas personalizadas',
-        descripcion: 'Disenos con imagenes, nombres o detalles especiales para regalos unicos.'
+        titulo: 'Lámparas personalizadas',
+        descripcion: 'Diseños con imágenes, nombres o detalles especiales para regalos únicos.'
       },
       {
-        etiqueta: 'Tecnologia util',
+        etiqueta: 'Tecnología útil',
         titulo: 'Llaveros NFC',
-        descripcion: 'Llaveros personalizados con tecnologia NFC para compartir redes, contactos o enlaces.'
+        descripcion: 'Llaveros personalizados con tecnología NFC para compartir redes, contactos o enlaces.'
       },
       {
         etiqueta: 'Uso diario',
         titulo: 'Piezas funcionales',
-        descripcion: 'Soportes, adaptadores, accesorios para drones y piezas utiles hechas a medida.'
+        descripcion: 'Soportes, adaptadores, accesorios para drones y piezas útiles hechas a medida.'
       },
       {
         etiqueta: 'A medida',
-        titulo: 'Disenos por encargo',
-        descripcion: 'Modelado, adaptacion o impresion de ideas segun la necesidad del cliente.'
+        titulo: 'Diseños por encargo',
+        descripcion: 'Modelado, adaptación o impresión de ideas según la necesidad del cliente.'
       }
     ]
 
@@ -81,42 +81,42 @@ export class EspecialidadComponent implements OnInit {
       {
         etiqueta: 'Ejemplo 3D',
         titulo: 'Regalos personalizados en 3D',
-        descripcion: 'Piezas decorativas con fotos, nombres o detalles especiales para regalos unicos.',
+        descripcion: 'Piezas decorativas con fotos, nombres o detalles especiales para regalos únicos.',
         imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
         alt: 'Regalo personalizado impreso en 3D con nombre y foto'
       },
       {
         etiqueta: 'Conectividad',
         titulo: 'Llaveros NFC',
-        descripcion: 'Llaveros personalizados para compartir enlaces, redes o informacion de contacto.',
+        descripcion: 'Llaveros personalizados para compartir enlaces, redes o información de contacto.',
         imagen: './assets/img/trabajos/llavero-nfc-personalizado.png',
         alt: 'Llavero NFC personalizado para abrir redes sociales desde el celular'
       },
       {
-        etiqueta: 'Uso practico',
+        etiqueta: 'Uso práctico',
         titulo: 'Piezas funcionales',
         descripcion: 'Soportes, accesorios, adaptadores y soluciones impresas en 3D.',
         imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
         alt: 'Piezas funcionales impresas en 3D para accesorios y repuestos personalizados'
       },
       {
-        etiqueta: 'Soporte tecnico',
-        titulo: 'Servicio tecnico de impresoras',
-        descripcion: 'Mantenimiento, diagnostico y reparacion de impresoras.',
+        etiqueta: 'Soporte técnico',
+        titulo: 'Servicio técnico de impresoras',
+        descripcion: 'Mantenimiento, diagnóstico y reparación de impresoras.',
         imagen: './assets/img/trabajos/servicio-tecnico-impresora-epson.png',
         alt: 'Servicio técnico y mantenimiento de impresora Epson'
       },
       {
-        etiqueta: 'Soporte tecnico',
-        titulo: 'Servicio tecnico de computadores',
-        descripcion: 'Mantenimiento, optimizacion, formateo y mejoras de equipos.',
+        etiqueta: 'Soporte técnico',
+        titulo: 'Servicio técnico de computadores',
+        descripcion: 'Mantenimiento, optimización, formateo y mejoras de equipos.',
         imagen: './assets/img/trabajos/servicio-tecnico-computadores.png',
         alt: 'Servicio técnico de computadores y mantenimiento de hardware'
       },
       {
         etiqueta: 'Proyecto especial',
         titulo: 'Proyectos personalizados',
-        descripcion: 'Desarrollo de ideas a medida combinando diseno 3D, adaptaciones funcionales o soporte segun la necesidad.',
+        descripcion: 'Desarrollo de ideas a medida combinando diseño 3D, adaptaciones funcionales o soporte según la necesidad.',
         placeholder: 'JankOS'
       }
     ]
@@ -124,11 +124,11 @@ export class EspecialidadComponent implements OnInit {
     this.proceso = [
       {
         paso: 'Revisar',
-        detalle: 'Evaluo el equipo, la necesidad o la idea para definir la mejor solucion tecnica.'
+        detalle: 'Evaluo el equipo, la necesidad o la idea para definir la mejor solución técnica.'
       },
       {
         paso: 'Solucionar',
-        detalle: 'Aplico mantenimiento, reparacion, optimizacion o fabricacion segun el servicio requerido.'
+        detalle: 'Aplico mantenimiento, reparación, optimización o fabricación según el servicio requerido.'
       },
       {
         paso: 'Entregar',

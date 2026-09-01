@@ -1,6 +1,6 @@
 <section class="content">
     <div data-aos="fade-right" class="titulo">
-        <hr><span>Educacion y formacion</span>
+        <hr><span>Educación y formación</span>
     </div>
     <div class="contentenedorTarjeta">
         <div [ngStyle]="data.design" data-aos="fade-up" class="tarjeta" *ngFor="let data of estudios">
@@ -13,7 +13,7 @@
             </ul>
             <div class="accionesEducacion">
                 <a *ngIf="data.linkPreview" target="_blank" rel="noopener noreferrer" [href]="data.linkPreview">{{data.linkLabel || 'Ver certificado'}} <img width="1rem"
-                        src="./assets/icons/openNewTab.png" alt="Abrir en nueva pestana"></a>
+                        src="./assets/icons/openNewTab.png"     alt="Abrir en nueva pestaña"></a>
                 <span *ngIf="!data.linkPreview && data.estado" class="estado">{{data.estado}}</span>
                 <img [src]="data.imagen" alt="Logo de {{data.lugar}}" loading="lazy" decoding="async">
             </div>

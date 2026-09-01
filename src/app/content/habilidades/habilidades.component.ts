@@ -32,17 +32,17 @@ export class HabilidadesComponent implements OnInit {
         color: '#4b5563'
       },
       {
-        name: 'Diagnostico tecnico',
+        name: 'Diagnóstico técnico',
         porcentaje: '90%',
         color: '#0b6daf'
       },
       {
-        name: 'Configuracion de sistemas',
+        name: 'Configuración de sistemas',
         porcentaje: '88%',
         color: '#00a2ff'
       },
       {
-        name: 'Atencion tecnica',
+        name: 'Atención técnica',
         porcentaje: '86%',
         color: '#00b8a9'
       },

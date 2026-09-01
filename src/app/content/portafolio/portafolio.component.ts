@@ -43,7 +43,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Blog Preview Card',
           imgFondo: previewAsset('blog-preview-card'),
-          info: 'Componente frontend responsivo, limpio y fiel a un diseno profesional.',
+          info: 'Componente frontend responsivo, limpio y fiel a un diseño profesional.',
           preview: 'https://jank1510.github.io/blog-preview-card-main/',
           repositorio: 'https://github.com/Jank1510/blog-preview-card-main',
           background: '#f4c73d',
@@ -52,7 +52,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Amigo Secreto',
           imgFondo: previewAsset('challenger-amigo-secreto'),
-          info: 'Aplicacion practica para sorteo de amigos secretos, enfocada en logica, DOM y experiencia sencilla.',
+          info: 'Aplicación práctica para sorteo de amigos secretos, enfocada en lógica, DOM y experiencia sencilla.',
           preview: 'https://jank1510.github.io/Challenger-Amigo-Secreto/',
           repositorio: 'https://github.com/Jank1510/Challenger-Amigo-Secreto',
           background: '#4f6cff',
@@ -61,7 +61,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'REST Countries',
           imgFondo: previewAsset('rest-countries'),
-          info: 'Pagina interactiva de paises usando REST Countries API.',
+          info: 'Página interactiva de países usando REST Countries API.',
           preview: 'https://jank1510.github.io/rest-countries-api/',
           repositorio: 'https://github.com/Jank1510/rest-countries-api',
           background: '#202c37',
@@ -70,7 +70,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Ecommerce Product',
           imgFondo: previewAsset('ecommerce-product'),
-          info: 'Pagina principal para exposicion de productos.',
+          info: 'Página principal para exposición de productos.',
           preview: 'https://jank1510.github.io/ecommerce-product-page-main/',
           repositorio: 'https://github.com/Jank1510/ecommerce-product-page-main',
           background: '#ff6f43',
@@ -79,7 +79,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Space Tourism',
           imgFondo: previewAsset('space-tourism'),
-          info: 'Sitio web de turismo espacial multipagina con datos desde JSON.',
+          info: 'Sitio web de turismo espacial multipágina con datos desde JSON.',
           preview: 'https://jank1510.github.io/space-tourism-website/',
           repositorio: 'https://github.com/Jank1510/space-tourism-website',
           background: '#26486d',
@@ -88,7 +88,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Comments Section',
           imgFondo: previewAsset('comments-section'),
-          info: 'Seccion de comentarios dinamica y responsiva.',
+          info: 'Sección de comentarios dinámica y responsiva.',
           preview: 'https://jank1510.github.io/interactive-comments-section/',
           repositorio: 'https://github.com/Jank1510/interactive-comments-section',
           background: '#5457b6',
@@ -142,7 +142,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'QR Code',
           imgFondo: previewAsset('qr-code'),
-          info: 'Componente visual para codigo QR.',
+          info: 'Componente visual para código QR.',
           preview: 'https://jank1510.github.io/qr-code-component-main/',
           repositorio: 'https://github.com/Jank1510/qr-code-component-main',
           background: '#3685fe',
@@ -178,7 +178,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Social Proof',
           imgFondo: previewAsset('social-proof'),
-          info: 'Seccion de pruebas sociales para landing page.',
+          info: 'Sección de pruebas sociales para landing page.',
           preview: 'https://jank1510.github.io/Social-Proof-Section/',
           repositorio: 'https://github.com/Jank1510/Social-Proof-Section',
           background: '#511f50',
@@ -187,7 +187,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Testimonials Grid',
           imgFondo: previewAsset('testimonials-grid'),
-          info: 'Seccion de cuadriculas de testimonios.',
+          info: 'Sección de cuadriculas de testimonios.',
           preview: 'https://jank1510.github.io/Testimonials-grid-section/',
           repositorio: 'https://github.com/Jank1510/Testimonials-grid-section',
           background: '#7541c9',
@@ -196,7 +196,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Expenses Chart',
           imgFondo: previewAsset('expenses-chart'),
-          info: 'Diseno de grafica para gastos.',
+          info: 'Diseño de gráfica para gastos.',
           preview: 'https://jank1510.github.io/expenses-chart-component/',
           repositorio: 'https://github.com/Jank1510/expenses-chart-component',
           background: '#eb775e',
@@ -223,7 +223,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Intro Section',
           imgFondo: previewAsset('intro-section'),
-          info: 'Seccion principal de introduccion con navegacion desplegable.',
+          info: 'Sección principal de introducción con navegación desplegable.',
           preview: 'https://jank1510.github.io/intro-section-with-dropdown-navigation-main/',
           repositorio: 'https://github.com/Jank1510/intro-section-with-dropdown-navigation-main',
           background: '#dbc428',
@@ -232,7 +232,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Presupuesto App',
           imgFondo: previewAsset('budget-app'),
-          info: 'Aplicacion dinamica para presupuestos.',
+          info: 'Aplicación dinámica para presupuestos.',
           preview: 'https://jank1510.github.io/Presupuesto-App/',
           repositorio: 'https://github.com/Jank1510/Presupuesto-App',
           background: '#ac3362',
@@ -241,7 +241,7 @@ export class PortafolioComponent implements OnInit {
         {
           titulo: 'Listado Personas',
           imgFondo: previewAsset('people-list'),
-          info: 'Aplicacion para listado de personas.',
+          info: 'Aplicación para listado de personas.',
           preview: 'https://jank1510.github.io/Listado-de-personas/',
           repositorio: 'https://github.com/Jank1510/Listado-de-personas',
           background: '#0f96b9',

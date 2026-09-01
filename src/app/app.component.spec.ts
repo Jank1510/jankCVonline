@@ -25,6 +25,6 @@ describe('AppComponent', () => {
   it(`should have the portfolio title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Jehan Hurtado | Soporte tecnico, impresoras e impresion 3D');
+    expect(app.title).toEqual('Jehan Hurtado | Soporte técnico, impresoras e impresión 3D');
   });
 });
