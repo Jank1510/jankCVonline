@@ -15,8 +15,10 @@
 .tarjetaEnfoque,
 .proceso {
     background: white;
-    box-shadow: 0 1px 10px -4px #b8b8b8;
+    border: 1px solid rgba(45, 45, 45, 0.06);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .bloquePrincipal {
@@ -47,16 +49,26 @@
     min-height: 2.5rem;
     padding: 0 0.9rem;
     text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accionesServicio a:hover {
+    transform: translateY(-1px);
 }
 
 .accionesServicio a:first-child {
-    background: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     color: white;
 }
 
 .accionesServicio a:last-child {
-    background: #2a2a2a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accionesServicio a:last-child:hover {
+    transform: translateY(-1px);
 }
 
 .textoPrincipal h1,
@@ -185,11 +197,19 @@
 .proceso article span {
     align-items: center;
     background: #2d2d2d;
+    border-radius: 999px;
     color: white;
     display: flex;
     flex-shrink: 0;
     font-weight: bold;
     justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.tarjetaEnfoque:hover,
+.proceso:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
 }
 
 @media (min-width:300px) {
@@ -261,10 +281,17 @@
         margin-top: 1rem;
     }
 
-    .tarjetaEnfoque {
-        border-radius: 0.8rem;
-        padding: 1rem;
-    }
+.tarjetaEnfoque {
+    border: 1px solid rgba(45, 45, 45, 0.06);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.tarjetaEnfoque:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
 
     .tarjetaEnfoque span {
         font-size: 0.72rem;

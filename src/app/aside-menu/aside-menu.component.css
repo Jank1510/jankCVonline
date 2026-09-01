@@ -23,7 +23,7 @@
 
 .perfil p {
 
-    background-color: #1a1a1a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     font-weight: bold;
 }
 
@@ -45,6 +45,7 @@
     background: linear-gradient(to right, #2d2d2d, hsl(0, 0%, 100%));
     padding: 0;
     margin-left: 20%;
+    transition: background 0.2s ease;
 }
 
 .navegacion ul li {
@@ -54,16 +55,16 @@
     cursor: pointer;
 }
 
-.aside_desktop .navegacion ul li a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #2d2d2d;
-    width: 100%;
-    text-decoration: none;
-    color: white;
-
-}
+    .aside_desktop .navegacion ul li a {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         width: 100%;
+         text-decoration: none;
+         color: white;
+         transition: background 0.2s ease;
+     }
 
 .navegacion ul li:hover .hoverEfecto {
     opacity: 70%;
@@ -177,7 +178,7 @@ hr {
 
 .aside_Ipad .navegacion ul {
     width: 80%;
-    background: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     padding: 0;
     margin: auto;
 }
@@ -187,11 +188,12 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     width: 100%;
     padding: 0;
     text-decoration: none;
     color: white;
+    transition: background 0.2s ease;
 }
 
 .closedMenu {
@@ -208,7 +210,7 @@ hr {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     left: 0;
 }
 
@@ -233,9 +235,16 @@ hr {
     top: 10vw;
     right: 2vw;
     z-index: 2;
-    background: #2d2d2d;
-    padding: 0.5vw;box-shadow: 0rem 0rem 1rem 0rem #a0a0a0c7;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 0.5vw;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 5vw;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btnDescarga:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
 }
 
 .btnDescarga a {

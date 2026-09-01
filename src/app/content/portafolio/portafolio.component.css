@@ -58,19 +58,25 @@ a:hover {
     width: min(100%, 68rem);
 }
 
-.proyectoDestacado {
-    align-items: flex-end;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0.8rem;
-    box-sizing: border-box;
-    box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
-    display: flex;
-    min-height: 30rem;
-    overflow: hidden;
-    padding: 1rem;
-}
+    .proyectoDestacado {
+        align-items: flex-end;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0.8rem;
+        box-sizing: border-box;
+        box-shadow: 0 0.5rem 1.2rem rgba(17, 24, 39, 0.16);
+        display: flex;
+        min-height: 30rem;
+        overflow: hidden;
+        padding: 1rem;
+        transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+
+    .proyectoDestacado:hover {
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        transform: translateY(-3px);
+    }
 
 .contenidoDestacado {
     -webkit-backdrop-filter: blur(18px) saturate(135%);
@@ -201,6 +207,11 @@ a:hover {
     overflow: hidden;
     position: relative;
     text-align: center;
+    transition: box-shadow 0.2s ease;
+}
+
+.gridPortafolio .etiqueta:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .gridPortafolio .etiqueta .hoveretiqueta {
@@ -268,7 +279,7 @@ a:hover {
     align-items: center;
     animation-duration: 0.5s;
     animation-name: animationSpan;
-    background-color: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     border-radius: 1rem;
     color: white;
     cursor: pointer;
@@ -276,6 +287,7 @@ a:hover {
     height: 2rem;
     justify-content: center;
     width: 6rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .paginacion div {

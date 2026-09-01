@@ -18,8 +18,15 @@
 
 .experiencia {
     background: white;
-    box-shadow: 0 1px 10px -4px #b8b8b8;
+    border: 1px solid rgba(45, 45, 45, 0.06);
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.experiencia:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .experiencia h1,
@@ -74,9 +81,17 @@
 }
 
 .aptitudes span {
-    background-color: #f8f8f8;
+    background: linear-gradient(135deg, #f0f0f0 0%, #f8f8f8 100%);
+    border: 1px solid rgba(45, 45, 45, 0.08);
+    border-radius: 999px;
     color: #2d2d2d;
     font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aptitudes span:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
 }
 
 @media (min-width:300px) {

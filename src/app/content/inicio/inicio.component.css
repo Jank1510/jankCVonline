@@ -118,6 +118,12 @@
     font-size: 0.85rem;
     font-weight: bold;
     padding: 0.38rem 0.75rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.chipsPerfil span:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
 }
 
 .accionesInicio {
@@ -143,18 +149,30 @@
     min-height: 2.75rem;
     padding: 0 1rem;
     text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accionesInicio a:hover {
+    transform: translateY(-1px);
 }
 
 .accionesInicio .contactame {
-    background-color: #2d2d2d;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     border: none;
     color: white;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .accionesInicio .descargar {
-    background: #2a2a2a;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accionesInicio .descargar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .accionesInicio .contactame:hover,

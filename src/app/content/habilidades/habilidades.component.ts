@@ -54,7 +54,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Angular',
         porcentaje: '85%',
-        color: '#6a6a6a'
+        color: '#5a5a5a'
       },
       {
         name: 'TypeScript',
@@ -64,7 +64,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Git',
         porcentaje: '80%',
-        color: '#6a6a6a'
+        color: '#7a7a7a'
       }
     ]
   }

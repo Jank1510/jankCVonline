@@ -25,7 +25,9 @@
     align-items: center;
     background-color: white;
     color: black;
-    box-shadow: 0px 1px 10px -4px #b8b8b8;position: relative;
+    border: 1px solid rgba(45, 45, 45, 0.06);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .tarjeta .accionesEducacion {
@@ -43,18 +45,21 @@
 
 .tarjeta a {
     align-items: center;
-    background-color: #f8f8f8;
+    background: linear-gradient(135deg, #f0f0f0 0%, #f8f8f8 100%);
+    border: 1px solid rgba(45, 45, 45, 0.06);
     display: flex;
     gap: 0.35rem;
     justify-content: center;
     text-decoration: none;
-    color: #b8b8b8;
+    color: #2d2d2d;
     font-weight: bold;
     cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjeta a:hover {
-    opacity: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
 }
 
 .tarjeta .estado {
@@ -77,10 +82,16 @@
 }
 
 .aptitudes li {
-    background: #fafafa;
+    background: linear-gradient(135deg, #f0f0f0 0%, #fafafa 100%);
+    border: 1px solid rgba(45, 45, 45, 0.06);
     border-radius: 999px;
     color: #2d2d2d;
     font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.aptitudes li:hover {
+    transform: translateY(-1px);
 }
 .lineadiv{
     position: absolute;

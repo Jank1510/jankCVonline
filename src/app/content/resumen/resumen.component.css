@@ -60,9 +60,10 @@
 
     .ctaResumen {
         align-items: flex-start;
-        background: #2a2a2a;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        border: 1px solid rgba(45, 45, 45, 0.12);
         border-radius: 0.75rem;
-        box-shadow: 0 1px 10px -4px #b8b8b8;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
         box-sizing: border-box;
         color: white;
         display: flex;
@@ -71,6 +72,11 @@
         margin-top: 2rem;
         padding: 1rem;
         width: 100%;
+        transition: box-shadow 0.2s ease;
+    }
+
+    .ctaResumen:hover {
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     }
 
     .ctaResumen span {
@@ -101,11 +107,22 @@
         min-height: 2.4rem;
         padding: 0 0.9rem;
         text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .accionesResumen a:hover {
+        transform: translateY(-1px);
     }
 
     .accionesResumen a:first-child {
-        background: #2d2d2d;
+        background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
         color: white;
+    }
+
+    .accionesResumen a:last-child {
+        background: white;
+        border: 1px solid rgba(45, 45, 45, 0.12);
+        color: #2d2d2d;
     }
 
     .accionesResumen a:last-child {
