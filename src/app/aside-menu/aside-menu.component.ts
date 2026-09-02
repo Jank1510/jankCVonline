@@ -46,7 +46,7 @@ export class AsideMenuComponent implements OnInit {
   constructor(private service: ServiceService) {
     this.width = window.innerWidth//cargamos una variable para condicionar las vistas de design en el dom
     this.menuVisible = false
-    this.colorGlobal = '#2d2d2d'
+    this.colorGlobal = '#3a3a3a'
     this.ancho='0'
     setTimeout(() => {
       this.scroll()
@@ -105,7 +105,7 @@ export class AsideMenuComponent implements OnInit {
   inicio(): void {
     this.li_diseno1 = { 'border-bottom-right-radius': '0.5vw' }
     this.li_especialidad = { 'border-top-right-radius': '0.5vw' }
-    this.li_inicio = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_inicio = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_educacion = {}
     this.li_habilidades = {}
     this.li_portafolio = {}
@@ -113,7 +113,7 @@ export class AsideMenuComponent implements OnInit {
     this.li_resumen = {}
     this.li_diseno2 = {}
     this.li_contactame = {}
-    this.imgInicio = 'invert(1) brightness(1.3)'
+    this.imgInicio = 'invert(1) brightness(1.2)'
     this.imgEspecialidad = ''
     this.imgEducacion = ''
     this.imgPortafolio = ''
@@ -125,7 +125,7 @@ export class AsideMenuComponent implements OnInit {
   especialidad(): void {
     this.li_inicio = { 'border-bottom-right-radius': '0.5vw' }
     this.li_educacion = { 'border-top-right-radius': '0.5vw' }
-    this.li_especialidad = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_especialidad = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -134,7 +134,7 @@ export class AsideMenuComponent implements OnInit {
     this.li_diseno2 = {}
     this.li_contactame = {}
     this.imgInicio = ''
-    this.imgEspecialidad = 'invert(1) brightness(1.3)'
+    this.imgEspecialidad = 'invert(1) brightness(1.2)'
     this.imgEducacion = ''
     this.imgPortafolio = ''
     this.imgExperiencia = ''
@@ -145,7 +145,7 @@ export class AsideMenuComponent implements OnInit {
   educacion(): void {
     this.li_especialidad = { 'border-bottom-right-radius': '0.5vw' }
     this.li_experiencia = { 'border-top-right-radius': '0.5vw' }
-    this.li_educacion = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_educacion = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_inicio = {}
     this.li_diseno1 = {}
     this.li_resumen = {}
@@ -155,7 +155,7 @@ export class AsideMenuComponent implements OnInit {
     this.li_contactame = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = 'invert(1) brightness(1.3)'
+    this.imgEducacion = 'invert(1) brightness(1.2)'
     this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
@@ -165,7 +165,7 @@ export class AsideMenuComponent implements OnInit {
   experiencia(): void {
     this.li_educacion = { 'border-bottom-right-radius': '0.5vw' }
     this.li_portafolio = { 'border-top-right-radius': '0.5vw' }
-    this.li_experiencia = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_experiencia = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_resumen = {}
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -176,7 +176,7 @@ export class AsideMenuComponent implements OnInit {
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
-    this.imgExperiencia = 'invert(1) brightness(1.3)'
+    this.imgExperiencia = 'invert(1) brightness(1.2)'
     this.imgPortafolio = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
@@ -185,7 +185,7 @@ export class AsideMenuComponent implements OnInit {
   portafolio(): void {
     this.li_experiencia = { 'border-bottom-right-radius': '0.5vw' }
     this.li_habilidades = { 'border-top-right-radius': '0.5vw' }
-    this.li_portafolio = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_portafolio = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_resumen = {}
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -197,7 +197,7 @@ export class AsideMenuComponent implements OnInit {
     this.imgEspecialidad = ''
     this.imgEducacion = ''
     this.imgExperiencia = ''
-    this.imgPortafolio = 'invert(1) brightness(1.3)'
+    this.imgPortafolio = 'invert(1) brightness(1.2)'
     this.imgHabilidades = ''
     this.imgResumen = ''
     this.imgContactame = ''
@@ -205,7 +205,7 @@ export class AsideMenuComponent implements OnInit {
   habilidades(): void {
     this.li_portafolio = { 'border-bottom-right-radius': '0.5vw' }
     this.li_resumen = { 'border-top-right-radius': '0.5vw' }
-    this.li_habilidades = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_habilidades = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_especialidad = {}
@@ -218,14 +218,14 @@ export class AsideMenuComponent implements OnInit {
     this.imgEducacion = ''
     this.imgPortafolio = ''
     this.imgExperiencia = ''
-    this.imgHabilidades = 'invert(1) brightness(1.3)'
+    this.imgHabilidades = 'invert(1) brightness(1.2)'
     this.imgResumen = ''
     this.imgContactame = ''
   }
   resumen(): void {
     this.li_habilidades = { 'border-bottom-right-radius': '0.5vw' }
     this.li_contactame = { 'border-top-right-radius': '0.5vw' }
-    this.li_resumen = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_resumen = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_portafolio = {}
     this.li_educacion = {}
     this.li_experiencia = {}
@@ -239,13 +239,13 @@ export class AsideMenuComponent implements OnInit {
     this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
-    this.imgResumen = 'invert(1) brightness(1.3)'
+    this.imgResumen = 'invert(1) brightness(1.2)'
     this.imgContactame = ''
   }
   contactame(): void {
     this.li_resumen = { 'border-bottom-right-radius': '0.5vw' }
     this.li_diseno2 = { 'border-top-right-radius': '0.5vw' }
-    this.li_contactame = { 'background': 'rgba(255, 255, 255, 0.06)', 'border-left': '3px solid rgba(255, 255, 255, 0.25)' }
+    this.li_contactame = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}
@@ -260,6 +260,6 @@ export class AsideMenuComponent implements OnInit {
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
-    this.imgContactame = 'invert(1) brightness(1.3)'
+    this.imgContactame = 'invert(1) brightness(1.2)'
   }
 }

@@ -42,7 +42,7 @@
 }
 
 .linea {
-    background: #8a8a8a;
+    background: #aaaaaa;
     content: ' ';
     height: 30px;
     left: 50%;
@@ -84,7 +84,7 @@
 }
 
 .saludo {
-    color: black;
+    color: #404040;
     font-weight: bold;
     letter-spacing: 0.08rem;
     margin-bottom: 0;
@@ -122,7 +122,7 @@
 }
 
 .name {
-    color: black;
+    color: #404040;
     font-size: clamp(1.45rem, 3vw, 2rem);
     font-weight: bold;
     margin: 0.5rem 0;
@@ -145,7 +145,7 @@
 }
 
 .accionesInicio .contactame {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     border: none;
     color: white;
     cursor: pointer;
@@ -153,7 +153,7 @@
 }
 
 .accionesInicio .descargar {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    background: linear-gradient(135deg, #333333 0%, #3a3a3a 100%);
     color: white;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

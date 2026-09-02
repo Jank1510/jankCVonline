@@ -15,7 +15,7 @@ app-aside-menu {
 
 hr {
     width: 80%;
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(137, 186, 199), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(120, 120, 120), rgba(0, 0, 0, 0));
     border: none;
 }
 
@@ -95,7 +95,7 @@ hr {
 .pantallaBienvenida{    position: fixed;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     top: 0;
     left: 0;
     animation-duration: 650ms;
@@ -105,14 +105,14 @@ hr {
 }
 .pantallaBienvenida::after{content: '';
     width: 150%;
-    background: #2d2d2d82;
+    background: #40404082;
     height: 100vh;
     position: absolute;
     left: 0;
     top: 0;
 }
 .pantallaBienvenida::before{content: '';
-    background: #2d2d2d38;
+    background: #40404038;
     height: 100vh;
     position: absolute;
     width: 200%;

@@ -40,7 +40,7 @@
 .aside_desktop .navegacion ul {
     /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
     width: 80%;
-    background: #2d2d2d;
+    background: #3a3a3a;
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
@@ -57,7 +57,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+         background: linear-gradient(135deg, #333333 0%, #404040 100%);
          width: 100%;
          text-decoration: none;
          color: white;
@@ -99,10 +99,10 @@ ul li img {
 }
 
 hr {
-    box-shadow: 0px -5px 2px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px -5px 2px 0px rgba(255, 255, 255, 0.12);
     height: 1px;
     border: 0;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.12);
     width: 60%;
 }
 
@@ -124,7 +124,7 @@ hr {
     height: 100%;
     z-index: 1;
     left: 0;
-    background: #1a1a1a6e;
+    background: #3a3a3a6e;
     display: flex;
     animation-duration: 1s;
     animation-name: animationOpen;
@@ -176,7 +176,7 @@ hr {
 
 .aside_Ipad .navegacion ul {
     width: 80%;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     padding: 0;
     margin: auto;
 }
@@ -186,7 +186,7 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     width: 100%;
     padding: 0;
     text-decoration: none;
@@ -208,7 +208,7 @@ hr {
     justify-content: center;
     align-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     left: 0;
 }
 
@@ -233,7 +233,7 @@ hr {
     top: 10vw;
     right: 2vw;
     z-index: 2;
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: linear-gradient(135deg, #333333 0%, #404040 100%);
     padding: 0.5vw;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 1vw;
