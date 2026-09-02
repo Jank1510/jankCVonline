@@ -39,10 +39,10 @@
 
 .aside_desktop .navegacion ul {
     /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
-    width: 80%;
+    width: 100%;
     background: transparent;
     padding: 0;
-    margin-left: 20%;
+    margin: 0;
     transition: background 0.2s ease;
 }
 
@@ -177,10 +177,10 @@ hr {
 }
 
     .aside_Ipad .navegacion ul {
-        width: 80%;
+        width: 100%;
         background: transparent;
         padding: 0;
-        margin: auto;
+        margin: 0;
     }
 
 .aside_Ipad .navegacion ul li a {
