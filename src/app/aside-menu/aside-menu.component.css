@@ -40,7 +40,7 @@
 .aside_desktop .navegacion ul {
     /*gradiente gris→blanco: permite que los border-radius de items vecinos muestren curvas blancas*/
     width: 80%;
-    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #f2f2f2 82%, #f2f2f2 100%);
+    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #ffffff 82%, #ffffff 100%);
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
