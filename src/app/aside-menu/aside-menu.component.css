@@ -38,9 +38,9 @@
 /*navegacion*/
 
 .aside_desktop .navegacion ul {
-    /*se parte el ul en dos colores para omitir un error en diseño de la navegacion*/
+    /*gradiente gris→blanco: permite que los border-radius de items vecinos muestren curvas blancas*/
     width: 80%;
-    background: transparent;
+    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #f2f2f2 82%, #f2f2f2 100%);
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
@@ -58,7 +58,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         background: transparent;
+         background: #4a4a4a;
          width: 100%;
          text-decoration: none;
          color: white;
