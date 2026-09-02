@@ -53,7 +53,8 @@
     cursor: pointer;
 }
 
-    .aside_desktop .navegacion ul li a {
+     .aside_desktop .navegacion ul li a {
+         box-sizing: border-box;
          display: flex;
          flex-direction: row;
          align-items: center;
@@ -61,7 +62,7 @@
          width: 100%;
          text-decoration: none;
          color: white;
-          transition: opacity 0.2s ease, background 0.25s ease, border-radius 0.25s ease;
+          transition: opacity 0.2s ease, background 0.25s ease, border-radius 0.25s ease, width 0.25s ease;
      }
 
 .navegacion ul li:hover .hoverEfecto {
@@ -183,24 +184,20 @@ hr {
         margin: auto;
     }
 
-.aside_Ipad .navegacion ul li a {
+    .aside_Ipad .navegacion ul li a {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: transparent;
+        width: 100%;
+        padding: 0;
+        text-decoration: none;
+        color: white;
+        transition: opacity 0.2s ease, background 0.25s ease, border-radius 0.25s ease, width 0.25s ease;
+    }
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: transparent;
-    width: 100%;
-    padding: 0;
-    text-decoration: none;
-    color: white;
-    transition: opacity 0.2s ease, background 0.25s ease, border-radius 0.25s ease, width 0.25s ease;
-}
-
-.aside_Ipad .navegacion ul li a[style*="f2f2f2"] {
-    width: 112.5%;
-}
-
-.closedMenu {
+    .closedMenu {
     position: absolute;
     z-index: 2;
     filter: invert(.95);
