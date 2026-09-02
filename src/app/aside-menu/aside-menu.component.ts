@@ -105,7 +105,7 @@ export class AsideMenuComponent implements OnInit {
   inicio(): void {
     this.li_diseno1 = { 'border-bottom-right-radius': '0.5vw' }
     this.li_especialidad = { 'border-top-right-radius': '0.5vw' }
-    this.li_inicio = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_inicio = { 'font-weight': '600' }
     this.li_educacion = {}
     this.li_habilidades = {}
     this.li_portafolio = {}
@@ -125,7 +125,7 @@ export class AsideMenuComponent implements OnInit {
   especialidad(): void {
     this.li_inicio = { 'border-bottom-right-radius': '0.5vw' }
     this.li_educacion = { 'border-top-right-radius': '0.5vw' }
-    this.li_especialidad = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_especialidad = { 'font-weight': '600' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -145,7 +145,7 @@ export class AsideMenuComponent implements OnInit {
   educacion(): void {
     this.li_especialidad = { 'border-bottom-right-radius': '0.5vw' }
     this.li_experiencia = { 'border-top-right-radius': '0.5vw' }
-    this.li_educacion = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_educacion = { 'font-weight': '600' }
     this.li_inicio = {}
     this.li_diseno1 = {}
     this.li_resumen = {}
@@ -165,7 +165,7 @@ export class AsideMenuComponent implements OnInit {
   experiencia(): void {
     this.li_educacion = { 'border-bottom-right-radius': '0.5vw' }
     this.li_portafolio = { 'border-top-right-radius': '0.5vw' }
-    this.li_experiencia = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_experiencia = { 'font-weight': '600' }
     this.li_resumen = {}
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -185,7 +185,7 @@ export class AsideMenuComponent implements OnInit {
   portafolio(): void {
     this.li_experiencia = { 'border-bottom-right-radius': '0.5vw' }
     this.li_habilidades = { 'border-top-right-radius': '0.5vw' }
-    this.li_portafolio = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_portafolio = { 'font-weight': '600' }
     this.li_resumen = {}
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -205,7 +205,7 @@ export class AsideMenuComponent implements OnInit {
   habilidades(): void {
     this.li_portafolio = { 'border-bottom-right-radius': '0.5vw' }
     this.li_resumen = { 'border-top-right-radius': '0.5vw' }
-    this.li_habilidades = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_habilidades = { 'font-weight': '600' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_especialidad = {}
@@ -225,7 +225,7 @@ export class AsideMenuComponent implements OnInit {
   resumen(): void {
     this.li_habilidades = { 'border-bottom-right-radius': '0.5vw' }
     this.li_contactame = { 'border-top-right-radius': '0.5vw' }
-    this.li_resumen = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_resumen = { 'font-weight': '600' }
     this.li_portafolio = {}
     this.li_educacion = {}
     this.li_experiencia = {}
@@ -245,7 +245,7 @@ export class AsideMenuComponent implements OnInit {
   contactame(): void {
     this.li_resumen = { 'border-bottom-right-radius': '0.5vw' }
     this.li_diseno2 = { 'border-top-right-radius': '0.5vw' }
-    this.li_contactame = { 'background': 'rgba(255, 255, 255, 0.08)', 'border-left': '3px solid rgba(255, 255, 255, 0.2)' }
+    this.li_contactame = { 'font-weight': '600' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}
