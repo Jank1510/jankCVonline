@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     position: relative;
 }
 
@@ -14,7 +14,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 34vh;
-    padding: 5rem 1.25rem 1.25rem 1.25rem;
+    padding: 2.5rem 1.25rem 1.25rem 1.25rem;
     position: relative;
     text-align: center;
     width: 100%;
@@ -26,51 +26,39 @@
     text-align: center;
 }
 
-.contenedor .perfil h1 span {
-    color: #3a3a3a;
-    display: block;
-    font-size: clamp(2.2rem, 5vw, 4.25rem);
-    font-weight: bold;
-    line-height: 1.02;
-    letter-spacing: -0.04em;
-    text-align: center;
-    text-wrap: balance;
-}
+    .contenedor .perfil h1 span {
+        color: #3a3a3a;
+        display: block;
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+        font-weight: bold;
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+        text-align: center;
+        text-wrap: balance;
+    }
 
 #text1 {
     animation-name: none;
 }
 
 .linea {
-    animation: linea_animation 2s cubic-bezier(1, 0, 0, 1) infinite;
-    background: #000;
+    background: #8a8a8a;
     content: ' ';
-    height: 82px;
+    height: 30px;
     left: 50%;
     margin-left: -1px;
-    mix-blend-mode: difference;
     position: absolute;
     top: 0px;
-    width: 1.5px;
+    width: 1px;
     z-index: 6;
 }
 
 .linea_contenedo {
-    height: 82px;
-    margin-top: 2rem;
+    height: 30px;
+    margin-top: 1rem;
     position: relative;
     width: 1px;
     z-index: 1;
-}
-
-@keyframes linea_animation {
-    from {
-        height: 0px;
-    }
-
-    to {
-        height: 82px;
-    }
 }
 
 .presentacion {
@@ -91,7 +79,7 @@
     color: #605f5f;
     font-size: clamp(1rem, 2vw, 1.18rem);
     margin: 0;
-    max-width: 38rem;
+    max-width: 44rem;
     text-wrap: balance;
 }
 
@@ -105,9 +93,9 @@
 .chipsPerfil {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.55rem;
+    gap: 0.45rem;
     justify-content: center;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
 }
 
 .chipsPerfil span {
@@ -129,15 +117,15 @@
 .accionesInicio {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    margin: 1.75rem 0 0 0;
+    gap: 0.75rem;
+    margin: 1rem 0 0 0;
 }
 
 .name {
     color: black;
     font-size: clamp(1.45rem, 3vw, 2rem);
     font-weight: bold;
-    margin: 0.75rem 0;
+    margin: 0.5rem 0;
 }
 
 .accionesInicio a {
@@ -178,7 +166,7 @@
 .accionesInicio .contactame:hover,
 .accionesInicio .descargar:hover,
 .accionesInicio .leerMas:hover {
-    opacity: 80%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .accionesInicio .leerMas {
@@ -190,13 +178,13 @@
 @media (max-width: 520px) {
     .perfil {
         min-height: 30vh;
-        padding-top: 5rem;
+        padding-top: 2.5rem;
     }
 
     .contenedor .perfil h1 span {
-        font-size: clamp(2rem, 10vw, 3rem);
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
         line-height: 1.06;
-        letter-spacing: -0.03em;
+        letter-spacing: -0.02em;
     }
 
     .accionesInicio {
@@ -207,12 +195,12 @@
 
 @media (min-width: 1270px) {
     .contenedor {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .perfil {
         min-height: 36vh;
-        padding-top: 5rem;
+        padding-top: 2.5rem;
         width: 100%;
     }
 }
