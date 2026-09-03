@@ -26,7 +26,7 @@
 }
 
 .perfil img {
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .navegacion {
