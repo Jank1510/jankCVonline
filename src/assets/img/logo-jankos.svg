@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <text x="50%" y="240" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="280" font-weight="700" fill="#ffffff" dominant-baseline="middle">J</text>
-  <text x="50%" y="380" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="600" fill="#e0e0e0" letter-spacing="4" dominant-baseline="middle">JANKOS</text>
+  <circle cx="256" cy="256" r="245" fill="#ffffff" stroke="#4a4a4a" stroke-width="3"/>
+  <circle cx="256" cy="256" r="225" fill="#f7f7f7"/>
+  <text x="50%" y="200" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="170" font-weight="700" fill="#2f2f2f" dominant-baseline="middle">JK</text>
+  <polygon points="230,298 256,270 282,298 256,326" fill="#777777"/>
+  <polygon points="256,270 282,298 256,326" fill="#999999"/>
+  <text x="50%" y="400" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="500" fill="#999999" letter-spacing="5" dominant-baseline="middle">JANKOS</text>
 </svg>
