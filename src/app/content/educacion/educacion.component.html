@@ -2,23 +2,28 @@
     <div data-aos="fade-right" class="titulo">
         <hr><span>Educación y formación</span>
     </div>
-    <div class="contentenedorTarjeta">
-        <div [ngStyle]="data.design" data-aos="fade-up" class="tarjeta" *ngFor="let data of estudios">
-            <p>{{data.titulo}}</p>
-            <span>{{data.lugar}}</span>
-            <span>{{data.periodo}}</span>
-            <span>{{data.descripcion}}</span>
-            <ul class="aptitudes">
-                <li *ngFor="let aptitud of data.aptitudes">{{aptitud}}</li>
-            </ul>
-            <div class="accionesEducacion">
-                <a *ngIf="data.linkPreview" target="_blank" rel="noopener noreferrer" [href]="data.linkPreview">{{data.linkLabel || 'Ver certificado'}} <img width="1rem"
-                        src="./assets/icons/openNewTab.png"     alt="Abrir en nueva pestaña"></a>
-                <span *ngIf="!data.linkPreview && data.estado" class="estado">{{data.estado}}</span>
-                <img [src]="data.imagen" alt="Logo de {{data.lugar}}" loading="lazy" decoding="async">
+
+    <div class="gridEducacion" data-aos="fade-up">
+        <!-- Columna 1 -->
+        <div class="columnaEducacion">
+            <h3>Formación Académica</h3>
+            <div class="listaTimeline">
+                <article class="tarjetaCompacta" *ngFor="let item of formacionAcademica">
+                    <h4>{{item.titulo}}</h4>
+                    <p>{{item.detalle}}</p>
+                </article>
             </div>
-            <div class="lineatarjeta" [ngStyle]="data.linea"></div>
         </div>
-        <div class="lineadiv"></div>
+
+        <!-- Columna 2 -->
+        <div class="columnaEducacion">
+            <h3>Cursos y Certificaciones</h3>
+            <div class="listaTimeline">
+                <article class="tarjetaCompacta" *ngFor="let item of cursosCertificaciones">
+                    <h4>{{item.titulo}}</h4>
+                    <p>{{item.detalle}}</p>
+                </article>
+            </div>
+        </div>
     </div>
 </section>
