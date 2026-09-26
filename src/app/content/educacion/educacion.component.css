@@ -35,14 +35,14 @@
 .tarjetaCompacta {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    border-left: 3px solid #2d2d2d;
+    border-left: 3px solid #0ea5e9;
     border-radius: 0.4rem;
     padding: 0.8rem 1rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tarjetaCompacta:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
     transform: translateY(-2px);
 }
 
@@ -54,7 +54,7 @@
 }
 
 .tarjetaCompacta p {
-    color: #666666;
+    color: #64748b;
     font-size: 0.85rem;
     margin: 0;
 }

@@ -22,17 +22,41 @@
     background: white;
     border: 1px solid rgba(45, 45, 45, 0.06);
     border-radius: 0.8rem;
+    border-top: 3px solid transparent;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
 .tarjetaServicio:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
     transform: translateY(-3px);
+}
+
+/* Tarjeta 1: Impresoras (Naranja Cobrizo) */
+.tarjetaServicio:nth-child(1) {
+    border-top-color: #d97706;
+}
+.tarjetaServicio:nth-child(1):hover {
+    box-shadow: 0 8px 24px rgba(217, 119, 6, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Tarjeta 2: Cómputo TI (Cian Tecnológico) */
+.tarjetaServicio:nth-child(2) {
+    border-top-color: #0ea5e9;
+}
+.tarjetaServicio:nth-child(2):hover {
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Tarjeta 3: Impresión 3D (Verde Técnico) */
+.tarjetaServicio:nth-child(3) {
+    border-top-color: #10b981;
+}
+.tarjetaServicio:nth-child(3):hover {
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .imagenContenedor {
@@ -44,7 +68,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-top: 2px solid #2d2d2d;
     display: block;
 }
 
@@ -70,14 +93,21 @@
 
 .listaCapacidades {
     margin: auto 0 0 0;
-    padding: 0 0 0 1.25rem;
-    color: #444444;
-    font-size: 0.85rem;
-    line-height: 1.6;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
 .listaCapacidades li {
-    margin-bottom: 0.25rem;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.75rem;
+    color: #475569;
+    margin-bottom: 0;
 }
 
 @media (min-width:300px) {
