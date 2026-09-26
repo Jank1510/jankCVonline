@@ -11,205 +11,40 @@
     background-color: black;
 }
 
-.bloquePrincipal,
-.tarjetaEnfoque,
-.proceso {
+.gridServiciosTecnicos {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem auto;
+    width: 90vw;
+}
+
+.tarjetaServicio {
     background: white;
     border: 1px solid rgba(45, 45, 45, 0.06);
+    border-top: 2px solid #2d2d2d;
+    border-radius: 0.8rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
+    padding: 1.5rem;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.bloquePrincipal {
-    display: grid;
-    overflow: hidden;
-}
-
-.textoPrincipal span {
-    color: #2d2d2d;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.accionesServicio {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-top: 1.2rem;
-}
-
-.accionesServicio a {
-    align-items: center;
-    border-radius: 0.65rem;
-    display: inline-flex;
-    font-weight: bold;
-    justify-content: center;
-    min-height: 2.5rem;
-    padding: 0 0.9rem;
-    text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.accionesServicio a:hover {
-    transform: translateY(-1px);
-}
-
-.accionesServicio a:first-child {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    color: white;
-}
-
-.accionesServicio a:last-child {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.accionesServicio a:last-child:hover {
-    transform: translateY(-1px);
-}
-
-.textoPrincipal h1,
-.textoPrincipal p,
-.tarjetaEnfoque span,
-.tarjetaEnfoque h2,
-.tarjetaEnfoque p,
-.proceso h3,
-.proceso p {
-    margin: 0;
-}
-
-.textoPrincipal p,
-.tarjetaEnfoque p,
-.proceso p {
-    color: #605f5f;
-}
-
-.resumenOperativo {
-    background: #2a2a2a;
-    color: white;
-    display: grid;
-}
-
-.resumenOperativo div {
-    border-left: 2px solid #2d2d2d;
-}
-
-.resumenOperativo strong,
-.resumenOperativo span {
-    display: block;
-}
-
-.resumenOperativo strong {
-    color: #b8b8b8;
-}
-
-.gridEnfoque {
-    display: grid;
-}
-
-.tarjetaEnfoque {
-    border-top: 2px solid #2d2d2d;
-}
-
-.tarjetaEnfoque span {
-    color: #2d2d2d;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.proceso {
-    display: grid;
-}
-
-.bloque3d {
-    margin-top: 1rem;
-}
-
-.tarjetaTrabajo {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-}
-
-.imagenTrabajo {
-    aspect-ratio: 16 / 10;
-    border-radius: 0.7rem;
-    display: block;
-    object-fit: cover;
-    width: 100%;
-}
-
-.placeholderTrabajo {
-    align-items: center;
-    aspect-ratio: 16 / 10;
-    background:
-        linear-gradient(135deg, rgba(45, 45, 45, 0.1), rgba(42, 42, 42, 0.92)),
-        linear-gradient(45deg, #fafafa, #f4f4f4);
-    border-radius: 0.7rem;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-}
-
-.placeholderTrabajo::before,
-.placeholderTrabajo::after {
-    color: rgba(255, 255, 255, 0.14);
-    font-weight: bold;
-    letter-spacing: 0.08em;
-    position: absolute;
-    text-transform: uppercase;
-}
-
-.placeholderTrabajo::before {
-    content: 'Proyectos';
-    font-size: clamp(1rem, 2vw, 1.35rem);
-    left: 0.9rem;
-    top: 0.8rem;
-}
-
-.placeholderTrabajo::after {
-    content: 'A medida';
-    bottom: 0.8rem;
-    font-size: clamp(0.9rem, 1.8vw, 1.1rem);
-    right: 0.9rem;
-}
-
-.placeholderTrabajo span {
-    color: white;
-    font-size: clamp(1.6rem, 3vw, 2.3rem);
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    position: relative;
-    z-index: 1;
-}
-
-.proceso article {
-    display: flex;
-    align-items: flex-start;
-}
-
-.proceso article span {
-    align-items: center;
-    background: #2d2d2d;
-    border-radius: 999px;
-    color: white;
-    display: flex;
-    flex-shrink: 0;
-    font-weight: bold;
-    justify-content: center;
-    transition: background 0.2s ease;
-}
-
-.tarjetaEnfoque:hover,
-.proceso:hover {
+.tarjetaServicio:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
     transform: translateY(-3px);
+}
+
+.tarjetaServicio h2 {
+    color: #1e1e1e;
+    font-size: 1.1rem;
+    margin: 0 0 0.8rem 0;
+}
+
+.tarjetaServicio p {
+    color: #555555;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.5;
 }
 
 @media (min-width:300px) {
@@ -219,7 +54,7 @@
 
     .content .titulo {
         font-size: 1.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         margin-left: 5vw;
         width: 90vw;
     }
@@ -228,114 +63,6 @@
         height: 1px;
         margin-right: 1rem;
         width: 3rem;
-    }
-
-    .bloquePrincipal,
-    .gridEnfoque,
-    .proceso {
-        width: 90vw;
-        margin: auto;
-    }
-
-    .bloquePrincipal {
-        border-radius: 1rem;
-        grid-template-columns: 1fr;
-    }
-
-    .textoPrincipal {
-        padding: 1.2rem;
-    }
-
-    .textoPrincipal span {
-        font-size: 0.75rem;
-        margin-bottom: 0.7rem;
-    }
-
-    .textoPrincipal h1 {
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-    }
-
-    .textoPrincipal p {
-        font-size: 0.9rem;
-    }
-
-    .resumenOperativo {
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        padding: 1.2rem;
-    }
-
-    .resumenOperativo div {
-        padding-left: 0.8rem;
-    }
-
-    .resumenOperativo strong,
-    .resumenOperativo span {
-        font-size: 0.85rem;
-    }
-
-    .gridEnfoque {
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        margin-top: 1rem;
-    }
-
-.tarjetaEnfoque {
-    border: 1px solid rgba(45, 45, 45, 0.06);
-    border-radius: 0.8rem;
-    padding: 1rem;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.tarjetaEnfoque:hover {
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
-    transform: translateY(-3px);
-}
-
-    .tarjetaEnfoque span {
-        font-size: 0.72rem;
-        margin-bottom: 0.45rem;
-    }
-
-    .tarjetaEnfoque h2 {
-        font-size: 1rem;
-        margin-bottom: 0.6rem;
-    }
-
-    .tarjetaEnfoque p,
-    .proceso p {
-        font-size: 0.85rem;
-    }
-
-    .proceso {
-        border-radius: 1rem;
-        gap: 1rem;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-
-    .grid3d {
-        grid-template-columns: 1fr;
-    }
-
-    .gridTrabajos {
-        grid-template-columns: 1fr;
-    }
-
-    .proceso article {
-        column-gap: 0.8rem;
-    }
-
-    .proceso article span {
-        border-radius: 2rem;
-        height: 2rem;
-        width: 2rem;
-    }
-
-    .proceso h3 {
-        font-size: 1rem;
-        margin-bottom: 0.35rem;
     }
 }
 
@@ -349,34 +76,9 @@
         width: auto;
     }
 
-    .bloquePrincipal,
-    .gridEnfoque,
-    .proceso {
-        width: 80vw;
-    }
-
-    .bloquePrincipal {
-        grid-template-columns: 2fr 1fr;
-    }
-
-    .resumenOperativo {
-        align-content: center;
-    }
-
-    .gridEnfoque {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .grid3d {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .gridTrabajos {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .proceso {
+    .gridServiciosTecnicos {
         grid-template-columns: 1fr 1fr 1fr;
+        width: 80vw;
     }
 }
 
@@ -399,102 +101,7 @@
         width: 3rem;
     }
 
-    .bloquePrincipal,
-    .gridEnfoque,
-    .proceso {
+    .gridServiciosTecnicos {
         width: min(70vw, 68rem);
-    }
-
-    .bloquePrincipal {
-        border-radius: 1rem;
-    }
-
-    .textoPrincipal {
-        padding: 1.5rem;
-    }
-
-    .textoPrincipal span {
-        font-size: 0.75rem;
-        margin-bottom: 0.7rem;
-    }
-
-    .textoPrincipal h1 {
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    }
-
-    .textoPrincipal p {
-        font-size: 0.95rem;
-    }
-
-    .resumenOperativo {
-        gap: 1rem;
-        padding: 1.5rem;
-    }
-
-    .resumenOperativo div {
-        border-left-width: 2px;
-        padding-left: 0.8rem;
-    }
-
-    .resumenOperativo strong,
-    .resumenOperativo span {
-        font-size: 0.85rem;
-    }
-
-    .gridEnfoque {
-        gap: 1rem;
-        margin-top: 1rem;
-    }
-
-    .grid3d {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .gridTrabajos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .tarjetaEnfoque {
-        border-radius: 0.8rem;
-        border-top-width: 2px;
-        padding: 1rem;
-    }
-
-    .tarjetaEnfoque span {
-        font-size: 0.72rem;
-        margin-bottom: 0.45rem;
-    }
-
-    .tarjetaEnfoque h2 {
-        font-size: 1rem;
-        margin-bottom: 0.6rem;
-    }
-
-    .tarjetaEnfoque p,
-    .proceso p {
-        font-size: 0.85rem;
-    }
-
-    .proceso {
-        border-radius: 1rem;
-        gap: 1rem;
-        margin-top: 1rem;
-        padding: 1rem;
-    }
-
-    .proceso article {
-        column-gap: 0.8rem;
-    }
-
-    .proceso article span {
-        border-radius: 2rem;
-        height: 2rem;
-        width: 2rem;
-    }
-
-    .proceso h3 {
-        font-size: 1rem;
-        margin-bottom: 0.35rem;
     }
 }

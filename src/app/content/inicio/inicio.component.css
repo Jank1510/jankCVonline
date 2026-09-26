@@ -26,39 +26,15 @@
     text-align: center;
 }
 
-    .contenedor .perfil h1 span {
-        color: #3a3a3a;
-        display: block;
-        font-size: clamp(1.5rem, 3vw, 2.5rem);
-        font-weight: bold;
-        line-height: 1.05;
-        letter-spacing: -0.02em;
-        text-align: center;
-        text-wrap: balance;
-    }
-
-#text1 {
-    animation-name: none;
-}
-
-.linea {
-    background: #aaaaaa;
-    content: ' ';
-    height: 30px;
-    left: 50%;
-    margin-left: -1px;
-    position: absolute;
-    top: 0px;
-    width: 1px;
-    z-index: 6;
-}
-
-.linea_contenedo {
-    height: 30px;
-    margin-top: 1rem;
-    position: relative;
-    width: 1px;
-    z-index: 1;
+.contenedor .perfil h1 span {
+    color: #3a3a3a;
+    display: block;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-weight: bold;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-wrap: balance;
 }
 
 .presentacion {
@@ -83,49 +59,11 @@
     text-wrap: balance;
 }
 
-.saludo {
-    color: #404040;
-    font-weight: bold;
-    letter-spacing: 0.08rem;
-    margin-bottom: 0;
-}
-
-.chipsPerfil {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.chipsPerfil span {
-    background: #f8f8f8;
-    border: 1px solid #e0e0e0;
-    border-radius: 999px;
-    color: #3a3a3a;
-    font-size: 0.85rem;
-    font-weight: bold;
-    padding: 0.38rem 0.75rem;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.chipsPerfil span:hover {
-    background: #f0f0f0;
-    transform: translateY(-1px);
-}
-
 .accionesInicio {
     display: flex;
     flex-direction: row;
     gap: 0.75rem;
-    margin: 1rem 0 0 0;
-}
-
-.name {
-    color: #404040;
-    font-size: clamp(1.45rem, 3vw, 2rem);
-    font-weight: bold;
-    margin: 0.5rem 0;
+    margin: 1.5rem 0 0 0;
 }
 
 .accionesInicio a {
@@ -137,42 +75,45 @@
     min-height: 2.75rem;
     padding: 0 1rem;
     text-decoration: none;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .accionesInicio a:hover {
     transform: translateY(-1px);
-}
-
-.accionesInicio .contactame {
-    background: linear-gradient(135deg, #333333 0%, #404040 100%);
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.accionesInicio .descargar {
-    background: linear-gradient(135deg, #333333 0%, #3a3a3a 100%);
-    color: white;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.accionesInicio .descargar:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.accionesInicio .contactame:hover,
-.accionesInicio .descargar:hover,
-.accionesInicio .leerMas:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.accionesInicio .leerMas {
-    color: black;
-    padding-left: 0;
-    padding-right: 0;
+.accionesInicio .contactame {
+    background: #1e1e1e;
+    border: none;
+    color: white;
+}
+
+.accionesInicio .descargar-outline {
+    background: transparent;
+    border: 1px solid #1e1e1e;
+    color: #1e1e1e;
+}
+
+.accionesInicio .descargar-outline:hover {
+    background: #f7f7f7;
+}
+
+.enlace-secundario {
+    margin-top: 1.5rem;
+}
+
+.enlace-secundario a {
+    color: #555555;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.enlace-secundario a:hover {
+    color: #1e1e1e;
+    text-decoration: underline;
 }
 
 @media (max-width: 520px) {
@@ -184,7 +125,6 @@
     .contenedor .perfil h1 span {
         font-size: clamp(1.5rem, 8vw, 2.5rem);
         line-height: 1.06;
-        letter-spacing: -0.02em;
     }
 
     .accionesInicio {
