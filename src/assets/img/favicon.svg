@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Fondo monocromático oscuro -->
+  <circle cx="256" cy="256" r="236" fill="#1e1e1e" />
+
+  <!-- J Isométrica (escala de grises) -->
+  <g transform="translate(256, 256) scale(1.4) translate(-256, -256)">
+    <!-- Top Faces -->
+    <polygon points="291,176 256,156 291,136 326,156" fill="#ffffff" />
+    <polygon points="186,236 221,256 256,236 221,216" fill="#ffffff" />
+    <polygon points="256,316 221,296 256,276 291,296" fill="#ffffff" />
+
+    <!-- Right Faces -->
+    <polygon points="291,176 291,376 326,356 326,156" fill="#a0a0a0" />
+    <polygon points="221,256 221,296 256,276 256,236" fill="#a0a0a0" />
+
+    <!-- Front/Left Face -->
+    <polygon points="291,176 291,376 186,316 186,236 221,256 221,296 256,316 256,156" fill="#707070" />
+  </g>
+</svg>
