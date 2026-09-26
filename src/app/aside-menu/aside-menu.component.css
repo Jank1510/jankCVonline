@@ -7,8 +7,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    height: 98vh;
-    margin: 1vh 0;
+    bottom: 0;
+    height: 100vh;
+    margin: 0;
     justify-content: center;
     z-index: 2;
 }
@@ -292,7 +293,7 @@ hr {
 
 
     .aside_desktop {
-        border-radius: 0.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
 
     }
 
@@ -390,7 +391,7 @@ hr {
     }
 
     .aside_desktop {
-        border-radius: 0.5vw;
+        border-radius: 0 0.5vw 0.5vw 0;
 
     }
 
