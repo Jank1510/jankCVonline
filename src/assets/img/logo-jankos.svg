@@ -1,18 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Fondo oscuro circular -->
-  <circle cx="256" cy="256" r="240" fill="#1e1e1e" />
-
-  <!-- Fuste de la 'J' con corte superior plano y curva inferior redondeada -->
-  <path d="M 198 126 L 246 126 L 246 294 A 72 72 0 0 1 102 294 A 24 24 0 0 1 150 294 A 24 24 0 0 0 198 294 Z" fill="url(#metalGrad)" />
-
-  <!-- Brazos de la 'K' con separación diagonal limpia y remates rectos -->
-  <path d="M 262 238 L 410 386 L 410 314 L 334 238 L 410 162 L 374 126 Z" fill="url(#metalGrad)" />
-
-  <!-- Degradado Metálico Sutil -->
   <defs>
-    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#e2e8f0" />
+    <linearGradient id="jk-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
     </linearGradient>
+    <filter id="subtle-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
   </defs>
+
+  <!-- Círculo base oscuro -->
+  <circle cx="256" cy="256" r="236" fill="#1e1e1e" stroke="#2d2d2d" stroke-width="4"/>
+
+  <g filter="url(#subtle-shadow)" fill="url(#jk-grad)">
+    <!-- Fuste curvo y cuerpo de la 'J' con corte diagonal superior derecho -->
+    <path d="M 218 130 
+             L 218 310 
+             C 218 355 186 385 140 385 
+             C 105 385 82 362 82 332 
+             C 82 310 100 294 122 294 
+             C 138 294 150 304 155 316 
+             C 158 323 164 328 174 328 
+             C 188 328 198 316 198 295 
+             L 198 175 
+             Z" />
+
+    <!-- Brazo superior de la 'K' con separación diagonal respecto al fuste -->
+    <polygon points="234,228 325,130 376,130 274,240 234,258" />
+
+    <!-- Pierna inferior de la 'K' que se proyecta con ángulo dinámico -->
+    <polygon points="252,242 322,382 376,382 294,222 260,222" />
+  </g>
 </svg>
