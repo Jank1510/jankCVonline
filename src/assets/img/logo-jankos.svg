@@ -1,19 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Fondo -->
-  <circle cx="256" cy="256" r="236" fill="#ffffff" stroke="#e0e0e0" stroke-width="8"/>
-
-  <!-- J Isométrica -->
-  <g transform="translate(256, 256) scale(1.4) translate(-256, -256)">
-    <!-- Top Faces -->
-    <polygon points="291,176 256,156 291,136 326,156" fill="#505050" />
-    <polygon points="186,236 221,256 256,236 221,216" fill="#505050" />
-    <polygon points="256,316 221,296 256,276 291,296" fill="#505050" />
-
-    <!-- Right Faces -->
-    <polygon points="291,176 291,376 326,356 326,156" fill="#333333" />
-    <polygon points="221,256 221,296 256,276 256,236" fill="#333333" />
-
-    <!-- Front/Left Face -->
-    <polygon points="291,176 291,376 186,316 186,236 221,256 221,296 256,316 256,156" fill="#1e1e1e" />
-  </g>
+  <circle cx="256" cy="256" r="236" fill="#1e1e1e" />
+  <path d="M 161 170 L 201 130 V 300 A 60 60 0 0 1 81 300 V 270 H 121 V 300 A 20 20 0 0 0 161 300 Z" fill="#ffffff" />
+  <path d="M 241 140 L 281 100 V 360 H 241 Z" fill="#ffffff" />
+  <path d="M 281 250 L 381 150 H 431 L 281 300 Z" fill="#ffffff" />
+  <path d="M 326 255 L 431 360 H 381 L 291 270 Z" fill="#ffffff" />
 </svg>

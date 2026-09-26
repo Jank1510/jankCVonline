@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 interface FocusItem {
   titulo: string;
   descripcion: string;
+  imagen: string;
+  capacidades: string[];
 }
 
 @Component({
@@ -17,15 +19,37 @@ export class EspecialidadComponent implements OnInit {
     this.servicios = [
       {
         titulo: 'Mantenimiento y Reparación de Impresoras',
-        descripcion: 'Diagnóstico, desobstrucción de cabezales, sistemas continuos, módulos térmicos y calibración mecánica.'
+        descripcion: 'Servicio técnico especializado para alargar la vida útil de equipos de impresión.',
+        imagen: './assets/img/trabajos/servicio-tecnico-impresora-epson.png',
+        capacidades: [
+          'Diagnóstico',
+          'Desobstrucción de cabezales',
+          'Sistemas continuos',
+          'Módulos térmicos',
+          'Calibración mecánica'
+        ]
       },
       {
         titulo: 'Soporte Cómputo e Infraestructura TI',
-        descripcion: 'Optimización, mantenimiento preventivo/correctivo de laptops y PCs de alto rendimiento, configuración de entornos y servidores.'
+        descripcion: 'Soluciones informáticas para garantizar el máximo rendimiento de equipos.',
+        imagen: './assets/img/trabajos/servicio-tecnico-computadores.png',
+        capacidades: [
+          'Optimización',
+          'Mantenimiento preventivo/correctivo',
+          'Laptops y PCs de alto rendimiento',
+          'Configuración de entornos/servidores'
+        ]
       },
       {
         titulo: 'Impresión 3D y Fabricación Digital',
-        descripcion: 'Prototipado funcional, producción de piezas mecánicas/personalizadas y asesoría técnica en corte/slicing.'
+        descripcion: 'Materialización de ideas a través de diseño paramétrico y manufactura aditiva.',
+        imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
+        capacidades: [
+          'Prototipado funcional',
+          'Producción de piezas mecánicas',
+          'Diseños personalizados',
+          'Asesoría técnica en corte/slicing'
+        ]
       }
     ];
   }

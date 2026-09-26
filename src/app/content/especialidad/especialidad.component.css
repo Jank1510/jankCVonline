@@ -13,7 +13,7 @@
 
 .gridServiciosTecnicos {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 1rem auto;
     width: 90vw;
 }
@@ -21,11 +21,12 @@
 .tarjetaServicio {
     background: white;
     border: 1px solid rgba(45, 45, 45, 0.06);
-    border-top: 2px solid #2d2d2d;
     border-radius: 0.8rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
@@ -34,17 +35,49 @@
     transform: translateY(-3px);
 }
 
-.tarjetaServicio h2 {
-    color: #1e1e1e;
-    font-size: 1.1rem;
-    margin: 0 0 0.8rem 0;
+.imagenContenedor {
+    height: 180px;
+    width: 100%;
 }
 
-.tarjetaServicio p {
+.imagenContenedor img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top: 2px solid #2d2d2d;
+    display: block;
+}
+
+.cuerpoTarjeta {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.cuerpoTarjeta h2 {
+    color: #1e1e1e;
+    font-size: 1.1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.cuerpoTarjeta p {
     color: #555555;
     font-size: 0.95rem;
-    margin: 0;
+    margin: 0 0 1rem 0;
     line-height: 1.5;
+}
+
+.listaCapacidades {
+    margin: auto 0 0 0;
+    padding: 0 0 0 1.25rem;
+    color: #444444;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.listaCapacidades li {
+    margin-bottom: 0.25rem;
 }
 
 @media (min-width:300px) {

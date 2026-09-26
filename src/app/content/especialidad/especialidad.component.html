@@ -5,8 +5,16 @@
 
     <div class="gridServiciosTecnicos" data-aos="fade-up">
         <article class="tarjetaServicio" *ngFor="let item of servicios">
-            <h2>{{item.titulo}}</h2>
-            <p>{{item.descripcion}}</p>
+            <div class="imagenContenedor">
+                <img [src]="item.imagen" [alt]="item.titulo" loading="lazy" decoding="async">
+            </div>
+            <div class="cuerpoTarjeta">
+                <h2>{{item.titulo}}</h2>
+                <p>{{item.descripcion}}</p>
+                <ul class="listaCapacidades">
+                    <li *ngFor="let cap of item.capacidades">{{cap}}</li>
+                </ul>
+            </div>
         </article>
     </div>
 </section>
