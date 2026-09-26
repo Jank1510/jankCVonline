@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 256" width="100%" height="100%">
   <!-- Isotipo -->
   <g transform="scale(0.5)">
-    <circle cx="256" cy="256" r="236" fill="#1e1e1e" />
-    <path d="M 161 170 L 201 130 V 300 A 60 60 0 0 1 81 300 V 270 H 121 V 300 A 20 20 0 0 0 161 300 Z" fill="#ffffff" />
-    <path d="M 241 140 L 281 100 V 360 H 241 Z" fill="#ffffff" />
-    <path d="M 281 250 L 381 150 H 431 L 281 300 Z" fill="#ffffff" />
-    <path d="M 326 255 L 431 360 H 381 L 291 270 Z" fill="#ffffff" />
+    <circle cx="256" cy="256" r="240" fill="#1e1e1e" />
+    <path d="M 198 126 L 246 126 L 246 294 A 72 72 0 0 1 102 294 A 24 24 0 0 1 150 294 A 24 24 0 0 0 198 294 Z" fill="#ffffff" />
+    <path d="M 262 238 L 410 386 L 410 314 L 334 238 L 410 162 L 374 126 Z" fill="#ffffff" />
   </g>
   <!-- Texto -->
   <text x="280" y="140" font-family="sans-serif" font-weight="bold" font-size="96" fill="#1e1e1e" letter-spacing="2">JANKOS</text>
