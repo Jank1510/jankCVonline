@@ -103,13 +103,29 @@ a:hover {
 .tarjeta {
     background-color: #2a2a2a;
     border: 1px solid rgba(45, 45, 45, 0.12);
-    border-top: 3px solid #2d2d2d;
+    border-top: 3px solid transparent;
     border-radius: 0.45rem;
     box-sizing: border-box;
     min-height: 9.5rem;
     padding: 1rem;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
+
+.tarjeta:hover {
+    transform: translateY(-2px);
+}
+
+.tarjeta:nth-child(1) { border-top-color: #0ea5e9; }
+.tarjeta:nth-child(1):hover { box-shadow: 0 4px 16px rgba(14, 165, 233, 0.15); }
+
+.tarjeta:nth-child(2) { border-top-color: #8b5cf6; }
+.tarjeta:nth-child(2):hover { box-shadow: 0 4px 16px rgba(139, 92, 246, 0.15); }
+
+.tarjeta:nth-child(3) { border-top-color: #10b981; }
+.tarjeta:nth-child(3):hover { box-shadow: 0 4px 16px rgba(16, 185, 129, 0.15); }
+
+.tarjeta:nth-child(4) { border-top-color: #f97316; }
+.tarjeta:nth-child(4):hover { box-shadow: 0 4px 16px rgba(249, 115, 22, 0.15); }
 
 .tarjeta p {
     color: #d8d8d8;
@@ -140,7 +156,7 @@ a:hover {
 
 .fortalezaActual {
     background-color: white;
-    border-left: 4px solid #2d2d2d;
+    border-left: 4px solid #0ea5e9;
     border-radius: 0.45rem;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
     color: black;

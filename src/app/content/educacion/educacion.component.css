@@ -35,16 +35,30 @@
 .tarjetaCompacta {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    border-left: 3px solid #0ea5e9;
+    border-left: 3px solid transparent;
     border-radius: 0.4rem;
     padding: 0.8rem 1rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .tarjetaCompacta:hover {
-    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.1);
     transform: translateY(-2px);
 }
+
+.tarjetaCompacta:nth-child(1) { border-left-color: #0ea5e9; }
+.tarjetaCompacta:nth-child(1):hover { box-shadow: 0 6px 18px rgba(14, 165, 233, 0.12); }
+
+.tarjetaCompacta:nth-child(2) { border-left-color: #f97316; }
+.tarjetaCompacta:nth-child(2):hover { box-shadow: 0 6px 18px rgba(249, 115, 22, 0.12); }
+
+.tarjetaCompacta:nth-child(3) { border-left-color: #10b981; }
+.tarjetaCompacta:nth-child(3):hover { box-shadow: 0 6px 18px rgba(16, 185, 129, 0.12); }
+
+.tarjetaCompacta:nth-child(4) { border-left-color: #8b5cf6; }
+.tarjetaCompacta:nth-child(4):hover { box-shadow: 0 6px 18px rgba(139, 92, 246, 0.12); }
+
+.tarjetaCompacta:nth-child(5) { border-left-color: #eab308; }
+.tarjetaCompacta:nth-child(5):hover { box-shadow: 0 6px 18px rgba(234, 179, 8, 0.12); }
 
 .tarjetaCompacta h4 {
     color: #1e1e1e;
