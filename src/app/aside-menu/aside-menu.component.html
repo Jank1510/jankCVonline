@@ -2,7 +2,9 @@
 <aside class="aside_desktop" *ngIf="width >= 1024" [ngStyle]="{ 'background-color': colorGlobal }"
   (window:scroll)="scroll()">
   <div class="perfil">
-    <img src="./assets/img/logo-jankos.svg" alt="perfil" />
+    <div class="logo-container">
+      <img src="assets/img/logo-jankos.png?v=2026" alt="perfil" />
+    </div>
     <p>JEHAN HURTADO</p>
   </div>
   <nav class="navegacion">
@@ -115,10 +117,12 @@
 <div class="opacity_fondo" *ngIf="( width < 1024) && menuVisible">
   <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
     <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
-    <div class="perfil">
-      <img src="./assets/img/logo-jankos.svg" alt="perfil" />
-      <p>JEHAN HURTADO</p>
+  <div class="perfil">
+    <div class="logo-container">
+      <img src="assets/img/logo-jankos.png?v=2026" alt="perfil" />
     </div>
+    <p>JEHAN HURTADO</p>
+  </div>
     <nav class="navegacion">
       <ul>
         <li>

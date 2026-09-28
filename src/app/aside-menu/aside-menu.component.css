@@ -26,8 +26,18 @@
     font-weight: bold;
 }
 
-.perfil img {
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e1e;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+    transform: scale(0.85);
 }
 
 .navegacion {
@@ -303,7 +313,7 @@ hr {
         border-radius: 0;
     }
 
-    .perfil img {
+    .logo-container {
         width: 6rem;
         border-radius: 50%;
         height: 6rem;
@@ -401,7 +411,7 @@ hr {
         border-radius: 0;
     }
 
-    .perfil img {
+    .logo-container {
         width: 6vw;
         border-radius: 50%;
         height: 6vw;
