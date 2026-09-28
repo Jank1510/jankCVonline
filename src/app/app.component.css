@@ -11,6 +11,10 @@ app-aside-menu {
 
 .ancho {
     scroll-margin-top: 4.5rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 hr {
