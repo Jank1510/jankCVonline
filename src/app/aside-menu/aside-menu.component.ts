@@ -55,6 +55,27 @@ export class AsideMenuComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          if (id === 'app-inicio') this.inicio();
+          else if (id === 'app-especialidad') this.especialidad();
+          else if (id === 'app-educacion') this.educacion();
+          else if (id === 'app-experiencia') this.experiencia();
+          else if (id === 'app-portafoli') this.portafolio();
+          else if (id === 'app-habilidades') this.habilidades();
+          else if (id === 'app-resumen') this.resumen();
+          else if (id === 'app-contactame') this.contactame();
+        }
+      });
+    }, { threshold: 0.5 });
+
+    setTimeout(() => {
+      document.querySelectorAll('.ancho').forEach((section) => {
+        observer.observe(section);
+      });
+    }, 100);
   }
 
   ajusteResolucion(event: Event): void {//funcion para actualizar el tamano del ancho en px de la pantalla
@@ -69,37 +90,10 @@ export class AsideMenuComponent implements OnInit {
   }
 
   cararPosicionYDeLosElementos() {//cargamos las variables con el servicio q nos trae los datos del componente app
-    this.inicioY = this.service.getinicioY()
-    this.especialidadY = this.service.getespecialidadY()
-    this.educaciony = this.service.geteducacionY()
-    this.experienciaY = this.service.getexperienciaY()
-    this.portafolioY = this.service.getportafolioY()
-    this.habilidadesY = this.service.gethabilidadesY()
-    this.resumenY = this.service.getresumenY()
-    this.contactameY = this.service.getcontactameY()
   }
 
-  scroll() {//esta funcion identifica donde esta el foco central de la pagina para animar la navegacion
-    const ubicacionCentral = (window.innerHeight / 3) + window.scrollY - 250; // offset de tolerancia de 250px para evitar micro saltos
-
-    this.cararPosicionYDeLosElementos()
-    if (ubicacionCentral <= this.inicioY) {
-      this.inicio()
-    } else if (ubicacionCentral <= this.inicioY + this.especialidadY + 1) {
-      this.especialidad()
-    } else if (ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + 2) {
-      this.educacion()
-    } else if ((ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + this.experienciaY + 3)) {
-      this.experiencia()
-    } else if ((ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + this.experienciaY + this.portafolioY + 4)) {
-      this.portafolio()
-    } else if ((ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + this.experienciaY + this.portafolioY + this.habilidadesY + 5)) {
-      this.habilidades()
-    } else if ((ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + this.experienciaY + this.portafolioY + this.habilidadesY + this.resumenY + 6)) {
-      this.resumen()
-    } else if ((ubicacionCentral <= this.inicioY + this.especialidadY + this.educaciony + this.experienciaY + this.portafolioY + this.habilidadesY + this.resumenY + this.contactameY + 7)) {
-      this.contactame()
-    }
+  scroll() {
+    // Obsolete - logic moved to IntersectionObserver
   }
   /*funciones de navegacion*/
   inicio(): void {
