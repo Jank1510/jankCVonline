@@ -4,7 +4,9 @@
        [style.top]="ic.top" 
        [style.left]="ic.left" 
        [style.animation-delay]="ic.delay" 
-       [style.transform]="ic.rotation">
+       [style.transform]="ic.rotation"
+       [style.color]="ic.color"
+       [style.filter]="'drop-shadow(0 0 6px ' + ic.color + ')'">
     <svg viewBox="0 0 24 24" fill="currentColor">
       <path [attr.d]="ic.path"></path>
     </svg>

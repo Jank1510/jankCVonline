@@ -50,19 +50,23 @@ export class AppComponent implements OnInit, AfterViewInit {
       'M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V5H19V19M17,17H7V15H17V17M13,13H11V7H13V13M15,9H9V11H15V9Z' // 3D Printer
     ];
 
+    const colores = ['#00f2fe', '#4facfe', '#f093fb', '#f5576c', '#43e97b', '#38f9d7', '#fa709a', '#fee140'];
+
     for (let i = 0; i < 35; i++) {
       const randPath = paths[Math.floor(Math.random() * paths.length)];
       const randTop = Math.floor(Math.random() * 90) + 5 + '%';
       const randLeft = Math.floor(Math.random() * 90) + 5 + '%';
       const randDelay = -(Math.random() * 15) + 's';
       const randRotation = `rotate(${Math.floor(Math.random() * 360)}deg)`;
+      const randColor = colores[Math.floor(Math.random() * colores.length)];
 
       this.iconosFlotantes.push({
         path: randPath,
         top: randTop,
         left: randLeft,
         delay: randDelay,
-        rotation: randRotation
+        rotation: randRotation,
+        color: randColor
       });
     }
   }

@@ -163,8 +163,8 @@ hr {
 .icono-flotante {
   position: absolute; 
   width: 45px; height: 45px;
-  opacity: 0.04;
-  fill: currentColor; color: #555;
+  opacity: 0.15;
+  fill: currentColor;
   animation: gravedadCero 12s infinite alternate ease-in-out;
 }
 
