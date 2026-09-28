@@ -69,7 +69,7 @@ export class AsideMenuComponent implements OnInit {
           else if (id === 'app-contactame') this.contactame();
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0, rootMargin: "-45% 0px -54% 0px" });
 
     setTimeout(() => {
       document.querySelectorAll('.ancho').forEach((section) => {
