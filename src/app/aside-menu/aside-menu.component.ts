@@ -1,12 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ServiceService } from '../servicios/service.service';
+import { fromEvent, Subscription } from 'rxjs';
+import { throttleTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-aside-menu',
   templateUrl: './aside-menu.component.html',
   styleUrls: ['./aside-menu.component.css']
 })
-export class AsideMenuComponent implements OnInit {
+export class AsideMenuComponent implements OnInit, OnDestroy {
+  scrollSubscription!: Subscription;
   colorGlobal: string
   /*variables para el control de border radius en el doom*/
   li_diseno1!: object
@@ -49,33 +52,46 @@ export class AsideMenuComponent implements OnInit {
     this.colorGlobal = '#4a4a4a'
     this.ancho='0'
     setTimeout(() => {
-      this.scroll()
+      this.detectarSeccionActiva()
     }, 10)
     //para q carge la animacion inicial, ya q ahora son por la funcion scroll no por los click
   }
 
   ngOnInit(): void {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          if (id === 'app-inicio') this.inicio();
-          else if (id === 'app-especialidad') this.especialidad();
-          else if (id === 'app-educacion') this.educacion();
-          else if (id === 'app-experiencia') this.experiencia();
-          else if (id === 'app-portafoli') this.portafolio();
-          else if (id === 'app-habilidades') this.habilidades();
-          else if (id === 'app-resumen') this.resumen();
-          else if (id === 'app-contactame') this.contactame();
-        }
+    this.scrollSubscription = fromEvent(window, 'scroll')
+      .pipe(throttleTime(100))
+      .subscribe(() => {
+        this.detectarSeccionActiva();
       });
-    }, { threshold: 0, rootMargin: "-45% 0px -54% 0px" });
+  }
 
-    setTimeout(() => {
-      document.querySelectorAll('.ancho').forEach((section) => {
-        observer.observe(section);
-      });
-    }, 100);
+  ngOnDestroy(): void {
+    if (this.scrollSubscription) {
+      this.scrollSubscription.unsubscribe();
+    }
+  }
+
+  detectarSeccionActiva(): void {
+    const secciones = document.querySelectorAll('.ancho');
+    const puntoMedio = window.innerHeight / 2;
+
+    for (let i = 0; i < secciones.length; i++) {
+      const seccion = secciones[i] as HTMLElement;
+      const rect = seccion.getBoundingClientRect();
+      
+      if (rect.top <= puntoMedio && rect.bottom >= puntoMedio) {
+        const id = seccion.id;
+        if (id === 'app-inicio') this.inicio();
+        else if (id === 'app-especialidad') this.especialidad();
+        else if (id === 'app-educacion') this.educacion();
+        else if (id === 'app-experiencia') this.experiencia();
+        else if (id === 'app-portafoli') this.portafolio();
+        else if (id === 'app-habilidades') this.habilidades();
+        else if (id === 'app-resumen') this.resumen();
+        else if (id === 'app-contactame') this.contactame();
+        break;
+      }
+    }
   }
 
   ajusteResolucion(event: Event): void {//funcion para actualizar el tamano del ancho en px de la pantalla
