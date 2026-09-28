@@ -165,10 +165,10 @@ hr {
   width: 45px; height: 45px;
   opacity: 0.15;
   fill: currentColor;
-  animation: gravedadCero 12s infinite alternate ease-in-out;
+  animation: gravedadCero 6s infinite alternate ease-in-out;
 }
 
 @keyframes gravedadCero {
-  0% { transform: translateY(0) rotate(0deg); }
-  100% { transform: translateY(-30px) rotate(8deg); }
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  100% { transform: translate(-30px, -70px) rotate(18deg); }
 }
