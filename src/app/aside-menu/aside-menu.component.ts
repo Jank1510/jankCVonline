@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, NgZone } from '@angular/core';
 import { ServiceService } from '../servicios/service.service';
 import { fromEvent, Subscription } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
@@ -10,6 +10,7 @@ import { throttleTime } from 'rxjs/operators';
 })
 export class AsideMenuComponent implements OnInit, OnDestroy {
   scrollSubscription!: Subscription;
+  seccionActual: string = '';
   colorGlobal: string
   /*variables para el control de border radius en el doom*/
   li_diseno1!: object
@@ -46,7 +47,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   directionNameAnimation!:string
   animation!:string
   ancho:string
-  constructor(private service: ServiceService) {
+  constructor(private service: ServiceService, private ngZone: NgZone) {
     this.width = window.innerWidth//cargamos una variable para condicionar las vistas de design en el dom
     this.menuVisible = false
     this.colorGlobal = '#4a4a4a'
@@ -58,11 +59,13 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.scrollSubscription = fromEvent(window, 'scroll')
-      .pipe(throttleTime(100))
-      .subscribe(() => {
-        this.detectarSeccionActiva();
-      });
+    this.ngZone.runOutsideAngular(() => {
+      this.scrollSubscription = fromEvent(window, 'scroll')
+        .pipe(throttleTime(50))
+        .subscribe(() => {
+          this.detectarSeccionActiva();
+        });
+    });
   }
 
   ngOnDestroy(): void {
@@ -80,15 +83,21 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
       const rect = seccion.getBoundingClientRect();
       
       if (rect.top <= puntoMedio && rect.bottom >= puntoMedio) {
-        const id = seccion.id;
-        if (id === 'app-inicio') this.inicio();
-        else if (id === 'app-especialidad') this.especialidad();
-        else if (id === 'app-educacion') this.educacion();
-        else if (id === 'app-experiencia') this.experiencia();
-        else if (id === 'app-portafoli') this.portafolio();
-        else if (id === 'app-habilidades') this.habilidades();
-        else if (id === 'app-resumen') this.resumen();
-        else if (id === 'app-contactame') this.contactame();
+        const nuevaSeccion = seccion.id;
+        
+        if (nuevaSeccion !== this.seccionActual) {
+          this.ngZone.run(() => {
+            this.seccionActual = nuevaSeccion;
+            if (nuevaSeccion === 'app-inicio') this.inicio();
+            else if (nuevaSeccion === 'app-especialidad') this.especialidad();
+            else if (nuevaSeccion === 'app-educacion') this.educacion();
+            else if (nuevaSeccion === 'app-experiencia') this.experiencia();
+            else if (nuevaSeccion === 'app-portafoli') this.portafolio();
+            else if (nuevaSeccion === 'app-habilidades') this.habilidades();
+            else if (nuevaSeccion === 'app-resumen') this.resumen();
+            else if (nuevaSeccion === 'app-contactame') this.contactame();
+          });
+        }
         break;
       }
     }
