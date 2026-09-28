@@ -80,7 +80,7 @@ export class AsideMenuComponent implements OnInit {
   }
 
   scroll() {//esta funcion identifica donde esta el foco central de la pagina para animar la navegacion
-    const ubicacionCentral = (window.innerHeight / 3) + window.scrollY //esta formula calcula el centro de la pantalla para que sea mas dinamico
+    const ubicacionCentral = (window.innerHeight / 3) + window.scrollY - 250; // offset de tolerancia de 250px para evitar micro saltos
 
     this.cararPosicionYDeLosElementos()
     if (ubicacionCentral <= this.inicioY) {
