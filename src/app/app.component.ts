@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, NgZone, AfterViewInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
 import { ServiceService } from './servicios/service.service';
 import * as AOS from 'aos';
 
@@ -7,12 +8,14 @@ import * as AOS from 'aos';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChild('canvasTecnologico') canvasRef!: ElementRef;
+  
   title = 'Jehan Hurtado | Soporte técnico, impresoras e impresión 3D';
   nameAnimatin = ''
   displayanimatin = 'block'
 
-  constructor(private service: ServiceService) {
+  constructor(private service: ServiceService, private ngZone: NgZone) {
     setTimeout(() => {
       this.loadSectionHeights()
     }, 10);
@@ -36,6 +39,17 @@ export class AppComponent {
   ngOnInit(): void {
     AOS.init()
     window.addEventListener('load', AOS.refresh)
+  }
+
+  ngAfterViewInit(): void {
+    this.ngZone.runOutsideAngular(() => {
+      fromEvent(window, 'scroll').subscribe(() => {
+        if (this.canvasRef) {
+          const parallaxValue = window.scrollY * 0.25;
+          this.canvasRef.nativeElement.style.setProperty('--parallax-y', `-${parallaxValue}px`);
+        }
+      });
+    });
   }
 
   private loadSectionHeights(): void {
