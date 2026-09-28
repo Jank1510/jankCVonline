@@ -162,14 +162,11 @@ hr {
 }
 .icono-flotante {
   position: absolute; 
+  width: 45px; height: 45px;
   opacity: 0.04;
   fill: currentColor; color: #555;
   animation: gravedadCero 12s infinite alternate ease-in-out;
 }
-.i-1 { width: 150px; top: 10%; left: 5%; animation-delay: 0s; }
-.i-2 { width: 220px; top: 40%; right: -5%; animation-delay: -3s; }
-.i-3 { width: 120px; top: 70%; left: 15%; animation-delay: -6s; }
-.i-4 { width: 180px; bottom: -5%; right: 20%; animation-delay: -9s; }
 
 @keyframes gravedadCero {
   0% { transform: translateY(0) rotate(0deg); }
