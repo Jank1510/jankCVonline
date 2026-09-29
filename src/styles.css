@@ -58,27 +58,32 @@ app-inicio, app-especialidad, app-experiencia, app-habilidades, app-resumen, app
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0.03) 60%, transparent 100%);
-    background-position: bottom left;
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    
-    padding-bottom: 0.8rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
     font-weight: bold;
 }
 
 
 
 .section-header span {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #333333;
+}
+
+.section-header span::before {
+    content: "";
+    display: inline-block;
+    width: 2.5rem;
+    height: 2px;
+    background-color: #bbbbbb;
+    border-radius: 2px;
 }
 
 @media (min-width: 1270px) {
     .section-header {
-        padding-bottom: 1rem;
-        margin-bottom: 3.5rem;
+        margin-bottom: 3rem;
     }
 }
 

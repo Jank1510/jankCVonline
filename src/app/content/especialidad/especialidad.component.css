@@ -6,7 +6,7 @@
     display: grid;
     gap: 1.5rem;
     margin: 1rem auto;
-    width: 90vw;
+    width: 100%;
 }
 
 .tarjetaServicio {
@@ -120,7 +120,7 @@
 
     .gridServiciosTecnicos {
         grid-template-columns: 1fr 1fr 1fr;
-        width: 80vw;
+        width: 100%;
     }
 }
 
@@ -136,6 +136,6 @@
     
 
     .gridServiciosTecnicos {
-        width: min(70vw, 68rem);
+        width: 100%;
     }
 }

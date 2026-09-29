@@ -1,17 +1,20 @@
 <div data-aos="fade-right" class="section-header">
-        <hr><span>Proyectos tecnológicos y Software</span>
-    </div>
+    <hr><span>Proyectos tecnológicos y Software</span>
+</div>
 <section (window:resize)="ajusteResolucion($event)" class="content">
     
-        <div class="intro-proyectos" data-aos="fade-left">
+    <div class="intro-proyectos" data-aos="fade-left">
         <p>Como valor agregado, también ofrezco servicios de desarrollo web, software e integración de Inteligencia Artificial para digitalizar procesos y crear herramientas a medida.</p>
-        <button class="btn-toggle-proyectos" (click)="toggleProyectos()">
-            {{ mostrarProyectos ? 'Ocultar proyectos de desarrollo' : 'Ver proyectos de desarrollo' }}
-        </button>
+        
+        <div class="categorias-proyectos">
+            <span>Desarrollo Web</span>
+            <span class="dot">·</span>
+            <span>Interfaces UI / UX</span>
+            <span class="dot">·</span>
+            <span>Integración IA</span>
+        </div>
     </div>
     
-    <div *ngIf="mostrarProyectos" class="contenedor-proyectos-desplegable" data-aos="fade-down">
-
     <div class="destacados" data-aos="fade-up">
         <article class="proyectoDestacado" *ngFor="let proyecto of proyectosDestacados" [ngStyle]="{'background-image':proyecto.imgFondo}">
             <div class="contenidoDestacado">
@@ -30,23 +33,52 @@
             </div>
         </article>
     </div>
-    <p data-aos="fade-left" *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al presionar una de las imágenes serás redirigido al repositorio del proyecto.</p>
-    <div class="scrollAnimation">
-        <div class="gridPortafolio" [ngClass]="animationScroll">
-            <div (click)="abrirRepositorioEnMovil(data.repositorio)" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta" *ngFor="let data of dataPortafolio[numeroDePagina]" [attr.aria-label]="data.titulo" [ngStyle]="{'background-image':data.imgFondo}">
-               <div *ngIf="width>1270" class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
-                    <h3>{{data.titulo}}</h3>
-                    <p>{{data.info}}</p>
-                    <a *ngIf="data.preview" target="_blank" rel="noopener noreferrer" [href]="data.preview">Visitar web</a>
-                    <a target="_blank" rel="noopener noreferrer" [href]="data.repositorio">Visitar repositorio</a>
-               </div>
+
+    <div class="trigger-explorar-container" data-aos="fade-up">
+        <div class="trigger-explorar" 
+             (click)="toggleProyectos()" 
+             [attr.aria-expanded]="mostrarProyectos"
+             tabindex="0"
+             (keydown.enter)="toggleProyectos()"
+             (keydown.space)="toggleProyectos()">
+            
+            <div class="trigger-line"></div>
+            
+            <div class="trigger-content">
+                <span class="trigger-title">Mis Aplicaciones</span>
+                <span class="trigger-subtitle">Explora los proyectos desarrollados</span>
             </div>
+            
+            <span class="trigger-chevron" [class.open]="mostrarProyectos">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 1L7 7L13 1" />
+                </svg>
+            </span>
+            
+            <div class="trigger-line bottom"></div>
         </div>
     </div>
-    <div class="paginacion">
-        <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('prev')">Anterior</span></div>
-            {{numeroDePagina+1}}/{{dataPortafolio.length}}
-        <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('next')">Siguiente</span></div>
-    </div>
+    
+    <div class="proyectos-desplegable-wrapper" [class.abierto]="mostrarProyectos">
+        <div class="proyectos-desplegable-inner">
+            <p data-aos="fade-left" *ngIf="width<1270"><img style="width: 1rem;" src="./assets/icons/warning.png" alt="Warning"> Al presionar una de las imágenes serás redirigido al repositorio del proyecto.</p>
+            <div class="scrollAnimation">
+                <div class="gridPortafolio" [ngClass]="animationScroll">
+                    <div (click)="abrirRepositorioEnMovil(data.repositorio)" (mouseover)="data.var= 'flex'" (mouseout)="data.var='none'" class="etiqueta" *ngFor="let data of dataPortafolio[numeroDePagina]" [attr.aria-label]="data.titulo" [ngStyle]="{'background-image':data.imgFondo}">
+                       <div *ngIf="width>1270" class="hoveretiqueta" [ngStyle]="{'display':data.var,'background-color':data.background}">
+                            <h3>{{data.titulo}}</h3>
+                            <p>{{data.info}}</p>
+                            <a *ngIf="data.preview" target="_blank" rel="noopener noreferrer" [href]="data.preview">Visitar web</a>
+                            <a target="_blank" rel="noopener noreferrer" [href]="data.repositorio">Visitar repositorio</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="paginacion">
+                <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('prev')">Anterior</span></div>
+                    {{numeroDePagina+1}}/{{dataPortafolio.length}}
+                <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('next')">Siguiente</span></div>
+            </div>
+        </div>
     </div>
 </section>

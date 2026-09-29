@@ -105,7 +105,7 @@
 
     .experiencias {
         gap: 1rem;
-        width: 90vw;
+        width: 100%;
         margin: auto;
     }
 
@@ -166,7 +166,7 @@
     }
 
     .experiencias {
-        width: 80vw;
+        width: 100%;
     }
 
     .encabezado {
@@ -198,7 +198,7 @@
 
     .experiencias {
         gap: 1vw;
-        width: 70vw;
+        width: 100%;
     }
 
     .experiencia {

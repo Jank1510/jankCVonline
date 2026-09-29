@@ -11,10 +11,8 @@ app-aside-menu {
 
 .ancho {
     scroll-margin-top: 4.5rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 hr {
@@ -85,6 +83,7 @@ hr {
 
     .ancho {
         width: 90%;
+        max-width: 68rem;
     }
 
     hr {
@@ -171,4 +170,20 @@ hr {
 @keyframes gravedadCero {
   0% { transform: translate(0px, 0px) rotate(0deg); }
   100% { transform: translate(-15px, -30px) rotate(8deg); }
+}
+
+
+#app-inicio {
+    justify-content: flex-start;
+    padding-top: 18vh;
+}
+
+#app-sobre-jankos {
+    justify-content: center;
+    gap: 5rem;
+    padding: 4rem 0;
+}
+
+.ancho {
+    padding: 4rem 0;
 }

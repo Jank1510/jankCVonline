@@ -6,7 +6,7 @@
     display: grid;
     gap: 2rem;
     margin: 1rem auto;
-    width: 90vw;
+    width: 100%;
 }
 
 .columnaEducacion h3 {
@@ -79,7 +79,7 @@
     
     .gridEducacion {
         grid-template-columns: 1fr 1fr;
-        width: 80vw;
+        width: 100%;
     }
 }
 
@@ -90,6 +90,6 @@
     
     
     .gridEducacion {
-        width: min(70vw, 68rem);
+        width: 100%;
     }
 }

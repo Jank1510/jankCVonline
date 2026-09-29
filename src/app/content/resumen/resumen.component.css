@@ -15,7 +15,7 @@
 
     .contentenedorTarjeta {
         margin: auto;
-        width: 90vw;
+        width: 100%;
     }
 
     .section {
@@ -156,7 +156,7 @@
     }
 
     .contentenedorTarjeta {
-        width: 80vw;
+        width: 100%;
     }
 
     .ctaResumen {
@@ -184,6 +184,6 @@
     }
 
     .contentenedorTarjeta {
-        width: min(70vw, 68rem);
+        width: 100%;
     }
 }
