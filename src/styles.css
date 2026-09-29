@@ -13,22 +13,19 @@ app-root {
     box-sizing: border-box;
 }
 
-html, body, .app-layout, app-root {
-    background-color: transparent !important;
-    background: transparent !important;
-}
-
 html {
+
     display: inherit;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-}
 
-body {
+}
+body{
     overflow-x: hidden;
-    background-color: #ffffff;
+
 }
 
 img {

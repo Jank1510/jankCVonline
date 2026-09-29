@@ -1,5 +1,5 @@
 <!--Aside para vistas de desktops-->
-<aside class="aside_desktop" *ngIf="width >= 1024"
+<aside class="aside_desktop" *ngIf="width >= 1024" [ngStyle]="{ 'background-color': colorGlobal }"
   >
   <div class="perfil">
     <div class="logo-container">
@@ -115,7 +115,7 @@
     CV <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
 </div>
 <div class="opacity_fondo" *ngIf="( width < 1024) && menuVisible">
-  <aside class="aside_Ipad" [ngStyle]="{ 'animation-name':directionNameAnimation }">
+  <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
     <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
   <div class="perfil">
     <div class="logo-container">

@@ -50,7 +50,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   constructor(private service: ServiceService, private ngZone: NgZone) {
     this.width = window.innerWidth//cargamos una variable para condicionar las vistas de design en el dom
     this.menuVisible = false
-    this.colorGlobal = 'rgba(40, 40, 40, 0.65)'
+    this.colorGlobal = '#4a4a4a'
     this.ancho='0'
     setTimeout(() => {
       this.detectarSeccionActiva()
@@ -124,7 +124,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   inicio(): void {
     this.li_diseno1 = { 'border-bottom-right-radius': '1.4rem' }
     this.li_especialidad = { 'border-top-right-radius': '1.4rem' }
-    this.li_inicio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_inicio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_educacion = {}
     this.li_habilidades = {}
     this.li_portafolio = {}
@@ -144,7 +144,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   especialidad(): void {
     this.li_inicio = { 'border-bottom-right-radius': '1.4rem' }
     this.li_educacion = { 'border-top-right-radius': '1.4rem' }
-    this.li_especialidad = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_especialidad = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -164,7 +164,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   educacion(): void {
     this.li_especialidad = { 'border-bottom-right-radius': '1.4rem' }
     this.li_experiencia = { 'border-top-right-radius': '1.4rem' }
-    this.li_educacion = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_educacion = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_inicio = {}
     this.li_diseno1 = {}
     this.li_resumen = {}
@@ -184,7 +184,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   experiencia(): void {
     this.li_educacion = { 'border-bottom-right-radius': '1.4rem' }
     this.li_portafolio = { 'border-top-right-radius': '1.4rem' }
-    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_resumen = {}
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -204,7 +204,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   portafolio(): void {
     this.li_experiencia = { 'border-bottom-right-radius': '1.4rem' }
     this.li_habilidades = { 'border-top-right-radius': '1.4rem' }
-    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_resumen = {}
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -224,7 +224,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   habilidades(): void {
     this.li_portafolio = { 'border-bottom-right-radius': '1.4rem' }
     this.li_resumen = { 'border-top-right-radius': '1.4rem' }
-    this.li_habilidades = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_habilidades = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_especialidad = {}
@@ -244,7 +244,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   resumen(): void {
     this.li_habilidades = { 'border-bottom-right-radius': '1.4rem' }
     this.li_contactame = { 'border-top-right-radius': '1.4rem' }
-    this.li_resumen = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_resumen = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_portafolio = {}
     this.li_educacion = {}
     this.li_experiencia = {}
@@ -264,7 +264,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   contactame(): void {
     this.li_resumen = { 'border-bottom-right-radius': '1.4rem' }
     this.li_diseno2 = { 'border-top-right-radius': '1.4rem' }
-    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '30px', 'margin': '0 15px', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}

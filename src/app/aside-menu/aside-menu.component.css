@@ -1,8 +1,3 @@
-:host {
-    display: block;
-    background: transparent !important;
-}
-
 .aside_desktop {
     width: 20vw;
     display: flex;
@@ -17,10 +12,6 @@
     margin: 0;
     justify-content: center;
     z-index: 2;
-    background: rgba(30, 30, 35, 0.5) !important;
-    backdrop-filter: blur(25px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .perfil {
@@ -63,7 +54,7 @@
 .aside_desktop .navegacion ul {
     /*gradiente gris→blanco: permite que los border-radius de items vecinos muestren curvas blancas*/
     width: 80%;
-    background: transparent;
+    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #ffffff 82%, #ffffff 100%);
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
@@ -81,12 +72,11 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         background: transparent;
+         background: #4a4a4a;
          width: 100%;
          text-decoration: none;
          color: white;
-         border-radius: 20px 0 0 20px;
-         margin-left: 10px;
+         border-radius: 1.4rem 0 0 1.4rem;
          transition: background-color 0.15s ease, color 0.15s ease, width 0.25s ease, opacity 0.2s ease;
      }
 
@@ -192,10 +182,6 @@ hr {
     padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
-    background: rgba(30, 30, 35, 0.5) !important;
-    backdrop-filter: blur(25px) saturate(180%) !important;
-    -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .aside_Ipad .navegacion ul li {
