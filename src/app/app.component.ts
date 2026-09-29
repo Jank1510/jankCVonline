@@ -52,9 +52,9 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     const colores = ['#00f2fe', '#4facfe', '#f093fb', '#f5576c', '#43e97b', '#38f9d7', '#fa709a', '#fee140'];
 
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 150; i++) {
       const randPath = paths[Math.floor(Math.random() * paths.length)];
-      const randTop = (Math.random() * 350 - 10) + '%';
+      const randTop = (Math.random() * 100) + '%';
       const randLeft = Math.floor(Math.random() * 90) + 5 + '%';
       const randDelay = -(Math.random() * 15) + 's';
       const randRotation = `rotate(${Math.floor(Math.random() * 360)}deg)`;
