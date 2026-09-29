@@ -17,9 +17,9 @@
     margin: 0;
     justify-content: center;
     z-index: 2;
-    background: rgba(25, 25, 30, 0.45) !important;
-    backdrop-filter: saturate(180%) blur(20px) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    background: rgba(30, 30, 35, 0.5) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -192,9 +192,9 @@ hr {
     padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
-    background: rgba(25, 25, 30, 0.45) !important;
-    backdrop-filter: saturate(180%) blur(20px) !important;
-    -webkit-backdrop-filter: saturate(180%) blur(20px) !important;
+    background: rgba(30, 30, 35, 0.5) !important;
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
