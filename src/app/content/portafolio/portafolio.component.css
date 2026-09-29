@@ -9,27 +9,11 @@
     width: 100%;
 }
 
-.content .titulo {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    margin: 0 auto 2rem auto;
-    max-width: calc(100vw - 2rem);
-    width: min(100%, 68rem);
-}
 
-.content .titulo hr {
-    background-color: black;
-    border: none;
-    height: 1px;
-    margin: 0 1rem 0 0;
-    width: 3rem;
-}
 
-.content .titulo span {
-    font-size: 1.5rem;
-}
+
+
+
 
 .content p {
     color: #605f5f;

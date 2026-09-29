@@ -45,3 +45,37 @@ textarea:focus-visible {
 }
 
 /*----------*/
+
+/* Unified Section Header Rules */
+app-inicio, app-especialidad, app-experiencia, app-habilidades, app-resumen, app-educacion, app-portafolio, app-contactame {
+    display: block;
+    width: 100%;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section-header hr {
+    height: 1px;
+    width: 3rem;
+    margin: 0 1rem 0 0;
+    border: none;
+    background-color: black;
+}
+
+.section-header span {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 1270px) {
+    .section-header {
+        margin-bottom: 2rem;
+    }
+}

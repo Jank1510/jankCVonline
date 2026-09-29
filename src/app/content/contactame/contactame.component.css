@@ -8,20 +8,9 @@
     box-sizing: border-box;
 }
 
-.content .titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: bold;
-}
 
-.content .titulo hr {
 
-    margin: 0;
-    margin-right: 0px;
-    border: none;
-    background-color: black;
-}
+
 
 .introContacto {
     margin: 0 auto 3rem auto;
@@ -375,15 +364,9 @@ li span {
         margin-right: 0;
     }
 
-    .content .titulo {
-        font-size: 1.5rem;
-        margin-bottom: 3rem;
-    }
+    
 
-    .content .titulo hr {
-        margin-right: 1rem;
-        width: 3rem;
-    }
+    
 
     .content form ul li label {
         margin-bottom: 0.5rem;
@@ -417,9 +400,7 @@ li span {
         font-size: 0.95rem;
     }
 
-    .content .titulo hr {
-        height: 1px;
-    }
+    
 }
 
 @media (min-width:700px) {
@@ -488,19 +469,11 @@ li span {
         align-items: start;
     }
 
-    .content .titulo {
-        margin-bottom: 3rem;
-    }
+    
 
-    .content .titulo span {
-        font-size: 1.5rem;
+    
 
-    }
-
-    .content .titulo hr {
-        margin-right: 1rem;
-        width: 3rem;
-    }
+    
 
     .content form ul li label {
         margin-bottom: 0.5rem;
@@ -543,8 +516,6 @@ li span {
         margin: 6rem auto 10rem auto;
     }
 
-    .content .titulo hr {
-        height: 1px;
-    }
+    
 
 }

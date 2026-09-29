@@ -1,15 +1,6 @@
-.content .titulo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-weight: bold;
-}
 
-.content .titulo hr {
-    margin: 0;
-    border: none;
-    background-color: black;
-}
+
+
 
 .gridEducacion {
     display: grid;
@@ -77,27 +68,15 @@
     .content {
         margin: 2rem 0 6rem 0;
     }
-    .content .titulo {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
-        margin-left: 5vw;
-        width: 90vw;
-    }
-    .content .titulo hr {
-        height: 1px;
-        margin-right: 1rem;
-        width: 3rem;
-    }
+    
+    
 }
 
 @media (min-width:700px) {
     .content {
         margin: 6rem 0;
     }
-    .content .titulo {
-        margin-left: 0;
-        width: auto;
-    }
+    
     .gridEducacion {
         grid-template-columns: 1fr 1fr;
         width: 80vw;
@@ -108,12 +87,8 @@
     .content {
         margin: 6rem 0;
     }
-    .content .titulo {
-        margin-bottom: 3rem;
-    }
-    .content .titulo span {
-        font-size: 1.5rem;
-    }
+    
+    
     .gridEducacion {
         width: min(70vw, 68rem);
     }

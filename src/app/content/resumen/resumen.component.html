@@ -1,7 +1,8 @@
-<section class="content" (window:resize)="ajusteResolucion($event)">
-    <div data-aos="fade-right" class="titulo">
+<div data-aos="fade-right" class="section-header">
         <hr><span>Sobre JANKOS / Jehan</span>
     </div>
+<section class="content" (window:resize)="ajusteResolucion($event)">
+    
     <div data-aos="fade-left" class="contentenedorTarjeta">
         <div class="section">
             <img *ngIf="width>=700" src="./assets/icons/resumen/perfil.png" alt="perfil">
