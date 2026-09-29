@@ -267,12 +267,13 @@ hr {
     display: flex;
     align-items: center;
     column-gap: 0.2vw;
-    color: #111111;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .btnDescarga a img {
-    opacity: 0.6;
+    opacity: 1;
+    filter: brightness(0) invert(1);
 }
 
 @keyframes animacionBTNDescarga {
