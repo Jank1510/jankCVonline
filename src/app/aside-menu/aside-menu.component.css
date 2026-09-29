@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #111111;
     position: fixed;
     left: 0;
     top: 0;
@@ -54,7 +54,7 @@
 .aside_desktop .navegacion ul {
     /*gradiente gris→blanco: permite que los border-radius de items vecinos muestren curvas blancas*/
     width: 80%;
-    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #ffffff 82%, #ffffff 100%);
+    background: linear-gradient(to right, #f8f9fa 0%, #f8f9fa 82%, #ffffff 82%, #ffffff 100%);
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
@@ -72,12 +72,12 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         background: #4a4a4a;
+         background: #f8f9fa;
          width: 100%;
          text-decoration: none;
-         color: white;
-         border-radius: 1.4rem 0 0 1.4rem;
-         transition: background-color 0.15s ease, color 0.15s ease, width 0.25s ease, opacity 0.2s ease;
+         color: #111111;
+         border-radius: 1.4rem 0 0 1.4rem; border-left: 4px solid transparent;
+         transition: background-color 0.15s ease, color 0.15s ease, opacity 0.2s ease;
      }
 
 .navegacion ul li:hover .hoverEfecto {
@@ -112,7 +112,7 @@
 }
 
 ul li img {
-    filter: invert(1);
+    opacity: 0.6;
 }
 
 hr {
@@ -176,7 +176,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #111111;
     position: fixed;
     margin: auto;
     padding-top: 5rem;
@@ -189,7 +189,7 @@ hr {
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
     .aside_Ipad .navegacion ul {
@@ -208,14 +208,14 @@ hr {
         width: 100%;
         padding: 0;
         text-decoration: none;
-        color: white;
-        transition: opacity 0.2s ease, background 0.25s ease, border-radius 0.25s ease, width 0.25s ease;
+        color: #111111;
+        transition: opacity 0.2s ease, background 0.25s ease, width 0.25s ease;
     }
 
     .closedMenu {
     position: absolute;
     z-index: 2;
-    filter: invert(.95);
+    opacity: 0.6;
 }
 
 .banner {
@@ -237,13 +237,13 @@ hr {
     align-items: center;
     column-gap: 0.35rem;
     text-decoration: none;
-    color: white;
+    color: #111111;
     font-weight: bold;
     font-size: 13px;
 }
 
 .banner img {
-    filter: invert(1);
+    opacity: 0.6;
 }
 
 .btnDescarga {
@@ -267,12 +267,12 @@ hr {
     display: flex;
     align-items: center;
     column-gap: 0.2vw;
-    color: white;
+    color: #111111;
     text-decoration: none;
 }
 
 .btnDescarga a img {
-    filter: invert(1);
+    opacity: 0.6;
 }
 
 @keyframes animacionBTNDescarga {
@@ -298,7 +298,7 @@ hr {
         z-index: 1;
         width: 2.5rem;
         padding: 0.35rem;
-        filter: invert(1);
+        opacity: 0.6;
     }
 
     * {

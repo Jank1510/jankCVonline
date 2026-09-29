@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" fill="#ffffff"/>
+  <!-- J -->
+  <rect x="40" y="20" width="15" height="55" fill="#000000"/>
+  <rect x="20" y="75" width="35" height="15" fill="#000000"/>
+  <rect x="20" y="55" width="15" height="20" fill="#000000"/>
+  
+  <!-- K -->
+  <rect x="65" y="20" width="15" height="70" fill="#000000"/>
+  <polygon points="70,60 105,20 85,20 65,45" fill="#000000"/>
+  <polygon points="70,50 105,90 85,90 65,65" fill="#000000"/>
+</svg>
