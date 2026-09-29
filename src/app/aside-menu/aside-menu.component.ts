@@ -13,16 +13,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   seccionActual: string = '';
   colorGlobal: string
   /*variables para el control de border radius en el doom*/
-  li_diseno1!: object
-  li_inicio!: object
-  li_especialidad!: object
-  li_educacion!: object
-  li_experiencia!: object
-  li_portafolio!: object
-  li_habilidades!: object
-  li_resumen!: object
-  li_contactame!: object
-  li_diseno2!: object
+  li_diseno1!: string
+  li_inicio!: string
+  li_especialidad!: string
+  li_educacion!: string
+  li_experiencia!: string
+  li_portafolio!: string
+  li_habilidades!: string
+  li_resumen!: string
+  li_contactame!: string
+  li_diseno2!: string
   imgInicio!: string
   imgEspecialidad!: string
   imgEducacion!: string
@@ -122,16 +122,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   }
   /*funciones de navegacion*/
   inicio(): void {
-    this.li_diseno1 = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_especialidad = { 'border-top-right-radius': '1.4rem' }
-    this.li_inicio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_educacion = {}
-    this.li_habilidades = {}
-    this.li_portafolio = {}
-    this.li_experiencia = {}
-    this.li_resumen = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
+    this.li_diseno1 = ''
+    this.li_especialidad = 'menu-vecino-inferior'
+    this.li_inicio = 'menu-activo'
+    this.li_educacion = ''
+    this.li_habilidades = ''
+    this.li_portafolio = ''
+    this.li_experiencia = ''
+    this.li_resumen = ''
+    this.li_diseno2 = ''
+    this.li_contactame = ''
     this.imgInicio = 'invert(0) opacity(80%)'
     this.imgEspecialidad = ''
     this.imgEducacion = ''
@@ -142,16 +142,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   especialidad(): void {
-    this.li_inicio = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_educacion = { 'border-top-right-radius': '1.4rem' }
-    this.li_especialidad = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_diseno1 = {}
-    this.li_resumen = {}
-    this.li_habilidades = {}
-    this.li_portafolio = {}
-    this.li_experiencia = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
+    this.li_inicio = 'menu-vecino-superior'
+    this.li_educacion = 'menu-vecino-inferior'
+    this.li_especialidad = 'menu-activo'
+    this.li_diseno1 = ''
+    this.li_resumen = ''
+    this.li_habilidades = ''
+    this.li_portafolio = ''
+    this.li_experiencia = ''
+    this.li_diseno2 = ''
+    this.li_contactame = ''
     this.imgInicio = ''
     this.imgEspecialidad = 'invert(0) opacity(80%)'
     this.imgEducacion = ''
@@ -162,16 +162,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   educacion(): void {
-    this.li_especialidad = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_experiencia = { 'border-top-right-radius': '1.4rem' }
-    this.li_educacion = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_inicio = {}
-    this.li_diseno1 = {}
-    this.li_resumen = {}
-    this.li_habilidades = {}
-    this.li_portafolio = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
+    this.li_especialidad = 'menu-vecino-superior'
+    this.li_experiencia = 'menu-vecino-inferior'
+    this.li_educacion = 'menu-activo'
+    this.li_inicio = ''
+    this.li_diseno1 = ''
+    this.li_resumen = ''
+    this.li_habilidades = ''
+    this.li_portafolio = ''
+    this.li_diseno2 = ''
+    this.li_contactame = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = 'invert(0) opacity(80%)'
@@ -182,16 +182,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   experiencia(): void {
-    this.li_educacion = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_portafolio = { 'border-top-right-radius': '1.4rem' }
-    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_resumen = {}
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_habilidades = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
+    this.li_educacion = 'menu-vecino-superior'
+    this.li_portafolio = 'menu-vecino-inferior'
+    this.li_experiencia = 'menu-activo'
+    this.li_resumen = ''
+    this.li_diseno1 = ''
+    this.li_inicio = ''
+    this.li_especialidad = ''
+    this.li_habilidades = ''
+    this.li_diseno2 = ''
+    this.li_contactame = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
@@ -202,16 +202,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   portafolio(): void {
-    this.li_experiencia = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_habilidades = { 'border-top-right-radius': '1.4rem' }
-    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_resumen = {}
-    this.li_educacion = {}
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
+    this.li_experiencia = 'menu-vecino-superior'
+    this.li_habilidades = 'menu-vecino-inferior'
+    this.li_portafolio = 'menu-activo'
+    this.li_resumen = ''
+    this.li_educacion = ''
+    this.li_diseno1 = ''
+    this.li_inicio = ''
+    this.li_especialidad = ''
+    this.li_diseno2 = ''
+    this.li_contactame = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
@@ -222,16 +222,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   habilidades(): void {
-    this.li_portafolio = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_resumen = { 'border-top-right-radius': '1.4rem' }
-    this.li_habilidades = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_diseno2 = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
-    this.li_contactame = {}
+    this.li_portafolio = 'menu-vecino-superior'
+    this.li_resumen = 'menu-vecino-inferior'
+    this.li_habilidades = 'menu-activo'
+    this.li_diseno1 = ''
+    this.li_inicio = ''
+    this.li_especialidad = ''
+    this.li_diseno2 = ''
+    this.li_educacion = ''
+    this.li_experiencia = ''
+    this.li_contactame = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
@@ -242,16 +242,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   resumen(): void {
-    this.li_habilidades = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_contactame = { 'border-top-right-radius': '1.4rem' }
-    this.li_resumen = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_portafolio = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_diseno2 = {}
+    this.li_habilidades = 'menu-vecino-superior'
+    this.li_contactame = 'menu-vecino-inferior'
+    this.li_resumen = 'menu-activo'
+    this.li_portafolio = ''
+    this.li_educacion = ''
+    this.li_experiencia = ''
+    this.li_diseno1 = ''
+    this.li_inicio = ''
+    this.li_especialidad = ''
+    this.li_diseno2 = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
@@ -262,16 +262,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   contactame(): void {
-    this.li_resumen = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_diseno2 = { 'border-top-right-radius': '1.4rem' }
-    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_portafolio = {}
-    this.li_habilidades = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
+    this.li_resumen = 'menu-vecino-superior'
+    this.li_diseno2 = ''
+    this.li_contactame = 'menu-activo'
+    this.li_portafolio = ''
+    this.li_habilidades = ''
+    this.li_educacion = ''
+    this.li_experiencia = ''
+    this.li_diseno1 = ''
+    this.li_inicio = ''
+    this.li_especialidad = ''
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
