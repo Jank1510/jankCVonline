@@ -5,6 +5,9 @@ app-aside-menu {
 
 .contenedor main {
     display: flex;
+    background-color: #ffffff;
+    border-radius: 36px 36px 0 0;
+    box-shadow: -4px 0 24px rgba(0,0,0,0.02);
     flex-direction: column;
     align-items: center;
 }
@@ -75,6 +78,7 @@ hr {
 @media (min-width:1024px) {
     .contenedor main {
         padding-top: 0;
+        border-radius: 36px 0 0 36px;
     }
 
     .contenedor {
