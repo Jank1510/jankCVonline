@@ -17,7 +17,7 @@
     margin: 0;
     justify-content: center;
     z-index: 2;
-    background: rgba(60, 60, 60, 0.4) !important;
+    background: rgba(15, 15, 20, 0.85) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
@@ -191,7 +191,7 @@ hr {
     padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
-    background: rgba(60, 60, 60, 0.4) !important;
+    background: rgba(15, 15, 20, 0.85) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
     border-right: 1px solid rgba(255, 255, 255, 0.08);
