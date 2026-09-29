@@ -1,7 +1,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    margin: 2rem auto 10rem auto;
+
     max-width: 72rem;
     padding: 0 1.25rem;
     width: 100%;
@@ -459,7 +459,7 @@ li span {
     }
 
     .content {
-        margin: 6rem auto 10rem auto;
+
     }
 }
 
@@ -513,7 +513,7 @@ li span {
     }
 
     .content {
-        margin: 6rem auto 10rem auto;
+
     }
 
     

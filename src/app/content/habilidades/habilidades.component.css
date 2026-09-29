@@ -2,7 +2,7 @@
     box-sizing: border-box;
     display: grid;
     gap: 2rem;
-    margin: 2rem auto 6rem auto;
+
     max-width: 60rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -221,7 +221,7 @@ a:hover {
         align-items: start;
         gap: 2.4rem;
         grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
-        margin: 6rem auto;
+
     }
 }
 
