@@ -7,72 +7,51 @@
     </div>
     <p>JEHAN HURTADO</p>
   </div>
-  <nav class="navegacion">
-    <ul>
-      <!--Guia de diseno para generar el efecto visual del item seleccionado-->
-      <li>
-        <a href="#" [ngStyle]="li_diseno1"> </a>
-      </li>
-      <li>
-        <a href="#app-inicio" [ngStyle]="li_inicio">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgInicio }"
-            src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
-          <span class="hoverEfecto">INICIO</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-especialidad" [ngStyle]="li_especialidad">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgEspecialidad }"
-            src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
-          <span class="hoverEfecto">SOPORTE TI</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-educacion" [ngStyle]="li_educacion">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgEducacion }"
-            src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
-          <span class="hoverEfecto">EDUCACION</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-experiencia" [ngStyle]="li_experiencia">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgExperiencia }"
-            src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
-          <span class="hoverEfecto">EXPERIENCIA</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-portafoli" [ngStyle]="li_portafolio">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgPortafolio }"
-            src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
-          <span class="hoverEfecto">PORTAFOLIO</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-habilidades" [ngStyle]="li_habilidades">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgHabilidades }"
-            src="./assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
-          <span class="hoverEfecto">HABILIDADES</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-resumen" [ngStyle]="li_resumen">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgResumen }"
-            src="./assets/icons/icons-aside/resumen-icon.png" alt="resume" />
-          <span class="hoverEfecto">RESUMEN</span>
-        </a>
-      </li>
-      <li>
-        <a href="#app-contactame" [ngStyle]="li_contactame">
-          <img class="hoverEfecto" [ngStyle]="{ filter: imgContactame }"
-            src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
-          <span class="hoverEfecto">CONTACTAME</span></a>
-      </li>
-      <li>
-        <a href="#" [ngStyle]="li_diseno2"> </a>
-      </li>
-    </ul>
-  </nav>
+          <nav class="navegacion">
+      <ul>
+        <li>
+          <a (click)="closedMenu()" href="#app-inicio">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
+            <span class="hoverEfecto">INICIO</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-servicios">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
+            <span class="hoverEfecto">SERVICIOS</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-trabajos">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
+            <span class="hoverEfecto">TRABAJOS</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-impresion3d">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/habilidades-icon.png" alt="3d printing" />
+            <span class="hoverEfecto">IMPRESIÓN 3D</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-sobre-jankos">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/resumen-icon.png" alt="about jankos" />
+            <span class="hoverEfecto">SOBRE JANKOS</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-proyectos">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
+            <span class="hoverEfecto">PROYECTOS</span>
+          </a>
+        </li>
+        <li>
+          <a (click)="closedMenu()" href="#app-cotizacion">
+            <img class="hoverEfecto" src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
+            <span class="hoverEfecto">COTIZACIÓN</span></a>
+        </li>
+      </ul>
+    </nav>
   <div class="contactenos">
     <hr />
     <ul>
@@ -92,7 +71,7 @@
         </a>
       </li>
       <li>
-        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/573043602822" aria-label="WhatsApp de Jehan">
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTechJankTech" aria-label="WhatsApp de Jehan">
           <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
         </a>
       </li>
@@ -192,7 +171,7 @@
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/573043602822" aria-label="WhatsApp de Jehan">
+          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTechJankTech" aria-label="WhatsApp de Jehan">
             <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
           </a>
         </li>

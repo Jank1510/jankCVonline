@@ -78,7 +78,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     const secciones = document.querySelectorAll('.ancho');
     const puntoMedio = window.innerHeight / 2;
 
-    for (let i = 0; i < secciones.length; i++) {
+        for (let i = 0; i < secciones.length; i++) {
       const seccion = secciones[i] as HTMLElement;
       const rect = seccion.getBoundingClientRect();
       
@@ -89,13 +89,12 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
           this.ngZone.run(() => {
             this.seccionActual = nuevaSeccion;
             if (nuevaSeccion === 'app-inicio') this.inicio();
-            else if (nuevaSeccion === 'app-especialidad') this.especialidad();
-            else if (nuevaSeccion === 'app-educacion') this.educacion();
-            else if (nuevaSeccion === 'app-experiencia') this.experiencia();
-            else if (nuevaSeccion === 'app-portafoli') this.portafolio();
-            else if (nuevaSeccion === 'app-habilidades') this.habilidades();
-            else if (nuevaSeccion === 'app-resumen') this.resumen();
-            else if (nuevaSeccion === 'app-contactame') this.contactame();
+            else if (nuevaSeccion === 'app-servicios') this.especialidad();
+            else if (nuevaSeccion === 'app-trabajos') this.experiencia();
+            else if (nuevaSeccion === 'app-impresion3d') this.habilidades();
+            else if (nuevaSeccion === 'app-sobre-jankos') this.resumen();
+            else if (nuevaSeccion === 'app-proyectos') this.portafolio();
+            else if (nuevaSeccion === 'app-cotizacion') this.contactame();
           });
         }
         break;
@@ -120,165 +119,132 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   scroll() {
     // Obsolete - logic moved to IntersectionObserver
   }
-  /*funciones de navegacion*/
+    /*funciones de navegacion*/
   inicio(): void {
     this.li_diseno1 = { 'border-bottom-right-radius': '1.4rem' }
     this.li_especialidad = { 'border-top-right-radius': '1.4rem' }
     this.li_inicio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_educacion = {}
-    this.li_habilidades = {}
-    this.li_portafolio = {}
     this.li_experiencia = {}
+    this.li_habilidades = {}
     this.li_resumen = {}
-    this.li_diseno2 = {}
+    this.li_portafolio = {}
     this.li_contactame = {}
+    this.li_diseno2 = {}
     this.imgInicio = 'invert(0) opacity(80%)'
     this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
+    this.imgPortafolio = ''
     this.imgContactame = ''
   }
   especialidad(): void {
     this.li_inicio = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_educacion = { 'border-top-right-radius': '1.4rem' }
+    this.li_experiencia = { 'border-top-right-radius': '1.4rem' }
     this.li_especialidad = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_diseno1 = {}
-    this.li_resumen = {}
     this.li_habilidades = {}
+    this.li_resumen = {}
     this.li_portafolio = {}
-    this.li_experiencia = {}
-    this.li_diseno2 = {}
     this.li_contactame = {}
+    this.li_diseno2 = {}
     this.imgInicio = ''
     this.imgEspecialidad = 'invert(0) opacity(80%)'
-    this.imgEducacion = ''
-    this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
-    this.imgContactame = ''
-  }
-  educacion(): void {
-    this.li_especialidad = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_experiencia = { 'border-top-right-radius': '1.4rem' }
-    this.li_educacion = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_inicio = {}
-    this.li_diseno1 = {}
-    this.li_resumen = {}
-    this.li_habilidades = {}
-    this.li_portafolio = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
-    this.imgInicio = ''
-    this.imgEspecialidad = ''
-    this.imgEducacion = 'invert(0) opacity(80%)'
     this.imgPortafolio = ''
-    this.imgExperiencia = ''
-    this.imgHabilidades = ''
-    this.imgResumen = ''
     this.imgContactame = ''
   }
   experiencia(): void {
-    this.li_educacion = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_portafolio = { 'border-top-right-radius': '1.4rem' }
-    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_resumen = {}
-    this.li_diseno1 = {}
-    this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_habilidades = {}
-    this.li_diseno2 = {}
-    this.li_contactame = {}
-    this.imgInicio = ''
-    this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgExperiencia = 'invert(0) opacity(80%)'
-    this.imgPortafolio = ''
-    this.imgHabilidades = ''
-    this.imgResumen = ''
-    this.imgContactame = ''
-  }
-  portafolio(): void {
-    this.li_experiencia = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_especialidad = { 'border-bottom-right-radius': '1.4rem' }
     this.li_habilidades = { 'border-top-right-radius': '1.4rem' }
-    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_resumen = {}
-    this.li_educacion = {}
-    this.li_diseno1 = {}
+    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_inicio = {}
-    this.li_especialidad = {}
-    this.li_diseno2 = {}
+    this.li_diseno1 = {}
+    this.li_resumen = {}
+    this.li_portafolio = {}
     this.li_contactame = {}
+    this.li_diseno2 = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgExperiencia = ''
-    this.imgPortafolio = 'invert(0) opacity(80%)'
+    this.imgExperiencia = 'invert(0) opacity(80%)'
     this.imgHabilidades = ''
     this.imgResumen = ''
+    this.imgPortafolio = ''
     this.imgContactame = ''
   }
   habilidades(): void {
-    this.li_portafolio = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_experiencia = { 'border-bottom-right-radius': '1.4rem' }
     this.li_resumen = { 'border-top-right-radius': '1.4rem' }
     this.li_habilidades = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_diseno1 = {}
     this.li_inicio = {}
+    this.li_diseno1 = {}
     this.li_especialidad = {}
-    this.li_diseno2 = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
+    this.li_portafolio = {}
     this.li_contactame = {}
+    this.li_diseno2 = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = 'invert(0) opacity(80%)'
     this.imgResumen = ''
+    this.imgPortafolio = ''
     this.imgContactame = ''
   }
   resumen(): void {
     this.li_habilidades = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_contactame = { 'border-top-right-radius': '1.4rem' }
+    this.li_portafolio = { 'border-top-right-radius': '1.4rem' }
     this.li_resumen = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_portafolio = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
-    this.li_diseno1 = {}
     this.li_inicio = {}
+    this.li_diseno1 = {}
     this.li_especialidad = {}
+    this.li_experiencia = {}
+    this.li_contactame = {}
     this.li_diseno2 = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = 'invert(0) opacity(80%)'
+    this.imgPortafolio = ''
     this.imgContactame = ''
   }
-  contactame(): void {
+  portafolio(): void {
     this.li_resumen = { 'border-bottom-right-radius': '1.4rem' }
-    this.li_diseno2 = { 'border-top-right-radius': '1.4rem' }
-    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
-    this.li_portafolio = {}
-    this.li_habilidades = {}
-    this.li_educacion = {}
-    this.li_experiencia = {}
-    this.li_diseno1 = {}
+    this.li_contactame = { 'border-top-right-radius': '1.4rem' }
+    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_inicio = {}
+    this.li_diseno1 = {}
     this.li_especialidad = {}
+    this.li_experiencia = {}
+    this.li_habilidades = {}
+    this.li_diseno2 = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = ''
-    this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
+    this.imgPortafolio = 'invert(0) opacity(80%)'
+    this.imgContactame = ''
+  }
+  contactame(): void {
+    this.li_portafolio = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_diseno2 = { 'border-top-right-radius': '1.4rem' }
+    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
+    this.li_inicio = {}
+    this.li_diseno1 = {}
+    this.li_especialidad = {}
+    this.li_experiencia = {}
+    this.li_habilidades = {}
+    this.li_resumen = {}
+    this.imgInicio = ''
+    this.imgEspecialidad = ''
+    this.imgExperiencia = ''
+    this.imgHabilidades = ''
+    this.imgResumen = ''
+    this.imgPortafolio = ''
     this.imgContactame = 'invert(0) opacity(80%)'
   }
 }
+

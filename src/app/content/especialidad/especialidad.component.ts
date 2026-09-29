@@ -39,17 +39,6 @@ export class EspecialidadComponent implements OnInit {
           'Laptops y PCs de alto rendimiento',
           'Configuración de entornos/servidores'
         ]
-      },
-      {
-        titulo: 'Impresión 3D y Fabricación Digital',
-        descripcion: 'Materialización de ideas a través de diseño paramétrico y manufactura aditiva.',
-        imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
-        capacidades: [
-          'Prototipado funcional',
-          'Producción de piezas mecánicas',
-          'Diseños personalizados',
-          'Asesoría técnica en corte/slicing'
-        ]
       }
     ];
   }

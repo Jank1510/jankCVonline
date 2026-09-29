@@ -1,71 +1,37 @@
 <section class="content flex">
     <div class="secciones">
         <div data-aos="fade-right" class="titulo">
-            <hr><span>Habilidades</span>
+            <hr><span>Impresión 3D y Fabricación Digital</span>
         </div>
         <p data-aos="zoom-in">
-            Mi fuerte actual es el soporte TI y el mantenimiento tecnológico. Trabajo diagnosticando, reparando y
-            configurando impresoras, computadores, sistemas y equipos de trabajo; también atiendo fallas de hardware,
-            software y conectividad para que la operación siga funcionando.
+            Soluciones en impresión 3D a medida. Desde piezas mecánicas y repuestos funcionales, hasta regalos personalizados, lámparas y tecnología integrada.
             <br> <br>
-            El desarrollo web, la automatización y la IA complementan ese perfil técnico: me permiten crear soluciones,
-            documentar procesos, automatizar tareas y construir herramientas digitales útiles para problemas reales.
+            Trabajo con manufactura aditiva para materializar ideas, prototipos y diseños físicos, garantizando calidad en los acabados y resistencia para usos prácticos.
             <br> <br>
-            Visite mi perfil de <a target="_blank"
-                href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/">LinkedIn</a> para obtener
-            más detalles o simplemente <a href="#app-contactame">contácteme</a>.
+            ¿Tienes un proyecto en mente? <a href="#app-contactame">Cotiza tu diseño aquí</a>.
         </p>
         <div class="fortalezaActual" data-aos="fade-up">
-            <span>FORTALEZA ACTUAL</span>
-            <h2>Soporte TI, impresoras y computadores</h2>
-            <p>Diagnóstico preventivo y correctivo, reparación de fallas, configuración de sistemas, mantenimiento de
-                equipos, atención técnica y acompañamiento a usuarios.</p>
+            <span>SERVICIOS Y PRODUCTOS</span>
+            <h2>Diseños personalizados y piezas técnicas</h2>
+            <p>Atendemos necesidades tanto comerciales como de uso personal, combinando impresión 3D con tecnología como chips NFC.</p>
             <ul>
-                <li>Impresoras y equipos de computo</li>
-                <li>Hardware, software y sistemas</li>
-                <li>Solución de fallas en entorno real de trabajo</li>
+                <li>Diseño paramétrico y corte/slicing</li>
+                <li>Piezas mecánicas y repuestos</li>
+                <li>Regalos personalizados y lámparas</li>
             </ul>
-        </div>
-        <div class="herramientas" data-aos="fade-up">
-            <span>AREAS DE APOYO</span>
-            <p>Documentación técnica, seguimiento de incidencias, instalación de herramientas, configuración de equipos,
-                control básico de procesos y desarrollo de soluciones web cuando el problema necesita una herramienta
-                digital.</p>
         </div>
     </div>
     <div class="secciones">
-        <div class="content-skills" data-aos="fade-down">
-            <div class="skills" *ngFor="let data of dataHabilidades">
-                <p>{{data.name}}</p>
-                <div class="linea">
-                    <div [ngStyle]="{'background-color':data.color,'width':data.porcentaje}" class="porcentajeLinea">
-                    </div>
-                </div>
-                <span class="txtEmergente">{{data.porcentaje}}</span>
+        <div class="content-tarjetas" data-aos="fade-left" style="margin-top: 2rem;">
+            <div class="tarjeta" *ngFor="let item of productos">
+                <p class="title-tarjetas">{{item.name}}</p>
+                <p>{{item.descripcion}}</p>
+            </div>
+            
+            <div class="tarjeta tarjetaPrincipal" style="margin-top: 1rem;">
+                <p class="title-tarjetas">¿Necesitas una pieza a medida?</p>
+                <p>Contáctame con los detalles o medidas para realizar un presupuesto detallado sin compromiso.</p>
             </div>
         </div>
-        <div class="content-tarjetas" data-aos="fade-left">
-            <div class="tarjeta tarjetaPrincipal">
-                <p class="title-tarjetas">Soporte TI</p>
-                <p>Mi área más fuerte actualmente: impresoras, computadores, diagnóstico de
-                    hardware/software, mantenimiento preventivo/correctivo y soporte a usuarios.</p>
-            </div>
-            <div class="tarjeta">
-                <p class="title-tarjetas">Mantenimiento técnico</p>
-                <p>Revisión de equipos, limpieza, configuración, instalación, pruebas,
-                    seguimiento de fallas y recuperación de funcionamiento.</p>
-            </div>
-            <div class="tarjeta">
-                <p class="title-tarjetas">Desarrollo Web</p>
-                <p>Creación de interfaces responsivas y herramientas digitales con Angular,
-                    TypeScript, JavaScript, HTML y CSS.</p>
-            </div>
-            <div class="tarjeta">
-                <p class="title-tarjetas">Automatización e IA</p>
-                <p>Exploración de soluciones prácticas con chat, acceso privado, memoria local,
-                    documentación y proyectos personales como Jank OS.</p>
-            </div>
-        </div>
-
     </div>
 </section>

@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-interface SkillItem {
+interface ProductItem {
   name: string
-  porcentaje: string
-  color: string
+  descripcion: string
 }
 
 @Component({
@@ -12,59 +11,25 @@ interface SkillItem {
   styleUrls: ['./habilidades.component.css']
 })
 export class HabilidadesComponent implements OnInit {
-  dataHabilidades: SkillItem[]
+  productos: ProductItem[]
 
   constructor() {
-    this.dataHabilidades = [
+    this.productos = [
       {
-        name: 'Soporte TI',
-        porcentaje: '96%',
-        color: '#2d2d2d'
+        name: 'Litofanías y lámparas',
+        descripcion: 'Transformación de fotografías en relieves 3D que revelan imágenes al ser iluminados.'
       },
       {
-        name: 'Mantenimiento de impresoras',
-        porcentaje: '94%',
-        color: '#ef7d24'
+        name: 'Llaveros NFC',
+        descripcion: 'Llaveros personalizados con tecnología NFC integrada para automatizaciones y contacto rápido.'
       },
       {
-        name: 'Hardware y software',
-        porcentaje: '92%',
-        color: '#4b5563'
+        name: 'Prototipado funcional',
+        descripcion: 'Materialización de ideas a través de diseño paramétrico y manufactura aditiva.'
       },
       {
-        name: 'Diagnóstico técnico',
-        porcentaje: '90%',
-        color: '#0b6daf'
-      },
-      {
-        name: 'Configuración de sistemas',
-        porcentaje: '88%',
-        color: '#00a2ff'
-      },
-      {
-        name: 'Atención técnica',
-        porcentaje: '86%',
-        color: '#00b8a9'
-      },
-      {
-        name: 'JavaScript',
-        porcentaje: '85%',
-        color: '#db9d26'
-      },
-      {
-        name: 'Angular',
-        porcentaje: '85%',
-        color: '#5a5a5a'
-      },
-      {
-        name: 'TypeScript',
-        porcentaje: '80%',
-        color: '#3178c6'
-      },
-      {
-        name: 'Git',
-        porcentaje: '80%',
-        color: '#7a7a7a'
+        name: 'Piezas mecánicas y por encargo',
+        descripcion: 'Diseño y producción de piezas a medida para reparaciones, reemplazos o proyectos físicos.'
       }
     ]
   }

@@ -14,25 +14,27 @@
 </div>
 <div class="contenedor" (window:resize)="RecargarValoresDeElementos($event)">
     <app-aside-menu role="banner"></app-aside-menu>
-    <main>
+        <main>
         <app-inicio name="app-inicio" id="app-inicio" class="ancho"></app-inicio>
         <hr>
-        <app-especialidad name="app-especialidad" id="app-especialidad" class="ancho"></app-especialidad>
+        <app-especialidad name="app-servicios" id="app-servicios" class="ancho"></app-especialidad>
         <hr>
-        <app-educacion name="app-educacion" id="app-educacion" class="ancho"></app-educacion>
+        <app-experiencia name="app-trabajos" id="app-trabajos" class="ancho"></app-experiencia>
         <hr>
-        <app-experiencia name="app-experiencia" id="app-experiencia" class="ancho"></app-experiencia>
+        <app-habilidades name="app-impresion3d" id="app-impresion3d" class="ancho"></app-habilidades>
         <hr>
-        <app-portafolio name="app-portafoli" id="app-portafoli" class="ancho"></app-portafolio>
+        <div name="app-sobre-jankos" id="app-sobre-jankos" class="ancho">
+            <app-resumen></app-resumen>
+            <hr>
+            <app-educacion></app-educacion>
+        </div>
         <hr>
-        <app-habilidades name="app-habilidades" id="app-habilidades" class="ancho"></app-habilidades>
+        <app-portafolio name="app-proyectos" id="app-proyectos" class="ancho"></app-portafolio>
         <hr>
-        <app-resumen name="app-resumen" id="app-resumen" class="ancho"></app-resumen>
-        <hr>
-        <app-contactame name="app-contactame" id="app-contactame" class="ancho"></app-contactame>
+        <app-contactame name="app-cotizacion" id="app-cotizacion" class="ancho"></app-contactame>
         <hr>
         <div class="copy">
-            <p>&copy; Jehan Carlos Hurtado Guerrero | Todos los derechos reservados</p>
+            <p>&copy; JANKOS | Jehan Carlos Hurtado Guerrero | Todos los derechos reservados</p>
         </div>
     </main>
 </div>

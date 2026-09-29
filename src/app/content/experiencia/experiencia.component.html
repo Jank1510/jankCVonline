@@ -1,6 +1,6 @@
 <section class="content">
     <div data-aos="fade-right" class="titulo">
-        <hr><span>Experiencia</span>
+        <hr><span>Trabajos y soporte</span>
     </div>
     <div class="experiencias">
         <article data-aos="fade-up" class="experiencia" *ngFor="let experiencia of experiencias">
@@ -15,13 +15,13 @@
             <p>{{experiencia.descripcion}}</p>
             <div class="detalleExperiencia">
                 <div>
-                    <h3>Responsabilidades</h3>
+                    <h3>Acciones realizadas</h3>
                     <ul>
                         <li *ngFor="let responsabilidad of experiencia.responsabilidades">{{responsabilidad}}</li>
                     </ul>
                 </div>
                 <div>
-                    <h3>Aportes</h3>
+                    <h3>Resultados</h3>
                     <ul>
                         <li *ngFor="let logro of experiencia.logros">{{logro}}</li>
                     </ul>
