@@ -7,7 +7,115 @@
     </div>
     <p>JEHAN HURTADO</p>
   </div>
-          <nav class="navegacion">
+                  <nav class="navegacion">
+      <ul>
+        <li>
+          <a href="#" [ngStyle]="li_diseno1"> </a>
+        </li>
+        <li>
+          <a href="#app-inicio" [ngStyle]="li_inicio">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgInicio }"
+              src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
+            <span class="hoverEfecto">INICIO</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-servicios" [ngStyle]="li_especialidad">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgEspecialidad }"
+              src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
+            <span class="hoverEfecto">SERVICIOS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-trabajos" [ngStyle]="li_experiencia">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgExperiencia }"
+              src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
+            <span class="hoverEfecto">TRABAJOS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-impresion3d" [ngStyle]="li_habilidades">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgHabilidades }"
+              src="./assets/icons/icons-aside/habilidades-icon.png" alt="3d printing" />
+            <span class="hoverEfecto">IMPRESIÓN 3D</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-sobre-jankos" [ngStyle]="li_resumen">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgResumen }"
+              src="./assets/icons/icons-aside/resumen-icon.png" alt="about jankos" />
+            <span class="hoverEfecto">SOBRE JANKOS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-proyectos" [ngStyle]="li_portafolio">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgPortafolio }"
+              src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
+            <span class="hoverEfecto">PROYECTOS</span>
+          </a>
+        </li>
+        <li>
+          <a href="#app-cotizacion" [ngStyle]="li_contactame">
+            <img class="hoverEfecto" [ngStyle]="{ filter: imgContactame }"
+              src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
+            <span class="hoverEfecto">COTIZACIÓN</span></a>
+        </li>
+        <li>
+          <a href="#" [ngStyle]="li_diseno2"> </a>
+        </li>
+      </ul>
+    </nav>
+  <div class="contactenos">
+    <hr />
+    <ul>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jank1510" aria-label="GitHub de Jehan">
+          <img src="./assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jehanhurtado/" aria-label="Instagram de Jehan">
+          <img src="./assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/" aria-label="LinkedIn de Jehan">
+          <img src="./assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
+        </a>
+      </li>
+      <li>
+        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTech" aria-label="WhatsApp de Jehan">
+          <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<!--Boton de descarga cv Viusta desktop-->
+<div *ngIf="width>=1024" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
+  (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
+  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf" aria-label="Descargar CV de Jehan Hurtado">
+    <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar CV</span></div>
+    <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV">
+  </a>
+</div>
+<!--Aside para vistas de Ipads-->
+<div *ngIf="( width < 1024 )" class="banner">
+  <img class="openMenu" src="./assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
+    (click)="menuVisible=true;directionNameAnimation='asideIpad'">
+  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">Descargar
+    CV <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
+</div>
+<div class="opacity_fondo" *ngIf="( width < 1024) && menuVisible">
+  <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
+    <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
+  <div class="perfil">
+    <div class="logo-container">
+      <img src="assets/img/logo-jankos.png?v=FINALREAL" alt="perfil" />
+    </div>
+    <p>JEHAN HURTADO</p>
+  </div>
+        <nav class="navegacion">
       <ul>
         <li>
           <a (click)="closedMenu()" href="#app-inicio">
@@ -52,107 +160,6 @@
         </li>
       </ul>
     </nav>
-  <div class="contactenos">
-    <hr />
-    <ul>
-      <li>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/Jank1510" aria-label="GitHub de Jehan">
-          <img src="./assets/icons/icons-aside/contact/github-icon.png" alt="logo-github" />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jehanhurtado/" aria-label="Instagram de Jehan">
-          <img src="./assets/icons/icons-aside/contact/instagram-icon.png" alt="logo-instagram" />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jehan-carlos-hurtado-guerrero-b250b3201/" aria-label="LinkedIn de Jehan">
-          <img src="./assets/icons/icons-aside/contact/linkedin-icon.png" alt="logo-linkedin" />
-        </a>
-      </li>
-      <li>
-        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTechJankTech" aria-label="WhatsApp de Jehan">
-          <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
-        </a>
-      </li>
-    </ul>
-  </div>
-</aside>
-<!--Boton de descarga cv Viusta desktop-->
-<div *ngIf="width>=1024" class="btnDescarga"  (mouseover)="animation= 'animacionBTNDescarga';ancho='7.8vw'" 
-  (mouseout)="animation='animacionBTNDescargaClosed';ancho='0'">
-  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf" aria-label="Descargar CV de Jehan Hurtado">
-    <div [ngStyle]="{'animation-name':animation,'width':ancho}"><span>Descargar CV</span></div>
-    <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV">
-  </a>
-</div>
-<!--Aside para vistas de Ipads-->
-<div *ngIf="( width < 1024 )" class="banner">
-  <img class="openMenu" src="./assets/icons/icons-aside/menu-hamburgesa.png" alt="Open"
-    (click)="menuVisible=true;directionNameAnimation='asideIpad'">
-  <a href="./assets/documents/cv-jehan-hurtado.pdf" target="_blank" download="CV-Jehan-Hurtado.pdf">Descargar
-    CV <img style="width:'1.5rem'" src="./assets/icons/icons-aside/curriculum.png" alt="CV"></a>
-</div>
-<div class="opacity_fondo" *ngIf="( width < 1024) && menuVisible">
-  <aside class="aside_Ipad" [ngStyle]="{ 'background-color': colorGlobal,'animation-name':directionNameAnimation }">
-    <img class="closedMenu" (click)="closedMenu()" src="./assets/icons/icons-aside/icon-close.png" alt="Closed" />
-  <div class="perfil">
-    <div class="logo-container">
-      <img src="assets/img/logo-jankos.png?v=FINALREAL" alt="perfil" />
-    </div>
-    <p>JEHAN HURTADO</p>
-  </div>
-    <nav class="navegacion">
-      <ul>
-        <li>
-          <a (click)="closedMenu()" href="#app-inicio">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/inicio-icon.png" alt="home" />
-            <span class="hoverEfecto">INICIO</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-especialidad">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/soporte-icon.svg" alt="support" />
-            <span class="hoverEfecto">SOPORTE TI</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-educacion">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/educacion-icon.png" alt="education" />
-            <span class="hoverEfecto">EDUCACION</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-experiencia">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/curriculum.png" alt="experience" />
-            <span class="hoverEfecto">EXPERIENCIA</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-portafoli">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/portafolio-icon.png" alt="portafolio" />
-            <span class="hoverEfecto">PORTAFOLIO</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-habilidades">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/habilidades-icon.png" alt="skills" />
-            <span class="hoverEfecto">HABILIDADES</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-resumen">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/resumen-icon.png" alt="resume" />
-            <span class="hoverEfecto">RESUMEN</span>
-          </a>
-        </li>
-        <li>
-          <a (click)="closedMenu()" href="#app-contactame">
-            <img class="hoverEfecto" src="./assets/icons/icons-aside/contactanos-icon.png" alt="contact" />
-            <span class="hoverEfecto">CONTACTAME</span></a>
-        </li>
-      </ul>
-    </nav>
     <div style="position: fixed;" class="contactenos">
       <ul>
         <li>
@@ -171,7 +178,7 @@
           </a>
         </li>
         <li>
-          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTechJankTech" aria-label="WhatsApp de Jehan">
+          <a target="_blank" rel="noopener noreferrer" href="https://wa.me/JankTech" aria-label="WhatsApp de Jehan">
             <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="logo-whatsapp" />
           </a>
         </li>
