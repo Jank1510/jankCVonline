@@ -12,6 +12,7 @@
     margin: 0;
     justify-content: center;
     z-index: 2;
+    background: rgba(40, 40, 40, 0.65) !important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-right: 1px solid rgba(255, 255, 255, 0.08);
@@ -57,7 +58,7 @@
 .aside_desktop .navegacion ul {
     /*gradiente gris→blanco: permite que los border-radius de items vecinos muestren curvas blancas*/
     width: 80%;
-    background: linear-gradient(to right, #4a4a4a 0%, #4a4a4a 82%, #ffffff 82%, #ffffff 100%);
+    background: transparent;
     padding: 0;
     margin-left: 20%;
     transition: background 0.2s ease;
@@ -75,7 +76,7 @@
          display: flex;
          flex-direction: row;
          align-items: center;
-         background: #4a4a4a;
+         background: transparent;
          width: 100%;
          text-decoration: none;
          color: white;
@@ -185,6 +186,7 @@ hr {
     padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
+    background: rgba(40, 40, 40, 0.65) !important;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-right: 1px solid rgba(255, 255, 255, 0.08);
