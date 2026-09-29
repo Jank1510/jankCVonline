@@ -282,6 +282,18 @@ export class PortafolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mostrarProyectos: boolean = false;
+
+  toggleProyectos(): void {
+    this.mostrarProyectos = !this.mostrarProyectos;
+    if (this.mostrarProyectos) {
+      setTimeout(() => {
+        window.dispatchEvent(new Event('resize'));
+      }, 50);
+    }
+  }
+
+
   ajusteResolucion(event: Event): void {
     this.width = window.innerWidth
   }

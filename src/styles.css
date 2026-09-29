@@ -58,14 +58,14 @@ app-inicio, app-especialidad, app-experiencia, app-habilidades, app-resumen, app
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
     font-weight: bold;
 }
 
 .section-header hr {
     height: 1px;
     width: 3rem;
-    margin: 0 1rem 0 0;
+    margin: 0 1.5rem 0 0;
     border: none;
     background-color: black;
 }
@@ -76,6 +76,6 @@ app-inicio, app-especialidad, app-experiencia, app-habilidades, app-resumen, app
 
 @media (min-width: 1270px) {
     .section-header {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 }

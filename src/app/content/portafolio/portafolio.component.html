@@ -3,9 +3,15 @@
     </div>
 <section (window:resize)="ajusteResolucion($event)" class="content">
     
-    <p data-aos="fade-left">Desde hace mucho tiempo me interesa el desarrollo web. Aquí puedes ver algunos de mis proyectos.
-        Quieres ver más? <a target="_blank" href="https://github.com/Jank1510">Entra aquí.</a>
-    </p>
+        <div class="intro-proyectos" data-aos="fade-left">
+        <p>Como valor agregado, también ofrezco servicios de desarrollo web, software e integración de Inteligencia Artificial para digitalizar procesos y crear herramientas a medida.</p>
+        <button class="btn-toggle-proyectos" (click)="toggleProyectos()">
+            {{ mostrarProyectos ? 'Ocultar proyectos de desarrollo' : 'Ver proyectos de desarrollo' }}
+        </button>
+    </div>
+    
+    <div *ngIf="mostrarProyectos" class="contenedor-proyectos-desplegable" data-aos="fade-down">
+
     <div class="destacados" data-aos="fade-up">
         <article class="proyectoDestacado" *ngFor="let proyecto of proyectosDestacados" [ngStyle]="{'background-image':proyecto.imgFondo}">
             <div class="contenidoDestacado">
@@ -41,5 +47,6 @@
         <div><span *ngIf="numeroDePagina!=0" (click)="EventPortafolio('prev')">Anterior</span></div>
             {{numeroDePagina+1}}/{{dataPortafolio.length}}
         <div><span *ngIf="dataPortafolio.length!=numeroDePagina+1" (click)="EventPortafolio('next')">Siguiente</span></div>
+    </div>
     </div>
 </section>
