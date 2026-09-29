@@ -122,9 +122,9 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   }
   /*funciones de navegacion*/
   inicio(): void {
-    this.li_diseno1 = {}
-    this.li_especialidad = {}
-    this.li_inicio = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_diseno1 = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_especialidad = { 'border-top-right-radius': '1.4rem' }
+    this.li_inicio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_educacion = {}
     this.li_habilidades = {}
     this.li_portafolio = {}
@@ -132,7 +132,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.li_resumen = {}
     this.li_diseno2 = {}
     this.li_contactame = {}
-    this.imgInicio = 'opacity(100%)'
+    this.imgInicio = 'invert(0) opacity(80%)'
     this.imgEspecialidad = ''
     this.imgEducacion = ''
     this.imgPortafolio = ''
@@ -142,9 +142,9 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   especialidad(): void {
-    this.li_inicio = {}
-    this.li_educacion = {}
-    this.li_especialidad = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_inicio = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_educacion = { 'border-top-right-radius': '1.4rem' }
+    this.li_especialidad = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_diseno1 = {}
     this.li_resumen = {}
     this.li_habilidades = {}
@@ -153,7 +153,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.li_diseno2 = {}
     this.li_contactame = {}
     this.imgInicio = ''
-    this.imgEspecialidad = 'opacity(100%)'
+    this.imgEspecialidad = 'invert(0) opacity(80%)'
     this.imgEducacion = ''
     this.imgPortafolio = ''
     this.imgExperiencia = ''
@@ -162,9 +162,9 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   educacion(): void {
-    this.li_especialidad = {}
-    this.li_experiencia = {}
-    this.li_educacion = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_especialidad = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_experiencia = { 'border-top-right-radius': '1.4rem' }
+    this.li_educacion = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_inicio = {}
     this.li_diseno1 = {}
     this.li_resumen = {}
@@ -174,7 +174,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.li_contactame = {}
     this.imgInicio = ''
     this.imgEspecialidad = ''
-    this.imgEducacion = 'opacity(100%)'
+    this.imgEducacion = 'invert(0) opacity(80%)'
     this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
@@ -182,9 +182,9 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgContactame = ''
   }
   experiencia(): void {
-    this.li_educacion = {}
-    this.li_portafolio = {}
-    this.li_experiencia = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_educacion = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_portafolio = { 'border-top-right-radius': '1.4rem' }
+    this.li_experiencia = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_resumen = {}
     this.li_diseno1 = {}
     this.li_inicio = {}
@@ -195,16 +195,16 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgInicio = ''
     this.imgEspecialidad = ''
     this.imgEducacion = ''
-    this.imgExperiencia = 'opacity(100%)'
+    this.imgExperiencia = 'invert(0) opacity(80%)'
     this.imgPortafolio = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
     this.imgContactame = ''
   }
   portafolio(): void {
-    this.li_experiencia = {}
-    this.li_habilidades = {}
-    this.li_portafolio = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_experiencia = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_habilidades = { 'border-top-right-radius': '1.4rem' }
+    this.li_portafolio = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_resumen = {}
     this.li_educacion = {}
     this.li_diseno1 = {}
@@ -216,15 +216,15 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgEspecialidad = ''
     this.imgEducacion = ''
     this.imgExperiencia = ''
-    this.imgPortafolio = 'opacity(100%)'
+    this.imgPortafolio = 'invert(0) opacity(80%)'
     this.imgHabilidades = ''
     this.imgResumen = ''
     this.imgContactame = ''
   }
   habilidades(): void {
-    this.li_portafolio = {}
-    this.li_resumen = {}
-    this.li_habilidades = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_portafolio = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_resumen = { 'border-top-right-radius': '1.4rem' }
+    this.li_habilidades = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_diseno1 = {}
     this.li_inicio = {}
     this.li_especialidad = {}
@@ -237,14 +237,14 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgEducacion = ''
     this.imgPortafolio = ''
     this.imgExperiencia = ''
-    this.imgHabilidades = 'opacity(100%)'
+    this.imgHabilidades = 'invert(0) opacity(80%)'
     this.imgResumen = ''
     this.imgContactame = ''
   }
   resumen(): void {
-    this.li_habilidades = {}
-    this.li_contactame = {}
-    this.li_resumen = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_habilidades = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_contactame = { 'border-top-right-radius': '1.4rem' }
+    this.li_resumen = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_portafolio = {}
     this.li_educacion = {}
     this.li_experiencia = {}
@@ -258,13 +258,13 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgPortafolio = ''
     this.imgExperiencia = ''
     this.imgHabilidades = ''
-    this.imgResumen = 'opacity(100%)'
+    this.imgResumen = 'invert(0) opacity(80%)'
     this.imgContactame = ''
   }
   contactame(): void {
-    this.li_resumen = {}
-    this.li_diseno2 = {}
-    this.li_contactame = { 'background': '#ffffff', 'color': '#111111', 'border-left': '4px solid #111111', 'font-weight': '700' }
+    this.li_resumen = { 'border-bottom-right-radius': '1.4rem' }
+    this.li_diseno2 = { 'border-top-right-radius': '1.4rem' }
+    this.li_contactame = { 'background': '#ffffff', 'color': '#2f2f2f', 'border-left': '4px solid #111111', 'border-radius': '1.4rem 0 0 1.4rem', 'font-weight': '600', 'width': this.width < 1024 ? '112.5%' : '100%' }
     this.li_portafolio = {}
     this.li_habilidades = {}
     this.li_educacion = {}
@@ -279,6 +279,6 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
     this.imgExperiencia = ''
     this.imgHabilidades = ''
     this.imgResumen = ''
-    this.imgContactame = 'opacity(100%)'
+    this.imgContactame = 'invert(0) opacity(80%)'
   }
 }
