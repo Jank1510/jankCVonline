@@ -50,7 +50,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
   constructor(private service: ServiceService, private ngZone: NgZone) {
     this.width = window.innerWidth//cargamos una variable para condicionar las vistas de design en el dom
     this.menuVisible = false
-    this.colorGlobal = '#4a4a4a'
+    this.colorGlobal = 'rgba(40, 40, 40, 0.65)'
     this.ancho='0'
     setTimeout(() => {
       this.detectarSeccionActiva()

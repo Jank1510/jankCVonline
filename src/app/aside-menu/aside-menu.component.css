@@ -12,6 +12,9 @@
     margin: 0;
     justify-content: center;
     z-index: 2;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .perfil {
@@ -182,6 +185,9 @@ hr {
     padding-top: 5rem;
     text-align: center;
     animation-duration: 0.5s;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .aside_Ipad .navegacion ul li {
