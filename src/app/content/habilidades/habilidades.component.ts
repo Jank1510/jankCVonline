@@ -38,13 +38,13 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
         enlace: '#app-cotizacion',
         catalogo: [
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-01.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-02.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-03.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-04.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-05.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-07.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-06.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-07.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' }
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-05.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-04.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-03.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-02.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-01.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' }
         ]
       },
       {
@@ -53,12 +53,12 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/llavero-nfc-personalizado.png',
         enlace: '#app-cotizacion',
         catalogo: [
+          { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-01.mp4', titulo: 'Demostración NFC', descripcion: 'Llavero NFC respondiendo a la lectura.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-1.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-2.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-3.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-4.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-5.webp', titulo: 'Llaveros NFC personalizados' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-01.mp4', titulo: 'Demostración NFC', descripcion: 'Llavero NFC respondiendo a la lectura.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-02.mp4', titulo: 'Demostración NFC', descripcion: 'Ejemplo de automatización con llavero NFC.' }
         ]
       },
