@@ -164,8 +164,9 @@
 
 @media (max-width: 520px) {
     .perfil {
-        min-height: 30vh;
-        padding-top: 2.5rem;
+        min-height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     .contenedor .perfil h1 span {
@@ -176,6 +177,11 @@
     .accionesInicio {
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .presentacion {
+        margin-top: 0.5rem;
     }
 }
 

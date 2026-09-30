@@ -194,3 +194,14 @@ hr {
 .ancho {
     padding: 4rem 0;
 }
+
+@media (max-width: 699px) {
+    #app-inicio {
+        padding-top: 2rem;
+    }
+    
+    #app-inicio.ancho {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
