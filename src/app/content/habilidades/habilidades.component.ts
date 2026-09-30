@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
 
 interface CatalogItem {
   tipo: 'imagen' | 'video'
@@ -25,6 +25,9 @@ export class HabilidadesComponent implements OnInit {
   modalAbierto = false
   categoriaActiva: ProductItem | null = null
   indiceActivo = 0
+
+  @ViewChild('viewerVideo', { static: false }) videoRef: ElementRef<HTMLVideoElement> | undefined
+  private reproduciendoVideo = false
 
   constructor() {
     this.productos = [
@@ -56,7 +59,7 @@ export class HabilidadesComponent implements OnInit {
       {
         name: 'Prototipado funcional',
         descripcion: 'Materialización de ideas a través de diseño paramétrico y manufactura aditiva.',
-        imagen: './assets/img/trabajos/placeholder-trabajo.svg',
+        imagen: 'https://media.nas-jankos.com/prototipado/representacion.svg',
         enlace: '#app-cotizacion',
         catalogo: [
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/prototipado/representacion.svg', titulo: 'Representación del proceso', descripcion: 'Ilustración del flujo de trabajo: diseño paramétrico, slicing y manufactura aditiva. Material fotográfico próximamente.' }
@@ -64,7 +67,7 @@ export class HabilidadesComponent implements OnInit {
       },
       {
         name: 'Piezas mecánicas y por encargo',
-        descripcion: 'Diseño y producción de piezas a medida para reparaciones, reemplazos o proyectos físicos.',
+        descripcion: 'Piezas funcionales, repuestos, adaptadores y soportes fabricados bajo medida para reparaciones, sustituciones y proyectos físicos.',
         imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
         enlace: '#app-cotizacion',
         catalogo: [
@@ -97,9 +100,11 @@ export class HabilidadesComponent implements OnInit {
     this.indiceActivo = 0
     this.modalAbierto = true
     document.documentElement.style.overflow = 'hidden'
+    setTimeout(() => this.controlarReproduccion(), 60)
   }
 
   cerrarCatalogo(): void {
+    this.detenerVideo()
     this.modalAbierto = false
     this.categoriaActiva = null
     this.indiceActivo = 0
@@ -108,13 +113,42 @@ export class HabilidadesComponent implements OnInit {
 
   siguiente(): void {
     if (!this.categoriaActiva?.catalogo?.length) return
+    this.detenerVideo()
     this.indiceActivo = (this.indiceActivo + 1) % this.categoriaActiva.catalogo.length
+    setTimeout(() => this.controlarReproduccion(), 60)
   }
 
   anterior(): void {
     if (!this.categoriaActiva?.catalogo?.length) return
+    this.detenerVideo()
     const n = this.categoriaActiva.catalogo.length
     this.indiceActivo = (this.indiceActivo - 1 + n) % n
+    setTimeout(() => this.controlarReproduccion(), 60)
+  }
+
+  private detenerVideo(): void {
+    const vid = this.videoRef?.nativeElement
+    if (vid) {
+      this.reproduciendoVideo = false
+      vid.pause()
+      vid.currentTime = 0
+    }
+  }
+
+  private controlarReproduccion(): void {
+    const item = this.itemActual
+    if (item?.tipo !== 'video') {
+      this.reproduciendoVideo = false
+      return
+    }
+    const vid = this.videoRef?.nativeElement
+    if (vid && !this.reproduciendoVideo) {
+      this.reproduciendoVideo = true
+      vid.muted = true
+      vid.playsInline = true
+      vid.currentTime = 0
+      vid.play().catch(() => { this.reproduciendoVideo = false })
+    }
   }
 
   @HostListener('document:keydown', ['$event'])

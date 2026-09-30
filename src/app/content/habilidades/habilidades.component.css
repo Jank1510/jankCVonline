@@ -113,6 +113,76 @@ a:hover {
 .tarjeta:nth-child(4) { border-top-color: #f97316; }
 .tarjeta:nth-child(4):hover { box-shadow: 0 4px 16px rgba(249, 115, 22, 0.15); }
 
+/* ---------- CTA especial ---------- */
+.content-tarjetas .tarjetaCta {
+    align-items: center;
+    background: #131313;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-top: 4px solid #0ea5e9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    width: 100%;
+}
+
+.content-tarjetas .tarjetaCta:hover {
+    box-shadow: 0 8px 22px rgba(14, 165, 233, 0.18);
+    transform: translateY(-2px);
+}
+
+.cta-ico {
+    height: 44px;
+    margin: 0 auto;
+    width: 44px;
+}
+
+.cta-ico svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.cta-titulo {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.cta-sub {
+    color: #b8b8b8;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.cta-btn {
+    align-items: center;
+    background: #0ea5e9;
+    border: none;
+    border-radius: 0.6rem;
+    color: #0a0a0a;
+    display: inline-flex;
+    font-size: 0.8rem;
+    font-weight: 700;
+    justify-content: center;
+    margin-top: 0.25rem;
+    padding: 0.6rem 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.cta-btn:hover {
+    background: #0284c7;
+    transform: translateY(-1px);
+}
+
 .tarjeta p {
     color: #d8d8d8;
     font-size: 0.93rem;
@@ -285,7 +355,26 @@ a:hover {
 }
 }
 
-/* ---------- Catálogo multimedia ---------- */
+@media (max-width: 699px) {
+    .content-tarjetas .tarjetaCta {
+        padding: 1.25rem 1rem;
+    }
+
+    .cta-titulo {
+        font-size: 0.95rem;
+    }
+
+    .cta-sub {
+        font-size: 0.8rem;
+    }
+
+    .cta-btn {
+        font-size: 0.78rem;
+        padding: 0.55rem 1.1rem;
+    }
+}
+
+/* ---------- Muestras multimedia ---------- */
 .catalogo-backdrop {
     align-items: center;
     background: rgba(6, 6, 6, 0.92);
@@ -350,15 +439,19 @@ a:hover {
 }
 
 .catalogo-media {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1;
     background: #0a0a0a;
-    border-radius: 0.6rem;
+    border-radius: 0.8rem;
     height: 100%;
-    margin-bottom: 1rem;
-    max-height: 55vh;
+    margin-bottom: 1.25rem;
+    max-height: 70vh;
     overflow: hidden;
     position: relative;
     width: 100%;
+}
+
+.catalogo-media video.catalogo-media-item {
+    object-fit: cover;
 }
 
 .catalogo-media-item {
@@ -434,23 +527,6 @@ a:hover {
 .catalogo-nav:hover {
     background: rgba(255, 255, 255, 0.06);
     border-color: rgba(255, 255, 255, 0.30);
-    color: #ffffff;
-}
-
-.catalogo-ver-proyecto {
-    background: transparent;
-    border: 1px solid rgba(14, 165, 233, 0.45);
-    border-radius: 999px;
-    color: #0ea5e9;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 0.45rem 1rem;
-    text-decoration: none;
-    transition: background 0.2s ease, color 0.2s ease;
-}
-
-.catalogo-ver-proyecto:hover {
-    background: rgba(14, 165, 233, 0.12);
     color: #ffffff;
 }
 

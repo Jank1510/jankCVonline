@@ -12,7 +12,7 @@
             ¿Tienes un proyecto en mente? <a href="#app-contactame">Cotiza tu diseño aquí</a>.
         </p>
         <div class="fortalezaActual" data-aos="fade-up">
-            <span>SERVICIOS Y PRODUCTOS</span>
+            <span>PROYECTOS 3D</span>
             <h2>Diseños personalizados y piezas técnicas</h2>
             <p>Atendemos necesidades tanto comerciales como de uso personal, combinando impresión 3D con tecnología como chips NFC.</p>
             <ul>
@@ -31,15 +31,25 @@
                 </div>
                 <button *ngIf="item.catalogo?.length" type="button" class="btn-catalogo"
                         (click)="abrirCatalogo(item)"
-                        [attr.aria-label]="'Ver catálogo de ' + item.name">
-                    <span>VER CATÁLOGO</span>
+                        [attr.aria-label]="'Ver muestras de ' + item.name">
+                    <span>VER MUESTRAS</span>
                     <span class="chevron" aria-hidden="true">›</span>
                 </button>
             </div>
             
-            <div class="tarjeta tarjetaPrincipal">
-                <p class="title-tarjetas">¿Necesitas una pieza a medida?</p>
-                <p>Contáctame con los detalles o medidas para realizar un presupuesto detallado sin compromiso.</p>
+            <div class="tarjeta tarjetaCta">
+                <div class="cta-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="3,3 21,3 19,21 5,21"></polygon>
+                        <line x1="8" y1="8" x2="16" y2="8"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                        <line x1="8" y1="16" x2="12" y2="16"></line>
+                    </svg>
+                </div>
+                <p class="cta-titulo">¿Tienes una idea?</p>
+                <p class="cta-sub">La convertimos en una pieza real.</p>
+                <a href="#app-cotizacion" class="cta-btn">SOLICITAR DISEÑO</a>
             </div>
         </div>
     </div>
@@ -49,21 +59,22 @@
     <div class="catalogo-modal" (click)="$event.stopPropagation()">
         <header class="catalogo-header">
             <h3 class="catalogo-titulo">{{ categoriaActiva?.name }}</h3>
-            <button type="button" class="catalogo-cerrar" (click)="cerrarCatalogo()" aria-label="Cerrar catálogo">×</button>
+            <button type="button" class="catalogo-cerrar" (click)="cerrarCatalogo()" aria-label="Cerrar muestras">×</button>
         </header>
 
         <div class="catalogo-media">
             <ng-container *ngIf="itemActual as item">
                 <img *ngIf="item.tipo === 'imagen'" [src]="item.src" [alt]="item.titulo || categoriaActiva?.name" class="catalogo-media-item" />
                 <video
-          *ngIf="item.tipo === 'video'"
-          class="catalogo-media-item"
-          [src]="item.src"
-          preload="metadata"
-          playsinline
-          controls
-          muted
-        ></video>
+           #viewerVideo
+           *ngIf="item.tipo === 'video'"
+           class="catalogo-media-item"
+           [src]="item.src"
+           preload="metadata"
+           playsinline
+           controls
+           muted
+         ></video>
             </ng-container>
         </div>
 
@@ -80,7 +91,6 @@
 
         <div class="catalogo-acciones">
             <button type="button" class="catalogo-nav" (click)="anterior()" aria-label="Anterior">‹</button>
-            <a *ngIf="categoriaActiva?.enlace" [href]="categoriaActiva.enlace" class="catalogo-ver-proyecto">VER PROYECTO</a>
             <button type="button" class="catalogo-nav" (click)="siguiente()" aria-label="Siguiente">›</button>
         </div>
     </div>
