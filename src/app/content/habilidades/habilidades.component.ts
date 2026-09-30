@@ -13,6 +13,7 @@ interface ProductItem {
   descripcion: string
   enlace?: string
   catalogo?: CatalogItem[]
+  etiqueta?: string
 }
 
 @Component({
@@ -37,8 +38,13 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
         enlace: '#app-cotizacion',
         catalogo: [
-          { tipo: 'imagen', src: 'https://media.nas-jankos.com/litofanias/poster-01.webp', titulo: 'Litofanía iluminada', descripcion: 'Relieve 3D que revela la imagen al ser iluminada.' },
-          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-01.mp4', titulo: 'Litofanía en proceso', descripcion: 'Detalle del relieve tallado en impresión 3D.' }
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-01.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-02.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-03.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-04.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-05.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-06.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-07.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' }
         ]
       },
       {
@@ -61,6 +67,7 @@ export class HabilidadesComponent implements OnInit {
         descripcion: 'Materialización de ideas a través de diseño paramétrico y manufactura aditiva.',
         imagen: 'https://media.nas-jankos.com/prototipado/representacion.svg',
         enlace: '#app-cotizacion',
+        etiqueta: 'Representación',
         catalogo: [
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/prototipado/representacion.svg', titulo: 'Representación del proceso', descripcion: 'Ilustración del flujo de trabajo: diseño paramétrico, slicing y manufactura aditiva. Material fotográfico próximamente.' }
         ]
@@ -70,6 +77,7 @@ export class HabilidadesComponent implements OnInit {
         descripcion: 'Piezas funcionales, repuestos, adaptadores y soportes fabricados bajo medida para reparaciones, sustituciones y proyectos físicos.',
         imagen: './assets/img/trabajos/piezas-funcionales-impresion-3d.png',
         enlace: '#app-cotizacion',
+        etiqueta: 'Trabajo real',
         catalogo: [
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/piezas-mecanicas/representacion.svg', titulo: 'Representación de piezas', descripcion: 'Ilustración de piezas funcionales por encargo para reparación y prototipado. Material fotográfico próximamente.' }
         ]

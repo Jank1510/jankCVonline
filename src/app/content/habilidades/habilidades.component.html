@@ -27,7 +27,8 @@
             <div class="tarjeta" *ngFor="let item of productos">
                 <p class="title-tarjetas">{{item.name}}</p>
                 <div class="tarjeta-imagen">
-                    <img [src]="item.imagen" [alt]="item.name" loading="lazy" decoding="async" />
+                     <img [src]="item.imagen" [alt]="item.name" loading="lazy" decoding="async" />
+                     <span class="tarjeta-badge" *ngIf="item.etiqueta">{{ item.etiqueta }}</span>
                 </div>
                 <button *ngIf="item.catalogo?.length" type="button" class="btn-catalogo"
                         (click)="abrirCatalogo(item)"

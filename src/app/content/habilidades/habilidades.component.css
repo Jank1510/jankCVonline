@@ -113,22 +113,19 @@ a:hover {
 .tarjeta:nth-child(4) { border-top-color: #f97316; }
 .tarjeta:nth-child(4):hover { box-shadow: 0 4px 16px rgba(249, 115, 22, 0.15); }
 
-/* ---------- CTA especial ---------- */
+/* ---------- CTA especial (tarjeta de servicio) ---------- */
 .content-tarjetas .tarjetaCta {
     align-items: center;
     background: #131313;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-top: 4px solid #0ea5e9;
+    border: 1px solid rgba(45, 45, 45, 0.12);
+    border-top: 3px solid #0ea5e9;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    grid-column: 1 / -1;
-    margin-top: 1rem;
-    padding: 1.5rem 1.25rem;
+    padding: 1rem;
     text-align: center;
     transition: box-shadow 0.25s ease, transform 0.25s ease;
-    width: 100%;
 }
 
 .content-tarjetas .tarjetaCta:hover {
@@ -137,9 +134,9 @@ a:hover {
 }
 
 .cta-ico {
-    height: 44px;
+    height: 40px;
     margin: 0 auto;
-    width: 44px;
+    width: 40px;
 }
 
 .cta-ico svg {
@@ -150,7 +147,7 @@ a:hover {
 
 .cta-titulo {
     color: #ffffff;
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 700;
     margin: 0;
 }
@@ -168,11 +165,11 @@ a:hover {
     border-radius: 0.6rem;
     color: #0a0a0a;
     display: inline-flex;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
     justify-content: center;
     margin-top: 0.25rem;
-    padding: 0.6rem 1.25rem;
+    padding: 0.45rem 0.9rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: background 0.2s ease, transform 0.15s ease;
@@ -198,6 +195,7 @@ a:hover {
 }
 
 .tarjeta-imagen {
+    position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
@@ -210,6 +208,20 @@ a:hover {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.tarjeta-badge {
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 999px;
+    color: #f1f5f9;
+    font-size: 0.68rem;
+    font-weight: 600;
+    left: 0.35rem;
+    padding: 0.15rem 0.5rem;
+    pointer-events: none;
+    position: absolute;
+    top: 0.35rem;
+    z-index: 2;
 }
 
 .tarjeta:nth-child(5) { border-top-color: #ec4899; }
@@ -357,7 +369,7 @@ a:hover {
 
 @media (max-width: 699px) {
     .content-tarjetas .tarjetaCta {
-        padding: 1.25rem 1rem;
+        padding: 1rem;
     }
 
     .cta-titulo {
