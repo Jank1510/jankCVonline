@@ -69,11 +69,10 @@ export class HabilidadesComponent implements OnInit {
         enlace: '#app-cotizacion',
         etiqueta: 'Trabajo real',
         catalogo: [
-          { tipo: 'imagen', src: './assets/img/trabajos/prototipo-electronico.jpg', titulo: 'Prototipo electrónico', descripcion: 'Diseño y fabricación de carcasa para electrónica.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/prototipado/20260426_111612.jpg', titulo: 'Desarrollo electrónico', descripcion: 'Pruebas de concepto y componentes electrónicos en fase de prototipado.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260708_204611.mp4', titulo: 'Prototipo en acción', descripcion: 'Muestra funcional de prototipo impreso en 3D.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260426_131421.mp4', titulo: 'Mecanismo articulado', descripcion: 'Prueba de concepto funcional.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260418_220939.mp4', titulo: 'Ensamblaje y pruebas', descripcion: 'Validación de tolerancias mecánicas.' },
+          { tipo: 'imagen', src: './assets/img/trabajos/prototipo-electronico.jpg', titulo: 'Prototipo electrónico', descripcion: 'Diseño y fabricación de carcasa para electrónica.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/prototipado/20260327_205108.jpg', titulo: 'Carcasa a medida', descripcion: 'Prototipo de carcasa diseñada para electrónica.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/prototipado/image-1785676752215.jpg', titulo: 'Geometría y diseño', descripcion: 'Diseño 3D de alta precisión para fabricación.' }
         ]
@@ -86,25 +85,9 @@ export class HabilidadesComponent implements OnInit {
         etiqueta: 'Trabajo real',
         catalogo: [
           { tipo: 'imagen', src: './assets/img/trabajos/piezas-funcionales-impresion-3d.png', titulo: 'Piezas de recambio', descripcion: 'Componentes impresos para mecanismos funcionales.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/piezas-mecanicas/IMG-20260426-WA0074.jpg', titulo: 'Cajas y organizadores', descripcion: 'Carcasas y contenedores a medida para circuitos y electrónica.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/piezas-mecanicas/20260426_213935.jpg', titulo: 'Estructuras funcionales', descripcion: 'Soportes y piezas con geometrías optimizadas para resistencia.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/piezas-mecanicas/Impresion-3d-piezas-impresora-3D.jpg', titulo: 'Repuestos a medida', descripcion: 'Sustitución de piezas mecánicas discontinuadas o rotas.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/piezas-mecanicas/Tecnologia-Robocasting-BCN-3D-CERAMICS2.jpg', titulo: 'Aplicaciones industriales', descripcion: 'Uso de materiales técnicos para resistencia mecánica y térmica.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/piezas-mecanicas/image2.webp', titulo: 'Engranajes y mecanismos', descripcion: 'Impresión de sistemas mecánicos completamente funcionales.' }
-        ]
-      },
-      {
-        name: 'Por encargo',
-        descripcion: 'Servicios de impresión 3D a demanda para producciones personalizadas o lotes pequeños de piezas.',
-        imagen: './assets/catalogo-3d/por-encargo/20260709_102831.jpg',
-        enlace: '#app-cotizacion',
-        etiqueta: 'Trabajo real',
-        catalogo: [
-          { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-01.mp4', titulo: 'Producción de llaveros', descripcion: 'Demostración de lote de llaveros personalizados impresos en 3D.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/por-encargo/20260709_102831.jpg', titulo: 'Lotes de producción', descripcion: 'Fabricación de lotes grandes personalizados.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/por-encargo/20260505_225243.jpg', titulo: 'Diseños a medida', descripcion: 'Llaveros y piezas con formas y logotipos específicos.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/por-encargo/20260613_131616.jpg', titulo: 'Llaveros corporativos', descripcion: 'Productos personalizados para empresas y marcas.' },
-          { tipo: 'imagen', src: './assets/catalogo-3d/por-encargo/20260614_200149.jpg', titulo: 'Merchandising', descripcion: 'Llaveros personalizados para eventos y regalos.' }
         ]
       }
     ]
