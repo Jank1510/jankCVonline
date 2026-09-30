@@ -162,11 +162,18 @@
     text-decoration: underline;
 }
 
+@media (max-width: 699px) {
+    .contenedor {
+        margin-bottom: 0;
+    }
+}
+
 @media (max-width: 520px) {
     .perfil {
         min-height: auto;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .contenedor .perfil h1 span {

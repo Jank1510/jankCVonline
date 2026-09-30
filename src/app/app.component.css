@@ -196,12 +196,11 @@ hr {
 }
 
 @media (max-width: 699px) {
-    #app-inicio {
-        padding-top: 2rem;
-    }
-    
     #app-inicio.ancho {
         padding-top: 2rem;
         padding-bottom: 2rem;
+        min-height: calc(100vh - 4.5rem);
+        min-height: calc(100svh - 4.5rem);
+        justify-content: center;
     }
 }
