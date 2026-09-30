@@ -232,3 +232,50 @@
         padding: 0.35vw 0.7vw;
     }
 }
+
+@media (max-width: 699px) {
+    .experiencia {
+        border-radius: 0.85rem;
+        padding: 0.8rem;
+    }
+
+    .ubicacion {
+        margin: 0.35rem 0 0.7rem 0 !important;
+    }
+
+    .detalleExperiencia {
+        gap: 0.5rem;
+        margin-top: 0.7rem;
+    }
+
+    .experiencia h1 {
+        font-size: 0.95rem;
+    }
+
+    .experiencia h2,
+    .encabezado span,
+    .experiencia p {
+        font-size: 0.85rem;
+    }
+
+    .experiencia h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .detalleExperiencia li {
+        font-size: 0.78rem;
+        line-height: 1.4;
+        margin-bottom: 0.22rem;
+    }
+
+    .aptitudes {
+        margin-top: 0.6rem;
+        gap: 0.3rem;
+    }
+
+    .aptitudes span {
+        font-size: 0.7rem;
+        padding: 0.22rem 0.5rem;
+    }
+}

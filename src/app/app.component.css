@@ -34,6 +34,13 @@ hr {
     .ancho {
         scroll-margin-top: 5.25rem;
     }
+
+    /* Secciones posteriores a Inicio: margen lateral consistente (~20px) en móvil.
+       Reduce el ancho disponible sin encoger el contenido; éste se adapta naturalmente. */
+    .ancho:not(#app-inicio) {
+        max-width: calc(100vw - 40px);
+        margin: 0 auto;
+    }
 }
 
 @media (min-width:700px) {

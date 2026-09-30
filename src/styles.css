@@ -91,3 +91,11 @@ hr {
     display: none !important;
 }
 
+
+/* Unified Content Area */
+@media (min-width: 1024px) {
+    .content {
+        width: 85%;
+        margin: 0 auto;
+    }
+}

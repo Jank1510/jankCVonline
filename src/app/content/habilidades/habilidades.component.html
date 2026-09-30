@@ -26,13 +26,62 @@
         <div class="content-tarjetas" data-aos="fade-left" style="margin-top: 2rem;">
             <div class="tarjeta" *ngFor="let item of productos">
                 <p class="title-tarjetas">{{item.name}}</p>
-                <p>{{item.descripcion}}</p>
+                <div class="tarjeta-imagen">
+                    <img [src]="item.imagen" [alt]="item.name" loading="lazy" decoding="async" />
+                </div>
+                <button *ngIf="item.catalogo?.length" type="button" class="btn-catalogo"
+                        (click)="abrirCatalogo(item)"
+                        [attr.aria-label]="'Ver catálogo de ' + item.name">
+                    <span>VER CATÁLOGO</span>
+                    <span class="chevron" aria-hidden="true">›</span>
+                </button>
             </div>
             
-            <div class="tarjeta tarjetaPrincipal" style="margin-top: 1rem;">
+            <div class="tarjeta tarjetaPrincipal">
                 <p class="title-tarjetas">¿Necesitas una pieza a medida?</p>
                 <p>Contáctame con los detalles o medidas para realizar un presupuesto detallado sin compromiso.</p>
             </div>
         </div>
     </div>
 </section>
+
+<div class="catalogo-backdrop" *ngIf="modalAbierto" (click)="cerrarCatalogo()" role="presentation">
+    <div class="catalogo-modal" (click)="$event.stopPropagation()">
+        <header class="catalogo-header">
+            <h3 class="catalogo-titulo">{{ categoriaActiva?.name }}</h3>
+            <button type="button" class="catalogo-cerrar" (click)="cerrarCatalogo()" aria-label="Cerrar catálogo">×</button>
+        </header>
+
+        <div class="catalogo-media">
+            <ng-container *ngIf="itemActual as item">
+                <img *ngIf="item.tipo === 'imagen'" [src]="item.src" [alt]="item.titulo || categoriaActiva?.name" class="catalogo-media-item" />
+                <video
+          *ngIf="item.tipo === 'video'"
+          class="catalogo-media-item"
+          [src]="item.src"
+          preload="metadata"
+          playsinline
+          controls
+          muted
+        ></video>
+            </ng-container>
+        </div>
+
+        <div class="catalogo-info">
+            <p *ngIf="itemActual?.titulo" class="catalogo-item-titulo">{{ itemActual.titulo }}</p>
+            <p *ngIf="itemActual?.descripcion" class="catalogo-item-desc">{{ itemActual.descripcion }}</p>
+        </div>
+
+        <div class="catalogo-indicadores">
+            <span *ngFor="let i of dots; let idx = index"
+                  class="puntito"
+                  [class.activo]="idx === indiceActivo"></span>
+        </div>
+
+        <div class="catalogo-acciones">
+            <button type="button" class="catalogo-nav" (click)="anterior()" aria-label="Anterior">‹</button>
+            <a *ngIf="categoriaActiva?.enlace" [href]="categoriaActiva.enlace" class="catalogo-ver-proyecto">VER PROYECTO</a>
+            <button type="button" class="catalogo-nav" (click)="siguiente()" aria-label="Siguiente">›</button>
+        </div>
+    </div>
+</div>

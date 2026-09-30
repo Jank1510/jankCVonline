@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Foto próximamente">
+  <rect x="2" y="2" width="636" height="356" rx="10" fill="#1a1a1a" stroke="#3a3a3a" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#8a8a8a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600">Foto próximamente</text>
+</svg>
