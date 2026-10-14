@@ -23,6 +23,7 @@ interface ProductItem {
 })
 export class HabilidadesComponent implements OnInit {
   productos: ProductItem[]
+  servicioQr: ProductItem
   modalAbierto = false
   categoriaActiva: ProductItem | null = null
   indiceActivo = 0
@@ -31,6 +32,19 @@ export class HabilidadesComponent implements OnInit {
   private reproduciendoVideo = false
 
   constructor() {
+    this.servicioQr = {
+      name: 'QR de pagos para negocios',
+      imagen: 'https://media.nas-jankos.com/Qr/1.jpg',
+      descripcion: 'Códigos QR personalizados en soporte físico que dirigen al enlace de pago Bre-B del negocio.',
+      enlace: '#app-cotizacion',
+      etiqueta: 'Bre-B',
+      catalogo: [
+        { tipo: 'imagen', src: 'https://media.nas-jankos.com/Qr/1.jpg', titulo: 'Soporte QR personalizado', descripcion: 'Placa en relieve con código QR permanente y datos comerciales vinculados a Bre-B.' },
+        { tipo: 'imagen', src: 'https://media.nas-jankos.com/Qr/2.jpg', titulo: 'Exhibición en mostrador comercial', descripcion: 'Soporte físico duradero ubicado en el punto de atención para cobros rápidos.' },
+        { tipo: 'imagen', src: 'https://media.nas-jankos.com/Qr/3.png', titulo: 'Base y soporte de mesa', descripcion: 'Estructura rígida con soporte personalizado para exhibición sobre mesas o cajas registradoras.' }
+      ]
+    }
+
     this.productos = [
       {
         name: 'Litofanías y lámparas',
@@ -38,6 +52,7 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
         enlace: '#app-cotizacion',
         catalogo: [
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-08.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-07.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-06.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-05.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
@@ -59,6 +74,7 @@ export class HabilidadesComponent implements OnInit {
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-3.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-4.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-5.webp', titulo: 'Llaveros NFC personalizados' },
+          { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/IMG-20261005-WA0082.jpeg', titulo: 'Llaveros NFC personalizados', descripcion: 'Llaveros con chip NFC integrados en formas personalizadas.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-02.mp4', titulo: 'Demostración NFC', descripcion: 'Ejemplo de automatización con llavero NFC.' }
         ]
       },

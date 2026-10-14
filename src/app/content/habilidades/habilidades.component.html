@@ -56,6 +56,63 @@
     </div>
 </section>
 
+<div data-aos="fade-right" class="section-header seccion-qr-header">
+    <hr><span>QR de pagos para negocios</span>
+</div>
+<section class="content flex seccion-qr">
+    <div class="secciones">
+        <p data-aos="zoom-in">
+            Códigos QR personalizados en soporte físico para negocios y comercios, diseñados para dirigir al cliente de forma directa al enlace o llave de pago Bre-B del establecimiento.
+            <br> <br>
+            Una alternativa profesional, limpia y visible frente a impresiones de papel en el mostrador. Cuentan con soporte rígido e identificación clara para agilizar los cobros presenciales.
+            <br> <br>
+            <em>Nota: Son códigos QR físicos personalizados que dirigen al enlace de pago Bre-B registrado por el negocio; no generan un QR distinto por transacción ni procesan pagos por sí mismos.</em>
+        </p>
+        <div class="fortalezaActual fortalezaQr" data-aos="fade-up">
+            <span>PUNTOS DE PAGO</span>
+            <h2>Presentación comercial y cobro ágil</h2>
+            <p>Optimiza la atención a tus clientes en mostrador o punto de venta con un código QR físico permanente y resistente.</p>
+            <ul>
+                <li>Enlace directo a tu llave o cuenta Bre-B</li>
+                <li>Soporte rígido para mostrador o caja</li>
+                <li>Personalización con nombre de negocio o titular</li>
+            </ul>
+        </div>
+    </div>
+    <div class="secciones">
+        <div class="content-tarjetas content-tarjetas-qr" data-aos="fade-left">
+            <div class="tarjeta tarjeta-qr">
+                <p class="title-tarjetas">{{ servicioQr.name }}</p>
+                <div class="tarjeta-imagen">
+                     <img [src]="servicioQr.imagen" [alt]="servicioQr.name" loading="lazy" decoding="async" />
+                     <span class="tarjeta-badge" *ngIf="servicioQr.etiqueta">{{ servicioQr.etiqueta }}</span>
+                </div>
+                <button *ngIf="servicioQr.catalogo?.length" type="button" class="btn-catalogo"
+                        (click)="abrirCatalogo(servicioQr)"
+                        [attr.aria-label]="'Ver muestras de ' + servicioQr.name">
+                    <span>VER MUESTRAS</span>
+                    <span class="chevron" aria-hidden="true">›</span>
+                </button>
+            </div>
+
+            <div class="tarjeta tarjetaCta tarjetaCtaQr">
+                <div class="cta-ico" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                    </svg>
+                </div>
+                <p class="cta-titulo">¿Quieres tu código QR?</p>
+                <p class="cta-sub">Personalizado con los datos de tu negocio.</p>
+                <a href="#app-cotizacion" class="cta-btn">SOLICITAR MI QR</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <div class="catalogo-backdrop" *ngIf="modalAbierto" (click)="cerrarCatalogo()" role="presentation">
     <div class="catalogo-modal" (click)="$event.stopPropagation()">
         <header class="catalogo-header">
