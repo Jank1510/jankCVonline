@@ -21,7 +21,7 @@ export class EducacionComponent implements OnInit {
         detalle: 'UNAD Colombia | En progreso (2025 - 2030)'
       },
       {
-        titulo: 'Técnico en Mantenimiento Mecatrónico',
+        titulo: 'Tecnólogo en Mecatrónica',
         detalle: 'SENA | Jun. 2019 - Oct. 2022'
       },
       {
