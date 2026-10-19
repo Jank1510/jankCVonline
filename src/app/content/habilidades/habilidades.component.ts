@@ -38,6 +38,8 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/regalo-personalizado-3d-home.png',
         enlace: '#app-cotizacion',
         catalogo: [
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/marketplace1.mp4', titulo: 'Lámpara litofanía cúbica', descripcion: 'Lámpara decorativa en formato cubo con panel litofánico iluminado y texto personalizado en relieve.' },
+          { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/marketplace2.mp4', titulo: 'Litofanía con soporte personalizado', descripcion: 'Retrato en relieve 3D retroiluminado montado sobre base personalizada con nombre.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-08.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-07.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/litofanias/litofania-06.mp4', titulo: 'Litofanía iluminada', descripcion: 'Relieve tallado en 3D que revela la imagen al ser iluminada.' },
@@ -54,6 +56,7 @@ export class HabilidadesComponent implements OnInit {
         imagen: './assets/img/trabajos/llavero-nfc-personalizado.png',
         enlace: '#app-cotizacion',
         catalogo: [
+          { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/llaverolitofania.mp4', titulo: 'Llavero NFC con litofanía', descripcion: 'Llavero con relieve litofánico y chip NFC integrado.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/nfc/video-01.mp4', titulo: 'Demostración NFC', descripcion: 'Llavero NFC respondiendo a la lectura.' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-1.webp', titulo: 'Llaveros NFC personalizados' },
           { tipo: 'imagen', src: 'https://media.nas-jankos.com/nfc/foto-2.webp', titulo: 'Llaveros NFC personalizados' },
@@ -71,6 +74,7 @@ export class HabilidadesComponent implements OnInit {
         enlace: '#app-cotizacion',
         etiqueta: 'Trabajo real',
         catalogo: [
+          { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/powerbank.mp4', titulo: 'Prototipo de powerbank', descripcion: 'Diseño, modelado y validación de carcasa funcional para batería portátil.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260708_204611.mp4', titulo: 'Prototipo en acción', descripcion: 'Muestra funcional de prototipo impreso en 3D.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260426_131421.mp4', titulo: 'Mecanismo articulado', descripcion: 'Prueba de concepto funcional.' },
           { tipo: 'video', src: 'https://media.nas-jankos.com/prototipado/opt_20260418_220939.mp4', titulo: 'Ensamblaje y pruebas', descripcion: 'Validación de tolerancias mecánicas.' },
