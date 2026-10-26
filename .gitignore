@@ -109,3 +109,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Temporary files, raw dumps & local media
+tmp_videos/
+runs.json
+src/assets/catalogo-3d/
