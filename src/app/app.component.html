@@ -1,17 +1,3 @@
-<div class="canvas-tecnologico" #canvasTecnologico>
-  <div *ngFor="let ic of iconosFlotantes" 
-       class="icono-flotante" 
-       [style.top]="ic.top" 
-       [style.left]="ic.left" 
-       [style.animation-delay]="ic.delay" 
-       [style.transform]="ic.rotation"
-       [style.color]="ic.color"
-       [style.filter]="'drop-shadow(0 0 6px ' + ic.color + ')'">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path [attr.d]="ic.path"></path>
-    </svg>
-  </div>
-</div>
 <div class="contenedor" (window:resize)="RecargarValoresDeElementos($event)">
     <app-aside-menu role="banner"></app-aside-menu>
         <main>

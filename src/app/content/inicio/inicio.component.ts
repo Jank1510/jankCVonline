@@ -7,16 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  positionBackground: string
-
   constructor() { 
-    this.positionBackground=''
   }
 
   ngOnInit(): void {
-  }
-  mouseMove(event: MouseEvent): void {
-    this.positionBackground = `${event.y - event.y / 1.003}px ${event.x - event.x / 1.003}px`
   }
 
   irASiguienteSeccion(event: Event): void {

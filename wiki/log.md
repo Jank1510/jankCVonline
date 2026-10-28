@@ -1,5 +1,13 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-27] update | Consolidación Fases 1–4: Simplificación de fondo y Hero a pantalla completa
+- Retiro de 150 iconos flotantes multicolor neón y lienzo tecnológico, estableciendo fondo neutro sobrio y profesional.
+- Saneamiento de listener huérfano mouseMove y variable positionBackground en inicio.component.
+- Rediseño minimalista de una sola columna con protagonismo tipográfico absoluto para «JANKOS».
+- Retiro definitivo de acceso secundario a JankOS en Hero, enfocando la conversión en «Contactar / Cotizar» (#app-cotizacion).
+- Dimensionamiento a pantalla completa (100svh / 100vh) con centrado en área útil y transición inmediata a #app-servicios.
+- Preservación íntegra del indicador de desplazamiento móvil con chevrón minimalista (< 700px).
+
 ## [2026-10-27] update | Refinamiento de indicador de scroll exclusivo para móvil
 - Eliminación del texto «Bajar», sustituyéndolo por un chevrón SVG estilizado y minimalista.
 - Visibilidad restringida exclusivamente a viewports móviles (< 700px), permaneciendo oculto en desktop y tablet.
