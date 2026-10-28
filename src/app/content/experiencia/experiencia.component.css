@@ -1,22 +1,23 @@
-
-
-
-
 .experiencias {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
 }
 
 .experiencia {
-    background: white;
-    border: 1px solid rgba(45, 45, 45, 0.06);
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
     border-top: 3px solid transparent;
-    border-radius: 1rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
-    color: black;
-    transition: box-shadow 0.25s ease, transform 0.25s ease;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05);
+    color: #18181b;
+    padding: 1.35rem 1.6rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .experiencia:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     transform: translateY(-2px);
 }
 
@@ -26,256 +27,197 @@
 .experiencia:nth-child(2) { border-top-color: #8b5cf6; }
 .experiencia:nth-child(2):hover { box-shadow: 0 6px 18px rgba(139, 92, 246, 0.12); }
 
-.experiencia:nth-child(3) { border-top-color: #f97316; }
-.experiencia:nth-child(3):hover { box-shadow: 0 6px 18px rgba(249, 115, 22, 0.12); }
-
-.experiencia h1,
-.experiencia h2,
-.experiencia h3,
-.experiencia p {
-    margin: 0;
-}
-
-.experiencia h1 {
-    color: black;
-    font-weight: bold;
-}
-
-.experiencia h2 {
-    color: #2a2a2a;
-    font-weight: normal;
-}
-
-.experiencia h3 {
-    color: black;
-    font-weight: bold;
-}
-
 .encabezado {
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
 }
 
-.encabezado span,
+.encabezado h1 {
+    color: #18181b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.encabezado h2 {
+    color: #0284c7;
+    font-size: 0.98rem;
+    font-weight: 600;
+    margin: 0.2rem 0 0 0;
+}
+
+.metaExperiencia {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.periodo {
+    color: #52525b;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
 .ubicacion {
-    color: #605f5f;
+    color: #71717a;
+    font-size: 0.8rem;
+}
+
+.descripcionCorta {
+    color: #3f3f46;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.75rem 0 1rem 0;
+}
+
+.bloqueFunciones h3 {
+    color: #18181b;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0 0 0.45rem 0;
+    text-transform: uppercase;
+}
+
+.listaFunciones {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.listaFunciones li {
+    color: #475569;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 0.35rem;
+}
+
+/* Desplegable para detalles secundarios */
+.desplegableExperiencia {
+    border-top: 1px solid #f1f5f9;
+    margin-top: 1rem;
+    padding-top: 0.65rem;
+}
+
+.desplegableExperiencia summary {
+    align-items: center;
+    color: #0284c7;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.84rem;
+    font-weight: 600;
+    justify-content: space-between;
+    list-style: none;
+    user-select: none;
+}
+
+.desplegableExperiencia summary::-webkit-details-marker {
+    display: none;
+}
+
+.desplegableExperiencia summary:hover .summaryTexto {
+    text-decoration: underline;
+}
+
+.chevronIcon {
+    color: #64748b;
+    height: 1.1rem;
+    transition: transform 0.2s ease;
+    width: 1.1rem;
+}
+
+.desplegableExperiencia[open] .chevronIcon {
+    transform: rotate(180deg);
+}
+
+.contenidoDesplegable {
+    animation: fadeIn 0.2s ease-in-out;
+    margin-top: 0.75rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.bloqueLogros h4 {
+    color: #18181b;
+    font-size: 0.84rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem 0;
+}
+
+.bloqueLogros ul {
+    margin: 0 0 0.75rem 0;
+    padding-left: 1.2rem;
+}
+
+.bloqueLogros li {
+    color: #52525b;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    margin-bottom: 0.25rem;
 }
 
 .aptitudes {
     display: flex;
     flex-wrap: wrap;
-}
-
-.detalleExperiencia {
-    display: grid;
-}
-
-.detalleExperiencia ul {
-    margin: 0;
-    padding-left: 1.1rem;
-}
-
-.detalleExperiencia li {
-    color: #605f5f;
+    gap: 0.4rem;
+    margin-top: 0.6rem;
 }
 
 .aptitudes span {
-    background-color: #f8fafc;
+    background: #f8fafc;
     border: 1px solid #e2e8f0;
-    border-radius: 4px;
+    border-radius: 9999px;
     color: #475569;
+    font-size: 0.75rem;
     font-weight: 500;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.25rem 0.65rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .aptitudes span:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     transform: translateY(-1px);
-}
-
-@media (min-width:300px) {
-    .content {
-
-    }
-
-    
-
-    
-
-    .experiencias {
-        gap: 1rem;
-        width: 100%;
-        margin: auto;
-    }
-
-    .experiencia {
-        border-radius: 1rem;
-        padding: 1.2rem;
-    }
-
-    .encabezado {
-        flex-direction: column;
-    }
-
-    .experiencia h1 {
-        font-size: 1.05rem;
-    }
-
-    .experiencia h2,
-    .experiencia p,
-    .encabezado span {
-        font-size: 0.9rem;
-    }
-
-    .ubicacion {
-        margin: 0.5rem 0 1rem 0 !important;
-    }
-
-    .aptitudes {
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    .detalleExperiencia {
-        gap: 1rem;
-        grid-template-columns: 1fr;
-        margin-top: 1rem;
-    }
-
-    .experiencia h3 {
-        font-size: 0.95rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .detalleExperiencia li {
-        font-size: 0.85rem;
-        margin-bottom: 0.35rem;
-    }
-
-    .aptitudes span {
-        border-radius: 1rem;
-        font-size: 0.75rem;
-        padding: 0.35rem 0.7rem;
-    }
-}
-
-@media (min-width:700px) {
-    .content {
-
-    }
-
-    .experiencias {
-        width: 100%;
-    }
-
-    .encabezado {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-
-    .detalleExperiencia {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    
-}
-
-@media (min-width:1270px) {
-    * {
-        font-size: 1vw;
-    }
-
-    .content {
-
-    }
-
-    
-
-    
-
-    
-
-    .experiencias {
-        gap: 1vw;
-        width: 100%;
-    }
-
-    .experiencia {
-        border-radius: 1vw;
-        padding: 1.4vw;
-    }
-
-    .aptitudes {
-        gap: 0.5vw;
-        margin-top: 1vw;
-    }
-
-    .detalleExperiencia {
-        gap: 1vw;
-        margin-top: 1vw;
-    }
-
-    .experiencia h3 {
-        font-size: 0.95vw;
-        margin-bottom: 0.5vw;
-    }
-
-    .detalleExperiencia li {
-        font-size: 0.85vw;
-        margin-bottom: 0.35vw;
-    }
-
-    .aptitudes span {
-        border-radius: 1vw;
-        font-size: 0.75vw;
-        padding: 0.35vw 0.7vw;
-    }
 }
 
 @media (max-width: 699px) {
     .experiencia {
-        border-radius: 0.85rem;
-        padding: 0.8rem;
+        padding: 1rem 1.1rem;
     }
 
-    .ubicacion {
-        margin: 0.35rem 0 0.7rem 0 !important;
+    .encabezado {
+        flex-direction: column;
+        gap: 0.4rem;
     }
 
-    .detalleExperiencia {
-        gap: 0.5rem;
-        margin-top: 0.7rem;
+    .metaExperiencia {
+        align-items: flex-start;
+        text-align: left;
+        white-space: normal;
     }
 
-    .experiencia h1 {
-        font-size: 0.95rem;
+    .encabezado h1 {
+        font-size: 1.05rem;
     }
 
-    .experiencia h2,
-    .encabezado span,
-    .experiencia p {
-        font-size: 0.85rem;
+    .encabezado h2 {
+        font-size: 0.92rem;
     }
 
-    .experiencia h3 {
-        font-size: 0.85rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .detalleExperiencia li {
-        font-size: 0.78rem;
-        line-height: 1.4;
-        margin-bottom: 0.22rem;
-    }
-
-    .aptitudes {
-        margin-top: 0.6rem;
-        gap: 0.3rem;
+    .descripcionCorta,
+    .listaFunciones li {
+        font-size: 0.84rem;
     }
 
     .aptitudes span {
-        font-size: 0.7rem;
-        padding: 0.22rem 0.5rem;
+        font-size: 0.72rem;
+        padding: 0.2rem 0.55rem;
     }
 }

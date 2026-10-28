@@ -13,6 +13,7 @@
 - *(Sin entradas aún)*
 
 ## Módulos
+- [Perfil Profesional y Experiencia](pages/perfil-y-experiencia.md) — Clasificación académica, síntesis de trayectoria y divulgación progresiva en Experiencia y Sobre Jankos.
 - [Catálogo 3D y Medios](pages/catalogo-3d.md) — Módulo interactivo de muestras multimedia de impresión 3D, NFC y prototipado.
 
 ## Operaciones

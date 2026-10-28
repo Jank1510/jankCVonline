@@ -1,162 +1,214 @@
-
-
-
-
-
-
-@media (min-width:300px) {
-    .content {
-
-    }
-
-    
-
-    
-
-    .contentenedorTarjeta {
-        margin: auto;
-        width: 100%;
-    }
-
-    .section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        column-gap: 4vw;
-        margin-top: 2rem;
-    }
-
-    .section div {
-        width: 100%;
-    }
-
-    .section h1 {
-        margin-bottom: 0.75rem;
-    }
-
-    .section img {
-        width: 8rem
-    }
-
-    .ctaResumen {
-        align-items: flex-start;
-        background: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-top: 3px solid #8b5cf6;
-        border-radius: 1rem;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.08);
-        box-sizing: border-box;
-        color: #1e1e1e;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 2rem;
-        padding: 1.5rem;
-        width: 100%;
-        transition: box-shadow 0.25s ease, transform 0.25s ease;
-    }
-
-    .ctaResumen:hover {
-        box-shadow: 0 8px 20px rgba(139, 92, 246, 0.16);
-        transform: translateY(-2px);
-    }
-
-    .ctaResumen span.badge-text {
-        color: #64748b;
-        display: inline-block;
-        font-size: 0.8rem;
-        font-weight: bold;
-        margin-bottom: 0.35rem;
-        text-transform: uppercase;
-    }
-
-    .status-dot-resumen {
-        width: 8px;
-        height: 8px;
-        background-color: #10b981;
-        border-radius: 50%;
-        display: inline-block;
-        position: relative;
-        box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
-        animation: pulse-dot-resumen 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        margin-right: 0.4rem;
-        vertical-align: middle;
-        margin-bottom: 0.35rem;
-    }
-
-    @keyframes pulse-dot-resumen {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.5; transform: scale(1.2); }
-    }
-
-    .ctaResumen h2 {
-        color: #0f172a;
-        font-size: 1.1rem;
-        margin: 0;
-    }
-
-    .accionesResumen {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.75rem;
-    }
-
-    .accionesResumen a {
-        align-items: center;
-        border-radius: 0.55rem;
-        display: inline-flex;
-        font-weight: bold;
-        min-height: 2.4rem;
-        padding: 0 0.9rem;
-        text-decoration: none;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .accionesResumen a:hover {
-        transform: translateY(-1px);
-    }
-
-    .accionesResumen a:first-child {
-        background: #f8fafc;
-        border: 1px solid #e2e8f0;
-        color: #1e293b;
-    }
-
-    .accionesResumen a:last-child {
-        background: #8b5cf6;
-        border: 1px solid transparent;
-        color: white;
-    }
-
-    .accionesResumen a:last-child:hover {
-        box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-    }
+.contenedorSobreJankos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem auto;
+    width: 100%;
 }
 
-@media (min-width:700px) {
-    .content {
+.gridCardsResumen {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
 
-    }
+.tarjetaResumen {
+    background: #ffffff;
+    border: 1px solid #e4e4e7;
+    border-top: 3px solid transparent;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    padding: 1.35rem 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .section {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-top: 4rem;
-    }
+.perfilCard {
+    border-top-color: #0ea5e9;
+}
 
-    
+.perfilCard:hover {
+    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.12);
+    transform: translateY(-2px);
+}
 
-    .section img {
-        width: 7rem
-    }
+.propositoCard {
+    border-top-color: #8b5cf6;
+}
 
-    .section div {
-        width: 70%;
-    }
+.propositoCard:hover {
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.12);
+    transform: translateY(-2px);
+}
 
-    .contentenedorTarjeta {
-        width: 100%;
+.cardHeader {
+    align-items: center;
+    display: flex;
+    gap: 0.85rem;
+    margin-bottom: 0.85rem;
+}
+
+.iconWrapper {
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.55rem;
+    display: flex;
+    flex-shrink: 0;
+    height: 2.6rem;
+    justify-content: center;
+    width: 2.6rem;
+}
+
+.iconWrapper img {
+    height: 1.8rem;
+    object-fit: contain;
+    width: 1.8rem;
+}
+
+.cardHeader h3 {
+    color: #18181b;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.subtituloCard {
+    color: #71717a;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 0.15rem;
+}
+
+.textoResumen {
+    color: #475569;
+    flex-grow: 1;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 0 0 1rem 0;
+}
+
+.tagsResumen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tagsResumen span {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    color: #475569;
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.22rem 0.65rem;
+}
+
+/* CTA Resumen */
+.ctaResumen {
+    align-items: flex-start;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid #10b981;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.ctaResumen:hover {
+    box-shadow: 0 6px 18px rgba(16, 185, 129, 0.12);
+    transform: translateY(-2px);
+}
+
+.badgeDisponibilidad {
+    align-items: center;
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.35rem;
+}
+
+.status-dot-resumen {
+    animation: pulse-dot-resumen 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    background-color: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+}
+
+@keyframes pulse-dot-resumen {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.2); }
+}
+
+.badgeDisponibilidad span.badge-text {
+    color: #059669;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.ctaInfo h2 {
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.accionesResumen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.accionesResumen a {
+    align-items: center;
+    border-radius: 0.55rem;
+    display: inline-flex;
+    font-size: 0.88rem;
+    font-weight: 600;
+    min-height: 2.35rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.accionesResumen a:hover {
+    transform: translateY(-1px);
+}
+
+.accionesResumen a:first-child {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: #1e293b;
+}
+
+.accionesResumen a:last-child {
+    background: #10b981;
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+
+.accionesResumen a:last-child:hover {
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+@media (min-width: 700px) {
+    .gridCardsResumen {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
     }
 
     .ctaResumen {
@@ -166,24 +218,25 @@
     }
 }
 
-@media (min-width:1270px) {
-    .content {
-
+@media (max-width: 699px) {
+    .tarjetaResumen {
+        padding: 1rem 1.1rem;
     }
 
-    
-
-    
-
-    
-
-    .section {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    .cardHeader h3 {
+        font-size: 1rem;
     }
 
-    .contentenedorTarjeta {
-        width: 100%;
+    .textoResumen {
+        font-size: 0.84rem;
+    }
+
+    .ctaInfo h2 {
+        font-size: 0.95rem;
+    }
+
+    .accionesResumen a {
+        font-size: 0.82rem;
+        padding: 0 0.85rem;
     }
 }

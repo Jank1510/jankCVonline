@@ -1,34 +1,61 @@
 <div data-aos="fade-right" class="section-header">
-        <hr><span>Sobre Jankos</span>
-    </div>
+    <hr><span>Sobre Jankos</span>
+</div>
 <section class="content" (window:resize)="ajusteResolucion($event)">
-    
-    <div data-aos="fade-left" class="contentenedorTarjeta">
-        <div class="section">
-            <img *ngIf="width>=700" src="./assets/icons/resumen/perfil.png" alt="perfil">
-            <div>
-                <h1>¿Qué es JANKOS?</h1>
-                <img *ngIf="width<700" src="./assets/icons/resumen/perfil.png" alt="perfil">
-                <p>JANKOS es mi marca de servicios tecnológicos comerciales. Soy Jehan Carlos Hurtado, tecnólogo en Mecatrónica y estudiante de Ingeniería de Sistemas. Tengo experiencia en soporte TI,
-                    mantenimiento de impresoras y computadores, diagnóstico de hardware y software, configuración de
-                    sistemas y atención técnica a usuarios. El desarrollo web, la automatización y la IA complementan mi
-                    perfil para crear soluciones prácticas orientadas a problemas reales.</p>
-            </div>
+    <div data-aos="fade-up" class="contenedorSobreJankos">
+        <div class="gridCardsResumen">
+            <!-- Tarjeta 1: Perfil Profesional -->
+            <article class="tarjetaResumen perfilCard">
+                <div class="cardHeader">
+                    <div class="iconWrapper">
+                        <img src="./assets/icons/resumen/perfil.png" alt="Perfil">
+                    </div>
+                    <div>
+                        <h3>Perfil Profesional</h3>
+                        <span class="subtituloCard">Jehan Carlos Hurtado • Mecatrónica & Sistemas</span>
+                    </div>
+                </div>
+                <p class="textoResumen">
+                    Especialista en soporte técnico TI, diagnóstico de hardware/software y mantenimiento de computadores e impresoras. Integro desarrollo web y automatización para asegurar la continuidad operativa y resolver fallas con criterio técnico.
+                </p>
+                <div class="tagsResumen">
+                    <span>Soporte TI</span>
+                    <span>Hardware & Software</span>
+                    <span>Mantenimiento Preventivo</span>
+                    <span>Desarrollo Web</span>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Enfoque y Propósito -->
+            <article class="tarjetaResumen propositoCard">
+                <div class="cardHeader">
+                    <div class="iconWrapper">
+                        <img src="./assets/icons/resumen/objetivo.png" alt="Propósito">
+                    </div>
+                    <div>
+                        <h3>Propósito & JANKOS Tech</h3>
+                        <span class="subtituloCard">Servicios Tecnológicos & Soluciones Técnicas</span>
+                    </div>
+                </div>
+                <p class="textoResumen">
+                    Brindar servicios tecnológicos confiables para personas y empresas: mantenimiento calificado, atención cercana a usuarios, impresión 3D funcional y herramientas digitales prácticas diseñadas para optimizar el trabajo diario.
+                </p>
+                <div class="tagsResumen">
+                    <span>Continuidad Operativa</span>
+                    <span>Atención Técnica</span>
+                    <span>Impresión 3D</span>
+                    <span>Soluciones Prácticas</span>
+                </div>
+            </article>
         </div>
-        <div class="section">
-            <img *ngIf="width>=700" src="./assets/icons/resumen/objetivo.png" alt="objetivo">
-            <div>
-                <h1>Propósito</h1>
-                <img *ngIf="width<700" src="./assets/icons/resumen/objetivo.png" alt="objetivo">
-                <p>El propósito de JANKOS es brindar soluciones tecnológicas confiables a personas y empresas, aportando
-                    en mantenimiento preventivo/correctivo, continuidad operativa, documentación de procesos y
-                    herramientas digitales que mejoren el trabajo diario de personas y empresas.</p>
-            </div>
-        </div>
+
+        <!-- Tarjeta 3: CTA Disponibilidad -->
         <div class="ctaResumen">
-            <div>
-                <span class="status-dot-resumen"></span>
-                <span class="badge-text">Disponible para oportunidades</span>
+            <div class="ctaInfo">
+                <div class="badgeDisponibilidad">
+                    <span class="status-dot-resumen"></span>
+                    <span class="badge-text">Disponible para oportunidades y proyectos</span>
+                </div>
                 <h2>Soporte TI, mantenimiento tecnológico y desarrollo web</h2>
             </div>
             <div class="accionesResumen">

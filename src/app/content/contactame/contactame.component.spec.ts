@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { ContactameComponent } from './contactame.component';
 
@@ -8,6 +9,7 @@ describe('ContactameComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ FormsModule ],
       declarations: [ ContactameComponent ]
     })
     .compileComponents();

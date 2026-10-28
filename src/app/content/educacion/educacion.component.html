@@ -1,25 +1,37 @@
 <section class="content">
-    
-
     <div class="gridEducacion" data-aos="fade-up">
-        <!-- Columna 1 -->
+        <!-- Columna 1: Formación Académica -->
         <div class="columnaEducacion">
             <h3>Formación Académica</h3>
             <div class="listaTimeline">
                 <article class="tarjetaCompacta" *ngFor="let item of formacionAcademica">
-                    <h4>{{item.titulo}}</h4>
-                    <p>{{item.detalle}}</p>
+                    <div class="tarjetaHeader">
+                        <h4>{{item.titulo}}</h4>
+                        <span class="badgeEstado" *ngIf="item.estado" [ngClass]="{'en-progreso': item.estado === 'En progreso'}">{{item.estado}}</span>
+                    </div>
+                    <div class="tarjetaMeta">
+                        <span class="institucion">{{item.institucion}}</span>
+                        <span class="separador">•</span>
+                        <span class="periodo">{{item.periodo}}</span>
+                    </div>
                 </article>
             </div>
         </div>
 
-        <!-- Columna 2 -->
+        <!-- Columna 2: Cursos y Certificaciones -->
         <div class="columnaEducacion">
             <h3>Cursos y Certificaciones</h3>
             <div class="listaTimeline">
                 <article class="tarjetaCompacta" *ngFor="let item of cursosCertificaciones">
-                    <h4>{{item.titulo}}</h4>
-                    <p>{{item.detalle}}</p>
+                    <div class="tarjetaHeader">
+                        <h4>{{item.titulo}}</h4>
+                        <span class="badgeEstado" *ngIf="item.estado">{{item.estado}}</span>
+                    </div>
+                    <div class="tarjetaMeta">
+                        <span class="institucion">{{item.institucion}}</span>
+                        <span class="separador">•</span>
+                        <span class="periodo">{{item.periodo}}</span>
+                    </div>
                 </article>
             </div>
         </div>

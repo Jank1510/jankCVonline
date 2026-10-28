@@ -1,5 +1,11 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-28] update | Mejora de perfil profesional, experiencia y clasificación académica
+- Reclasificación académica: traslado de «Técnico en Programación Web» a «Formación Académica» y depuración de «Cursos y Certificaciones».
+- Renombramiento integral de «Trabajos» a «Experiencia» en navegación (escritorio y móvil) y encabezado visible, preservando el anclaje `#app-trabajos`.
+- Reducción de carga textual y divulgación progresiva mediante tarjetas compactas en Sobre Jankos y acordeón `<details>` para logros/competencias en Experiencia.
+- Creación de documentación modular en `wiki/pages/perfil-y-experiencia.md` y actualización del catálogo general en `wiki/index.md`.
+
 ## [2026-10-28] architecture | Alineación de secciones DOM con navegación y unificación de Sobre Jankos
 - Reordenamiento del DOM en `app.component.html` para coincidir exactamente con el menú: Inicio, Impresión 3D, Proyectos, Trabajos, Sobre Jankos y Cotización.
 - Unificación de Educación dentro de Sobre Jankos: eliminación del encabezado redundante de Educación y de la línea divisoria `<hr>` interna, conservando un único título «Sobre Jankos».
