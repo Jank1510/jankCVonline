@@ -1,5 +1,11 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-27] update | Indicador de scroll Bajar y preservación de botón en Hero
+- Retiro del botón secundario «Descargar CV» en la sección principal Hero preservando intacto «Contactar / Cotizar».
+- Incorporación del indicador accesible de scroll vertical con flecha animada y texto «Bajar».
+- Desplazamiento suave con soporte de teclado, historial de navegación y compatibilidad con `prefers-reduced-motion`.
+- Preservación independiente de ramas de desarrollo previo sin alteraciones al resto del feed.
+
 ## [2026-10-26] fix | Unificación de dominio canónico SEO a jankostech.com
 - Corrección de etiquetas canónicas, Open Graph, Twitter cards y schema JSON-LD en `src/index.html`.
 - Actualización de directiva en `src/robots.txt` a `https://jankostech.com/sitemap.xml` y `<loc>` en `src/sitemap.xml`.

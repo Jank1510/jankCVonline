@@ -22,13 +22,6 @@
 
     <div class="accionesInicio">
       <a data-aos="fade-right" class="contactame" href="#app-cotizacion">Contactar / Cotizar</a>
-      <a
-        data-aos="fade-up"
-        class="descargar-outline"
-        href="./assets/documents/cv-jehan-hurtado.pdf"
-        target="_blank"
-        download="CV-Jehan-Hurtado.pdf"
-      >Descargar CV</a>
     </div>
 
     <div class="enlace-secundario" data-aos="fade-left">
@@ -39,4 +32,19 @@
       >Acceder a JankOS &rarr;</a>
     </div>
   </div>
+
+  <a
+    href="#app-servicios"
+    (click)="irASiguienteSeccion($event)"
+    (keydown.space)="irASiguienteSeccion($event)"
+    class="indicador-scroll"
+    data-aos="fade-up"
+    data-aos-delay="200"
+    aria-label="Bajar a la siguiente sección"
+  >
+    <span class="indicador-texto">Bajar</span>
+    <svg class="flecha-scroll" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </a>
 </section>

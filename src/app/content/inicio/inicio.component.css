@@ -135,14 +135,55 @@
     font-weight: 500;
 }
 
-.accionesInicio .descargar-outline {
+.indicador-scroll {
+    align-items: center;
     background: transparent;
-    border: 1px solid #1e1e1e;
-    color: #1e1e1e;
+    border: none;
+    border-radius: 9999px;
+    color: #52525b;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+    animation: flotar-suave 2.4s ease-in-out infinite;
 }
 
-.accionesInicio .descargar-outline:hover {
-    background: #f7f7f7;
+.indicador-scroll:hover,
+.indicador-scroll:focus-visible {
+    color: #18181b;
+}
+
+.indicador-scroll:focus-visible {
+    outline: 2px solid #52525b;
+    outline-offset: 4px;
+}
+
+.indicador-texto {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.flecha-scroll {
+    display: block;
+    height: 16px;
+    stroke: currentColor;
+    width: 16px;
+}
+
+@keyframes flotar-suave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
 }
 
 .enlace-secundario {
@@ -166,6 +207,10 @@
     .contenedor {
         margin-bottom: 0;
     }
+
+    .indicador-scroll {
+        margin-top: 1.25rem;
+    }
 }
 
 @media (max-width: 520px) {
@@ -182,13 +227,20 @@
     }
 
     .accionesInicio {
-        flex-wrap: wrap;
         justify-content: center;
         margin-top: 1rem;
     }
     
     .presentacion {
         margin-top: 0.5rem;
+    }
+
+    .enlace-secundario {
+        margin-top: 1.15rem;
+    }
+
+    .indicador-scroll {
+        margin-top: 1rem;
     }
 }
 
@@ -201,5 +253,14 @@
         min-height: 36vh;
         padding-top: 2.5rem;
         width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .indicador-scroll,
+    .status-dot {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
     }
 }
