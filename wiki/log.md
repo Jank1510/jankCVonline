@@ -1,5 +1,10 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-27] update | Refinamiento de indicador de scroll exclusivo para móvil
+- Eliminación del texto «Bajar», sustituyéndolo por un chevrón SVG estilizado y minimalista.
+- Visibilidad restringida exclusivamente a viewports móviles (< 700px), permaneciendo oculto en desktop y tablet.
+- Animación vertical sutil optimizada y respeto a la preferencia de movimiento reducido.
+
 ## [2026-10-27] update | Indicador de scroll Bajar y preservación de botón en Hero
 - Retiro del botón secundario «Descargar CV» en la sección principal Hero preservando intacto «Contactar / Cotizar».
 - Incorporación del indicador accesible de scroll vertical con flecha animada y texto «Bajar».

@@ -136,18 +136,14 @@
 }
 
 .indicador-scroll {
+    display: none;
     align-items: center;
     background: transparent;
     border: none;
-    border-radius: 9999px;
-    color: #52525b;
+    color: #71717a;
     cursor: pointer;
-    display: inline-flex;
-    flex-direction: column;
-    gap: 0.25rem;
     justify-content: center;
-    margin-top: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     text-decoration: none;
     transition: color 0.2s ease, transform 0.2s ease;
     animation: flotar-suave 2.4s ease-in-out infinite;
@@ -161,27 +157,23 @@
 .indicador-scroll:focus-visible {
     outline: 2px solid #52525b;
     outline-offset: 4px;
-}
-
-.indicador-texto {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    border-radius: 4px;
 }
 
 .flecha-scroll {
     display: block;
-    height: 16px;
+    height: 22px;
     stroke: currentColor;
-    width: 16px;
+    width: 22px;
 }
 
 @keyframes flotar-suave {
     0%, 100% {
+        opacity: 0.7;
         transform: translateY(0);
     }
     50% {
+        opacity: 1;
         transform: translateY(5px);
     }
 }
@@ -209,6 +201,7 @@
     }
 
     .indicador-scroll {
+        display: inline-flex;
         margin-top: 1.25rem;
     }
 }
