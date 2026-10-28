@@ -227,6 +227,7 @@
     }
 
     .accionesInicio {
+        flex-wrap: wrap;
         justify-content: center;
         margin-top: 1rem;
     }
@@ -257,8 +258,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .indicador-scroll,
-    .status-dot {
+    .indicador-scroll {
         animation: none !important;
         transition: none !important;
         transform: none !important;
