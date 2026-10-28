@@ -1,5 +1,17 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-28] update | Reordenamiento de navegación y renovación de portada 1200x630
+- Reordenamiento de la navegación en menú de escritorio y móvil: 1. Inicio, 2. Impresión 3D, 3. Proyectos, 4. Trabajos, 5. Sobre Jankos, 6. Cotización.
+- Ajuste de estilos geométricos y sincronización de estado activo en `aside-menu.component.ts`.
+- Sustitución de `src/assets/preview.png` con la portada oficial (1200x630 px), preservando el dominio canónico `https://jankostech.com/`.
+- Incorporación de etiquetas Open Graph `og:image:width`, `og:image:height` y `og:image:type` en `src/index.html`.
+
+## [2026-10-28] fix | Corrección técnica de favicon 404, MIME SVG, manifiesto y página 404
+- Inclusión de `src/favicon.ico` en `angular.json` assets para resolver el error 404 en la raíz `/favicon.ico`.
+- Corrección del tipo MIME a `image/svg+xml` y adición de `<link rel="alternate icon">` en `src/index.html`.
+- Actualización de marca en `src/site.webmanifest` (`name` y `short_name` establecidos en `JANKOS Tech`).
+- Saneamiento de `src/404.html` actualizando título y enlace de retorno al dominio canónico `https://jankostech.com/`.
+
 ## [2026-10-27] update | Consolidación Fases 1–4: Simplificación de fondo y Hero a pantalla completa
 - Retiro de 150 iconos flotantes multicolor neón y lienzo tecnológico, estableciendo fondo neutro sobrio y profesional.
 - Saneamiento de listener huérfano mouseMove y variable positionBackground en inicio.component.
