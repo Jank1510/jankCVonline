@@ -1,5 +1,10 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-28] architecture | Alineación de secciones DOM con navegación y unificación de Sobre Jankos
+- Reordenamiento del DOM en `app.component.html` para coincidir exactamente con el menú: Inicio, Impresión 3D, Proyectos, Trabajos, Sobre Jankos y Cotización.
+- Unificación de Educación dentro de Sobre Jankos: eliminación del encabezado redundante de Educación y de la línea divisoria `<hr>` interna, conservando un único título «Sobre Jankos».
+- Actualización de anclajes de desplazamiento en Hero (`inicio.component.html/ts`) y Contacto hacia `#app-impresion3d` para evitar anclajes rotos.
+
 ## [2026-10-28] update | Reordenamiento de navegación y renovación de portada 1200x630
 - Reordenamiento de la navegación en menú de escritorio y móvil: 1. Inicio, 2. Impresión 3D, 3. Proyectos, 4. Trabajos, 5. Sobre Jankos, 6. Cotización.
 - Ajuste de estilos geométricos y sincronización de estado activo en `aside-menu.component.ts`.

@@ -16,7 +16,7 @@ export class InicioComponent implements OnInit {
   irASiguienteSeccion(event: Event): void {
     event.preventDefault();
     const siguienteSeccion =
-      document.getElementById('app-recorrido') || document.getElementById('app-servicios');
+      document.getElementById('app-impresion3d');
     if (siguienteSeccion) {
       const prefersReducedMotion =
         typeof window !== 'undefined' &&
@@ -35,7 +35,7 @@ export class InicioComponent implements OnInit {
         siguienteSeccion.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
 
-      const targetId = siguienteSeccion.id || 'app-servicios';
+      const targetId = siguienteSeccion.id || 'app-impresion3d';
       if (window.history && window.history.pushState) {
         window.history.pushState(null, '', '#' + targetId);
       }

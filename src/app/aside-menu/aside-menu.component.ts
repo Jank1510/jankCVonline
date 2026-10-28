@@ -88,7 +88,7 @@ export class AsideMenuComponent implements OnInit, OnDestroy {
         if (nuevaSeccion !== this.seccionActual) {
           this.ngZone.run(() => {
             this.seccionActual = nuevaSeccion;
-            if (nuevaSeccion === 'app-inicio' || nuevaSeccion === 'app-servicios') this.inicio();
+            if (nuevaSeccion === 'app-inicio') this.inicio();
             else if (nuevaSeccion === 'app-impresion3d') this.habilidades();
             else if (nuevaSeccion === 'app-proyectos') this.portafolio();
             else if (nuevaSeccion === 'app-trabajos') this.experiencia();
