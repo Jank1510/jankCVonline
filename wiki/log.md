@@ -1,5 +1,27 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-28] fix | Corrección de objetivo táctil en summary de acordeones laborales (WCAG 2.5.5)
+- Ajuste de `.desplegableExperiencia summary` con `min-height: 44px` y `box-sizing: border-box`.
+- Padding vertical de `0.75rem 0` en móvil y `0.65rem 0` en escritorio para garantizar al menos 44 × 44 px de área interactiva.
+- Verificación con Puppeteer a 390 × 844 y 1440 × 900: apertura, cierre, teclado, ausencia de desbordamiento horizontal y cero errores de consola.
+
+## [2026-10-28] architecture | Rediseño minimalista del Catálogo 3D y corrección de usabilidad
+- Rediseño de 6 tarjetas de `#app-impresion3d` a tarjetas blancas (#ffffff) con acentos bicromáticos (#0ea5e9 y #d97706), eliminando el esquema oscuro y la dispersión neón.
+- Enfoque visual en la fotografía, tratamiento unificado de imágenes verticales (QR Bre-B) con `object-fit: contain` e inclusión de extracto descriptivo de 2 líneas.
+- Botones de acción táctil de 44px («VER MUESTRAS» y «SOLICITAR DISEÑO») y controles de modal optimizados a 44 × 44px (WCAG 2.5.5).
+- Sustitución de `data-aos="fade-left"` por `data-aos="fade-up"` eliminando el desbordamiento lateral de 80px en móvil, preservando intacto el comportamiento multimedia.
+
+## [2026-10-28] fix | Ajustes de accesibilidad y usabilidad táctil móvil en Experiencia
+- Altura táctil mínima de 44px (`min-height: 44px; padding: 0.75rem 1rem`) en `.btnCotizarServicio` para viewports móviles (< 700px), cumpliendo directriz WCAG 2.5.5.
+- Ampliación de área táctil vertical en `.desplegableExperiencia summary` con padding de `0.5rem 0` en móvil y `0.45rem 0` en escritorio.
+- Verificación exhaustiva con Puppeteer: respuesta táctil, activación por teclado (Enter/Espacio) y ausencia de desbordamiento horizontal.
+
+## [2026-10-28] architecture | Integración de Servicios Técnicos en Experiencia (Layout 2 Columnas)
+- Reestructuración de `#app-trabajos` en cuadrícula simétrica de dos columnas para escritorio y apilado secuencial móvil.
+- Columna izquierda: recuperación de tarjetas técnicas de mantenimiento de computadores e impresoras con fotografías, capacidades y CTA de cotización por WhatsApp.
+- Columna derecha: consolidación de trayectoria laboral (Multitintas INK y Comercializadora Internacional de Llantas) con disclosure progresivo accesible.
+- Preservación íntegra de catálogo 3D (`#app-impresion3d`), identificadores de navegación y suite de pruebas unitarias (10/10 pasando).
+
 ## [2026-10-28] update | Mejora de perfil profesional, experiencia y clasificación académica
 - Reclasificación académica: traslado de «Técnico en Programación Web» a «Formación Académica» y depuración de «Cursos y Certificaciones».
 - Renombramiento integral de «Trabajos» a «Experiencia» en navegación (escritorio y móvil) y encabezado visible, preservando el anclaje `#app-trabajos`.

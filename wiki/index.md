@@ -13,8 +13,8 @@
 - *(Sin entradas aún)*
 
 ## Módulos
-- [Perfil Profesional y Experiencia](pages/perfil-y-experiencia.md) — Clasificación académica, síntesis de trayectoria y divulgación progresiva en Experiencia y Sobre Jankos.
-- [Catálogo 3D y Medios](pages/catalogo-3d.md) — Módulo interactivo de muestras multimedia de impresión 3D, NFC y prototipado.
+- [Perfil Profesional y Experiencia](pages/perfil-y-experiencia.md) — Clasificación académica, integración de servicios técnicos y síntesis de trayectoria en Experiencia y Sobre Jankos.
+- [Catálogo 3D y Medios](pages/catalogo-3d.md) — Vitrina técnica de impresión 3D, NFC y prototipado con arquitectura CDN y rediseño comercial minimalista.
 
 ## Operaciones
 - [SEO y Dominio Canónico](pages/seo-canonical-domain.md) — Unificación del dominio canónico a `jankostech.com` y resolución de redirecciones en metadatos y sitemap.

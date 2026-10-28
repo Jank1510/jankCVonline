@@ -22,12 +22,20 @@ Para reflejar con rigor los títulos formales y evitar confusión con formación
 - **Título de sección:** `<hr><span>Experiencia</span>` dentro de [`ExperienciaComponent`](src/app/content/experiencia/experiencia.component.ts).
 - **Estabilidad de anclajes:** Se preserva el identificador técnico `#app-trabajos` en el DOM para evitar rotura de enlaces externos o marcadores.
 
-## 3. Síntesis y Divulgación Progresiva (Scannability)
+## 3. Síntesis, Servicios Técnicos y Divulgación Progresiva
 
-- **Experiencia Laboral:**
-  - Presentación concisa con cargo, empresa, período y síntesis operativa.
-  - Máximo 2 a 3 funciones principales por rol.
-  - Divulgación progresiva mediante `<details>` accesible para logros específicos y badges de aptitudes técnicas.
+- **Reestructuración en Doble Columna (Escritorio):**
+  - **Columna Izquierda — Servicios Técnicos Especializados:** Recupera y presenta las tarjetas de servicio técnico comercial (`tarjetaServicio`):
+    - *Mantenimiento de computadores:* Diagnóstico de hardware/software, optimización, formateo e instalación con acento `#0ea5e9` y fotografía técnica (`servicio-tecnico-computadores.png`).
+    - *Mantenimiento de impresoras:* Diagnóstico, limpieza de cabezales, calibración y sistemas continuos con acento cobrizo `#d97706` y fotografía técnica (`servicio-tecnico-impresora-epson.png`).
+    - Botones de acción directa con cotización por WhatsApp (`https://wa.me/JankosTech?text=...`).
+  - **Columna Derecha — Trayectoria y Soporte Laboral:**
+    - Presentación concisa con cargo, empresa, período y síntesis operativa (Multitintas INK y Comercializadora Internacional de Llantas).
+    - Máximo 2 a 3 funciones principales por rol.
+    - Divulgación progresiva mediante acordeón accesible `<details>` para logros específicos y badges de aptitudes técnicas.
+- **Comportamiento en Móvil (`< 900px`):**
+  - Apilado vertical natural que prioriza los Servicios Técnicos Especializados primero y la Trayectoria Laboral a continuación, optimizando la conversión comercial inmediata.
+  - Usabilidad táctil móvil (WCAG 2.5.5): botón de WhatsApp `.btnCotizarServicio` con altura mínima de 44 px (`min-height: 44px; padding: 0.75rem 1rem`) y área de interacción del acordeón `<summary>` con altura interactiva mínima de 44 px (`min-height: 44px; padding: 0.75rem 0` en móvil y `0.65rem 0` en escritorio).
 - **Sobre Jankos:**
   - Tarjetas duales compactas: *Perfil Profesional* y *Propósito & JANKOS Tech*.
   - Reducción de párrafos extensos a resúmenes de alto impacto orientados a capacidades técnicas y valor operativo.

@@ -1,9 +1,8 @@
 <div data-aos="fade-right" class="section-header">
-            <hr><span>Impresión 3D y Fabricación Digital</span>
-        </div>
+    <hr><span>Impresión 3D y Fabricación Digital</span>
+</div>
 <section class="content flex">
     <div class="secciones">
-        
         <p data-aos="zoom-in">
             Soluciones en impresión 3D a medida. Desde piezas mecánicas y repuestos funcionales, hasta regalos personalizados, lámparas y tecnología integrada.
             <br> <br>
@@ -23,12 +22,15 @@
         </div>
     </div>
     <div class="secciones">
-        <div class="content-tarjetas" data-aos="fade-left" style="margin-top: 2rem;">
+        <div class="content-tarjetas" data-aos="fade-up">
             <div class="tarjeta" *ngFor="let item of productos">
-                <p class="title-tarjetas">{{item.name}}</p>
                 <div class="tarjeta-imagen">
-                     <img [src]="item.imagen" [alt]="item.name" loading="lazy" decoding="async" />
-                     <span class="tarjeta-badge" *ngIf="item.etiqueta">{{ item.etiqueta }}</span>
+                    <img [src]="item.imagen" [alt]="item.name" loading="lazy" decoding="async" />
+                    <span class="tarjeta-badge" *ngIf="item.etiqueta">{{ item.etiqueta }}</span>
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <h3 class="title-tarjetas">{{item.name}}</h3>
+                    <p class="tarjeta-desc" *ngIf="item.descripcion">{{item.descripcion}}</p>
                 </div>
                 <button *ngIf="item.catalogo?.length" type="button" class="btn-catalogo"
                         (click)="abrirCatalogo(item)"
@@ -48,8 +50,10 @@
                         <line x1="8" y1="16" x2="12" y2="16"></line>
                     </svg>
                 </div>
-                <p class="cta-titulo">¿Tienes una idea?</p>
-                <p class="cta-sub">La convertimos en una pieza real.</p>
+                <div class="tarjeta-cuerpo cta-cuerpo">
+                    <h3 class="cta-titulo">¿Tienes una idea?</h3>
+                    <p class="cta-sub">La convertimos en una pieza real.</p>
+                </div>
                 <a href="#app-cotizacion" class="cta-btn">SOLICITAR DISEÑO</a>
             </div>
         </div>

@@ -29,4 +29,12 @@
 - Carga inicial: `powerbank.mp4` (17:18) y `llaverolitofania.mp4` (17:20) integrados en Prototipado y NFC.
 - Carga posterior: `marketplace1.mp4` (19:04) y `marketplace2.mp4` (19:04) recepcionados en `/DATA/media/catalogo-3d/litofanias/`, validados con H.264 High Profile, faststart habilitado y reproducibilidad HTML5.
 
+## 5. Rediseño Minimalista y Usabilidad Comercial (2026-10-28)
+- **Tarjetas Blancas y Sobrias:** Sustitución del fondo oscuro `#2a2a2a` y la dispersión cromática neón por tarjetas blancas `#ffffff` con bordes `#e4e4e7` y radio de 12 px (`0.75rem`), unificadas con la estética global de JANKOS TECH.
+- **Acentos Bicromáticos:** Esquema restringido a 2 tonos corporativos: Cian tecnológico `#0ea5e9` (NFC, Prototipado, QR, CTA) y Naranja de fabricación `#d97706` (Litofanías, Piezas mecánicas).
+- **Proporción y Encuadre Multimedia:** Incorporación de regla `object-fit: contain` para imágenes verticales (QR Bre-B) evitando recortes destructivos.
+- **Extracto Descriptivo:** Integración de extracto de descripción de 2 líneas (`.tarjeta-desc`) derivado de `item.descripcion`.
+- **Accesibilidad Táctil (WCAG 2.5.5):** Altura mínima de 44 px en botones «VER MUESTRAS» y «SOLICITAR DISEÑO». Controles de cierre y navegación del modal ampliados a 44 × 44 px.
+- **Resolución de Desbordamiento:** Reemplazo de `data-aos="fade-left"` por `data-aos="fade-up"` en `.content-tarjetas`, erradicando el desbordamiento horizontal en móvil.
+
 

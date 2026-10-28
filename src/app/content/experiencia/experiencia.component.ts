@@ -1,5 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface ServiceItem {
+  titulo: string;
+  etiqueta: string;
+  descripcion: string;
+  imagen: string;
+  capacidades: string[];
+  enlaceCotizacion: string;
+}
+
 export interface ExperienceItem {
   cargo: string;
   empresa: string;
@@ -17,9 +26,41 @@ export interface ExperienceItem {
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  servicios: ServiceItem[];
   experiencias: ExperienceItem[];
 
   constructor() {
+    this.servicios = [
+      {
+        titulo: 'Mantenimiento de computadores',
+        etiqueta: 'Soporte Hardware & Software',
+        descripcion: 'Diagnóstico técnico, mantenimiento preventivo y correctivo, optimización de velocidad, formateo e instalación de sistemas para laptops y equipos de escritorio.',
+        imagen: './assets/img/trabajos/servicio-tecnico-computadores.png',
+        capacidades: [
+          'Diagnóstico de hardware y software',
+          'Mantenimiento preventivo / correctivo',
+          'Optimización de rendimiento',
+          'Formateo e instalación de sistemas',
+          'Laptops y PCs de alto rendimiento'
+        ],
+        enlaceCotizacion: 'https://wa.me/JankosTech?text=Hola%20JANKOS%20Tech,%20deseo%20cotizar%20mantenimiento%20de%20computadores'
+      },
+      {
+        titulo: 'Mantenimiento de impresoras',
+        etiqueta: 'Soporte Especializado',
+        descripcion: 'Diagnóstico integral, desobstrucción y limpieza profunda de cabezales, calibración mecánica, solución de fallas y mantenimiento de sistemas continuos y térmicos.',
+        imagen: './assets/img/trabajos/servicio-tecnico-impresora-epson.png',
+        capacidades: [
+          'Diagnóstico y solución de fallas',
+          'Limpieza y desobstrucción de cabezales',
+          'Sistemas continuos y recargas',
+          'Módulos térmicos y calibración mecánica',
+          'Mantenimiento preventivo para oficinas'
+        ],
+        enlaceCotizacion: 'https://wa.me/JankosTech?text=Hola%20JANKOS%20Tech,%20deseo%20cotizar%20mantenimiento%20de%20impresoras'
+      }
+    ];
+
     this.experiencias = [
       {
         cargo: 'Soporte TI y mantenimiento tecnológico',
