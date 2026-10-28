@@ -36,5 +36,6 @@
 - **Extracto Descriptivo:** Integración de extracto de descripción de 2 líneas (`.tarjeta-desc`) derivado de `item.descripcion`.
 - **Accesibilidad Táctil (WCAG 2.5.5):** Altura mínima de 44 px en botones «VER MUESTRAS» y «SOLICITAR DISEÑO». Controles de cierre y navegación del modal ampliados a 44 × 44 px.
 - **Resolución de Desbordamiento:** Reemplazo de `data-aos="fade-left"` por `data-aos="fade-up"` en `.content-tarjetas`, erradicando el desbordamiento horizontal en móvil.
+- **Priorización Visual del Catálogo (DOM Reordering):** Reordenación semántica del HTML colocando las 6 tarjetas del catálogo como primer contenido visual tras el encabezado de sección (`margin-top: 0`), ubicando el bloque descriptivo general y la tarjeta de proyectos debajo para elevar el impacto comercial y preservar el orden secuencial de lectura y foco (accesibilidad).
 
 

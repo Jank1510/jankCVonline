@@ -29,6 +29,7 @@ Para reflejar con rigor los títulos formales y evitar confusión con formación
     - *Mantenimiento de computadores:* Diagnóstico de hardware/software, optimización, formateo e instalación con acento `#0ea5e9` y fotografía técnica (`servicio-tecnico-computadores.png`).
     - *Mantenimiento de impresoras:* Diagnóstico, limpieza de cabezales, calibración y sistemas continuos con acento cobrizo `#d97706` y fotografía técnica (`servicio-tecnico-impresora-epson.png`).
     - Botones de acción directa con cotización por WhatsApp (`https://wa.me/JankosTech?text=...`).
+    - Compactación visual: supresión de pastillas redundantes al pie de las tarjetas de mantenimiento para nivelar la altura con la trayectoria laboral adyacente, conservando descripciones técnicas completas y botones de acción.
   - **Columna Derecha — Trayectoria y Soporte Laboral:**
     - Presentación concisa con cargo, empresa, período y síntesis operativa (Multitintas INK y Comercializadora Internacional de Llantas).
     - Máximo 2 a 3 funciones principales por rol.

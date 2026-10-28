@@ -24,9 +24,6 @@
                     <div class="cuerpoServicio">
                         <h4>{{servicio.titulo}}</h4>
                         <p class="descripcionServicio">{{servicio.descripcion}}</p>
-                        <div class="capacidadesServicio">
-                            <span *ngFor="let cap of servicio.capacidades">{{cap}}</span>
-                        </div>
                         <div class="accionesServicio">
                             <a [href]="servicio.enlaceCotizacion" target="_blank" rel="noopener noreferrer" class="btnCotizarServicio">
                                 <img src="./assets/icons/icons-aside/contact/whatsapp-icon.png" alt="WhatsApp" class="iconoWa">

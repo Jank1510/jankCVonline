@@ -1,5 +1,10 @@
 # LLM Wiki — Bitácora Cronológica (jankCVonline)
 
+## [2026-10-28] update | Ajuste UX quirúrgico en Servicios Técnicos y Catálogo 3D
+- Compactación de tarjetas de mantenimiento en Experiencia eliminando pastillas redundantes al pie, logrando equilibrio visual con la trayectoria laboral adyacente.
+- Reordenación en el DOM de Impresión 3D (`#app-impresion3d`): el catálogo de 6 tarjetas se presenta como primer contenido y el texto descriptivo general se ubica debajo.
+- Coincidencia estricta del orden visual con el orden de lectura y navegación por teclado (sin trucos de CSS `order`), preservando WCAG 2.5.5 y responsive completo.
+
 ## [2026-10-28] fix | Corrección de objetivo táctil en summary de acordeones laborales (WCAG 2.5.5)
 - Ajuste de `.desplegableExperiencia summary` con `min-height: 44px` y `box-sizing: border-box`.
 - Padding vertical de `0.75rem 0` en móvil y `0.65rem 0` en escritorio para garantizar al menos 44 × 44 px de área interactiva.
